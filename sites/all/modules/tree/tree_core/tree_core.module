@@ -1,0 +1,125 @@
+<?php
+/**
+ * @file
+ * Code for the Core feature.
+ */
+
+include_once 'tree_core.features.inc';
+
+/**
+ * Implements hook_entity_info_alter()
+ */
+function tree_core_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['search_result'] = array(
+    'label' => t('Search result'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['fieldable_panels_pane']['view modes']['teaser'] = array(
+    'label' => t('Teaser'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['fieldable_panels_pane']['view modes']['link'] = array(
+    'label' => t('Link'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['user']['view modes']['teaser'] = array(
+    'label' => t('Teaser'),
+    'custom settings' => TRUE,
+  );
+}
+
+/**
+ * Implements hook_form_alter()
+ * Hides fields if they are empty
+ */
+function tree_core_form_alter(&$form, &$form_state, $form_id) {
+  foreach ($form as $id => &$item) {
+    if (is_array($item) && isset($item['#type']) && $item['#type'] == 'container') {
+      switch($item['#type']) {
+        case 'container':
+          $language = isset($item['#language']) ? $item['#language'] : LANGUAGE_NONE;
+          if (isset($item[$language]['#type']) && $item[$language]['#type'] == 'select') {
+            $diff = array_diff($item[$language]['#options'], array('_none' => '- None -'));
+            if (empty($diff)) {
+              $item['#type'] = 'hidden';
+            }
+          }
+          break;
+        case 'select':
+          if (empty($item['#options'])) {
+            $item['#type'] = 'hidden';
+          }
+          break;
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_pathauto_alias_alter()
+ */
+function tree_core_pathauto_alias_alter(&$alias, array &$context) {
+  // Force all aliases to be saved as language neutral.
+  $context['language'] = LANGUAGE_NONE;
+}
+
+/**
+ * Implements hook_path_insert()
+ */
+function tree_core_path_insert($path) {
+  if ($path['language'] != LANGUAGE_NONE) {
+    $initial_path = path_load(array('source' => $path['source'], 'language' => LANGUAGE_NONE));
+    if (!empty($initial_path)) {
+      path_delete($path['pid']);
+    }
+    else {
+      $path['language'] = LANGUAGE_NONE;
+      // Resave path
+      path_save($path);
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_presave()
+ *
+ * Makes sure pathauto is not used when no path is set
+ */
+function tree_core_entity_presave($node, $type) {
+  if (!isset($node->path['pathauto'])) {
+    $node->path['pathauto'] = FALSE;
+  }
+}
+
+/**
+ * Implements hook_field_extra_fields()
+ */
+function tree_core_field_extra_fields() {
+  $extra['node']['tree_document']['display'] = array(
+    'tree_core_share_button' => array(
+      'label' => t('Share button'),
+      'description' => t('Share button'),
+      'weight' => 0,
+    ),
+  );
+
+  return $extra;
+}
+
+/**
+ * Implements hook_node_view().
+ *
+ * Adds share button
+ */
+function tree_core_node_view($node, $view_mode, $langcode) {
+  $url = url('node/'.$node->nid, array('absolute' => TRUE));
+  drupal_add_js('https://static.addtoany.com/menu/page.js');
+  $node->content['tree_core_share_button'] = array(
+    '#type' => 'item',
+    '#title' => '',
+    '#markup' => l('<i class="fa fa-share"></i> '.t('share'), 'http://www.addtoany.com/share_save', array('attributes' => array('class' => array( 'a2a_dd', 'btn', 'btn-default')), 'html' => TRUE)),
+    '#suffix' => '<script type="text/javascript">a2a_config.linkname = "'.$node->title.'";a2a_config.linkurl = "'.$url.'";a2a.init("page");</script>',
+  );
+}
+
+
