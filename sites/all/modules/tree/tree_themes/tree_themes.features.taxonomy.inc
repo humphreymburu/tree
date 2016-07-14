@@ -9,10 +9,10 @@
  */
 function tree_themes_taxonomy_default_vocabularies() {
   return array(
-    'theme' => array(
+    'tree_theme' => array(
       'name' => 'Theme',
-      'machine_name' => 'theme',
-      'description' => 'Describes Tree,Research, Education contexts',
+      'machine_name' => 'tree_theme',
+      'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
