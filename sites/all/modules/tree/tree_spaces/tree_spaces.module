@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Spaces feature.
+ */
+
+include_once 'tree_spaces.features.inc';

@@ -1,0 +1,15 @@
+name = Themes
+description = Provides the themes taxonomy
+core = 7.x
+package = Tree
+dependencies[] = ctools
+dependencies[] = entityreference
+dependencies[] = features
+dependencies[] = feeds
+dependencies[] = taxonomy
+dependencies[] = tree_core
+features[ctools][] = feeds:feeds_importer_default:1
+features[features_api][] = api:2
+features[feeds_importer][] = tree_themes
+features[taxonomy][] = theme
+mtime = 1468429207

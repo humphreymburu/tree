@@ -1,0 +1,5 @@
+name = Exposed Filter Buttons
+description = Create Buttons instead of Select box in Views Exposed Filter
+package = Views
+core = 7.x
+dependencies[] = views

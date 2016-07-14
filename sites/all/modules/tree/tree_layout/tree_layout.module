@@ -1,0 +1,41 @@
+<?php
+/**
+ * @file
+ * Code for the Layout feature.
+ */
+
+include_once 'tree_layout.features.inc';
+
+function tree_layout_block_info() {
+  $blocks['tree_layout_login'] = array(
+    'info' => t('Tree Login block'),
+  );
+
+  $blocks['tree_layout_donate'] = array(
+    'info' => t('Tree Donate block'),
+  );
+
+  return $blocks;
+}
+
+function tree_layout_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'tree_layout_login':
+      $block['content'] = '';
+      if (!user_is_logged_in()) {
+        $block['content'] = l(t('SIGN IN'), 'user/login', 
+          array('attributes' => array('class' => array('sign', '')), 'query' => drupal_get_destination()));
+      }
+      break;
+    case 'tree_layout_donate':
+       $block['content'] = l(t('DONATE'), 'donate', 
+          array('attributes' => array('class' => array('button', 'radius', ''))));
+     break;
+
+      }
+  return $block;
+}
+
+
+

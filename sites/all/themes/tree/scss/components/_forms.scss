@@ -1,0 +1,44 @@
+// Docs: http://foundation.zurb.com/docs/components/forms.html
+
+// Drupal specific classes
+// ----------------------------------------------------------------------------
+.form-text {}
+.form-submit {}
+
+
+.select {
+position: relative;
+    display: inline-block;
+    vertical-align: top;
+    min-width: 220px;
+    width: auto;
+	
+}
+
+.chosen-container-single .chosen-single {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 0 0 0 8px;
+    height: 34px;
+    border: 1px solid #5B8930;
+    border-radius: 2px;
+    background-color: #fff;
+    background: white;
+	
+}
+
+
+.chosen-container-single .chosen-single span {
+	color: #5B8930;
+	margin-top: 0.3rem;
+}
+
+.chosen-container-single .chosen-single div b {
+    margin-top: 0.3rem;
+}
+
+.views-widget { 
+    margin-top: 0.48rem;
+}	
+	

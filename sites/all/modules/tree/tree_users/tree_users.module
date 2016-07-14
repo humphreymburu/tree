@@ -1,0 +1,104 @@
+<?php
+/**
+ * @file
+ * Code for the Users feature.
+ */
+
+include_once 'tree_users.features.inc';
+
+/** 
+ * Implementation of hook_entity_info_alter()
+ */
+function tree_users_entity_info_alter(&$entity_info) {
+
+  // Quick links
+  $entity_info['fieldable_panels_pane']['bundles']['tree_users'] = array(
+    'label' => t('Users'),
+    'pane category' => t('Users'),
+    'pane top level' => TRUE,
+    'admin' => array(
+      'path' => 'admin/structure/fieldable-panels-panes/manage/%fieldable_panels_panes_type',
+      'bundle argument' => 4,
+      'real path' => 'admin/structure/fieldable-panels-panes/manage/tree-users',
+      'access arguments' => array('administer fieldable panels panes'),
+    ),
+  );
+}
+
+function tree_users_field_formatter_info() {
+  return array(
+    'tree_users_skype' => array(
+      'label' => t('Skype Status'),
+      'field types' => array('text'),
+    ),
+  );
+}
+
+function tree_users_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+  $element = array();
+  $settings = $display['settings'];
+
+  switch ($display['type']) {
+    case 'tree_users_skype':
+      // Common case: each value is displayed individually in a sub-element
+      // keyed by delta. The field.tpl.php template specifies the markup
+      // wrapping each value.
+      foreach ($items as $delta => $item) {
+        $status = file_get_contents('http://mystatus.skype.com/'.$item['safe_value'].'.num');
+        $class = '';
+        if ($status == 2) {
+          $class = 'skype-online';
+        }
+        $element[$delta] = array('#markup' => '<a treeef="skype:'.$item['safe_value'].'?call"><i class="fa fa-skype fa-2x '.$class.'"></i></a>');       
+      }
+      break;
+  }
+  return $element;
+}
+
+
+/**
+ * Implements hook_og_features_registry()
+ */
+function tree_users_og_features_registry() {
+  $registry = array();
+  $feature = new stdClass();
+  $feature->id = 'tree_users';
+  $feature->name = t('People');
+  $feature->description = t('Show members of your space.');
+  $feature->components = array(
+    'pane' => array(
+      'tree_users-space_members',
+    ),
+  );
+  $registry[$feature->id] = $feature;
+  return $registry;
+}
+
+/**
+ * Implements hook_og_features_toggle($entity, $entity_id, $entity_type, $features)
+ */
+function tree_users_og_features_toggle($entity, $entity_id, $entity_type, $features) {
+  if (isset($features['tree_users'])) {
+    $mlid = og_menu_single_get_link_mlid('node', $entity_id);
+    if (empty($features['tree_users'])) {
+      menu_link_delete(NULL, 'node/'.$entity_id.'/people');
+    }
+    else {
+      // See if menu link already exists
+      $menu_link = menu_link_get_preferred('node/'.$entity_id.'/people', OG_MENU_SINGLE_MENU_NAME);
+      if (empty($menu_link)) {
+        $menu_link = array(
+          'link_path' => 'node/'.$entity_id.'/people',
+          'link_title' => 'People',
+          'menu_name' => OG_MENU_SINGLE_MENU_NAME,
+          'weight' => 8,
+          'plid' => $mlid,
+        );
+        menu_link_save($menu_link);
+      }
+    }
+  }
+
+}
+

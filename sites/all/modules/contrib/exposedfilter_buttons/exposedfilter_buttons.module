@@ -1,0 +1,58 @@
+<?php 
+
+function exposedfilter_buttons_form_alter(&$form, &$form_state, $form_id) {
+  /**
+   * Manipulate output of Views Ajax Exposed filter 
+   */
+   
+
+
+  if ($form['#id'] == 'views-exposed-form-staff-pages') {
+    $form['#attached']['js'] = array(
+      drupal_get_path('module', 'exposedfilter_buttons') . '/js/exposedfilter_buttons.js',
+    );
+
+
+   dpm($form);;
+
+    $links = $form['field_field_job_categories']['#options'];
+    $newlinks = array();
+
+
+
+
+
+
+    foreach ($links as $tid => $term_name) {
+      if ($tid == 'All') {
+        $newlinks[] = array('data' => '<span class="filter-tab"><a href="" id="' .$tid . '" class="active">' . $term_name . '</a></span>', 'class' => array('pop-filter-label'));
+      }
+      if (_get_term_depth($tid) == 1) {
+        $newlinks[] = array('data' => '<span class="filter-tab"><a href="" id="' .$tid . '">' . $term_name . '</a></span>', 'class' => array('pop-filter-label'));
+      }
+    }
+  
+    $prefix = theme(
+      'item_list', array(
+      'items' => $newlinks,
+      'type' => 'ul',
+      'attributes' => array('id' => 'pop-filter-list'),
+      'container_id' => 'scope-list-wrapper',
+    ));
+
+    $form['links'] = array(
+      '#type' => 'markup',
+      '#value' => $prefix,
+      '#markup' => $prefix,
+    ); 
+  }
+
+  // extra submit form handle
+  $form['#submit'][] = 'exposedfilter_buttons_form_submit';
+
+}
+
+// handle form submition 
+function exposedfilter_buttons_form_submit($form, &$form_state){
+    $values = $form_state['values'];
+}
