@@ -48,8 +48,11 @@ features[field_base][] = field_related_content
 features[field_base][] = field_website
 features[field_base][] = name_field
 features[field_base][] = title_field
+<<<<<<< HEAD
 features[isotope_configurations][] = default_two
 features[isotope_configurations][] = vertical
+=======
+>>>>>>> dev
 features[user_permission][] = save draft
 features[user_permission][] = use panels in place editing
 features[user_permission][] = view own unpublished content
@@ -76,4 +79,8 @@ features[variable][] = site_default_country
 features[variable][] = theme_default
 features[variable][] = user_admin_role
 features[variable][] = user_default_timezone
+<<<<<<< HEAD
 mtime = 1468256890
+=======
+mtime = 1468433956
+>>>>>>> dev
