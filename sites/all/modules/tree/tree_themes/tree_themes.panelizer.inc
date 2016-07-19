@@ -658,33 +658,6 @@ function tree_themes_panelizer_defaults() {
     $display->content['new-a532d49b-303f-49a7-8c8e-f17c407a957d'] = $pane;
     $display->panels['contentmain'][1] = 'new-a532d49b-303f-49a7-8c8e-f17c407a957d';
     $pane = new stdClass();
-    $pane->pid = 'new-5530855c-1605-4cb2-8767-10e12da4ef99';
-    $pane->panel = 'header';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:title_field';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'text_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'panelizer',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '5530855c-1605-4cb2-8767-10e12da4ef99';
-    $display->content['new-5530855c-1605-4cb2-8767-10e12da4ef99'] = $pane;
-    $display->panels['header'][0] = 'new-5530855c-1605-4cb2-8767-10e12da4ef99';
-    $pane = new stdClass();
     $pane->pid = 'new-c93d19cd-d045-441b-b48d-e01bfa2372b5';
     $pane->panel = 'header';
     $pane->type = 'entity_field';
@@ -712,11 +685,11 @@ function tree_themes_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
     $pane->uuid = 'c93d19cd-d045-441b-b48d-e01bfa2372b5';
     $display->content['new-c93d19cd-d045-441b-b48d-e01bfa2372b5'] = $pane;
-    $display->panels['header'][1] = 'new-c93d19cd-d045-441b-b48d-e01bfa2372b5';
+    $display->panels['header'][0] = 'new-c93d19cd-d045-441b-b48d-e01bfa2372b5';
     $pane = new stdClass();
     $pane->pid = 'new-1740d229-8a6f-43fd-810a-08482fcfbaf3';
     $pane->panel = 'sidebar';
@@ -773,7 +746,7 @@ function tree_themes_panelizer_defaults() {
     $display->content['new-ec1bcc0b-206b-45ad-a3a0-d9ade558a30e'] = $pane;
     $display->panels['sidebar'][1] = 'new-ec1bcc0b-206b-45ad-a3a0-d9ade558a30e';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-5530855c-1605-4cb2-8767-10e12da4ef99';
+  $display->title_pane = '0';
   $panelizer->display = $display;
   $export['node:themes:tree_themes'] = $panelizer;
 
