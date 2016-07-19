@@ -10,6 +10,23 @@
 function tree_layout_menu_default_menu_links() {
   $menu_links = array();
 
+  // Exported menu link: main-menu_contact-us:contact_us
+  $menu_links['main-menu_contact-us:contact_us'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'contact_us',
+    'router_path' => 'contact_us',
+    'link_title' => 'Contact Us',
+    'options' => array(
+      'identifier' => 'main-menu_contact-us:contact_us',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+  );
   // Exported menu link: main-menu_education:Education
   $menu_links['main-menu_education:Education'] = array(
     'menu_name' => 'main-menu',
@@ -25,23 +42,6 @@ function tree_layout_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => -45,
-    'customized' => 1,
-  );
-  // Exported menu link: main-menu_home:home
-  $menu_links['main-menu_home:home'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'home',
-    'router_path' => 'home',
-    'link_title' => 'Home',
-    'options' => array(
-      'identifier' => 'main-menu_home:home',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
     'customized' => 1,
   );
   // Exported menu link: main-menu_research:Research
@@ -80,8 +80,8 @@ function tree_layout_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('Contact Us');
   t('EDUCATION');
-  t('Home');
   t('RESEARCH');
   t('TREATMENT');
 
