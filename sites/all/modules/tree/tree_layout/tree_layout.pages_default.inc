@@ -16,7 +16,10 @@ function tree_layout_default_page_manager_pages() {
   $page->admin_title = 'Contacts Page';
   $page->admin_description = 'Tree Feed Back Page';
   $page->path = 'contact_us';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'normal',
     'title' => 'Contact Us',
