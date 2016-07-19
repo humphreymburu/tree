@@ -17,22 +17,22 @@ function tree_layout_context_default_contexts() {
   $context->description = 'Banner';
   $context->tag = 'Banner';
   $context->conditions = array(
-    'context' => array(
+    'path' => array(
       'values' => array(
-        'home' => 'home',
-        'research' => 'research',
-        'education' => 'education',
-        'treatment' => 'treatment',
-        'resources' => 'resources',
+        '<front>' => '<front>',
+        'Resources' => 'Resources',
+        'Education' => 'Education',
+        'Treatment' => 'Treatment',
+        'Research' => 'Research',
       ),
     ),
   );
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-banner-block_1' => array(
+        'views-hero_slider-block' => array(
           'module' => 'views',
-          'delta' => 'banner-block_1',
+          'delta' => 'hero_slider-block',
           'region' => 'header',
           'weight' => '-10',
         ),
