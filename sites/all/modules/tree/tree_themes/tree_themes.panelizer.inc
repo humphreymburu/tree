@@ -699,9 +699,12 @@ function tree_themes_panelizer_defaults() {
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
         'image_link' => 'content',
-        'image_style' => 'flexslider_full',
+        'image_style' => 'hero',
       ),
       'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
