@@ -100,7 +100,7 @@ function tree_pages_views_default_views() {
   $handler->display->display_options['fields']['field_theme_photo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_theme_photo']['settings'] = array(
     'image_style' => '',
-    'image_link' => '',
+    'image_link' => 'content',
   );
   /* Field: Content: Photo */
   $handler->display->display_options['fields']['field_photo']['id'] = 'field_photo';
@@ -135,12 +135,12 @@ function tree_pages_views_default_views() {
     'tree_page' => 'tree_page',
     'themes' => 'themes',
   );
-  /* Filter criterion: Taxonomy term: Name (name_field) */
-  $handler->display->display_options['filters']['name_field_value']['id'] = 'name_field_value';
-  $handler->display->display_options['filters']['name_field_value']['table'] = 'field_data_name_field';
-  $handler->display->display_options['filters']['name_field_value']['field'] = 'name_field_value';
-  $handler->display->display_options['filters']['name_field_value']['relationship'] = 'field_type_of_theme_target_id';
-  $handler->display->display_options['filters']['name_field_value']['value'] = 'Education';
+  /* Filter criterion: Taxonomy term: Name */
+  $handler->display->display_options['filters']['name']['id'] = 'name';
+  $handler->display->display_options['filters']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['name']['field'] = 'name';
+  $handler->display->display_options['filters']['name']['relationship'] = 'field_type_of_theme_target_id';
+  $handler->display->display_options['filters']['name']['value'] = 'Education';
   $handler->display->display_options['path'] = 'uw_education';
   $translatables['education'] = array(
     t('Master'),
@@ -408,12 +408,12 @@ function tree_pages_views_default_views() {
     'tree_page' => 'tree_page',
     'themes' => 'themes',
   );
-  /* Filter criterion: Taxonomy term: Name (name_field) */
-  $handler->display->display_options['filters']['name_field_value']['id'] = 'name_field_value';
-  $handler->display->display_options['filters']['name_field_value']['table'] = 'field_data_name_field';
-  $handler->display->display_options['filters']['name_field_value']['field'] = 'name_field_value';
-  $handler->display->display_options['filters']['name_field_value']['relationship'] = 'field_type_of_theme_target_id';
-  $handler->display->display_options['filters']['name_field_value']['value'] = 'Research';
+  /* Filter criterion: Taxonomy term: Name */
+  $handler->display->display_options['filters']['name']['id'] = 'name';
+  $handler->display->display_options['filters']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['name']['field'] = 'name';
+  $handler->display->display_options['filters']['name']['relationship'] = 'field_type_of_theme_target_id';
+  $handler->display->display_options['filters']['name']['value'] = 'Research';
   $handler->display->display_options['path'] = 'uw_research';
   $translatables['research'] = array(
     t('Master'),
@@ -688,7 +688,7 @@ function tree_pages_views_default_views() {
   $handler->display->display_options['fields']['field_theme_photo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_theme_photo']['settings'] = array(
     'image_style' => '',
-    'image_link' => '',
+    'image_link' => 'content',
   );
   /* Field: Content: Photo */
   $handler->display->display_options['fields']['field_photo']['id'] = 'field_photo';
@@ -723,12 +723,12 @@ function tree_pages_views_default_views() {
     'tree_page' => 'tree_page',
     'themes' => 'themes',
   );
-  /* Filter criterion: Taxonomy term: Name (name_field) */
-  $handler->display->display_options['filters']['name_field_value']['id'] = 'name_field_value';
-  $handler->display->display_options['filters']['name_field_value']['table'] = 'field_data_name_field';
-  $handler->display->display_options['filters']['name_field_value']['field'] = 'name_field_value';
-  $handler->display->display_options['filters']['name_field_value']['relationship'] = 'field_type_of_theme_target_id';
-  $handler->display->display_options['filters']['name_field_value']['value'] = 'Treatment';
+  /* Filter criterion: Taxonomy term: Name */
+  $handler->display->display_options['filters']['name']['id'] = 'name';
+  $handler->display->display_options['filters']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['name']['field'] = 'name';
+  $handler->display->display_options['filters']['name']['relationship'] = 'field_type_of_theme_target_id';
+  $handler->display->display_options['filters']['name']['value'] = 'Treatment';
   $handler->display->display_options['path'] = 'uw_treatment';
   $translatables['treatment'] = array(
     t('Master'),
