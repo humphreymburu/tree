@@ -24,8 +24,8 @@ function tree_layout_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
-    'customized' => 0,
+    'weight' => -45,
+    'customized' => 1,
   );
   // Exported menu link: main-menu_education:Education
   $menu_links['main-menu_education:Education'] = array(
@@ -41,7 +41,27 @@ function tree_layout_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -45,
+    'weight' => -47,
+    'customized' => 1,
+  );
+  // Exported menu link: main-menu_events:Event
+  $menu_links['main-menu_events:Event'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'Event',
+    'router_path' => 'Event',
+    'link_title' => 'EVENTS',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Events Links',
+      ),
+      'identifier' => 'main-menu_events:Event',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -46,
     'customized' => 1,
   );
   // Exported menu link: main-menu_research:Research
@@ -58,7 +78,7 @@ function tree_layout_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -48,
     'customized' => 1,
   );
   // Exported menu link: main-menu_treatment:Treatment
@@ -75,13 +95,14 @@ function tree_layout_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -49,
     'customized' => 1,
   );
   // Translatables
   // Included for use with string extractors like potx.
   t('Contact Us');
   t('EDUCATION');
+  t('EVENTS');
   t('RESEARCH');
   t('TREATMENT');
 
