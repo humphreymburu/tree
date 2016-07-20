@@ -36,3 +36,21 @@ span.date-display-start {
 span.date-display-end {
 	color: #5B8930;
 }
+
+
+#page-title {
+    bottom: 0;
+    -moz-box-sizing: border-box;
+   // box-sizing: border-box;
+    //color: #fff;
+    //left: 0;
+    //padding: 20px;
+    //position: absolute;
+    width: 100%;
+    //z-index: 2;	
+	//padding-bottom: 40%;
+	display: block;
+    //text-shadow: 1px 1px 2px #222;
+	font-size: 2.25rem;
+	line-height: 1.16666667;
+}

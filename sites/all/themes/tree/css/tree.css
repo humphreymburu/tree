@@ -2939,7 +2939,7 @@ p aside {
 /* Default header styles */
 /* line 182, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Nunito", Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   color: #222;
@@ -8594,6 +8594,16 @@ span.date-display-start {
 /* line 36, ../scss/layout/_main.scss */
 span.date-display-end {
   color: #5B8930;
+}
+
+/* line 41, ../scss/layout/_main.scss */
+#page-title {
+  bottom: 0;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  display: block;
+  font-size: 2.25rem;
+  line-height: 1.16666667;
 }
 
 /* line 8, ../scss/layout/_footer.scss */
