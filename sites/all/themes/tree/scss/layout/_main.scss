@@ -6,3 +6,33 @@
 .body {}
 .image {}
 .breadcrumb {}
+
+
+
+.pane-content {
+	display: block;
+	padding-top: 15px;
+}
+.pane-content.field-wrapper {
+	p {
+		//margin-top: 1rem;
+	}
+}
+
+span.date-display-single {
+    color: #5B8930;
+    color: #5B8930;
+	font-size: 1rem;
+	line-height: 1.5;
+	margin: 0;
+    letter-spacing: .25px;
+	padding-left: 0;
+	font-weight: bold;
+	display: block;
+}
+span.date-display-start {
+  color: #5B8930;
+}
+span.date-display-end {
+	color: #5B8930;
+}
