@@ -307,7 +307,7 @@ function tree_layout_default_page_manager_pages() {
     $pane->uuid = 'c566fd5a-68ac-4d58-b90c-c56d9bda447a';
     $display->content['new-c566fd5a-68ac-4d58-b90c-c56d9bda447a'] = $pane;
     $display->panels['contentmain'][0] = 'new-c566fd5a-68ac-4d58-b90c-c56d9bda447a';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;

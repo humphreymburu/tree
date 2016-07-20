@@ -57,4 +57,4 @@ features[user_permission][] = use text format panopoly_wysiwyg_text
 features[variable][] = flexslider_version
 features[variable][] = site_frontpage
 features[views_view][] = hero_slider
-mtime = 1469010097
+mtime = 1469041081
