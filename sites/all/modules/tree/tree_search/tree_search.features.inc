@@ -170,6 +170,144 @@ function tree_search_default_search_api_index() {
  */
 function tree_search_default_search_api_server() {
   $items = array();
+  $items['database'] = entity_import('search_api_server', '{
+    "name" : "Database",
+    "machine_name" : "database",
+    "description" : "Database Service",
+    "class" : "search_api_db_service",
+    "options" : {
+      "database" : "default:default",
+      "min_chars" : "1",
+      "partial_matches" : 0,
+      "autocomplete" : { "suggest_suffix" : 1, "suggest_words" : 1 },
+      "indexes" : { "default_node_index" : {
+          "type" : {
+            "table" : "search_api_db_default_node_index",
+            "column" : "type",
+            "type" : "string",
+            "boost" : "1.0"
+          },
+          "title" : {
+            "table" : "search_api_db_default_node_index_text",
+            "type" : "text",
+            "boost" : "5.0"
+          },
+          "promote" : {
+            "table" : "search_api_db_default_node_index",
+            "column" : "promote",
+            "type" : "boolean",
+            "boost" : "1.0"
+          },
+          "sticky" : {
+            "table" : "search_api_db_default_node_index",
+            "column" : "sticky",
+            "type" : "boolean",
+            "boost" : "1.0"
+          },
+          "created" : {
+            "table" : "search_api_db_default_node_index",
+            "column" : "created",
+            "type" : "date",
+            "boost" : "1.0"
+          },
+          "changed" : {
+            "table" : "search_api_db_default_node_index",
+            "column" : "changed",
+            "type" : "date",
+            "boost" : "1.0"
+          },
+          "author" : {
+            "table" : "search_api_db_default_node_index",
+            "column" : "author",
+            "type" : "integer",
+            "boost" : "1.0"
+          },
+          "title_field" : {
+            "table" : "search_api_db_default_node_index_text",
+            "type" : "text",
+            "boost" : "5.0"
+          },
+          "field_type_of_theme" : {
+            "table" : "search_api_db_default_node_index_field_type_of_theme",
+            "column" : "value",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "field_event_category" : {
+            "table" : "search_api_db_default_node_index_field_event_category",
+            "column" : "value",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "field_type_of_news" : {
+            "table" : "search_api_db_default_node_index_field_type_of_news",
+            "column" : "value",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "field_information" : {
+            "table" : "search_api_db_default_node_index_text",
+            "type" : "text",
+            "boost" : "5.0"
+          },
+          "field_type_of_space" : {
+            "table" : "search_api_db_default_node_index_field_type_of_space",
+            "column" : "value",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "field_document_type" : {
+            "table" : "search_api_db_default_node_index_field_document_type",
+            "column" : "value",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "field_publication_date" : {
+            "table" : "search_api_db_default_node_index",
+            "column" : "field_publication_date",
+            "type" : "date",
+            "boost" : "1.0"
+          },
+          "search_api_language" : {
+            "table" : "search_api_db_default_node_index",
+            "column" : "search_api_language",
+            "type" : "string",
+            "boost" : "1.0"
+          },
+          "body:value" : {
+            "table" : "search_api_db_default_node_index_text",
+            "type" : "text",
+            "boost" : "5.0"
+          },
+          "language" : {
+            "table" : "search_api_db_default_node_index",
+            "column" : "language",
+            "type" : "string",
+            "boost" : "1.0"
+          },
+          "url" : {
+            "table" : "search_api_db_default_node_index",
+            "column" : "url",
+            "type" : "uri",
+            "boost" : "1.0"
+          },
+          "status" : {
+            "table" : "search_api_db_default_node_index",
+            "column" : "status",
+            "type" : "integer",
+            "boost" : "1.0"
+          },
+          "body:format" : {
+            "table" : "search_api_db_default_node_index",
+            "column" : "body_format",
+            "type" : "string",
+            "boost" : "1.0"
+          }
+        }
+      }
+    },
+    "enabled" : "1"
+  }');
   $items['tree_solr'] = entity_import('search_api_server', '{
     "name" : "Solr",
     "machine_name" : "tree_solr",
