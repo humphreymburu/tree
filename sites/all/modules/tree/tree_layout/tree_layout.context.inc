@@ -13,6 +13,39 @@ function tree_layout_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'search';
+  $context->description = 'search functionality';
+  $context->tag = 'search';
+  $context->conditions = array(
+    'sitewide' => array(
+      'values' => array(
+        1 => 1,
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views--exp-search-page' => array(
+          'module' => 'views',
+          'delta' => '-exp-search-page',
+          'region' => 'featured',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('search');
+  t('search functionality');
+  $export['search'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'slider_banner';
   $context->description = 'Banner';
   $context->tag = 'Banner';
