@@ -215,12 +215,15 @@ function tree_news_panelizer_defaults() {
   $panelizer->link_to_entity = TRUE;
   $panelizer->extra = array();
   $display = new panels_display();
-  $display->layout = 'radix_boxton';
+  $display->layout = 'radix_moscone';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
       'contentmain' => NULL,
+      'header' => NULL,
+      'sidebar' => NULL,
+      'footer' => NULL,
     ),
   );
   $display->cache = array();
@@ -236,13 +239,16 @@ function tree_news_panelizer_defaults() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'above',
-      'formatter' => 'hidden',
+      'label' => 'hidden',
+      'formatter' => 'text_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(),
       'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -264,7 +270,7 @@ function tree_news_panelizer_defaults() {
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'hidden',
-      'formatter' => 'text_trimmed',
+      'formatter' => 'text_summary_or_trimmed',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
@@ -287,6 +293,64 @@ function tree_news_panelizer_defaults() {
     $pane->uuid = 'fe7ee197-b027-4ed0-a955-a13dda318b4c';
     $display->content['new-fe7ee197-b027-4ed0-a955-a13dda318b4c'] = $pane;
     $display->panels['contentmain'][1] = 'new-fe7ee197-b027-4ed0-a955-a13dda318b4c';
+    $pane = new stdClass();
+    $pane->pid = 'new-2d3b0fbc-2e1e-4659-8fef-a936f4115be7';
+    $pane->panel = 'contentmain';
+    $pane->type = 'entity_field_extra';
+    $pane->subtype = 'node:tree_core_read_more_button';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_mode' => 'full',
+      'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = '2d3b0fbc-2e1e-4659-8fef-a936f4115be7';
+    $display->content['new-2d3b0fbc-2e1e-4659-8fef-a936f4115be7'] = $pane;
+    $display->panels['contentmain'][2] = 'new-2d3b0fbc-2e1e-4659-8fef-a936f4115be7';
+    $pane = new stdClass();
+    $pane->pid = 'new-f2f59457-4fb3-4741-b55b-385744a10969';
+    $pane->panel = 'sidebar';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_image';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'image',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(
+        'image_style' => 'medium',
+        'image_link' => 'content',
+      ),
+      'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'f2f59457-4fb3-4741-b55b-385744a10969';
+    $display->content['new-f2f59457-4fb3-4741-b55b-385744a10969'] = $pane;
+    $display->panels['sidebar'][0] = 'new-f2f59457-4fb3-4741-b55b-385744a10969';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $panelizer->display = $display;
