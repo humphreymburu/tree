@@ -21,9 +21,7 @@
 
 span.date-display-single {
     color: #5B8930;
-    color: #5B8930;
 	font-size: 1rem;
-	line-height: 1.5;
 	margin: 0;
     letter-spacing: .25px;
 	padding-left: 0;
@@ -53,4 +51,140 @@ span.date-display-end {
     //text-shadow: 1px 1px 2px #222;
 	font-size: 2.25rem;
 	line-height: 1.16666667;
+}
+
+
+
+// node panels 
+
+.node-search-result {
+
+  background-color: #F2F1EF;
+  border: 1px solid #FFF;
+  margin: 1%;
+  padding: 1rem;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px !important;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+
+  > h2 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 20px 20px 79px;
+    max-height: 55px;
+    margin-left: 18px;
+    margin-top: 16px;
+    min-height: 55px;
+  }
+  
+  
+  .form-item  {
+	  margin-top: 0.2em;
+	  margin-bottom: 0.2em;
+  }
+  
+  
+}
+  
+.node-search-result.field-label {
+	 font-weight: bolder;
+	 font-size: 0.875rem;
+}
+.field .field-label {
+    font-size: 0.875rem;
+    font-weight: bolder;
+    color: #212121;
+    margin-bottom: 0.2rem;
+   font-family: "Nunito",Arial,Helvetica,sans-serif;
+}
+
+
+
+//field.field-name-field-document-bio field-type-text-with-summary field-label-hidden field-wrapper
+.field.field-name-title-field.field-type-text.field-wrapper {
+	font-size: 18px;
+    font-weight: bold;
+ 	color: #5B8930;
+	font-family: "Nunito",Arial,Helvetica,sans-serif;
+}
+.field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper {
+	display: block;
+
+	
+	p {
+		font-size: 0.875rem;
+		line-height: 1.2rem;
+        margin: 0;
+	 }
+	 
+	 span {
+		 color: #212121;
+		 padding-left: 0;
+		 font-size: 0.875rem;
+		 
+		 
+		 	.date-display-single {
+		
+				 color: #212121;
+		 	}
+		 
+	 }
+	 
+	 .date-display-single {
+		 color: #212121;
+	 	
+	 }
+
+		  
+}
+
+.field.field-name-field-document-type.field-type-entityreference.clearfix.field-wrapper
+{
+	font-size: 0.855rem;
+	    font-weight: normal;
+	    line-height: normal;
+	
+}
+.field.field-name-field-publication-date.field-type-datetime.clearfix.field-wrapper {
+
+	
+ span {
+	 color: #212121;
+	 padding-left: 0;
+     font-size: 0.855rem;
+     font-weight: normal;
+	 
+	 
+	 
+	 	.date-display-single {
+	
+			 color: #212121;
+	 	}
+	 
+ }
+	
+	
+}
+
+
+
+
+.field.field-name-field-file.field-type-file.field-wrapper {
+		
+		.file {
+			display: block;
+			float: right;
+		}
+	
 }
