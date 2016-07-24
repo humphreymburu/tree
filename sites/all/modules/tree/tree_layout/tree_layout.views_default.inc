@@ -155,6 +155,13 @@ function tree_layout_views_default_views() {
   $handler->display->display_options['filters']['sticky']['table'] = 'node';
   $handler->display->display_options['filters']['sticky']['field'] = 'sticky';
   $handler->display->display_options['filters']['sticky']['value'] = '1';
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type_1']['id'] = 'type_1';
+  $handler->display->display_options['filters']['type_1']['table'] = 'node';
+  $handler->display->display_options['filters']['type_1']['field'] = 'type';
+  $handler->display->display_options['filters']['type_1']['value'] = array(
+    'themes' => 'themes',
+  );
   $handler->display->display_options['block_description'] = 'hero_slider';
   $translatables['hero_slider'] = array(
     t('Master'),

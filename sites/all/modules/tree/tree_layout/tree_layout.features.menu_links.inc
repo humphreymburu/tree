@@ -15,16 +15,19 @@ function tree_layout_menu_default_menu_links() {
     'menu_name' => 'main-menu',
     'link_path' => 'contact_us',
     'router_path' => 'contact_us',
-    'link_title' => 'Contact Us',
+    'link_title' => 'CONTACT US',
     'options' => array(
       'identifier' => 'main-menu_contact-us:contact_us',
+      'attributes' => array(
+        'title' => '',
+      ),
     ),
     'module' => 'system',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -45,
+    'weight' => -44,
     'customized' => 1,
   );
   // Exported menu link: main-menu_education:Education
@@ -61,7 +64,7 @@ function tree_layout_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -45,
     'customized' => 1,
   );
   // Exported menu link: main-menu_research:Research
@@ -100,7 +103,7 @@ function tree_layout_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Contact Us');
+  t('CONTACT US');
   t('EDUCATION');
   t('EVENTS');
   t('RESEARCH');
