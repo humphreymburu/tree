@@ -20,7 +20,7 @@ function tree_document_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'file',
         'settings' => array(),
-        'type' => 'file_default',
+        'type' => 'file_url_plain',
         'weight' => 0,
       ),
       'token' => array(
@@ -44,7 +44,7 @@ function tree_document_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'media',
+      'module' => 'file',
       'settings' => array(
         'allowed_schemes' => array(
           'private' => 'private',
@@ -67,7 +67,7 @@ function tree_document_field_default_field_instances() {
         ),
         'progress_indicator' => 'ttreeobber',
       ),
-      'type' => 'media_generic',
+      'type' => 'file_generic',
       'weight' => 0,
     ),
   );
@@ -295,9 +295,7 @@ function tree_document_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(
-        'apply_chosen' => 1,
-      ),
+      'settings' => array(),
       'type' => 'options_select',
       'weight' => 2,
     ),
@@ -543,92 +541,14 @@ function tree_document_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-tree_document_type-description_field'
-  $field_instances['taxonomy_term-tree_document_type-description_field'] = array(
-    'bundle' => 'tree_document_type',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'description_field',
-    'label' => 'Description',
-    'required' => FALSE,
-    'settings' => array(
-      'display_summary' => 0,
-      'entity_translation_sync' => FALSE,
-      'hide_label' => array(
-        'entity' => FALSE,
-        'page' => FALSE,
-      ),
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-tree_document_type-name_field'
-  $field_instances['taxonomy_term-tree_document_type-name_field'] = array(
-    'bundle' => 'tree_document_type',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'name_field',
-    'label' => 'Name',
-    'required' => TRUE,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'hide_label' => array(
-        'entity' => FALSE,
-        'page' => FALSE,
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 0,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
-  t('Description');
   t('Document Bio');
   t('Document type');
   t('Document_photo');
   t('File');
   t('File(s)');
   t('Language');
-  t('Name');
   t('Publication Date');
   t('Title');
   t('Type of Theme');
