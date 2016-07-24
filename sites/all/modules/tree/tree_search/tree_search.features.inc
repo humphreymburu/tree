@@ -20,6 +20,13 @@ function tree_search_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function tree_search_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_default_search_api_index().
  */
 function tree_search_default_search_api_index() {
@@ -28,45 +35,132 @@ function tree_search_default_search_api_index() {
     "name" : "Default node index",
     "machine_name" : "default_node_index",
     "description" : "An automatically created search index for indexing node data. Might be configured to specific needs.",
-    "server" : null,
+    "server" : "database",
     "item_type" : "node",
     "options" : {
       "index_directly" : 1,
       "cron_limit" : "50",
-      "data_alter_callbacks" : { "search_api_alter_node_access" : { "status" : 1, "weight" : "0", "settings" : [] } },
+      "data_alter_callbacks" : {
+        "search_api_alter_bundle_filter" : {
+          "status" : 0,
+          "weight" : "-10",
+          "settings" : { "default" : "1", "bundles" : [] }
+        },
+        "search_api_alter_node_access" : { "status" : 1, "weight" : "0", "settings" : [] },
+        "search_api_alter_node_status" : { "status" : 0, "weight" : "0", "settings" : [] },
+        "search_api_alter_add_hierarchy" : {
+          "status" : 1,
+          "weight" : "0",
+          "settings" : { "fields" : {
+              "field_tags:parents_all" : "field_tags:parents_all",
+              "field_type_of_theme:parents_all" : "field_type_of_theme:parents_all",
+              "field_event_category:parents_all" : "field_event_category:parents_all",
+              "field_type_of_news:parents_all" : "field_type_of_news:parents_all",
+              "field_home_page:parents_all" : "field_home_page:parents_all",
+              "field_type_of_space:parents_all" : "field_type_of_space:parents_all",
+              "field_document_type:parents_all" : "field_document_type:parents_all"
+            }
+          }
+        },
+        "search_api_alter_add_viewed_entity" : { "status" : 0, "weight" : "0", "settings" : { "mode" : "full" } },
+        "search_api_alter_add_url" : { "status" : 0, "weight" : "0", "settings" : [] },
+        "search_api_alter_add_aggregation" : { "status" : 1, "weight" : "0", "settings" : [] }
+      },
       "processors" : {
-        "search_api_case_ignore" : { "status" : 1, "weight" : "0", "settings" : { "strings" : 0 } },
+        "search_api_case_ignore" : {
+          "status" : 1,
+          "weight" : "0",
+          "settings" : { "fields" : {
+              "type" : true,
+              "title" : true,
+              "title_field" : true,
+              "field_information" : true,
+              "body:value" : true
+            }
+          }
+        },
         "search_api_html_filter" : {
           "status" : 1,
           "weight" : "10",
           "settings" : {
-            "title" : 0,
+            "fields" : {
+              "type" : true,
+              "title" : true,
+              "title_field" : true,
+              "field_information" : true,
+              "body:value" : true
+            },
+            "title" : 1,
             "alt" : 1,
-            "tags" : "h1 = 5\\nh2 = 3\\nh3 = 2\\nstrong = 2\\nb = 2\\nem = 1.5\\nu = 1.5"
+            "tags" : "h1 = 5\\r\\nh2 = 3\\r\\nh3 = 2\\r\\nstrong = 2\\r\\nb = 2\\r\\nem = 1.5\\r\\nu = 1.5"
           }
         },
         "search_api_tokenizer" : {
           "status" : 1,
           "weight" : "20",
-          "settings" : { "spaces" : "[^\\\\p{L}\\\\p{N}]", "ignorable" : "[-]" }
+          "settings" : {
+            "fields" : {
+              "title" : true,
+              "title_field" : true,
+              "field_information" : true,
+              "body:value" : true
+            },
+            "spaces" : "[^\\\\p{L}\\\\p{N}]",
+            "ignorable" : "[-]"
+          }
+        },
+        "search_api_stopwords" : {
+          "status" : 0,
+          "weight" : "30",
+          "settings" : {
+            "fields" : {
+              "title" : true,
+              "title_field" : true,
+              "field_information" : true,
+              "body:value" : true
+            },
+            "file" : "",
+            "stopwords" : "but\\r\\ndid\\r\\nthe this that those\\r\\netc"
+          }
+        },
+        "search_api_highlighting" : {
+          "status" : 0,
+          "weight" : "35",
+          "settings" : {
+            "prefix" : "\\u003Cstrong\\u003E",
+            "suffix" : "\\u003C\\/strong\\u003E",
+            "excerpt" : 1,
+            "excerpt_length" : "256",
+            "highlight" : "always"
+          }
         }
       },
       "fields" : {
         "type" : { "type" : "string" },
         "title" : { "type" : "text", "boost" : "5.0" },
+        "language" : { "type" : "string" },
+        "url" : { "type" : "uri" },
+        "status" : { "type" : "integer" },
         "promote" : { "type" : "boolean" },
         "sticky" : { "type" : "boolean" },
         "created" : { "type" : "date" },
         "changed" : { "type" : "date" },
         "author" : { "type" : "integer", "entity_type" : "user" },
-        "comment_count" : { "type" : "integer" },
+        "title_field" : { "type" : "text", "boost" : "5.0" },
+        "field_type_of_theme" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
+        "field_event_category" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
+        "field_type_of_news" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
+        "field_information" : { "type" : "text", "boost" : "5.0" },
+        "field_type_of_space" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
+        "field_document_type" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
+        "field_publication_date" : { "type" : "date" },
         "search_api_language" : { "type" : "string" },
-        "body:value" : { "type" : "text" }
+        "body:value" : { "type" : "text", "boost" : "5.0" },
+        "body:format" : { "type" : "string" }
       }
     },
-    "enabled" : "0",
-    "read_only" : "0",
-    "rdf_mapping" : []
+    "enabled" : "1",
+    "read_only" : "0"
   }');
   return $items;
 }
@@ -94,8 +188,7 @@ function tree_search_default_search_api_server() {
       "highlight_data" : 0,
       "http_method" : "AUTO"
     },
-    "enabled" : "1",
-    "rdf_mapping" : []
+    "enabled" : "0"
   }');
   return $items;
 }
