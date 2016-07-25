@@ -253,24 +253,9 @@ function tree_links__topbar_main_menu($variables) {
   $output = _zurb_foundation_links($links);
   $variables['attributes']['class'][] = 'right';
 
-  $searchFormItem = '<li class="has-form">
-        <form method="GET" action="' . $GLOBALS['base_url'] . '/search/content/">
-          <div class="row collapse">
-            <div class="large-8 small-9 columns"">
-              <input type="text" name="keys">
-            </div>
-            <div class="large-4 small-3 columns">
-			<button type="submit" class="js_toggler"><i class="step fi-magnifying-glass size-18"></i>
-			  </button>
-			  
-	
-			  
-            </div>
-          </div>
-        </form>
-      </li>';
 
-  return '<ul class="right"' . drupal_attributes($variables['attributes']) . '>' . $output . $searchFormItem . '</ul>';
+
+  return '<ul class="right"' . drupal_attributes($variables['attributes']) . '>' . $output . '</ul>';
 }
 
 
