@@ -13,6 +13,13 @@ function tree_users_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'file_public_path';
+  $strongarm->value = 'sites/default/files';
+  $export['file_public_path'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_defaults_fieldable_panels_pane_tree_users';
   $strongarm->value = array(
     'status' => 1,
@@ -108,14 +115,14 @@ function tree_users_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_picture_path';
-  $strongarm->value = 'user/pictures';
+  $strongarm->value = '/user/pictures';
   $export['user_picture_path'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_picture_style';
-  $strongarm->value = 'profile';
+  $strongarm->value = '';
   $export['user_picture_style'] = $strongarm;
 
   $strongarm = new stdClass();

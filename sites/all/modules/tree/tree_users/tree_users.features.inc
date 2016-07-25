@@ -37,8 +37,7 @@ function tree_users_default_profile2_type() {
     "type" : "tree_profile",
     "label" : "Tree Profile",
     "weight" : "0",
-    "data" : { "registration" : 0 },
-    "rdf_mapping" : []
+    "data" : { "registration" : 0, "roles" : { "2" : "2" }, "use_page" : 0 }
   }');
   return $items;
 }

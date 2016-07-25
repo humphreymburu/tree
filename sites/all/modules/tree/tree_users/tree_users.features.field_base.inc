@@ -106,7 +106,7 @@ function tree_users_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'tree_job_title' => 'tree_job_title',
+          'profile_categories' => 'profile_categories',
         ),
       ),
       'profile2_private' => 0,

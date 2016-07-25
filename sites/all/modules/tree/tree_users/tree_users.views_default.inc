@@ -40,7 +40,7 @@ function tree_users_views_default_views() {
     'field_job_categories' => 0,
   );
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: OG membership: OG membership from User group */
+  /* Relationship: Broken/missing handler */
   $handler->display->display_options['relationships']['og_membership_rel_group']['id'] = 'og_membership_rel_group';
   $handler->display->display_options['relationships']['og_membership_rel_group']['table'] = 'users';
   $handler->display->display_options['relationships']['og_membership_rel_group']['field'] = 'og_membership_rel_group';
@@ -127,12 +127,8 @@ function tree_users_views_default_views() {
   $handler->display->display_options['filters']['tid']['field'] = 'tid';
   $handler->display->display_options['filters']['tid']['relationship'] = 'field_job_categories_target_id';
   $handler->display->display_options['filters']['tid']['value'] = array(
-    26 => '26',
-    25 => '25',
-    22 => '22',
-    24 => '24',
-    23 => '23',
-    29 => '29',
+    20 => '20',
+    21 => '21',
   );
   $handler->display->display_options['filters']['tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['tid']['expose']['operator_id'] = 'tid_op';
@@ -146,7 +142,7 @@ function tree_users_views_default_views() {
   );
   $handler->display->display_options['filters']['tid']['expose']['reduce'] = TRUE;
   $handler->display->display_options['filters']['tid']['type'] = 'select';
-  $handler->display->display_options['filters']['tid']['vocabulary'] = 'tree_job_title';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'profile_categories';
   $handler->display->display_options['filters']['tid']['hierarchy'] = 1;
   $handler->display->display_options['path'] = 'staff';
   $translatables['staff'] = array(
@@ -165,7 +161,7 @@ function tree_users_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('OG membership from user group'),
+    t('og_membership_rel_group'),
     t('OG membership type'),
     t('Page'),
     t('Profile'),
