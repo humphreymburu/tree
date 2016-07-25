@@ -10,19 +10,19 @@
 function tree_about_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-about_tree-body'
-  $field_instances['node-about_tree-body'] = array(
+  // Exported field_instance: 'node-about_tree-field_about_informationa'
+  $field_instances['node-about_tree-field_about_informationa'] = array(
     'bundle' => 'about_tree',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 3,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -31,26 +31,24 @@ function tree_about_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
-        'weight' => 1,
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'body',
-    'label' => 'Body',
-    'required' => FALSE,
+    'field_name' => 'field_about_informationa',
+    'label' => 'About Information',
+    'required' => 1,
     'settings' => array(
-      'display_summary' => TRUE,
+      'display_summary' => 0,
       'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
         'rows' => 20,
@@ -139,7 +137,7 @@ function tree_about_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Body');
+  t('About Information');
   t('Photo About');
 
   return $field_instances;
