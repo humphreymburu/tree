@@ -180,7 +180,7 @@ function tree_core_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_admin_role';
-  $strongarm->value = 30037204;
+  $strongarm->value = '30037204';
   $export['user_admin_role'] = $strongarm;
 
   $strongarm = new stdClass();
