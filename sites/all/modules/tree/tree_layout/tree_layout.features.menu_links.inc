@@ -84,6 +84,26 @@ function tree_layout_menu_default_menu_links() {
     'weight' => -48,
     'customized' => 1,
   );
+  // Exported menu link: main-menu_resources:Resources
+  $menu_links['main-menu_resources:Resources'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'Resources',
+    'router_path' => 'Resources',
+    'link_title' => 'RESOURCES',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Resources page',
+      ),
+      'identifier' => 'main-menu_resources:Resources',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -46,
+    'customized' => 1,
+  );
   // Exported menu link: main-menu_treatment:Treatment
   $menu_links['main-menu_treatment:Treatment'] = array(
     'menu_name' => 'main-menu',
@@ -107,6 +127,7 @@ function tree_layout_menu_default_menu_links() {
   t('EDUCATION');
   t('EVENTS');
   t('RESEARCH');
+  t('RESOURCES');
   t('TREATMENT');
 
 
