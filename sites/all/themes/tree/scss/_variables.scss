@@ -1357,7 +1357,6 @@ $topbar-menu-icon-color-toggled: #5b8530;
 
 
 
-
 .block-title {
     font-size: 1em;
     text-transform: uppercase;
@@ -1576,7 +1575,17 @@ img, object, embed {
            text-decoration: none;
            line-height: inherit;
 	     }
+		 
+		 
 	}  
+	
+	a {
+       color: #fff;
+       text-decoration: none;
+       line-height: inherit;
+     }
+	
+	
   }
  
  
@@ -1703,7 +1712,11 @@ img, object, embed {
 	 	
 	 }
 
-
+	 span {
+	     padding-left: 0px;
+	     color: #ccc;
+	 }
+    
 
 
        .field-content {
@@ -2259,13 +2272,20 @@ img, object, embed {
 	 
 	 .isotope-grid-sizer,
      .isotope-element {
-     height:300px;
+    // height:300px;
+     display: block;
 	 	
        .pack-header {
 	       padding: 170px 10px calc(20px);
-	       height: 216px;
+	       //height: 216px;
 	       display: block;
 	 }
+	 
+
+
+	 
+	 
+	 
  }
  
  li.isotope-element.one {
