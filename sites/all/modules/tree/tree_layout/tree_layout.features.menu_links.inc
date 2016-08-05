@@ -10,19 +10,19 @@
 function tree_layout_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu_contact-us:contact_us
-  $menu_links['main-menu_contact-us:contact_us'] = array(
+  // Exported menu link: main-menu_about:About_us
+  $menu_links['main-menu_about:About_us'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'contact_us',
-    'router_path' => 'contact_us',
-    'link_title' => 'CONTACT US',
+    'link_path' => 'About_us',
+    'router_path' => 'About_us',
+    'link_title' => 'ABOUT',
     'options' => array(
-      'identifier' => 'main-menu_contact-us:contact_us',
       'attributes' => array(
         'title' => '',
       ),
+      'identifier' => 'main-menu_about:About_us',
     ),
-    'module' => 'system',
+    'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
@@ -123,7 +123,7 @@ function tree_layout_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('CONTACT US');
+  t('ABOUT');
   t('EDUCATION');
   t('EVENTS');
   t('RESEARCH');
