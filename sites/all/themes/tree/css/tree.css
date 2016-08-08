@@ -8632,46 +8632,43 @@ header {
     display: block;
   }
 }
-/* line 5, ../scss/layout/_main.scss */
-.l-main img.right {
-  float: right;
-  width: 500px;
-  margin: 0px 0px 70px 70px;
-}
-/* line 12, ../scss/layout/_main.scss */
-.l-main img.left {
-  float: left;
-  width: 500px;
-  margin: 0px 0px 70px 70px;
-}
-
-/* line 27, ../scss/layout/_main.scss */
+/* line 16, ../scss/layout/_main.scss */
 p {
   margin: 0 0 10px;
   text-align: justify;
 }
 
-/* line 32, ../scss/layout/_main.scss */
+/* line 21, ../scss/layout/_main.scss */
 .right {
   float: right;
   width: 500px;
   margin: 0px 0px 70px 70px;
 }
 
-/* line 39, ../scss/layout/_main.scss */
-.pane-content ul li {
+/* line 27, ../scss/layout/_main.scss */
+li.isotope-element {
+  margin: 0;
+}
+
+/* line 32, ../scss/layout/_main.scss */
+.top-bar-section li {
+  margin: 0;
+}
+
+/* line 37, ../scss/layout/_main.scss */
+ul li {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   margin-left: 2.5rem;
 }
 
-/* line 48, ../scss/layout/_main.scss */
+/* line 45, ../scss/layout/_main.scss */
 .pane-content {
   display: block;
   padding-top: 15px;
 }
 
-/* line 58, ../scss/layout/_main.scss */
+/* line 55, ../scss/layout/_main.scss */
 span.date-display-single {
   color: #5B8930;
   font-size: 1rem;
@@ -8682,17 +8679,17 @@ span.date-display-single {
   display: block;
 }
 
-/* line 67, ../scss/layout/_main.scss */
+/* line 64, ../scss/layout/_main.scss */
 span.date-display-start {
   color: #5B8930;
 }
 
-/* line 70, ../scss/layout/_main.scss */
+/* line 67, ../scss/layout/_main.scss */
 span.date-display-end {
   color: #5B8930;
 }
 
-/* line 75, ../scss/layout/_main.scss */
+/* line 72, ../scss/layout/_main.scss */
 #page-title {
   bottom: 0;
   -moz-box-sizing: border-box;
@@ -8702,7 +8699,7 @@ span.date-display-end {
   line-height: 1.16666667;
 }
 
-/* line 96, ../scss/layout/_main.scss */
+/* line 93, ../scss/layout/_main.scss */
 .node-search-result {
   background-color: #F2F1EF;
   border: 1px solid #FFF;
@@ -8712,7 +8709,7 @@ span.date-display-end {
   margin-bottom: 20px !important;
   position: relative;
 }
-/* line 106, ../scss/layout/_main.scss */
+/* line 103, ../scss/layout/_main.scss */
 .node-search-result:after {
   content: '';
   display: block;
@@ -8723,7 +8720,7 @@ span.date-display-end {
   right: 0;
   height: 100%;
 }
-/* line 117, ../scss/layout/_main.scss */
+/* line 114, ../scss/layout/_main.scss */
 .node-search-result > h2 {
   font-size: 16px;
   font-weight: bold;
@@ -8733,19 +8730,19 @@ span.date-display-end {
   margin-top: 16px;
   min-height: 55px;
 }
-/* line 128, ../scss/layout/_main.scss */
+/* line 125, ../scss/layout/_main.scss */
 .node-search-result .form-item {
   margin-top: 0.2em;
   margin-bottom: 0.2em;
 }
 
-/* line 136, ../scss/layout/_main.scss */
+/* line 133, ../scss/layout/_main.scss */
 .node-search-result.field-label {
   font-weight: bolder;
   font-size: 0.875rem;
 }
 
-/* line 140, ../scss/layout/_main.scss */
+/* line 137, ../scss/layout/_main.scss */
 .field .field-label {
   font-size: 0.875rem;
   font-weight: bolder;
@@ -8754,7 +8751,7 @@ span.date-display-end {
   font-family: "Nunito",Arial,Helvetica,sans-serif;
 }
 
-/* line 151, ../scss/layout/_main.scss */
+/* line 148, ../scss/layout/_main.scss */
 .field.field-name-title-field.field-type-text.field-wrapper {
   font-size: 18px;
   color: #5B8930;
@@ -8765,51 +8762,51 @@ span.date-display-end {
   line-height: 40px;
 }
 
-/* line 160, ../scss/layout/_main.scss */
+/* line 157, ../scss/layout/_main.scss */
 .field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper {
   display: block;
 }
-/* line 164, ../scss/layout/_main.scss */
+/* line 161, ../scss/layout/_main.scss */
 .field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper p {
   font-size: 0.875rem;
   line-height: 1.2rem;
   margin: 0;
 }
-/* line 170, ../scss/layout/_main.scss */
+/* line 167, ../scss/layout/_main.scss */
 .field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper span {
   color: #212121;
   padding-left: 0;
   font-size: 0.875rem;
 }
-/* line 176, ../scss/layout/_main.scss */
+/* line 173, ../scss/layout/_main.scss */
 .field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper span .date-display-single {
   color: #212121;
 }
-/* line 183, ../scss/layout/_main.scss */
+/* line 180, ../scss/layout/_main.scss */
 .field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper .date-display-single {
   color: #212121;
 }
 
-/* line 191, ../scss/layout/_main.scss */
+/* line 188, ../scss/layout/_main.scss */
 .field.field-name-field-document-type.field-type-entityreference.clearfix.field-wrapper {
   font-size: 0.855rem;
   font-weight: normal;
   line-height: normal;
 }
 
-/* line 201, ../scss/layout/_main.scss */
+/* line 198, ../scss/layout/_main.scss */
 .field.field-name-field-publication-date.field-type-datetime.clearfix.field-wrapper span {
   color: #212121;
   padding-left: 0;
   font-size: 0.855rem;
   font-weight: normal;
 }
-/* line 209, ../scss/layout/_main.scss */
+/* line 206, ../scss/layout/_main.scss */
 .field.field-name-field-publication-date.field-type-datetime.clearfix.field-wrapper span .date-display-single {
   color: #212121;
 }
 
-/* line 224, ../scss/layout/_main.scss */
+/* line 221, ../scss/layout/_main.scss */
 .field.field-name-field-file.field-type-file.field-wrapper .file {
   display: block;
   float: right;

@@ -2,18 +2,7 @@
 
 .l-main {
 	
-	img.right {
-		//margin: 0px 0px 70px 70px;
-		float: right;
-		    width: 500px;
-		    margin: 0px 0px 70px 70px;
-	}
 	
-	img.left {
-		float: left;
-		    width: 500px;
-		    margin: 0px 0px 70px 70px;
-	}
 	
 	
 	
@@ -35,14 +24,22 @@ p {
 	margin: 0px 0px 70px 70px;
 } 
  
+li.isotope-element  
+{
+	margin:0;
+}
 
-.pane-content ul li{
+.top-bar-section li 
+{
+	margin:0;
+}
+
+ul li{
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
 	margin-left: 2.5rem;
 }
 
-   
 
 
 .pane-content {
