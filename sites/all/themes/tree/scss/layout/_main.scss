@@ -1,12 +1,48 @@
 // Non-modular or client styles for the .l-content region.
 
-.l-main {}
+.l-main {
+	
+	img.right {
+		//margin: 0px 0px 70px 70px;
+		float: right;
+		    width: 500px;
+		    margin: 0px 0px 70px 70px;
+	}
+	
+	img.left {
+		float: left;
+		    width: 500px;
+		    margin: 0px 0px 70px 70px;
+	}
+	
+	
+	
+}
 
 .node {}
 .body {}
 .image {}
 .breadcrumb {}
 
+p {
+	    margin: 0 0 10px;
+		text-align:justify;
+}
+ 
+.right {
+   float: right;
+	width: 500px;
+	margin: 0px 0px 70px 70px;
+} 
+ 
+
+.pane-content ul li{
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	margin-left: 2.5rem;
+}
+
+   
 
 
 .pane-content {
@@ -114,9 +150,12 @@ span.date-display-end {
 //field.field-name-field-document-bio field-type-text-with-summary field-label-hidden field-wrapper
 .field.field-name-title-field.field-type-text.field-wrapper {
 	font-size: 18px;
-    font-weight: bold;
  	color: #5B8930;
 	font-family: "Nunito",Arial,Helvetica,sans-serif;
+	font-weight: 500;
+	letter-spacing: 1px;
+	font-size: 32px;
+	line-height: 40px;
 }
 .field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper {
 	display: block;
