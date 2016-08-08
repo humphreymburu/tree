@@ -579,7 +579,7 @@ function tree_themes_panelizer_defaults() {
   $panelizer->no_blocks = FALSE;
   $panelizer->css_id = '';
   $panelizer->css = '';
-  $panelizer->pipeline = 'ipe';
+  $panelizer->pipeline = 'standard';
   $panelizer->contexts = array();
   $panelizer->relationships = array();
   $panelizer->access = array();
@@ -643,6 +643,36 @@ function tree_themes_panelizer_defaults() {
     $pane->uuid = 'c93d19cd-d045-441b-b48d-e01bfa2372b5';
     $display->content['new-c93d19cd-d045-441b-b48d-e01bfa2372b5'] = $pane;
     $display->panels['header'][0] = 'new-c93d19cd-d045-441b-b48d-e01bfa2372b5';
+    $pane = new stdClass();
+    $pane->pid = 'new-fe099bbf-3a85-4e8b-93b7-7673faa54363';
+    $pane->panel = 'header';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:title_field';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'text_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'fe099bbf-3a85-4e8b-93b7-7673faa54363';
+    $display->content['new-fe099bbf-3a85-4e8b-93b7-7673faa54363'] = $pane;
+    $display->panels['header'][1] = 'new-fe099bbf-3a85-4e8b-93b7-7673faa54363';
     $pane = new stdClass();
     $pane->pid = 'new-ff2c2837-724d-40ba-bbd1-3afd883ef55a';
     $pane->panel = 'middle';

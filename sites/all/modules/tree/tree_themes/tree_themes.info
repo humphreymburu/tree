@@ -36,4 +36,4 @@ features_exclude[dependencies][flexslider_views] = flexslider_views
 features_exclude[dependencies][panels] = panels
 features_exclude[dependencies][views] = views
 features_exclude[dependencies][views_content] = views_content
-mtime = 1469531894
+mtime = 1469536402
