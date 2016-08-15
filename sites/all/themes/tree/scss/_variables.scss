@@ -1737,6 +1737,11 @@ img, object, embed {
 } 
  
  
+.isotope_title {
+	//text-transform: uppercase;
+} 
+ 
+ 
 .isotope_desc {
  
  bottom: 0;
@@ -1748,10 +1753,40 @@ img, object, embed {
  position: absolute;
  width: 100%;
  z-index: 1;
+ padding-bottom: 110px;
+ padding-left: 35px;
+ padding-right: 30px;
 
- h2{
-	 font-size: 12px;
+
+
+
+ h1 {
+	 font-size: 2.2em;
+	 text-transform: uppercase;
  }
+
+ a:hover, a:focus {
+     color: #fff;
+	 text-decoration: underline;
+ }
+
+ a:hover {
+     cursor: pointer;
+ }
+ a:active, a:hover {
+     outline: 0;
+ }
+ a {
+     color: #fff;
+     text-decoration: none;
+     line-height: inherit;
+ }
+ 
+
+
+
+
+
 
 }
  

@@ -798,6 +798,8 @@ function tree_pages_views_default_views() {
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['distinct'] = TRUE;
+  $handler->display->display_options['query']['options']['pure_distinct'] = TRUE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -833,6 +835,11 @@ function tree_pages_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['group_by'] = FALSE;
+  $handler->display->display_options['defaults']['query'] = FALSE;
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['distinct'] = TRUE;
+  $handler->display->display_options['query']['options']['pure_distinct'] = TRUE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'isotope_grid';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -845,21 +852,22 @@ function tree_pages_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_home_page_target_id']['id'] = 'field_home_page_target_id';
-  $handler->display->display_options['relationships']['field_home_page_target_id']['table'] = 'field_data_field_home_page';
-  $handler->display->display_options['relationships']['field_home_page_target_id']['field'] = 'field_home_page_target_id';
-  $handler->display->display_options['relationships']['field_home_page_target_id']['required'] = TRUE;
-  /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_type_of_space_target_id']['id'] = 'field_type_of_space_target_id';
   $handler->display->display_options['relationships']['field_type_of_space_target_id']['table'] = 'field_data_field_type_of_space';
   $handler->display->display_options['relationships']['field_type_of_space_target_id']['field'] = 'field_type_of_space_target_id';
   $handler->display->display_options['relationships']['field_type_of_space_target_id']['required'] = TRUE;
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_home_page_target_id']['id'] = 'field_home_page_target_id';
+  $handler->display->display_options['relationships']['field_home_page_target_id']['table'] = 'field_data_field_home_page';
+  $handler->display->display_options['relationships']['field_home_page_target_id']['field'] = 'field_home_page_target_id';
+  $handler->display->display_options['relationships']['field_home_page_target_id']['required'] = TRUE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h1';
@@ -867,12 +875,24 @@ function tree_pages_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'pack-header';
+  /* Field: Content: Type of space */
+  $handler->display->display_options['fields']['field_type_of_space']['id'] = 'field_type_of_space';
+  $handler->display->display_options['fields']['field_type_of_space']['table'] = 'field_data_field_type_of_space';
+  $handler->display->display_options['fields']['field_type_of_space']['field'] = 'field_type_of_space';
+  $handler->display->display_options['fields']['field_type_of_space']['label'] = '';
+  $handler->display->display_options['fields']['field_type_of_space']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_type_of_space']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_type_of_space']['settings'] = array(
+    'link' => 0,
+  );
   /* Field: Content: Information */
   $handler->display->display_options['fields']['field_information']['id'] = 'field_information';
   $handler->display->display_options['fields']['field_information']['table'] = 'field_data_field_information';
   $handler->display->display_options['fields']['field_information']['field'] = 'field_information';
   $handler->display->display_options['fields']['field_information']['label'] = '';
-  $handler->display->display_options['fields']['field_information']['element_type'] = 'h2';
+  $handler->display->display_options['fields']['field_information']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_information']['alter']['path'] = '/[field_type_of_space]';
+  $handler->display->display_options['fields']['field_information']['element_type'] = 'h1';
   $handler->display->display_options['fields']['field_information']['element_class'] = '.isotope_title';
   $handler->display->display_options['fields']['field_information']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_information']['element_wrapper_type'] = 'div';
@@ -883,6 +903,8 @@ function tree_pages_views_default_views() {
   $handler->display->display_options['fields']['field_photo']['table'] = 'field_data_field_photo';
   $handler->display->display_options['fields']['field_photo']['field'] = 'field_photo';
   $handler->display->display_options['fields']['field_photo']['label'] = '';
+  $handler->display->display_options['fields']['field_photo']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_photo']['alter']['path'] = '/[field_type_of_space]';
   $handler->display->display_options['fields']['field_photo']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_photo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_photo']['settings'] = array(
@@ -890,12 +912,6 @@ function tree_pages_views_default_views() {
     'image_link' => '',
   );
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Taxonomy term: Name (name_field) */
-  $handler->display->display_options['sorts']['name_field_value_1']['id'] = 'name_field_value_1';
-  $handler->display->display_options['sorts']['name_field_value_1']['table'] = 'field_data_name_field';
-  $handler->display->display_options['sorts']['name_field_value_1']['field'] = 'name_field_value';
-  $handler->display->display_options['sorts']['name_field_value_1']['relationship'] = 'field_type_of_space_target_id';
-  $handler->display->display_options['sorts']['name_field_value_1']['order'] = 'DESC';
   /* Sort criterion: Content: Content fields (field_content_fields) */
   $handler->display->display_options['sorts']['field_content_fields_value']['id'] = 'field_content_fields_value';
   $handler->display->display_options['sorts']['field_content_fields_value']['table'] = 'field_data_field_content_fields';
@@ -914,7 +930,7 @@ function tree_pages_views_default_views() {
   $handler->display->display_options['filters']['field_home_page_target_id']['table'] = 'field_data_field_home_page';
   $handler->display->display_options['filters']['field_home_page_target_id']['field'] = 'field_home_page_target_id';
   $handler->display->display_options['filters']['field_home_page_target_id']['value'] = array(
-    18 => '18',
+    25 => '25',
   );
   $handler->display->display_options['path'] = 'tree';
   $translatables['tree'] = array(
@@ -934,8 +950,8 @@ function tree_pages_views_default_views() {
     t('next ›'),
     t('last »'),
     t('Page'),
-    t('Taxonomy term entity referenced from field_home_page'),
     t('Taxonomy term entity referenced from field_type_of_space'),
+    t('Taxonomy term entity referenced from field_home_page'),
   );
   $export['tree'] = $view;
 
