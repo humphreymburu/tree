@@ -496,27 +496,39 @@ function tree_pages_views_default_views() {
   );
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_type'] = 'h6';
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'div';
-  $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'pack-header';
+  /* Field: Content: Type of News */
+  $handler->display->display_options['fields']['field_type_of_news_1']['id'] = 'field_type_of_news_1';
+  $handler->display->display_options['fields']['field_type_of_news_1']['table'] = 'field_data_field_type_of_news';
+  $handler->display->display_options['fields']['field_type_of_news_1']['field'] = 'field_type_of_news';
+  $handler->display->display_options['fields']['field_type_of_news_1']['label'] = '';
+  $handler->display->display_options['fields']['field_type_of_news_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_type_of_news_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_type_of_news_1']['settings'] = array(
+    'link' => 0,
+  );
+  /* Field: Content: Document type */
+  $handler->display->display_options['fields']['field_document_type_1']['id'] = 'field_document_type_1';
+  $handler->display->display_options['fields']['field_document_type_1']['table'] = 'field_data_field_document_type';
+  $handler->display->display_options['fields']['field_document_type_1']['field'] = 'field_document_type';
+  $handler->display->display_options['fields']['field_document_type_1']['label'] = '';
+  $handler->display->display_options['fields']['field_document_type_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_document_type_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_document_type_1']['settings'] = array(
+    'link' => 0,
+  );
   /* Field: Content: Document type */
   $handler->display->display_options['fields']['field_document_type']['id'] = 'field_document_type';
   $handler->display->display_options['fields']['field_document_type']['table'] = 'field_data_field_document_type';
   $handler->display->display_options['fields']['field_document_type']['field'] = 'field_document_type';
   $handler->display->display_options['fields']['field_document_type']['label'] = '';
+  $handler->display->display_options['fields']['field_document_type']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_document_type']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_document_type']['alter']['path'] = '/test-search?search=[field_document_type_1] ';
   $handler->display->display_options['fields']['field_document_type']['element_type'] = 'h2';
   $handler->display->display_options['fields']['field_document_type']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_document_type']['element_wrapper_type'] = 'div';
-  $handler->display->display_options['fields']['field_document_type']['element_wrapper_class'] = 'content_type';
+  $handler->display->display_options['fields']['field_document_type']['element_wrapper_class'] = 'content_types';
+  $handler->display->display_options['fields']['field_document_type']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_document_type']['settings'] = array(
     'link' => 0,
   );
@@ -525,10 +537,15 @@ function tree_pages_views_default_views() {
   $handler->display->display_options['fields']['field_type_of_news']['table'] = 'field_data_field_type_of_news';
   $handler->display->display_options['fields']['field_type_of_news']['field'] = 'field_type_of_news';
   $handler->display->display_options['fields']['field_type_of_news']['label'] = '';
+  $handler->display->display_options['fields']['field_type_of_news']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_type_of_news']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_type_of_news']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_type_of_news']['alter']['path'] = '/test-search?search=[field_type_of_news]';
   $handler->display->display_options['fields']['field_type_of_news']['element_type'] = 'h2';
   $handler->display->display_options['fields']['field_type_of_news']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_type_of_news']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['field_type_of_news']['element_wrapper_class'] = 'content_type';
+  $handler->display->display_options['fields']['field_type_of_news']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_type_of_news']['settings'] = array(
     'link' => 0,
   );
@@ -541,7 +558,7 @@ function tree_pages_views_default_views() {
   $handler->display->display_options['fields']['field_document_photo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_document_photo']['settings'] = array(
     'image_style' => 'large',
-    'image_link' => 'content',
+    'image_link' => '',
   );
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
@@ -554,6 +571,17 @@ function tree_pages_views_default_views() {
     'image_style' => '',
     'image_link' => '',
   );
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_document_type]
+[field_type_of_news]';
+  $handler->display->display_options['fields']['nothing']['element_type'] = 'h2';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['nothing']['element_wrapper_class'] = 'content_type';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -596,6 +624,8 @@ function tree_pages_views_default_views() {
     t('Taxonomy term entity referenced from field_type_of_news'),
     t('Page'),
     t('Resources'),
+    t('[field_document_type]
+[field_type_of_news]'),
   );
   $export['resources'] = $view;
 

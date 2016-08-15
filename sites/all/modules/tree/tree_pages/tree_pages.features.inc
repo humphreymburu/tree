@@ -29,7 +29,7 @@ function tree_pages_views_api($module = NULL, $api = NULL) {
 function tree_pages_node_info() {
   $items = array(
     'themes' => array(
-      'name' => t('Tree_themes'),
+      'name' => t('Themes'),
       'base' => 'node_content',
       'description' => t('Content type like Treatment,Research and Education'),
       'has_title' => '1',
