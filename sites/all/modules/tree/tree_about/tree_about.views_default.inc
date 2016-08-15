@@ -61,6 +61,7 @@ function tree_about_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'isotope_grid';
   $handler->display->display_options['style_options']['data_fields'] = array(
@@ -78,6 +79,10 @@ function tree_about_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h3';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'pack-header';
   /* Field: Content: Photo About */
   $handler->display->display_options['fields']['field_about_photo']['id'] = 'field_about_photo';
   $handler->display->display_options['fields']['field_about_photo']['table'] = 'field_data_field_about_photo';
