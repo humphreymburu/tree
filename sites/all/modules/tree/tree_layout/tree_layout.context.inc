@@ -26,9 +26,9 @@ function tree_layout_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views--exp-search-page' => array(
+        'views--exp-test_search-page' => array(
           'module' => 'views',
-          'delta' => '-exp-search-page',
+          'delta' => '-exp-test_search-page',
           'region' => 'featured',
           'weight' => '-10',
         ),
@@ -99,13 +99,13 @@ function tree_layout_context_default_contexts() {
           'module' => 'tree_layout',
           'delta' => 'tree_layout_login',
           'region' => 'top_region',
-          'weight' => '-9',
+          'weight' => '-18',
         ),
         'tree_layout-tree_layout_donate' => array(
           'module' => 'tree_layout',
           'delta' => 'tree_layout_donate',
           'region' => 'top_region',
-          'weight' => '-8',
+          'weight' => '-17',
         ),
       ),
     ),
@@ -116,6 +116,50 @@ function tree_layout_context_default_contexts() {
   // Included for use with string extractors like potx.
   t('Top Region Links');
   $export['top_region_links'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'uw-search';
+  $context->description = 'search facet';
+  $context->tag = '';
+  $context->conditions = array(
+    'views' => array(
+      'values' => array(
+        'test_search:page' => 'test_search:page',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'facetapi-tCvT45PkzbaLXPQ8gyB1OHo0thg2Ib1h' => array(
+          'module' => 'facetapi',
+          'delta' => 'tCvT45PkzbaLXPQ8gyB1OHo0thg2Ib1h',
+          'region' => 'sidebar_first',
+          'weight' => '-10',
+        ),
+        'facetapi-lgt5rm3VHshRKawlakO2zH5iHPE2M882' => array(
+          'module' => 'facetapi',
+          'delta' => 'lgt5rm3VHshRKawlakO2zH5iHPE2M882',
+          'region' => 'sidebar_first',
+          'weight' => '-9',
+        ),
+        'facetapi-AiuRg65F7rRjYyhB1D1fgSGZOgH6CatI' => array(
+          'module' => 'facetapi',
+          'delta' => 'AiuRg65F7rRjYyhB1D1fgSGZOgH6CatI',
+          'region' => 'sidebar_first',
+          'weight' => '-8',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('search facet');
+  $export['uw-search'] = $context;
 
   return $export;
 }
