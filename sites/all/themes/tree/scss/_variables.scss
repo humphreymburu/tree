@@ -1107,26 +1107,26 @@ $default-float: left;
 
 // We use this to control padding.
 
-// $side-nav-padding: em-calc(14 0);
+ $side-nav-padding: em-calc(14 0);
 
 // We use these to control list styles.
 
-// $side-nav-list-type: none;
-// $side-nav-list-position: inside;
-// $side-nav-list-margin: em-calc(0 0 7 0);
+ $side-nav-list-type: none;
+ $side-nav-list-position: inside;
+$side-nav-list-margin: em-calc(0 0 7 0);
 
 // We use these to control link styles.
 
-// $side-nav-link-color: $primary-color;
-// $side-nav-link-color-active: lighten(#000, 30%);
-// $side-nav-font-size: em-calc(14);
-// $side-nav-font-weight: bold;
+$side-nav-link-color: $primary-color;
+$side-nav-link-color-active: lighten(#000, 30%);
+$side-nav-font-size: em-calc(14);
+$side-nav-font-weight: bold;
 
 // We use these to control border styles
 
-// $side-nav-divider-size: 1px;
-// $side-nav-divider-style: solid;
-// $side-nav-divider-color: darken(#fff, 10%);
+$side-nav-divider-size: 1px;
+$side-nav-divider-style: solid;
+$side-nav-divider-color: darken(#fff, 10%);
 
 //
 // Sub Nav Variables
@@ -1799,8 +1799,46 @@ img, object, embed {
    }
   
   
+
   
   
+   .content_types {
+       bottom: 0;
+       -moz-box-sizing: border-box;
+       box-sizing: border-box;
+       color: #fff;
+       left: 0;
+       background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.26) 100%);
+       background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 0.26) 100%);
+       position: absolute;
+       width: 100%;
+       z-index: 1;
+  	 height: 0;
+  	 padding-bottom: 10%;
+  	 padding-left: 5%;
+	 
+	 
+	 
+	 a:hover, a:focus {
+	     color: #fff;
+		 text-decoration: underline;
+	 }
+
+	 a:hover {
+	     cursor: pointer;
+	 }
+	 a:active, a:hover {
+	     outline: 0;
+	 }
+	 a {
+	     color: #fff;
+	     text-decoration: none;
+	     line-height: inherit;
+	 }
+	 
+	 
+	 
+   }
   
   
  .content_type {
@@ -1813,10 +1851,34 @@ img, object, embed {
      background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 0.26) 100%);
      position: absolute;
      width: 100%;
-     z-index: 1;
+     z-index: 1000;
 	 height: 0;
 	 padding-bottom: 10%;
 	 padding-left: 5%;
+	 
+	 
+	 
+	 
+	 
+	 a:hover, a:focus {
+	     color: #fff;
+		 text-decoration: underline;
+	 }
+
+	 a:hover {
+	     cursor: pointer;
+	 }
+	 a:active, a:hover {
+	     outline: 0;
+	 }
+	 a {
+	     color: #fff;
+	     text-decoration: none;
+	     line-height: inherit;
+	 }
+	 
+	 
+	 
  }
  
  	 .content_type h2 {
@@ -1999,13 +2061,16 @@ img, object, embed {
 	  
 	  h2 {
 	      text-transform: uppercase;
-	      font-size: 2.5em;
 	      margin-bottom: 0;
 	      font-family: "Nunito",Arial,Helvetica,sans-serif;
 	      letter-spacing: 1px;	
-		   margin-bottom: 0.1em;
-		  line-height: 1.0em;
+		  margin-bottom: 16px;
 		  color:#fff;
+	      font-size: 36px;
+	      line-height: 36px;
+	 
+		  
+		  
 	  }
 	  
 	  a {
@@ -2190,6 +2255,10 @@ img, object, embed {
 	    padding: 30px 30px calc(34.5px);
 	}
 
+  .content_types {
+    padding: 30px 30px calc(34.5px);
+}
+
  
 
 
@@ -2248,7 +2317,20 @@ img, object, embed {
  	text-transform: uppercase;
  }
 	 
-	 
+  .content_types {
+     padding: 40px 40px calc(42.3px);
+  }
+  
+
+	 .content_types h2 {
+  
+	font-size: 0.9em;
+	line-height: 1.36364;
+	font-weight: 400;
+	color: white;
+	text-transform: uppercase;
+}
+ 
 	 
 	 
 	 
@@ -2369,7 +2451,28 @@ img, object, embed {
 	    z-index: 1;
 	}
 	 
+	 .content_types h2 {
+	  
+	font-size: 0.9em;
+	line-height: 1.36364;
+	font-weight: 400;
+	color: white;
+	text-transform: uppercase;
+}
 	 
+	.content_types {
+	    bottom: 0;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    color: #fff;
+	    left: 0;
+	    background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.46) 100%);
+	    background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 0.46) 100%);
+	    padding: 20px;
+	    position: absolute;
+	    width: 100%;
+	    z-index: 1000;
+	} 
 	 
 	 
 	 

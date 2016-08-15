@@ -26,26 +26,25 @@
     print $q;
   ?>
 <?php endif; ?>
-
-  
-<div class="views-exposed-form has-form">
-  <div class="views-exposed-widgets clearfix row collapse">
+<div class="views-exposed-form">
+  <div class="views-exposed-widgets clearfix">
     <?php if (in_array('filter-search_api_views_fulltext', array_keys($widgets))) { ?>
       <?php $widget = $widgets['filter-search_api_views_fulltext']; ?>
-      
-	  
-	  
 	  
 	  <div id="<?php print $widget->id; ?>-wrapper" class="views-exposed-widget views-widget-filter-search_api_views_fulltext form-group">
-        <div class="input-group">
-          <input class="form-control form-text" id="edit-search-api-views-fulltext" name="search" value="" size="30" maxlength="128" type="text" placeholder="<?php print $widget->label; ?>" />
-          <span class="input_btn">
-            <button type="submit" class="js_toggler"><i class="step fi-magnifying-glass size-18"></i></button>
-          </span>
-        </div>
-      </div>
+	         <div class="input-group">
+	      
+				
+				  <input class="form-control form-text" id="edit-search-api-views-fulltext" name="search" value="" size="30" maxlength="128" type="text" placeholder="<?php print $widget->label; ?>" /></li>
+	          
+			 <span class="input_btn">
+	             <button type="submit" class="js_toggler"><i class="step fi-magnifying-glass size-18"></i></button>
+	           </span>
+	         </div>
+	       </div>
 	  
-	  	  
+	  
+	  
 	  
 	  
 	  

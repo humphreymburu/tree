@@ -123,7 +123,7 @@ function tree_core_node_view($node, $view_mode, $langcode) {
   $node->content['tree_core_share_button'] = array(
     '#type' => 'item',
     '#title' => '',
-    '#markup' => l('<i class="step fi-share size-16"></i> '.t('Share'), 'http://www.addtoany.com/share_save', array('attributes' => array('class' => array( 'a2a_dd','button')), 'html' => TRUE)),
+    '#markup' => l('<i class="step fi-share size-16"></i> '.t('Share'), 'http://www.addtoany.com/share_save', array('attributes' => array('class' => array( 'a2a_dd','ztn')), 'html' => TRUE)),
     '#suffix' => '<script type="text/javascript">a2a_config.linkname = "'.$node->title.'";a2a_config.linkurl = "'.$url.'";a2a.init("page");</script>',
   );
   
@@ -138,7 +138,7 @@ function tree_core_node_view($node, $view_mode, $langcode) {
         'attributes' => array(
           'class' => array(
             '',
-            'button'
+            'ztn'
           )
         ),
         'html' => TRUE

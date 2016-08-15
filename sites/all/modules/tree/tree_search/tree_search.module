@@ -5,3 +5,12 @@
  */
 
 include_once 'tree_search.features.inc';
+
+
+  
+  
+function tree_search_form_views_exposed_form_alter (&$form, $form_state) {
+  if ($form['#id'] == 'views-exposed-form-test-search-page') {
+    $form['#info']['filter-search_api_views_fulltext']['label'] = t('Search');
+  }
+}

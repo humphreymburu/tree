@@ -31,15 +31,34 @@ function tree_search_views_api($module = NULL, $api = NULL) {
  */
 function tree_search_default_search_api_index() {
   $items = array();
-  $items['default_node_index'] = entity_import('search_api_index', '{
-    "name" : "Default node index",
-    "machine_name" : "default_node_index",
-    "description" : "An automatically created search index for indexing node data. Might be configured to specific needs.",
+  $items['node_indexes'] = entity_import('search_api_index', '{
+    "name" : "Node Indexes",
+    "machine_name" : "node_indexes",
+    "description" : null,
     "server" : "database",
     "item_type" : "node",
     "options" : {
       "index_directly" : 1,
       "cron_limit" : "50",
+      "fields" : {
+        "type" : { "type" : "string" },
+        "title" : { "type" : "text" },
+        "status" : { "type" : "boolean" },
+        "created" : { "type" : "date" },
+        "changed" : { "type" : "date" },
+        "author" : { "type" : "integer", "entity_type" : "user" },
+        "title_field" : { "type" : "text" },
+        "field_type_of_theme" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
+        "field_event_category" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
+        "field_event_email" : { "type" : "text" },
+        "field_type_of_news" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
+        "field_home_page" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
+        "field_information" : { "type" : "text" },
+        "field_type_of_space" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
+        "field_document_type" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
+        "search_api_language" : { "type" : "string" },
+        "search_api_access_node" : { "type" : "list\\u003Cstring\\u003E" }
+      },
       "data_alter_callbacks" : {
         "search_api_alter_bundle_filter" : {
           "status" : 0,
@@ -74,8 +93,8 @@ function tree_search_default_search_api_index() {
               "type" : true,
               "title" : true,
               "title_field" : true,
-              "field_information" : true,
-              "body:value" : true
+              "field_event_email" : true,
+              "field_information" : true
             }
           }
         },
@@ -84,13 +103,12 @@ function tree_search_default_search_api_index() {
           "weight" : "10",
           "settings" : {
             "fields" : {
-              "type" : true,
               "title" : true,
               "title_field" : true,
-              "field_information" : true,
-              "body:value" : true
+              "field_event_email" : true,
+              "field_information" : true
             },
-            "title" : 1,
+            "title" : 0,
             "alt" : 1,
             "tags" : "h1 = 5\\r\\nh2 = 3\\r\\nh3 = 2\\r\\nstrong = 2\\r\\nb = 2\\r\\nem = 1.5\\r\\nu = 1.5"
           }
@@ -102,11 +120,11 @@ function tree_search_default_search_api_index() {
             "fields" : {
               "title" : true,
               "title_field" : true,
-              "field_information" : true,
-              "body:value" : true
+              "field_event_email" : true,
+              "field_information" : true
             },
-            "spaces" : "[^\\\\p{L}\\\\p{N}]",
-            "ignorable" : "[-]"
+            "spaces" : "[^[:alnum:]]",
+            "ignorable" : "[\\u0027]"
           }
         },
         "search_api_stopwords" : {
@@ -116,8 +134,8 @@ function tree_search_default_search_api_index() {
             "fields" : {
               "title" : true,
               "title_field" : true,
-              "field_information" : true,
-              "body:value" : true
+              "field_event_email" : true,
+              "field_information" : true
             },
             "file" : "",
             "stopwords" : "but\\r\\ndid\\r\\nthe this that those\\r\\netc"
@@ -134,29 +152,6 @@ function tree_search_default_search_api_index() {
             "highlight" : "always"
           }
         }
-      },
-      "fields" : {
-        "type" : { "type" : "string" },
-        "title" : { "type" : "text", "boost" : "5.0" },
-        "language" : { "type" : "string" },
-        "url" : { "type" : "uri" },
-        "status" : { "type" : "integer" },
-        "promote" : { "type" : "boolean" },
-        "sticky" : { "type" : "boolean" },
-        "created" : { "type" : "date" },
-        "changed" : { "type" : "date" },
-        "author" : { "type" : "integer", "entity_type" : "user" },
-        "title_field" : { "type" : "text", "boost" : "5.0" },
-        "field_type_of_theme" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
-        "field_event_category" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
-        "field_type_of_news" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
-        "field_information" : { "type" : "text", "boost" : "5.0" },
-        "field_type_of_space" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
-        "field_document_type" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
-        "field_publication_date" : { "type" : "date" },
-        "search_api_language" : { "type" : "string" },
-        "body:value" : { "type" : "text", "boost" : "5.0" },
-        "body:format" : { "type" : "string" }
       }
     },
     "enabled" : "1",
@@ -180,12 +175,13 @@ function tree_search_default_search_api_server() {
       "min_chars" : "1",
       "partial_matches" : 0,
       "autocomplete" : { "suggest_suffix" : 1, "suggest_words" : 1 },
-      "indexes" : { "default_node_index" : {
+      "indexes" : {
+        "default_node_index" : {
           "type" : {
-            "table" : "search_api_db_default_node_index",
+            "table" : "search_api_db_default_node_index_text",
             "column" : "type",
-            "type" : "string",
-            "boost" : "1.0"
+            "type" : "text",
+            "boost" : "5.0"
           },
           "title" : {
             "table" : "search_api_db_default_node_index_text",
@@ -301,6 +297,111 @@ function tree_search_default_search_api_server() {
             "table" : "search_api_db_default_node_index",
             "column" : "body_format",
             "type" : "string",
+            "boost" : "1.0"
+          },
+          "body:summary" : {
+            "table" : "search_api_db_default_node_index_text",
+            "type" : "text",
+            "boost" : "1.0"
+          }
+        },
+        "node_indexes" : {
+          "type" : {
+            "table" : "search_api_db_node_indexes",
+            "column" : "type",
+            "type" : "string",
+            "boost" : "1.0"
+          },
+          "title" : {
+            "table" : "search_api_db_node_indexes_text",
+            "type" : "text",
+            "boost" : "1.0"
+          },
+          "title_field" : {
+            "table" : "search_api_db_node_indexes_text",
+            "type" : "text",
+            "boost" : "1.0"
+          },
+          "field_type_of_theme" : {
+            "table" : "search_api_db_node_indexes_field_type_of_theme",
+            "column" : "field_type_of_theme",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "field_event_category" : {
+            "table" : "search_api_db_node_indexes_field_event_category",
+            "column" : "field_event_category",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "field_event_email" : {
+            "table" : "search_api_db_node_indexes_text",
+            "type" : "text",
+            "boost" : "1.0"
+          },
+          "field_type_of_news" : {
+            "table" : "search_api_db_node_indexes_field_type_of_news",
+            "column" : "field_type_of_news",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "field_home_page" : {
+            "table" : "search_api_db_node_indexes_field_home_page",
+            "column" : "field_home_page",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "field_information" : {
+            "table" : "search_api_db_node_indexes_text",
+            "type" : "text",
+            "boost" : "1.0"
+          },
+          "field_type_of_space" : {
+            "table" : "search_api_db_node_indexes_field_type_of_space",
+            "column" : "field_type_of_space",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "field_document_type" : {
+            "table" : "search_api_db_node_indexes_field_document_type",
+            "column" : "field_document_type",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "search_api_language" : {
+            "table" : "search_api_db_node_indexes",
+            "column" : "search_api_language",
+            "type" : "string",
+            "boost" : "1.0"
+          },
+          "status" : {
+            "table" : "search_api_db_node_indexes",
+            "column" : "status",
+            "type" : "boolean",
+            "boost" : "1.0"
+          },
+          "author" : {
+            "table" : "search_api_db_node_indexes",
+            "column" : "author",
+            "type" : "integer",
+            "boost" : "1.0"
+          },
+          "search_api_access_node" : {
+            "table" : "search_api_db_node_indexes_search_api_access_node",
+            "column" : "value",
+            "type" : "list\\u003Cstring\\u003E",
+            "boost" : "1.0"
+          },
+          "created" : {
+            "table" : "search_api_db_node_indexes",
+            "column" : "created",
+            "type" : "date",
+            "boost" : "1.0"
+          },
+          "changed" : {
+            "table" : "search_api_db_node_indexes",
+            "column" : "changed",
+            "type" : "date",
             "boost" : "1.0"
           }
         }
