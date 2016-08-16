@@ -386,13 +386,64 @@ function tree_pages_views_default_views() {
     'image_style' => '',
     'image_link' => '',
   );
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="res-container"><a href="researcher_list" class="res_button">Meet Our Researchers</a></div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  /* Field: Content: Researcher Bio */
+  $handler->display->display_options['fields']['field_researcher_bio']['id'] = 'field_researcher_bio';
+  $handler->display->display_options['fields']['field_researcher_bio']['table'] = 'field_data_field_researcher_bio';
+  $handler->display->display_options['fields']['field_researcher_bio']['field'] = 'field_researcher_bio';
+  $handler->display->display_options['fields']['field_researcher_bio']['label'] = '';
+  $handler->display->display_options['fields']['field_researcher_bio']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_researcher_bio']['alter']['text'] = '[nothing]';
+  $handler->display->display_options['fields']['field_researcher_bio']['element_type'] = 'h3';
+  $handler->display->display_options['fields']['field_researcher_bio']['element_class'] = 'res-block_title ';
+  $handler->display->display_options['fields']['field_researcher_bio']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_researcher_bio']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_researcher_bio']['element_wrapper_class'] = 'res-block_content';
+  $handler->display->display_options['fields']['field_researcher_bio']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['field_researcher_bio']['settings'] = array(
+    'trim_length' => '5',
+  );
+  /* Field: Content: Photo Researcher */
+  $handler->display->display_options['fields']['field_researcher_pic']['id'] = 'field_researcher_pic';
+  $handler->display->display_options['fields']['field_researcher_pic']['table'] = 'field_data_field_researcher_pic';
+  $handler->display->display_options['fields']['field_researcher_pic']['field'] = 'field_researcher_pic';
+  $handler->display->display_options['fields']['field_researcher_pic']['label'] = '';
+  $handler->display->display_options['fields']['field_researcher_pic']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_researcher_pic']['alter']['path'] = '/research_list';
+  $handler->display->display_options['fields']['field_researcher_pic']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_researcher_pic']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_researcher_pic']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Global: Random */
   $handler->display->display_options['sorts']['random']['id'] = 'random';
   $handler->display->display_options['sorts']['random']['table'] = 'views';
   $handler->display->display_options['sorts']['random']['field'] = 'random';
+  /* Sort criterion: Content: Sticky */
+  $handler->display->display_options['sorts']['sticky']['id'] = 'sticky';
+  $handler->display->display_options['sorts']['sticky']['table'] = 'node';
+  $handler->display->display_options['sorts']['sticky']['field'] = 'sticky';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type_1']['id'] = 'type_1';
+  $handler->display->display_options['filters']['type_1']['table'] = 'node';
+  $handler->display->display_options['filters']['type_1']['field'] = 'type';
+  $handler->display->display_options['filters']['type_1']['value'] = array(
+    'tree_page' => 'tree_page',
+    'tree_researchers' => 'tree_researchers',
+    'themes' => 'themes',
+  );
+  $handler->display->display_options['filters']['type_1']['group'] = 1;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -400,14 +451,6 @@ function tree_pages_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'tree_page' => 'tree_page',
-    'themes' => 'themes',
-  );
   /* Filter criterion: Taxonomy term: Name */
   $handler->display->display_options['filters']['name']['id'] = 'name';
   $handler->display->display_options['filters']['name']['table'] = 'taxonomy_term_data';
@@ -433,6 +476,8 @@ function tree_pages_views_default_views() {
     t('last »'),
     t('Page'),
     t('Taxonomy term entity referenced from field_type_of_theme'),
+    t('<div class="res-container"><a href="researcher_list" class="res_button">Meet Our Researchers</a></div>'),
+    t('[nothing]'),
   );
   $export['research'] = $view;
 
