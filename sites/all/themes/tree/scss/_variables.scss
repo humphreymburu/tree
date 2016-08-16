@@ -1812,8 +1812,86 @@ img, object, embed {
  }
  
  
-
+ //research 
  
+ .res_button {
+     border: 1px solid #fff;
+     border-radius: 5px;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     color: #fff;
+     display: inline-block;
+     font-weight: 500;
+     line-height: 30px;
+     margin-right: 10px;
+     min-width: 140px;
+     padding-top: 2px;
+     padding-bottom: 2px;
+     padding-left: 8px;
+     padding-right: 8px;
+     position: relative;
+     text-align: center;
+     -webkit-transition: background-color 250ms linear,border-color 250ms linear,color 250ms linear;
+     transition: background-color 250ms linear,border-color 250ms linear,color 250ms linear;
+	 font-size: 1rem;
+	 font-family: "Nunito",Arial,Helvetica,sans-serif;
+ }
+ 
+ 
+ .res_button.hover {
+     border: 1px solid #fff;
+     border-radius: 5px;
+	 background-color: #fff;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     color: #fff;
+	  display: inline-block;
+     -webkit-transition: background-color 250ms linear,border-color 250ms linear,color 250ms linear;
+     transition: background-color 250ms linear,border-color 250ms linear,color 250ms linear;
+ }
+ 
+ 
+ .res-container {
+    margin-top: -0.7rem;
+ }
+
+
+ .res-block_content {
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     color: #fff;
+     min-height: 50vw;
+     padding: 20px;
+     position: absolute;
+     width: 100%;
+	 
+	 h3 {
+		 color: #fff;
+	 }
+	 a:hover, a:focus {
+	     color: #fff;
+		 text-decoration: none;
+	 }
+
+	 a:hover {
+	     cursor: pointer;
+	 }
+	 a:active, a:hover {
+	     outline: 0;
+	 }
+	 a {
+	     text-decoration: none;
+	 }
+ 
+	 
+	 
+ }
+ 
+ 
+ .res-block_title 
+  {
+	margin-bottom: 1.875rem; 
+  }
  //resources isotope css
  
  
@@ -2319,7 +2397,9 @@ img, object, embed {
  		width: calc(100% / 3);	
  	 }
 	 
-	 
+	 .res-block_content {
+	     padding: 25px;
+	 }
 	 
 	 
 	 
