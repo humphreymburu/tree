@@ -63,6 +63,11 @@ function tree_events_views_default_views() {
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'isotope_grid';
+  $handler->display->display_options['style_options']['data_fields'] = array(
+    'title' => 0,
+    'field_event_photo' => 0,
+    'field_event_date' => 0,
+  );
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -83,6 +88,7 @@ function tree_events_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'pack-header';
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   /* Field: Content: event photo */
   $handler->display->display_options['fields']['field_event_photo']['id'] = 'field_event_photo';
   $handler->display->display_options['fields']['field_event_photo']['table'] = 'field_data_field_event_photo';
@@ -90,6 +96,7 @@ function tree_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_photo']['label'] = '';
   $handler->display->display_options['fields']['field_event_photo']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_event_photo']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_photo']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_event_photo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_event_photo']['settings'] = array(
     'image_style' => '',
