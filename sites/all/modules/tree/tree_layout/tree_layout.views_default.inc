@@ -125,7 +125,7 @@ function tree_layout_views_default_views() {
   $handler->display->display_options['fields']['title_1']['label'] = '';
   $handler->display->display_options['fields']['title_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title_1']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title_1']['alter']['text'] = 'More';
+  $handler->display->display_options['fields']['title_1']['alter']['text'] = '>> More';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
@@ -134,7 +134,7 @@ function tree_layout_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<h2>[title]</h2>
 [body]
-<div class="slider-button-rounded-corners">[title_1]</div>
+[title_1]
 ';
   $handler->display->display_options['fields']['nothing']['element_type'] = 'h2';
   $handler->display->display_options['fields']['nothing']['element_class'] = 'field-caption';
@@ -181,10 +181,10 @@ function tree_layout_views_default_views() {
     t('last »'),
     t('Page'),
     t('Block'),
-    t('More'),
+    t('>> More'),
     t('<h2>[title]</h2>
 [body]
-<div class="slider-button-rounded-corners">[title_1]</div>
+[title_1]
 '),
     t('hero_slider'),
   );
