@@ -176,7 +176,7 @@ function tree_pages_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'test-events';
+  $handler->display->display_options['title'] = 'Success Stories';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -196,6 +196,21 @@ function tree_pages_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => 'content',
+  );
+  /* Field: Content: News Body */
+  $handler->display->display_options['fields']['field_news_body']['id'] = 'field_news_body';
+  $handler->display->display_options['fields']['field_news_body']['table'] = 'field_data_field_news_body';
+  $handler->display->display_options['fields']['field_news_body']['field'] = 'field_news_body';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -263,9 +278,256 @@ function tree_pages_views_default_views() {
   $handler->display->display_options['filters']['name']['operator'] = 'contains';
   $handler->display->display_options['filters']['name']['value'] = 'Success Stories';
   $handler->display->display_options['path'] = 'Publications';
+
+  /* Display: Blogs */
+  $handler = $view->new_display('page', 'Blogs', 'blogs');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '6';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'div';
+  $handler->display->display_options['fields']['title']['element_class'] = '.pub__info__title';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: News Body */
+  $handler->display->display_options['fields']['field_news_body']['id'] = 'field_news_body';
+  $handler->display->display_options['fields']['field_news_body']['table'] = 'field_data_field_news_body';
+  $handler->display->display_options['fields']['field_news_body']['field'] = 'field_news_body';
+  $handler->display->display_options['fields']['field_news_body']['label'] = '';
+  $handler->display->display_options['fields']['field_news_body']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_news_body']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_news_body']['element_class'] = 'pub__info__meta ';
+  $handler->display->display_options['fields']['field_news_body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_news_body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['field_news_body']['settings'] = array(
+    'trim_length' => '80',
+  );
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="pub__info__title"> [title] </div>
+';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['nothing']['element_wrapper_class'] = 'pub__info';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'tree_news' => 'tree_news',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Has taxonomy term */
+  $handler->display->display_options['filters']['tid']['id'] = 'tid';
+  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['value'] = array(
+    10 => '10',
+  );
+  $handler->display->display_options['filters']['tid']['type'] = 'select';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'news_category';
+  $handler->display->display_options['filters']['tid']['hierarchy'] = 1;
+  $handler->display->display_options['path'] = 'Blog Posts/list';
+
+  /* Display: Success Stories */
+  $handler = $view->new_display('page', 'Success Stories', 'page_2');
+  $handler->display->display_options['display_description'] = 'list';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '6';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'div';
+  $handler->display->display_options['fields']['title']['element_class'] = '.pub__info__title';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: News Body */
+  $handler->display->display_options['fields']['field_news_body']['id'] = 'field_news_body';
+  $handler->display->display_options['fields']['field_news_body']['table'] = 'field_data_field_news_body';
+  $handler->display->display_options['fields']['field_news_body']['field'] = 'field_news_body';
+  $handler->display->display_options['fields']['field_news_body']['label'] = '';
+  $handler->display->display_options['fields']['field_news_body']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_news_body']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_news_body']['element_class'] = 'pub__info__meta ';
+  $handler->display->display_options['fields']['field_news_body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_news_body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['field_news_body']['settings'] = array(
+    'trim_length' => '80',
+  );
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="pub__info__title"> [title] </div>
+';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['nothing']['element_wrapper_class'] = 'pub__info';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'tree_news' => 'tree_news',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Has taxonomy term */
+  $handler->display->display_options['filters']['tid']['id'] = 'tid';
+  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['value'] = array(
+    11 => '11',
+  );
+  $handler->display->display_options['filters']['tid']['type'] = 'select';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'news_category';
+  $handler->display->display_options['filters']['tid']['hierarchy'] = 1;
+  $handler->display->display_options['path'] = 'Success Stories/list';
+
+  /* Display: News */
+  $handler = $view->new_display('page', 'News', 'news');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'News';
+  $handler->display->display_options['display_description'] = 'list';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '6';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'div';
+  $handler->display->display_options['fields']['title']['element_class'] = '.pub__info__title';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: News Body */
+  $handler->display->display_options['fields']['field_news_body']['id'] = 'field_news_body';
+  $handler->display->display_options['fields']['field_news_body']['table'] = 'field_data_field_news_body';
+  $handler->display->display_options['fields']['field_news_body']['field'] = 'field_news_body';
+  $handler->display->display_options['fields']['field_news_body']['label'] = '';
+  $handler->display->display_options['fields']['field_news_body']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_news_body']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_news_body']['element_class'] = 'pub__info__meta ';
+  $handler->display->display_options['fields']['field_news_body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_news_body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['field_news_body']['settings'] = array(
+    'trim_length' => '80',
+  );
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="pub__info__title"> [title] </div>
+';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['nothing']['element_wrapper_class'] = 'pub__info';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'tree_news' => 'tree_news',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Has taxonomy term */
+  $handler->display->display_options['filters']['tid']['id'] = 'tid';
+  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['value'] = array(
+    26 => '26',
+  );
+  $handler->display->display_options['filters']['tid']['type'] = 'select';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'news_category';
+  $handler->display->display_options['filters']['tid']['hierarchy'] = 1;
+  $handler->display->display_options['path'] = 'News/list';
   $translatables['pubs'] = array(
     t('Master'),
-    t('test-events'),
+    t('Success Stories'),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -280,7 +542,13 @@ function tree_pages_views_default_views() {
     t('next ›'),
     t('last »'),
     t('Taxonomy term entity referenced from field_type_of_news'),
+    t('News Body'),
     t('Page'),
+    t('Blogs'),
+    t('<div class="pub__info__title"> [title] </div>
+'),
+    t('list'),
+    t('News'),
   );
   $export['pubs'] = $view;
 
@@ -585,7 +853,7 @@ function tree_pages_views_default_views() {
   $handler->display->display_options['fields']['field_type_of_news']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_type_of_news']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_type_of_news']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_type_of_news']['alter']['path'] = '/test-search?search=[field_type_of_news]';
+  $handler->display->display_options['fields']['field_type_of_news']['alter']['path'] = '/[field_type_of_news]/list';
   $handler->display->display_options['fields']['field_type_of_news']['element_type'] = 'h2';
   $handler->display->display_options['fields']['field_type_of_news']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_type_of_news']['element_wrapper_type'] = 'div';
