@@ -30,7 +30,7 @@
  * See the STARTER/README.txt file regarding "CHANGING FOUNDATION DEFAULT
  * SETTINGS" for documentation.
  */
-@import "https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif|Lato:400,700|Montserrat:400,700|Nunito|Open+Sans:300,400";
+@import "https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif:400,700|Montserrat:400,700|Open+Sans:300,400,800,800i|Roboto|Source+Sans+Pro:400,600,700,900";
 @import "https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif|Lato:400,700|Montserrat:400,700|Nunito|Open+Sans:300,400";
 /* line 1360, ../scss/_variables.scss */
 .block-title {
@@ -293,7 +293,7 @@ li.isotope-element .pack-header h6 {
   line-height: 1.36364;
   font-weight: 400;
   color: white;
-  font-family: "Nunito",Arial,Helvetica,sans-serif;
+  font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 }
 /* line 1715, ../scss/_variables.scss */
 li.isotope-element .pack-header span {
@@ -393,7 +393,7 @@ a {
   -webkit-transition: background-color 250ms linear,border-color 250ms linear,color 250ms linear;
   transition: background-color 250ms linear,border-color 250ms linear,color 250ms linear;
   font-size: 1rem;
-  font-family: "Nunito",Arial,Helvetica,sans-serif;
+  font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 }
 
 /* line 1841, ../scss/_variables.scss */
@@ -649,7 +649,12 @@ li.isotope-element.nine_item {
   background-color: white;
 }
 
-/* line 2124, ../scss/_variables.scss */
+/* line 2122, ../scss/_variables.scss */
+.flex-direction-nav a {
+  height: 50px;
+}
+
+/* line 2125, ../scss/_variables.scss */
 .slider-button-rounded-corners {
   display: inline-block;
   width: 50%;
@@ -662,13 +667,13 @@ li.isotope-element.nine_item {
   text-decoration: none;
 }
 
-/* line 2139, ../scss/_variables.scss */
+/* line 2140, ../scss/_variables.scss */
 .slider-button-rounded-corners:hover,
 .slider-button-rounded-corners:active {
   text-decoration: underline;
 }
 
-/* line 2144, ../scss/_variables.scss */
+/* line 2145, ../scss/_variables.scss */
 .field-container {
   width: 26%;
   padding-left: 0px;
@@ -689,25 +694,26 @@ li.isotope-element.nine_item {
   position: absolute;
 }
 
-/* line 2165, ../scss/_variables.scss */
+/* line 2166, ../scss/_variables.scss */
 .flexslider {
   margin: 0;
   background: #fff;
   border: 0;
 }
 
-/* line 2176, ../scss/_variables.scss */
+/* line 2177, ../scss/_variables.scss */
 .field-container h2 {
   text-transform: uppercase;
   margin-bottom: 0;
-  font-family: "Nunito",Arial,Helvetica,sans-serif;
+  font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
   letter-spacing: 1px;
   margin-bottom: 16px;
   color: #fff;
   font-size: 36px;
   line-height: 36px;
+  font-weight: bold;
 }
-/* line 2190, ../scss/_variables.scss */
+/* line 2192, ../scss/_variables.scss */
 .field-container a {
   color: #fff;
   letter-spacing: 1px;
@@ -715,19 +721,19 @@ li.isotope-element.nine_item {
   margin-bottom: 1rem;
   margin-bottom: 0.1em;
 }
-/* line 2197, ../scss/_variables.scss */
+/* line 2199, ../scss/_variables.scss */
 .field-container a:visited {
   color: #fff;
 }
-/* line 2200, ../scss/_variables.scss */
+/* line 2202, ../scss/_variables.scss */
 .field-container a:hover {
-  color: #fff;
+  color: #ffF;
 }
-/* line 2203, ../scss/_variables.scss */
+/* line 2206, ../scss/_variables.scss */
 .field-container a:active {
   color: #fff;
 }
-/* line 2208, ../scss/_variables.scss */
+/* line 2211, ../scss/_variables.scss */
 .field-container p {
   font-size: 0.9em;
   font-style: normal;
@@ -737,12 +743,12 @@ li.isotope-element.nine_item {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 2219, ../scss/_variables.scss */
+/* line 2222, ../scss/_variables.scss */
 .text-overlay {
   text-align: center;
 }
 
-/* line 2222, ../scss/_variables.scss */
+/* line 2225, ../scss/_variables.scss */
 .text-overlay {
   position: absolute;
   width: 100%;
@@ -753,7 +759,7 @@ li.isotope-element.nine_item {
   z-index: 10;
 }
 
-/* line 2234, ../scss/_variables.scss */
+/* line 2237, ../scss/_variables.scss */
 .flex-control-nav.flex-control-paging {
   position: absolute;
   bottom: 15px;
@@ -761,7 +767,7 @@ li.isotope-element.nine_item {
   z-index: 501;
 }
 
-/* line 2241, ../scss/_variables.scss */
+/* line 2244, ../scss/_variables.scss */
 .flex-control-nav.flex-control-paging a {
   width: 10px;
   height: 10px;
@@ -778,36 +784,34 @@ li.isotope-element.nine_item {
   border-radius: 35px;
 }
 
-/* line 2257, ../scss/_variables.scss */
+/* line 2260, ../scss/_variables.scss */
 .flex-control-paging li a.flex-active {
   background: #5B8930;
 }
 
-/* line 2262, ../scss/_variables.scss */
+/* line 2267, ../scss/_variables.scss */
 .flex-nav-next {
   right: 0;
-  background: url("/sites/default/themes/tree/images/carousel-chevron-right-large.png") no-repeat 135% 48%;
 }
 
-/* line 2268, ../scss/_variables.scss */
+/* line 2273, ../scss/_variables.scss */
 .flex-nav-prev {
   left: 0;
-  background: url("/sites/default/themes/tree/images/carousel-chevron-left-large.png") no-repeat -30% 48%;
 }
 
-/* line 2274, ../scss/_variables.scss */
+/* line 2279, ../scss/_variables.scss */
 .views-slideshow-ddblock-cycle-vsdcw60p .slide-read-more {
   margin: 0 15px;
 }
 
-/* line 2277, ../scss/_variables.scss */
+/* line 2282, ../scss/_variables.scss */
 .views-slideshow-ddblock-cycle-vsdcw60p .slide-read-more {
   display: inline-block;
   float: right;
   zoom: 1;
 }
 
-/* line 2282, ../scss/_variables.scss */
+/* line 2287, ../scss/_variables.scss */
 .views-slideshow-ddblock-cycle-vsdcw60p .slide-read-more a {
   display: inline-block;
   padding: 10px 40px 10px 20px;
@@ -822,7 +826,7 @@ li.isotope-element.nine_item {
   text-decoration: none;
 }
 
-/* line 2297, ../scss/_variables.scss */
+/* line 2302, ../scss/_variables.scss */
 .field-image-colour-standard .group-slide-description {
   background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.22) 17%, rgba(0, 0, 0, 0.75) 57%, rgba(0, 0, 0, 0.75) 88%, rgba(0, 0, 0, 0.75) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(17%, rgba(0, 0, 0, 0.22)), color-stop(57%, rgba(0, 0, 0, 0.75)), color-stop(88%, rgba(0, 0, 0, 0.75)), color-stop(100%, rgba(0, 0, 0, 0.75)));
@@ -833,13 +837,13 @@ li.isotope-element.nine_item {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#bf000000',GradientType=0);
 }
 
-/* line 2315, ../scss/_variables.scss */
+/* line 2320, ../scss/_variables.scss */
 .date_tag {
   font-size: 12px;
   padding-top: 8px;
   text-transform: uppercase;
 }
-/* line 2321, ../scss/_variables.scss */
+/* line 2326, ../scss/_variables.scss */
 .date_tag span.date-display-single {
   float: left;
   display: block;
@@ -850,7 +854,7 @@ li.isotope-element.nine_item {
   font-size: 0.75rem;
 }
 
-/* line 2334, ../scss/_variables.scss */
+/* line 2339, ../scss/_variables.scss */
 .tag_date {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
@@ -869,19 +873,124 @@ li.isotope-element.nine_item {
   bottom: 20px;
 }
 
+/* line 2363, ../scss/_variables.scss */
+.fixed {
+  right: 0;
+}
+
+/* line 2370, ../scss/_variables.scss */
+.pub__info {
+  bottom: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  left: 0;
+  background: -webkit-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.64) 100%);
+  background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 0.64) 100%);
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+/* line 2385, ../scss/_variables.scss */
+.pub__info a:hover, .pub__info a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+/* line 2390, ../scss/_variables.scss */
+.pub__info a:hover {
+  cursor: pointer;
+}
+/* line 2394, ../scss/_variables.scss */
+.pub__info a:active, .pub__info a:hover {
+  outline: 0;
+}
+/* line 2398, ../scss/_variables.scss */
+.pub__info a {
+  color: #fff;
+  text-decoration: none;
+  line-height: inherit;
+  font-size: 1.4em;
+  font-weight: bolder;
+}
+
+/* line 2414, ../scss/_variables.scss */
+.pub__info p {
+  font-size: 0.75em;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+/* line 2421, ../scss/_variables.scss */
+.pub__info--intro {
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+/* line 2427, ../scss/_variables.scss */
+.pub__info--state {
+  display: none;
+  background-color: rgba(141, 178, 85, 0.8);
+  color: black;
+  padding: 5px 10px;
+}
+
+/* line 2436, ../scss/_variables.scss */
+.pub__info__title {
+  margin-bottom: 0;
+  margin-top: 8px;
+  font-size: 0.65em;
+  line-height: 1.39666690;
+}
+
+/* line 2447, ../scss/_variables.scss */
+.pub__info--title {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+}
+
+/* line 2453, ../scss/_variables.scss */
+.pub__info__meta {
+  color: #fff;
+  padding: 0 10px;
+  padding-top: 7px;
+  padding-bottom: 1px;
+  margin-bottom: -3px;
+  line-height: 1;
+}
+
 @media only screen and (min-width: 768px) {
-  /* line 2368, ../scss/_variables.scss */
+  /* line 2475, ../scss/_variables.scss */
   .content_type {
     padding: 30px 30px calc(34.5px);
   }
 
-  /* line 2372, ../scss/_variables.scss */
+  /* line 2479, ../scss/_variables.scss */
   .content_types {
     padding: 30px 30px calc(34.5px);
   }
+
+  /* line 2485, ../scss/_variables.scss */
+  .pub__info {
+    padding: 30px 30px calc(34.5px);
+  }
+
+  /* line 2494, ../scss/_variables.scss */
+  .tile__info--state {
+    display: inline-block;
+  }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 2391, ../scss/_variables.scss */
+  /* line 2506, ../scss/_variables.scss */
+  .pub__info {
+    padding: 10px 10px calc(42.3px);
+  }
+
+  /* line 2511, ../scss/_variables.scss */
+  .pub__info--state {
+    display: inline-block;
+  }
+
+  /* line 2518, ../scss/_variables.scss */
   .isotope-element {
     float: left;
     overflow: hidden;
@@ -891,12 +1000,12 @@ li.isotope-element.nine_item {
     width: calc(100% / 3);
   }
 
-  /* line 2400, ../scss/_variables.scss */
+  /* line 2527, ../scss/_variables.scss */
   .res-block_content {
     padding: 25px;
   }
 
-  /* line 2409, ../scss/_variables.scss */
+  /* line 2536, ../scss/_variables.scss */
   .isotope-element.res {
     width: calc(100% / 2);
     height: 300px;
@@ -908,12 +1017,12 @@ li.isotope-element.nine_item {
     background-color: white;
   }
 
-  /* line 2422, ../scss/_variables.scss */
+  /* line 2549, ../scss/_variables.scss */
   .content_type {
     padding: 40px 40px calc(42.3px);
   }
 
-  /* line 2427, ../scss/_variables.scss */
+  /* line 2554, ../scss/_variables.scss */
   .content_type h2 {
     font-size: 0.9em;
     line-height: 1.36364;
@@ -922,12 +1031,12 @@ li.isotope-element.nine_item {
     text-transform: uppercase;
   }
 
-  /* line 2436, ../scss/_variables.scss */
+  /* line 2563, ../scss/_variables.scss */
   .content_types {
     padding: 40px 40px calc(42.3px);
   }
 
-  /* line 2441, ../scss/_variables.scss */
+  /* line 2568, ../scss/_variables.scss */
   .content_types h2 {
     font-size: 0.9em;
     line-height: 1.36364;
@@ -936,7 +1045,7 @@ li.isotope-element.nine_item {
     text-transform: uppercase;
   }
 
-  /* line 2455, ../scss/_variables.scss */
+  /* line 2582, ../scss/_variables.scss */
   .isotope-element.pr {
     width: calc(100% * 1 / 4);
     float: left;
@@ -948,33 +1057,33 @@ li.isotope-element.nine_item {
     height: 200px;
   }
 
-  /* line 2471, ../scss/_variables.scss */
+  /* line 2598, ../scss/_variables.scss */
   .isotope-grid-sizer,
   .isotope-element {
     display: block;
   }
-  /* line 2476, ../scss/_variables.scss */
+  /* line 2603, ../scss/_variables.scss */
   .isotope-grid-sizer .pack-header,
   .isotope-element .pack-header {
     padding: 170px 10px calc(20px);
     display: block;
   }
 
-  /* line 2491, ../scss/_variables.scss */
+  /* line 2618, ../scss/_variables.scss */
   li.isotope-element.one .pack-header {
     padding: 250px 10px calc(40px);
     height: 300px;
     display: block;
   }
 
-  /* line 2501, ../scss/_variables.scss */
+  /* line 2628, ../scss/_variables.scss */
   li.isotope-element.two .pack-header {
     padding: 250px 10px calc(40px);
     height: 300px;
     display: block;
   }
 
-  /* line 2508, ../scss/_variables.scss */
+  /* line 2635, ../scss/_variables.scss */
   .isotope-grid-sizer,
   .isotope-element.odd {
     width: 66.4%;
@@ -987,14 +1096,14 @@ li.isotope-element.nine_item {
     background-color: white;
   }
 
-  /* line 2520, ../scss/_variables.scss */
+  /* line 2647, ../scss/_variables.scss */
   .isotope-gutter-sizer.odd img, .isotope-element.odd img {
     width: 100%;
     display: block;
     height: 510px;
   }
 
-  /* line 2526, ../scss/_variables.scss */
+  /* line 2653, ../scss/_variables.scss */
   .isotope-element.even {
     width: 33%;
     width: calc(100% / 3);
@@ -1007,7 +1116,7 @@ li.isotope-element.nine_item {
   }
 }
 @media only screen and (min-width: 1440px) {
-  /* line 2547, ../scss/_variables.scss */
+  /* line 2674, ../scss/_variables.scss */
   .content_type h2 {
     font-size: 0.9em;
     line-height: 1.36364;
@@ -1016,7 +1125,7 @@ li.isotope-element.nine_item {
     text-transform: uppercase;
   }
 
-  /* line 2556, ../scss/_variables.scss */
+  /* line 2683, ../scss/_variables.scss */
   .content_type {
     bottom: 0;
     -moz-box-sizing: border-box;
@@ -1031,7 +1140,7 @@ li.isotope-element.nine_item {
     z-index: 1;
   }
 
-  /* line 2570, ../scss/_variables.scss */
+  /* line 2697, ../scss/_variables.scss */
   .content_types h2 {
     font-size: 0.9em;
     line-height: 1.36364;
@@ -1040,7 +1149,7 @@ li.isotope-element.nine_item {
     text-transform: uppercase;
   }
 
-  /* line 2579, ../scss/_variables.scss */
+  /* line 2706, ../scss/_variables.scss */
   .content_types {
     bottom: 0;
     -moz-box-sizing: border-box;
@@ -1055,12 +1164,12 @@ li.isotope-element.nine_item {
     z-index: 1000;
   }
 
-  /* line 2595, ../scss/_variables.scss */
+  /* line 2722, ../scss/_variables.scss */
   .isotope-gutter-sizer {
     width: 25%;
   }
 
-  /* line 2601, ../scss/_variables.scss */
+  /* line 2728, ../scss/_variables.scss */
   .isotope-element.res {
     width: calc(25%);
     height: 230px;
@@ -1072,7 +1181,7 @@ li.isotope-element.nine_item {
     background-color: white;
   }
 
-  /* line 2613, ../scss/_variables.scss */
+  /* line 2740, ../scss/_variables.scss */
   .isotope-element.odd {
     width: 33.3%;
     width: calc(100% / 3);
@@ -1085,7 +1194,7 @@ li.isotope-element.nine_item {
     background-color: white;
   }
 
-  /* line 2628, ../scss/_variables.scss */
+  /* line 2755, ../scss/_variables.scss */
   .isotope-element {
     float: left;
     overflow: hidden;
@@ -3159,7 +3268,7 @@ p aside {
 /* Default header styles */
 /* line 182, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Nunito", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   color: #222;
@@ -8642,7 +8751,7 @@ header {
 /* line 270, ../scss/layout/_header.scss */
 .top-bar-section a {
   text-transform: uppercase;
-  font-family: "Nunito", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /* line 279, ../scss/layout/_header.scss */
@@ -8721,7 +8830,7 @@ form input::-webkit-input-placeholder {
 }
 /* line 351, ../scss/layout/_header.scss */
 .block.block-views.block-views-exp-test-search-page form input::-webkit-input-placeholder {
-  color: #fff !important;
+  color: #3d5d1f !important;
 }
 /* line 359, ../scss/layout/_header.scss */
 .block.block-views.block-views-exp-test-search-page .input-group {
@@ -8734,12 +8843,13 @@ form input::-webkit-input-placeholder {
   font-size: 12px;
   width: 200px;
   float: right;
-  color: #fff;
+  color: #8DB255 s;
 }
 /* line 372, ../scss/layout/_header.scss */
 .block.block-views.block-views-exp-test-search-page .input-group button {
   background: transparent;
   right: 0;
+  color: #8DB255;
   position: absolute;
   right: 5px;
   top: -14%;
@@ -8752,7 +8862,7 @@ form input::-webkit-input-placeholder {
   border-color: #3d5d1f;
   border-radius: 3px;
   box-shadow: none;
-  background-color: #8DB255;
+  background-color: #fff;
   height: 30px;
 }
 /* line 398, ../scss/layout/_header.scss */
@@ -8840,45 +8950,45 @@ form input::-webkit-input-placeholder {
   color: #fff;
 }
 
-/* line 468, ../scss/layout/_header.scss */
+/* line 469, ../scss/layout/_header.scss */
 .top_bar {
   height: 0;
 }
 
 @media only screen and (min-width: 1280px) {
-  /* line 484, ../scss/layout/_header.scss */
+  /* line 485, ../scss/layout/_header.scss */
   .top-bar-section {
     display: block;
     height: 90px;
   }
-  /* line 489, ../scss/layout/_header.scss */
+  /* line 490, ../scss/layout/_header.scss */
   .top-bar-section li {
     line-height: inherit;
   }
-  /* line 492, ../scss/layout/_header.scss */
+  /* line 493, ../scss/layout/_header.scss */
   .top-bar-section li a {
     margin-top: 32px;
     line-height: inherit;
   }
 
-  /* line 508, ../scss/layout/_header.scss */
+  /* line 509, ../scss/layout/_header.scss */
   .top-bar-section.menu li a {
     line-height: inherit;
   }
 
-  /* line 515, ../scss/layout/_header.scss */
+  /* line 516, ../scss/layout/_header.scss */
   .top-bar ul.menu {
     float: right;
     width: auto;
     margin-bottom: 0;
     background: #fff;
   }
-  /* line 521, ../scss/layout/_header.scss */
+  /* line 522, ../scss/layout/_header.scss */
   .top-bar ul.menu li {
     line-height: inherit;
   }
 
-  /* line 529, ../scss/layout/_header.scss */
+  /* line 530, ../scss/layout/_header.scss */
   .wrapper {
     background-color: #5B8930;
     min-height: 50px;
@@ -9020,7 +9130,7 @@ span.date-display-end {
   font-weight: bolder;
   color: #212121;
   margin-bottom: 0.2rem;
-  font-family: "Nunito",Arial,Helvetica,sans-serif;
+  font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 }
 
 /* line 175, ../scss/layout/_main.scss */
@@ -9078,7 +9188,7 @@ span.date-display-end {
 /* line 215, ../scss/layout/_main.scss */
 .field.field-name-title-field.field-type-text.field-wrapper {
   color: #5B8930;
-  font-family: "Nunito",Arial,Helvetica,sans-serif;
+  font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
   font-weight: 500;
   font-size: 1.4rem;
 }
@@ -9134,6 +9244,11 @@ span.date-display-end {
 }
 
 /* line 8, ../scss/layout/_footer.scss */
+.copyright {
+  font-size: 0.8em;
+}
+
+/* line 12, ../scss/layout/_footer.scss */
 .footer_wrapper {
   background-color: #5B8930;
   display: inline-block;
@@ -9142,7 +9257,7 @@ span.date-display-end {
   padding-top: 20%;
 }
 
-/* line 17, ../scss/layout/_footer.scss */
+/* line 21, ../scss/layout/_footer.scss */
 .footer_top {
   width: 100%;
   height: 0;
@@ -9154,14 +9269,14 @@ span.date-display-end {
   line-height: 20px;
 }
 
-/* line 28, ../scss/layout/_footer.scss */
+/* line 32, ../scss/layout/_footer.scss */
 .visually-hidden {
   position: absolute !important;
   top: -9999px !important;
   left: -9999px !important;
 }
 
-/* line 34, ../scss/layout/_footer.scss */
+/* line 38, ../scss/layout/_footer.scss */
 .footer_bottom {
   background-color: #7A942E;
   display: inline-block;
@@ -9169,7 +9284,7 @@ span.date-display-end {
   width: 100%;
   float: left;
 }
-/* line 41, ../scss/layout/_footer.scss */
+/* line 45, ../scss/layout/_footer.scss */
 .footer_bottom .panel {
   border-style: none;
   border-width: 0;

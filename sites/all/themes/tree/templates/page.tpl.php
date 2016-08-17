@@ -65,7 +65,7 @@
    </div>
 
    <div class="row">
-	   <div class="large-4 columns">
+	   <div class="large-3 columns">
        <div class="logo">
          <?php if (theme_get_setting('branding_type') == 'logo'): ?>
          <a href="<?php print base_path();?>">
@@ -85,7 +85,7 @@
        </div>
      </div>
 	 
-	 <div class="large-8 columns">
+	 <div class="large-9 columns">
 	     <?php if ($top_bar): ?>
 	       <!--.top-bar -->
 	       <?php if ($top_bar_classes): ?>

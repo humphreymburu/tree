@@ -80,7 +80,7 @@ $em-base: 16px !default;
 
 // Various global styles
 
-@import 'https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif|Lato:400,700|Montserrat:400,700|Nunito|Open+Sans:300,400';
+@import 'https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif:400,700|Montserrat:400,700|Open+Sans:300,400,800,800i|Roboto|Source+Sans+Pro:400,600,700,900';
 
 
 $default-float: left;
@@ -198,7 +198,7 @@ $default-float: left;
 
 // Control header font styles
 
- $header-font-family: "Nunito", Arial, sans-serif;
+ $header-font-family: "Source Sans Pro", Arial, sans-serif;
  $header-font-weight: bold;
  $header-font-style: normal;
  $header-font-color: #222;
@@ -1708,7 +1708,7 @@ img, object, embed {
 	 	line-height: 1.36364;
 	 	font-weight: 400;
 	 	color: white;
-		font-family: "Nunito",Arial,Helvetica,sans-serif;
+		font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 	 	
 	 }
 
@@ -1834,7 +1834,7 @@ img, object, embed {
      -webkit-transition: background-color 250ms linear,border-color 250ms linear,color 250ms linear;
      transition: background-color 250ms linear,border-color 250ms linear,color 250ms linear;
 	 font-size: 1rem;
-	 font-family: "Nunito",Arial,Helvetica,sans-serif;
+	 font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
  }
  
  
@@ -2119,8 +2119,9 @@ img, object, embed {
  
  
  //flexslider
- 
-
+ .flex-direction-nav a {
+     height: 50px;
+ }
  .slider-button-rounded-corners  {
   
    
@@ -2176,12 +2177,13 @@ img, object, embed {
 	  h2 {
 	      text-transform: uppercase;
 	      margin-bottom: 0;
-	      font-family: "Nunito",Arial,Helvetica,sans-serif;
+	      font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 	      letter-spacing: 1px;	
 		  margin-bottom: 16px;
 		  color:#fff;
 	      font-size: 36px;
 	      line-height: 36px;
+	      font-weight: bold;
 	 
 		  
 		  
@@ -2198,7 +2200,8 @@ img, object, embed {
 	        color: #fff;
 	      }
 	      &:hover {
-	        color: #fff;   
+	        color: #ffF;
+			//text-decoration: underline;
 	      }
 	      &:active {
 	        color: #fff;
@@ -2259,15 +2262,17 @@ img, object, embed {
 }
 
 
+
+
 .flex-nav-next {
     right: 0;
-    background: url('/sites/default/themes/tree/images/carousel-chevron-right-large.png') no-repeat 135% 48%;
+    //background: url('../carousel-chevron-right-large.png') no-repeat 135% 48%;
 }
 
 
 .flex-nav-prev {
     left: 0;
-    background: url('/sites/default/themes/tree/images/carousel-chevron-left-large.png') no-repeat -30% 48%;
+    //background: url('../carousel-chevron-left-large.png') no-repeat -30% 48%;
 }
 
 
@@ -2350,10 +2355,112 @@ img, object, embed {
  }
  
  
+
  
  
+ //publications
+ 
+ .fixed  {
+   right: 0; 
+}
+ 
+
  
  
+.pub__info {
+	bottom: 0;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    color: #fff;
+	    left: 0;
+	    background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.64) 100%);
+	    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.64) 100%);
+	    padding: 20px;
+	    position: absolute;
+	    width: 100%;
+	    z-index: 1;
+
+
+
+  a:hover, a:focus {
+     color: #fff;
+ 	 text-decoration: underline;
+  }
+
+  a:hover {
+      cursor: pointer;
+  }
+ 
+  a:active, a:hover {
+      outline: 0;
+  }
+  
+  a {
+      color: #fff;
+      text-decoration: none;
+      line-height: inherit;
+	  font-size: 1.4em;
+	  font-weight: bolder;
+  }
+ 
+
+
+
+
+}
+  
+ 
+	  
+  .pub__info p {
+    font-size: 0.75em;
+    padding-bottom: 15px;
+    margin: 0; }
+	
+
+ 
+  .pub__info--intro {
+    color: #FFFFFF;
+	
+    padding: 10px; }
+ 
+ 
+  .pub__info--state {
+    display: none;
+    background-color: rgba(141, 178, 85, .8);
+    color: black;
+    padding: 5px 10px; }
+    
+     
+  
+  
+  .pub__info__title {
+      margin-bottom: 0;
+      margin-top: 8px;
+      font-size: 0.65em;
+      line-height: 1.39666690;
+	//background-color: rgba(141, 178, 85, .8);
+}
+	
+		
+		
+		
+  .pub__info--title {
+	 font-family: "Source Sans Pro", Arial, sans-serif;
+   }
+	
+	
+	
+  .pub__info__meta {
+    color: #fff;
+    padding: 0 10px;
+    padding-top: 7px;
+    padding-bottom: 1px;
+    margin-bottom: -3px;
+    line-height: 1; 
+    //background-color: rgba(255, 255, 255, .8);
+}
+	
+	
  
  
  
@@ -2373,18 +2480,38 @@ img, object, embed {
     padding: 30px 30px calc(34.5px);
 }
 
+
+
+		.pub__info{
+			padding: 30px 30px calc(34.5px);
+	
+		}
  
+	  
 
 
 
-
-
+	        .tile__info--state {
+	          display: inline-block; } 
 
 }
 
 
 
  @media #{$medium}  { 
+	 
+	
+
+
+	 	    .pub__info {
+	 	        padding: 10px 10px calc(42.3px);
+	 	        } 
+	  
+
+	 	        .pub__info--state {
+	 	          display: inline-block; } 
+	 
+	 
 	 
 	 
 	 

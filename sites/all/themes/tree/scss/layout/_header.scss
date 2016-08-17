@@ -269,7 +269,7 @@ header {
   
    a {
       text-transform: uppercase;
-	  font-family: "Nunito", sans-serif;
+	  font-family: "Source Sans Pro", sans-serif;
      }
   
 } 
@@ -349,7 +349,7 @@ form input::-webkit-input-placeholder{
 
 
 	form input::-webkit-input-placeholder{
-	     color: #fff !important;
+	     color: #3d5d1f !important;
 
 	 }
 
@@ -366,13 +366,13 @@ form input::-webkit-input-placeholder{
 	    font-size: 12px;
 	    width: 200px;
 	    float: right;
-		 color: #fff;
+		 color: #8DB255s;
 	}
 	
 	.input-group button {
 	    background: transparent;
 	    right: 0;
-	
+	    color: #8DB255;
 
 	    position: absolute;
 	    right: 5px;
@@ -387,7 +387,7 @@ form input::-webkit-input-placeholder{
 	    border-color: #3d5d1f;
 	    border-radius: 3px;
 	    box-shadow: none;	
-		background-color: #8DB255;
+		background-color: #fff;
 		height: 30px;
 	  }	
    
@@ -460,6 +460,7 @@ form input::-webkit-input-placeholder{
 	$full-width: false,
 	$is-input: false,
 	$disabled: false
+	
   );
 }
 
