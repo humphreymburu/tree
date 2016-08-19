@@ -201,7 +201,7 @@ $default-float: left;
  $header-font-family: "Source Sans Pro", Arial, sans-serif;
  $header-font-weight: bold;
  $header-font-style: normal;
- $header-font-color: #222;
+ $header-font-color: #563521;
  $header-line-height: 1.4;
  $header-top-margin: .2em;
  $header-bottom-margin: .5em;
@@ -209,11 +209,11 @@ $default-float: left;
 
 // Control header font sizes
 
- $h1-font-size: em-calc(44);
- $h2-font-size: em-calc(37);
- $h3-font-size: em-calc(27);
- $h4-font-size: em-calc(23);
- $h5-font-size: em-calc(18);
+ $h1-font-size: em-calc(40);
+ $h2-font-size: em-calc(30);
+ $h3-font-size: em-calc(20);
+ $h4-font-size: em-calc(15);
+ $h5-font-size: em-calc(10);
  $h6-font-size: 1em;
 
 // Control how subheaders are styled.
@@ -1318,12 +1318,12 @@ $topbar-menu-link-color-toggled: #5b8530;
 $topbar-menu-icon-color-toggled: #5b8530;
 
 
- $topbar-link-color: #212121;
+ $topbar-link-color: #731620;
  $topbar-link-color-hover: #ccc;
  $topbar-link-color-active: #fff;
  $topbar-link-weight: bold;
- $topbar-link-font-size: em-calc(13);
- $topbar-link-hover-lightness: -30%; // Darken by 30%
+ $topbar-link-font-size: em-calc(15);
+ $topbar-link-hover-lightness: -50%; // Darken by 30%
  $topbar-link-bg-hover: #8DB255;
  $topbar-link-bg-active: #8DB255;
 

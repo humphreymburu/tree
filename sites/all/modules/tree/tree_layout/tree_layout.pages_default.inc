@@ -44,7 +44,7 @@ function tree_layout_default_page_manager_pages() {
     'name' => 'panel',
   );
   $display = new panels_display();
-  $display->layout = 'radix_moscone_flipped';
+  $display->layout = 'radix_taylor';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -53,6 +53,9 @@ function tree_layout_default_page_manager_pages() {
       'sidebar' => NULL,
       'contentmain' => NULL,
       'footer' => NULL,
+      'half' => NULL,
+      'quarter1' => NULL,
+      'quarter2' => NULL,
     ),
   );
   $display->cache = array();
@@ -62,15 +65,15 @@ function tree_layout_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-4077394d-1076-4533-9bb8-090a341e4276';
-    $pane->panel = 'contentmain';
+    $pane->panel = 'half';
     $pane->type = 'contact';
     $pane->subtype = 'contact';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
+      'override_title' => 1,
+      'override_title_text' => 'Contact Tree',
+      'override_title_heading' => 'h1',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -82,7 +85,67 @@ function tree_layout_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = '4077394d-1076-4533-9bb8-090a341e4276';
     $display->content['new-4077394d-1076-4533-9bb8-090a341e4276'] = $pane;
-    $display->panels['contentmain'][0] = 'new-4077394d-1076-4533-9bb8-090a341e4276';
+    $display->panels['half'][0] = 'new-4077394d-1076-4533-9bb8-090a341e4276';
+    $pane = new stdClass();
+    $pane->pid = 'new-e4de56e3-ec78-4315-b84b-7d64237c62b6';
+    $pane->panel = 'quarter1';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => 'contacts',
+      'title' => 'Nairobi Contacts',
+      'body' => '<p>University of Washington-TREE Program<br style="box-sizing: border-box;" />University of Nairobi Medical School<br style="box-sizing: border-box;" />Kenyatta National Hospital<br style="box-sizing: border-box;" />UNITID Building Ground Floor<br style="box-sizing: border-box;" />P.O. Box 205-00202, KNH(edited)</p>
+
+<p><i class="step fi-marker size-18"></i>&nbsp;Nairobi, Kenya
+<br/>
+<i class="step fi-telephone size-18"></i>&nbsp;Phone: (254) / 0731112512
+</p>',
+      'format' => 'panopoly_html_text',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'e4de56e3-ec78-4315-b84b-7d64237c62b6';
+    $display->content['new-e4de56e3-ec78-4315-b84b-7d64237c62b6'] = $pane;
+    $display->panels['quarter1'][0] = 'new-e4de56e3-ec78-4315-b84b-7d64237c62b6';
+    $pane = new stdClass();
+    $pane->pid = 'new-0d234ae0-932f-4656-ad0b-33f8e15d5430';
+    $pane->panel = 'quarter2';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => 'Seattle Contacts',
+      'body' => '<p>Treatment, Research, and Expert Education (TREE)<br />Department of Global Health, University of Washington&nbsp;<br />NJB 13th Floor<br />325 9th Avenue Box 359909</p>
+
+<p><i class="step fi-marker size-18"></i>&nbsp;Seattle, WA 98104
+<br/>
+<i class="step fi-telephone size-18"></i>&nbsp;Phone: (206)685-8332
+</p>',
+      'format' => 'panopoly_html_text',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '0d234ae0-932f-4656-ad0b-33f8e15d5430';
+    $display->content['new-0d234ae0-932f-4656-ad0b-33f8e15d5430'] = $pane;
+    $display->panels['quarter2'][0] = 'new-0d234ae0-932f-4656-ad0b-33f8e15d5430';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-4077394d-1076-4533-9bb8-090a341e4276';
   $handler->conf['display'] = $display;
