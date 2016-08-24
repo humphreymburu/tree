@@ -1570,14 +1570,21 @@ img, object, embed {
  
  
  h5.title-one {
-    
-	font-size: 1rem;
-    line-height: 1.5;
-    margin: 0;
-    letter-spacing: .25px;
-	color: #fff;
+
+	    font-size: 1rem;
+	    line-height: 1.5;
+	    margin: 0;
+	    letter-spacing: .25px;
+	    color: #fff;
+	    font-weight: 300;
+}
+ 
+ 
+h5.title-one::before {
+    content: "> ";
 	
 }
+ 
  
  
  
@@ -1596,10 +1603,12 @@ img, object, embed {
 }
 
 .title-block {
-    margin-bottom: 1.875rem;
-    font-weight: 600;
-	font-size: 1.4rem;
-	line-height: 1.16666667;
+        margin-top: 0.5rem;
+     font-weight: 700;
+     font-size: 1.1rem;
+     line-height: 1.16666667;
+     margin-bottom: 1.2rem;
+	
 	
 	
 	a {

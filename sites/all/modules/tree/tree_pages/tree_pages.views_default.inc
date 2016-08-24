@@ -98,6 +98,16 @@ function tree_pages_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Education Category */
+  $handler->display->display_options['fields']['field_education_category']['id'] = 'field_education_category';
+  $handler->display->display_options['fields']['field_education_category']['table'] = 'field_data_field_education_category';
+  $handler->display->display_options['fields']['field_education_category']['field'] = 'field_education_category';
+  $handler->display->display_options['fields']['field_education_category']['label'] = '';
+  $handler->display->display_options['fields']['field_education_category']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_education_category']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_education_category']['settings'] = array(
+    'link' => 0,
+  );
   /* Field: Content: Theme Photo */
   $handler->display->display_options['fields']['field_theme_photo']['id'] = 'field_theme_photo';
   $handler->display->display_options['fields']['field_theme_photo']['table'] = 'field_data_field_theme_photo';
@@ -125,7 +135,8 @@ function tree_pages_views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<h3 class="title-block">[title]</h3> ';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<h5 class="title-one">[field_education_category]</h5>
+<h3 class="title-block">[title]</h3> ';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_wrapper_class'] = 'title-block-content';
@@ -319,7 +330,8 @@ function tree_pages_views_default_views() {
     t('Page'),
     t('Education'),
     t('Taxonomy term entity referenced from field_type_of_theme'),
-    t('<h3 class="title-block">[title]</h3> '),
+    t('<h5 class="title-one">[field_education_category]</h5>
+<h3 class="title-block">[title]</h3> '),
     t('Courses'),
     t('courses'),
     t('View panes'),
