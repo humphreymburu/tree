@@ -244,7 +244,24 @@ function tree_preprocess_html(&$vars){
 }
 
 
-
+function tree_form_alter( &$form, &$form_state, $form_id )
+{
+    
+      if($form_id=="simplenews_block_form_27"){
+        $form['mail']=array(
+          '#type'=>'textfield',
+          '#title' => t('Email'),
+          '#size' => 20,
+          '#maxlength' => 128,
+          '#required' =>true,
+		  '#attributes' => array(
+		          'placeholder' => t('Email'),
+		        ),
+        );
+	}
+    
+}
+ 
 
 
 
