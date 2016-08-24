@@ -425,5 +425,12 @@ function tree_pages_strongarm() {
   $strongarm->value = '[node:og-group-ref:url:path]/page/[node:title]';
   $export['pathauto_node_tree_page_pattern'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'views_defaults';
+  $strongarm->value = array();
+  $export['views_defaults'] = $strongarm;
+
   return $export;
 }
