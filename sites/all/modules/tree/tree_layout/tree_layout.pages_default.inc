@@ -72,7 +72,7 @@ function tree_layout_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'override_title' => 1,
-      'override_title_text' => 'Contact Tree',
+      'override_title_text' => 'Contact TREE',
       'override_title_heading' => 'h1',
     );
     $pane->cache = array();
@@ -95,8 +95,8 @@ function tree_layout_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'admin_title' => 'contacts',
-      'title' => 'Nairobi Contacts',
-      'body' => '<p>University of Washington-TREE Program<br style="box-sizing: border-box;" />University of Nairobi Medical School<br style="box-sizing: border-box;" />Kenyatta National Hospital<br style="box-sizing: border-box;" />UNITID Building Ground Floor<br style="box-sizing: border-box;" />P.O. Box 205-00202, KNH(edited)</p>
+      'title' => 'Nairobi',
+      'body' => '<p>University of Washington-TREE Program<br style="box-sizing: border-box;" />University of Nairobi Medical School<br style="box-sizing: border-box;" />Kenyatta National Hospital<br style="box-sizing: border-box;" />UNITID Building Ground Floor<br style="box-sizing: border-box;" />P.O. Box 205-00202, KNH</p>
 
 <p><i class="step fi-marker size-18"></i>&nbsp;Nairobi, Kenya
 <br/>
@@ -125,12 +125,12 @@ function tree_layout_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'admin_title' => '',
-      'title' => 'Seattle Contacts',
-      'body' => '<p>Treatment, Research, and Expert Education (TREE)<br />Department of Global Health, University of Washington&nbsp;<br />NJB 13th Floor<br />325 9th Avenue Box 359909</p>
+      'title' => 'Seattle',
+      'body' => '<p>Treatment, Research, and Expert Education (TREE)<br />Department of Global Health University of Washington&nbsp;<br />NJB 13th Floor<br />325 9th Avenue Box 359909</p>
 
 <p><i class="step fi-marker size-18"></i>&nbsp;Seattle, WA 98104
 <br/>
-<i class="step fi-telephone size-18"></i>&nbsp;Phone: (206)685-8332
+<i class="step fi-telephone size-18"></i>&nbsp;Phone: (206)&nbsp;685-8332
 </p>',
       'format' => 'panopoly_html_text',
       'substitute' => TRUE,
@@ -706,7 +706,7 @@ function tree_layout_default_page_manager_pages() {
     'name' => 'panel',
   );
   $display = new panels_display();
-  $display->layout = 'foundation_1col';
+  $display->layout = 'radix_boxton';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -716,6 +716,7 @@ function tree_layout_default_page_manager_pages() {
       'right' => NULL,
       'bottom' => NULL,
       'middle' => NULL,
+      'contentmain' => NULL,
     ),
   );
   $display->cache = array();
@@ -725,7 +726,7 @@ function tree_layout_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-7a2793d4-f005-4a0d-a870-3d530406f80b';
-    $pane->panel = 'middle';
+    $pane->panel = 'contentmain';
     $pane->type = 'views';
     $pane->subtype = 'treatment';
     $pane->shown = TRUE;
@@ -757,7 +758,7 @@ function tree_layout_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = '7a2793d4-f005-4a0d-a870-3d530406f80b';
     $display->content['new-7a2793d4-f005-4a0d-a870-3d530406f80b'] = $pane;
-    $display->panels['middle'][0] = 'new-7a2793d4-f005-4a0d-a870-3d530406f80b';
+    $display->panels['contentmain'][0] = 'new-7a2793d4-f005-4a0d-a870-3d530406f80b';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

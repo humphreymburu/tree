@@ -46,10 +46,10 @@
 .size-18 { font-size: 18px; }
 
 .logo {
-	margin-top: -10px;
-    height: 100%;
-    width: 100%;
+	margin-top: -14px;
     display: block;
+    height: 95px;
+    width: 378px;
 }
 
 .top-bar-section ul li > a {
@@ -70,8 +70,8 @@
 
 .slides {
 	p {
-		    margin: 0px 0 20px;
-			text-align:justify;
+		    margin: 0;
+		    text-align: left;
 			font-size: 14px;
 	}
 }
@@ -250,8 +250,8 @@ header {
 	    }
 	
 	.button {
-		background-color: #8DB255;
-		border-color: #3d5d1f;
+	    background-color: #6c7a89;
+	    border-color: #56616c;
 		display: block;
 	    border-width: 1px;
 
@@ -336,9 +336,11 @@ header {
 
 
 
-.breadcrumbs {
-    margin-top: 0.5rem;
-}
+	.breadcrumbs {
+	    margin-top: 0.5rem;
+	    display: none;
+	}
+
 
 form input::-webkit-input-placeholder{
      color:red !important;
