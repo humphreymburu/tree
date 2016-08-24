@@ -30,6 +30,25 @@ function tree_layout_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_fe_date_custom_date_formats().
+ */
+function tree_layout_fe_date_custom_date_formats() {
+  $custom_date_formats = array();
+  $custom_date_formats['F  d'] = 'F  d';
+  return $custom_date_formats;
+}
+
+/**
+ * Implements hook_date_format_types().
+ */
+function tree_layout_date_format_types() {
+  $format_types = array();
+  // Exported date format type: events
+  $format_types['events'] = 'Events';
+  return $format_types;
+}
+
+/**
  * Implements hook_image_default_styles().
  */
 function tree_layout_image_default_styles() {
@@ -59,4 +78,21 @@ function tree_layout_image_default_styles() {
   );
 
   return $styles;
+}
+
+/**
+ * Implements hook_node_info().
+ */
+function tree_layout_node_info() {
+  $items = array(
+    'simplenews' => array(
+      'name' => t('Simplenews newsletter'),
+      'base' => 'node_content',
+      'description' => t('A newsletter issue to be sent to subscribed email addresses.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+  );
+  return $items;
 }
