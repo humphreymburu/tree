@@ -120,6 +120,9 @@ function tree_events_strongarm() {
         'language' => array(
           'weight' => '8',
         ),
+        'locations' => array(
+          'weight' => '11',
+        ),
       ),
       'display' => array(),
     ),

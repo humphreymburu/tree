@@ -527,6 +527,63 @@ function tree_events_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-tree_event-field_type_of_theme'
+  $field_instances['node-tree_event-field_type_of_theme'] = array(
+    'bundle' => 'tree_event',
+    'default_value' => NULL,
+    'default_value_function' => '',
+    'deleted' => 0,
+    'description' => 'Associate an event with a theme',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 8,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_type_of_theme',
+    'label' => 'Type of Theme',
+    'required' => 0,
+    'settings' => array(
+      'behaviors' => array(
+        'prepopulate' => array(
+          'status' => 0,
+        ),
+        'taxonomy-index' => array(
+          'status' => TRUE,
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'hser',
+      'settings' => array(
+        'editable' => 0,
+      ),
+      'type' => 'hser_hierarchy',
+      'weight' => 7,
+    ),
+  );
+
   // Exported field_instance: 'node-tree_event-title_field'
   $field_instances['node-tree_event-title_field'] = array(
     'bundle' => 'tree_event',
@@ -637,6 +694,7 @@ function tree_events_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Associate an event with a theme');
   t('Body');
   t('Contact Email');
   t('Date');
@@ -644,6 +702,7 @@ function tree_events_field_default_field_instances() {
   t('Name');
   t('Related content');
   t('Title');
+  t('Type of Theme');
   t('event photo');
 
   return $field_instances;
