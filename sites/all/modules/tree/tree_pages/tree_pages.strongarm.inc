@@ -181,10 +181,13 @@ function tree_pages_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '6',
+          'weight' => '7',
         ),
         'redirect' => array(
-          'weight' => '5',
+          'weight' => '6',
+        ),
+        'locations' => array(
+          'weight' => '8',
         ),
       ),
       'display' => array(),

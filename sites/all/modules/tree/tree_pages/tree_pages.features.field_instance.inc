@@ -61,6 +61,53 @@ function tree_pages_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-themes-field_education_category'
+  $field_instances['node-themes-field_education_category'] = array(
+    'bundle' => 'themes',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 5,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_education_category',
+    'label' => 'Education Category',
+    'required' => FALSE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'hser',
+      'settings' => array(
+        'editable' => FALSE,
+      ),
+      'type' => 'hser_hierarchy',
+      'weight' => 4,
+    ),
+  );
+
   // Exported field_instance: 'node-themes-field_related_links'
   $field_instances['node-themes-field_related_links'] = array(
     'bundle' => 'themes',
@@ -122,7 +169,7 @@ function tree_pages_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -304,7 +351,7 @@ function tree_pages_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => -5,
+      'weight' => 0,
     ),
   );
 
@@ -722,6 +769,7 @@ Its a list themes  and its mostly used for the home page usability and aesthetic
   t('Body');
   t('Content fields');
   t('Differentiate home page images and text used for  usability and aesthetic functionality purposes.');
+  t('Education Category');
   t('Home Page');
   t('Information');
   t('Link');
