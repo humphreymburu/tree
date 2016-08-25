@@ -9634,36 +9634,38 @@ span.date-display-end {
 /* line 273, ../scss/layout/_footer.scss */
 .footer-first h2.block-title {
   margin-right: 9em;
+  text-align: left;
 }
 
-/* line 284, ../scss/layout/_footer.scss */
+/* line 285, ../scss/layout/_footer.scss */
 .footer-third h2.block-title {
   margin-right: 2.4em;
+  text-align: left;
 }
 
-/* line 293, ../scss/layout/_footer.scss */
+/* line 295, ../scss/layout/_footer.scss */
 .col-md-12.radix-layouts-footer.panel-panel {
   padding-top: 20px;
 }
 
 @media only screen and (min-width: 1280px) {
-  /* line 301, ../scss/layout/_footer.scss */
+  /* line 303, ../scss/layout/_footer.scss */
   .footer_wrapper p {
     text-align: left;
   }
 
-  /* line 303, ../scss/layout/_footer.scss */
+  /* line 305, ../scss/layout/_footer.scss */
   .footer_wrapper .social {
     text-align: left;
     margin: 0;
   }
 
-  /* line 306, ../scss/layout/_footer.scss */
+  /* line 308, ../scss/layout/_footer.scss */
   .footer_wrapper .contact {
     text-align: left;
   }
 
-  /* line 308, ../scss/layout/_footer.scss */
+  /* line 310, ../scss/layout/_footer.scss */
   .footer_wrapper .contact > i {
     margin-right: 1rem;
   }

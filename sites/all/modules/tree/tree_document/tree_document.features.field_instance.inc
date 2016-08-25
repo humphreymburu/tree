@@ -280,7 +280,7 @@ function tree_document_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_document_type',
-    'label' => 'Document type',
+    'label' => 'Document Type',
     'required' => 1,
     'settings' => array(
       'behaviors' => array(
@@ -546,7 +546,7 @@ function tree_document_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Document Bio');
-  t('Document type');
+  t('Document Type');
   t('Document_photo');
   t('File');
   t('File(s)');

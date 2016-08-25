@@ -564,7 +564,7 @@ function tree_document_panelizer_defaults() {
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
-        'link' => 1,
+        'link' => 0,
         'view_mode' => 'default',
         'links' => 1,
       ),
