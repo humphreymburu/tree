@@ -14,6 +14,7 @@ function tree_layout_default_fe_block_settings() {
 
   $export['block-about_us'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'machine_name' => 'about_us',
     'module' => 'block',
@@ -52,6 +53,7 @@ function tree_layout_default_fe_block_settings() {
 
   $export['block-contacts'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'machine_name' => 'contacts',
     'module' => 'block',
@@ -90,6 +92,7 @@ function tree_layout_default_fe_block_settings() {
 
   $export['block-other_links'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'machine_name' => 'other_links',
     'module' => 'block',
@@ -128,6 +131,7 @@ function tree_layout_default_fe_block_settings() {
 
   $export['simplenews-0'] = array(
     'cache' => 1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 0,
     'module' => 'simplenews',
@@ -166,6 +170,7 @@ function tree_layout_default_fe_block_settings() {
 
   $export['simplenews-27'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 27,
     'module' => 'simplenews',
