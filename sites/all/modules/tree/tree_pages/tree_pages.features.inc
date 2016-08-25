@@ -25,28 +25,3 @@ function tree_pages_ctools_plugin_api($module = NULL, $api = NULL) {
 function tree_pages_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
-
-/**
- * Implements hook_node_info().
- */
-function tree_pages_node_info() {
-  $items = array(
-    'themes' => array(
-      'name' => t('Themes'),
-      'base' => 'node_content',
-      'description' => t('Content type like Treatment,Research and Education'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
-    'tree_page' => array(
-      'name' => t('Page'),
-      'base' => 'node_content',
-      'description' => t('Use <em>pages</em> for static content and adverts, wiki pages.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
-  );
-  return $items;
-}
