@@ -48,7 +48,7 @@ function tree_themes_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 1800,
-          'height' => 500,
+          'height' => 565,
         ),
         'weight' => 1,
       ),

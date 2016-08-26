@@ -149,11 +149,9 @@ $default-float: left;
 
 
 
-
-
-  $small-screen: 768px;
-  $medium-screen: 1280px;
-  $large-screen: 1440px;
+  $small-screen: em-calc(768);
+  $medium-screen: em-calc(1024);
+  $large-screen: em-calc(1440);
 
 // $screen: "only screen";
   $small: "only screen and (min-width: #{$small-screen})";
@@ -1603,12 +1601,10 @@ h5.title-one::before {
 }
 
 .title-block {
-        margin-top: 0.5rem;
-     font-weight: 700;
-     font-size: 1.1rem;
-     line-height: 1.16666667;
-     margin-bottom: 1.2rem;
-	
+	 margin-top: 4.5rem;
+	     font-weight: 700;
+	     font-size: 1.1rem;
+	     line-height: 1.16666667;
 	
 	
 	a {
@@ -1886,7 +1882,7 @@ h5.title-one::before {
  
  .res_button {
      border: 1px solid #fff;
-     border-radius: 5px;
+     border-radius: 3px;
      -moz-box-sizing: border-box;
      box-sizing: border-box;
      color: #fff;
@@ -1905,6 +1901,7 @@ h5.title-one::before {
      transition: background-color 250ms linear,border-color 250ms linear,color 250ms linear;
 	 font-size: 1rem;
 	 font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+	 background-color: rgba(0, 0, 0, 0.32);
  }
  
  
@@ -1922,7 +1919,7 @@ h5.title-one::before {
  
  
  .res-container {
-    margin-top: -0.7rem;
+	margin-top: 0.5em;
  }
 
 
@@ -2189,6 +2186,10 @@ h5.title-one::before {
  
  
  //flexslider
+ 
+ .flexslider {
+ 
+ 
  .flex-direction-nav a {
      height: 50px;
  }
@@ -2212,25 +2213,24 @@ h5.title-one::before {
    text-decoration: underline;
  }
  
+ 
+
+ 	
+ 
  .field-container {
-	width: 26%;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    clear: both;
-    -webkit-transition: all 0.25s linear;
-    -moz-transition: all 0.25s linear;
-    -o-transition: all 0.25s linear;
-    transition: all 0.25s linear;
-	top: 0.1rem;
-	z-index: 10;
-	left: 1.2rem;
-	background-color: rgba(144,145,145,0.55);
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-	padding: 3rem 1.5rem;
-	position: absolute;	
 	
+	
+	position: relative;
+	    margin-left: auto;
+	    margin-right: auto;
+	    top: 100%;
+	    width: 100%;
+		padding: 2.5em;
+	
+	
+}
+
+
 }
   
  .flexslider {
@@ -2250,31 +2250,32 @@ h5.title-one::before {
 	      font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 	      letter-spacing: 1px;	
 		  margin-bottom: 16px;
-		  color:#fff;
+		  color: #5B8930;
 	      font-size: 36px;
-	      line-height: 36px;
 	      font-weight: bold;
-	 
+		  font-size: 18px;
+		      line-height: 24px;
+		      margin-bottom: 5px;
 		  
 		  
 	  }
 	  
 	  a {
-	      color: #fff;
+	      color: #5B8930;
 		  letter-spacing: 1px;
 		  font-weight: 900;
 	      margin-bottom: 1rem;
 		  margin-bottom: 0.1em;
 		  
 		  &:visited {
-	        color: #fff;
+	        color:#4e7629;
 	      }
 	      &:hover {
-	        color: #ffF;
+	        color: #4e7629;
 			//text-decoration: underline;
 	      }
 	      &:active {
-	        color: #fff;
+	        color: #5B8930;
 	      }
 	    }  
 	  
@@ -2282,10 +2283,18 @@ h5.title-one::before {
 	    font-size: 0.9em;
 	    font-style: normal;
 	    text-transform: none;
-		color: #fff;
+		
 		line-height: 1.3em;
 		font-family: "Open Sans", sans-serif;
 	  }
+	  
+	  .slides p {
+	      margin: 0;
+	      text-align: left;
+	      font-size: 14px;
+		  color: #222;
+	  }
+	  
 	  
   }
  
@@ -2570,7 +2579,97 @@ h5.title-one::before {
 
  @media #{$medium}  { 
 	 
-	
+	 //hero flex
+	 
+	 .flexslider {
+	 	
+	 
+	 .field-container {
+		width: 30%;
+	    //padding-left: 0px;
+	    //padding-right: 0px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    clear: both;
+	    -webkit-transition: all 0.25s linear;
+	    -moz-transition: all 0.25s linear;
+	    -o-transition: all 0.25s linear;
+	    transition: all 0.25s linear;
+		top: 0.5rem;
+		z-index: 10;
+		left: 1.2rem;
+		background-color: rgba(144,145,145,0.55);
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+		//padding: 3rem 1.5rem;
+		position: absolute;	
+		padding: 34px 32px 34px 32px;
+		padding: 5rem 3rem;
+		left: 3rem;
+		
+	}
+	 
+	 
+	} 
+	 
+    .field-container {
+     
+
+	  
+	  
+   	  h2 {
+   	      text-transform: uppercase;
+   	      margin-bottom: 0;
+   	      font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+   	      letter-spacing: 1px;	
+   		  margin-bottom: 16px;
+   		  color:#fff;
+   	      font-size: 36px;
+   	      line-height: 36px;
+   	      font-weight: bold;
+	 
+		  
+		  
+   	  }
+	  
+   	  a {
+   	      color: #fff;
+   		  letter-spacing: 1px;
+   		  font-weight: 900;
+   	      margin-bottom: 1rem;
+   		  margin-bottom: 0.1em;
+		  
+   		  &:visited {
+   	        color: #fff;
+   	      }
+   	      &:hover {
+   	        color: #ffF;
+   			//text-decoration: underline;
+   	      }
+   	      &:active {
+   	        color: #fff;
+   	      }
+   	    }  
+	  
+   	  p {
+   	    font-size: 0.9em;
+   	    font-style: normal;
+   	    text-transform: none;
+   		color: #fff;
+   		line-height: 1.3em;
+   		font-family: "Open Sans", sans-serif;
+   	  }
+	  
+     }
+ 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
 
 
 	 	    .pub__info {

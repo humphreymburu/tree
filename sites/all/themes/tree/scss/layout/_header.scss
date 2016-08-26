@@ -1,6 +1,6 @@
 // Non-modular or client styles for .l-header region.
   $small-screen: 768px;
-  $medium-screen: 1280px;
+  $medium-screen: 1024px;
   $large-screen: 1440px;
 
 // $screen: "only screen";
@@ -46,10 +46,10 @@
 .size-18 { font-size: 18px; }
 
 .logo {
-	margin-top: -14px;
-    display: block;
-    height: 95px;
-    width: 378px;
+	margin-top: -16px;
+	    display: block;
+	    height: 105px;
+	    width: 378px;
 }
 
 .top-bar-section ul li > a {
@@ -58,11 +58,16 @@
 
 
 .top-bar-section li a:not(.button) {
-	line-height: 40px;
 	border-radius: 3px;
 	background: transparent;
 	
 }
+
+.top-bar-section ul li:not(.button)  {
+    float: left;
+    padding-top: 0.599em;
+}
+
 
 .top-bar-section ul li:hover > a {
     color: #fff;
@@ -245,12 +250,12 @@ header {
 	 
 	
 	.button:hover {
-	      background: #5B8930;
+	      background: #414d55;
 	      color: white;
 	    }
 	
 	.button {
-	    background-color: #6c7a89;
+	    background-color: #7b919f;
 	    border-color: #56616c;
 		display: block;
 	    border-width: 1px;
@@ -547,6 +552,34 @@ padding: 10px 10px 12px 10px;
  }
  
  
+
+ .top-bar-section li a:not(.button) {
+ 	line-height: 35px;
+ 	border-radius: 3px;
+ 	background: transparent;
+	
+ }
+
+ .top-bar-section ul li:not(.button)  {
+     float: left;
+     padding-top: 0.599em;
+ }
+
+
+ .top-bar-section ul li:hover > a {
+     color: #fff;
+ }
+
+ .slides {
+ 	p {
+ 		    margin: 0;
+ 		    text-align: left;
+ 			font-size: 14px;
+ 	}
+ }
+
+
+
  
  
  

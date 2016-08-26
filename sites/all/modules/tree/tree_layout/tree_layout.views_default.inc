@@ -125,6 +125,7 @@ function tree_layout_views_default_views() {
   $handler->display->display_options['fields']['body']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['body']['alter']['text'] = '[body][title_1]';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '200',
@@ -137,9 +138,9 @@ function tree_layout_views_default_views() {
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<h2>[title]</h2>
 [body]
 
+
+
 ';
-  $handler->display->display_options['fields']['nothing']['element_type'] = 'h2';
-  $handler->display->display_options['fields']['nothing']['element_class'] = 'field-caption';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_wrapper_class'] = 'field-container';
@@ -187,6 +188,8 @@ function tree_layout_views_default_views() {
     t('[body][title_1]'),
     t('<h2>[title]</h2>
 [body]
+
+
 
 '),
     t('hero_slider'),
