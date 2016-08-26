@@ -1046,11 +1046,10 @@ li.isotope-element.nine_item {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     position: absolute;
     padding: 34px 32px 34px 32px;
-    padding: 5rem 3rem;
     left: 3rem;
   }
 
-  /* line 2619, ../scss/_variables.scss */
+  /* line 2618, ../scss/_variables.scss */
   .field-container h2 {
     text-transform: uppercase;
     margin-bottom: 0;
@@ -1062,7 +1061,7 @@ li.isotope-element.nine_item {
     line-height: 36px;
     font-weight: bold;
   }
-  /* line 2634, ../scss/_variables.scss */
+  /* line 2633, ../scss/_variables.scss */
   .field-container a {
     color: #fff;
     letter-spacing: 1px;
@@ -1070,19 +1069,19 @@ li.isotope-element.nine_item {
     margin-bottom: 1rem;
     margin-bottom: 0.1em;
   }
-  /* line 2641, ../scss/_variables.scss */
+  /* line 2640, ../scss/_variables.scss */
   .field-container a:visited {
     color: #fff;
   }
-  /* line 2644, ../scss/_variables.scss */
+  /* line 2643, ../scss/_variables.scss */
   .field-container a:hover {
     color: #ffF;
   }
-  /* line 2648, ../scss/_variables.scss */
+  /* line 2647, ../scss/_variables.scss */
   .field-container a:active {
     color: #fff;
   }
-  /* line 2653, ../scss/_variables.scss */
+  /* line 2652, ../scss/_variables.scss */
   .field-container p {
     font-size: 0.9em;
     font-style: normal;
@@ -1092,17 +1091,17 @@ li.isotope-element.nine_item {
     font-family: "Open Sans", sans-serif;
   }
 
-  /* line 2675, ../scss/_variables.scss */
+  /* line 2674, ../scss/_variables.scss */
   .pub__info {
     padding: 10px 10px calc(42.3px);
   }
 
-  /* line 2680, ../scss/_variables.scss */
+  /* line 2679, ../scss/_variables.scss */
   .pub__info--state {
     display: inline-block;
   }
 
-  /* line 2687, ../scss/_variables.scss */
+  /* line 2686, ../scss/_variables.scss */
   .isotope-element {
     float: left;
     overflow: hidden;
@@ -1112,12 +1111,12 @@ li.isotope-element.nine_item {
     width: calc(100% / 3);
   }
 
-  /* line 2696, ../scss/_variables.scss */
+  /* line 2695, ../scss/_variables.scss */
   .res-block_content {
     padding: 18px;
   }
 
-  /* line 2705, ../scss/_variables.scss */
+  /* line 2704, ../scss/_variables.scss */
   .isotope-element.res {
     width: calc(100% / 2);
     height: 300px;
@@ -1129,12 +1128,12 @@ li.isotope-element.nine_item {
     background-color: white;
   }
 
-  /* line 2718, ../scss/_variables.scss */
+  /* line 2717, ../scss/_variables.scss */
   .content_type {
     padding: 40px 40px calc(42.3px);
   }
 
-  /* line 2723, ../scss/_variables.scss */
+  /* line 2722, ../scss/_variables.scss */
   .content_type h2 {
     font-size: 0.9em;
     line-height: 1.36364;
@@ -1143,12 +1142,12 @@ li.isotope-element.nine_item {
     text-transform: uppercase;
   }
 
-  /* line 2732, ../scss/_variables.scss */
+  /* line 2731, ../scss/_variables.scss */
   .content_types {
     padding: 40px 40px calc(42.3px);
   }
 
-  /* line 2737, ../scss/_variables.scss */
+  /* line 2736, ../scss/_variables.scss */
   .content_types h2 {
     font-size: 0.9em;
     line-height: 1.36364;
@@ -1157,7 +1156,7 @@ li.isotope-element.nine_item {
     text-transform: uppercase;
   }
 
-  /* line 2751, ../scss/_variables.scss */
+  /* line 2750, ../scss/_variables.scss */
   .isotope-element.pr {
     width: calc(100% * 1 / 4);
     float: left;
@@ -1169,33 +1168,33 @@ li.isotope-element.nine_item {
     height: 200px;
   }
 
-  /* line 2767, ../scss/_variables.scss */
+  /* line 2766, ../scss/_variables.scss */
   .isotope-grid-sizer,
   .isotope-element {
     display: block;
   }
-  /* line 2772, ../scss/_variables.scss */
+  /* line 2771, ../scss/_variables.scss */
   .isotope-grid-sizer .pack-header,
   .isotope-element .pack-header {
     padding: 170px 10px calc(20px);
     display: block;
   }
 
-  /* line 2787, ../scss/_variables.scss */
+  /* line 2786, ../scss/_variables.scss */
   li.isotope-element.one .pack-header {
     padding: 250px 10px calc(40px);
     height: 300px;
     display: block;
   }
 
-  /* line 2797, ../scss/_variables.scss */
+  /* line 2796, ../scss/_variables.scss */
   li.isotope-element.two .pack-header {
     padding: 250px 10px calc(40px);
     height: 300px;
     display: block;
   }
 
-  /* line 2804, ../scss/_variables.scss */
+  /* line 2803, ../scss/_variables.scss */
   .isotope-grid-sizer,
   .isotope-element.odd {
     width: 66.4%;
@@ -1208,14 +1207,14 @@ li.isotope-element.nine_item {
     background-color: white;
   }
 
-  /* line 2816, ../scss/_variables.scss */
+  /* line 2815, ../scss/_variables.scss */
   .isotope-gutter-sizer.odd img, .isotope-element.odd img {
     width: 100%;
     display: block;
     height: 510px;
   }
 
-  /* line 2822, ../scss/_variables.scss */
+  /* line 2821, ../scss/_variables.scss */
   .isotope-element.even {
     width: 33%;
     width: calc(100% / 3);
@@ -1228,7 +1227,7 @@ li.isotope-element.nine_item {
   }
 }
 @media only screen and (min-width: 90em) {
-  /* line 2843, ../scss/_variables.scss */
+  /* line 2842, ../scss/_variables.scss */
   .content_type h2 {
     font-size: 0.9em;
     line-height: 1.36364;
@@ -1237,7 +1236,7 @@ li.isotope-element.nine_item {
     text-transform: uppercase;
   }
 
-  /* line 2852, ../scss/_variables.scss */
+  /* line 2851, ../scss/_variables.scss */
   .content_type {
     bottom: 0;
     -moz-box-sizing: border-box;
@@ -1252,7 +1251,7 @@ li.isotope-element.nine_item {
     z-index: 1;
   }
 
-  /* line 2866, ../scss/_variables.scss */
+  /* line 2865, ../scss/_variables.scss */
   .content_types h2 {
     font-size: 0.9em;
     line-height: 1.36364;
@@ -1261,7 +1260,7 @@ li.isotope-element.nine_item {
     text-transform: uppercase;
   }
 
-  /* line 2875, ../scss/_variables.scss */
+  /* line 2874, ../scss/_variables.scss */
   .content_types {
     bottom: 0;
     -moz-box-sizing: border-box;
@@ -1276,12 +1275,12 @@ li.isotope-element.nine_item {
     z-index: 1000;
   }
 
-  /* line 2891, ../scss/_variables.scss */
+  /* line 2890, ../scss/_variables.scss */
   .isotope-gutter-sizer {
     width: 25%;
   }
 
-  /* line 2897, ../scss/_variables.scss */
+  /* line 2896, ../scss/_variables.scss */
   .isotope-element.res {
     width: calc(25%);
     height: 230px;
@@ -1293,7 +1292,7 @@ li.isotope-element.nine_item {
     background-color: white;
   }
 
-  /* line 2909, ../scss/_variables.scss */
+  /* line 2908, ../scss/_variables.scss */
   .isotope-element.odd {
     width: 33.3%;
     width: calc(100% / 3);
@@ -1306,7 +1305,7 @@ li.isotope-element.nine_item {
     background-color: white;
   }
 
-  /* line 2924, ../scss/_variables.scss */
+  /* line 2923, ../scss/_variables.scss */
   .isotope-element {
     float: left;
     overflow: hidden;
