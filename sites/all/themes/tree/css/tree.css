@@ -9458,6 +9458,18 @@ ul.isotope-options.clearfix {
   background-color: #8DB255;
 }
 
+/* line 383, ../scss/layout/_main.scss */
+.panel-pane.pane-entity-field-extra.pane-user-profile-tree-profile h3 {
+  display: none;
+}
+/* line 387, ../scss/layout/_main.scss */
+.panel-pane.pane-entity-field-extra.pane-user-profile-tree-profile .field {
+  font-family: inherit;
+  font-size: 0.95em;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
 /* line 9, ../scss/layout/_aside.scss */
 .radix-layouts-sidebar.panel-panel
 .sidebar .pane-title {
