@@ -20,7 +20,7 @@ function tree_about_panelizer_defaults() {
   $panelizer->no_blocks = FALSE;
   $panelizer->css_id = '';
   $panelizer->css = '';
-  $panelizer->pipeline = 'ipe';
+  $panelizer->pipeline = 'standard';
   $panelizer->contexts = array();
   $panelizer->relationships = array();
   $panelizer->access = array();
@@ -105,6 +105,61 @@ function tree_about_panelizer_defaults() {
     $display->content['new-120b62e4-d71d-4a8c-9a19-988118c8bf12'] = $pane;
     $display->panels['contentmain'][1] = 'new-120b62e4-d71d-4a8c-9a19-988118c8bf12';
     $pane = new stdClass();
+    $pane->pid = 'new-d719a30e-5d26-46fe-9658-8bdcf5a94157';
+    $pane->panel = 'footer';
+    $pane->type = 'views';
+    $pane->subtype = 'about';
+    $pane->shown = TRUE;
+    $pane->access = array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'entity_field_value:node:about_tree:field_status',
+          'settings' => array(
+            'field_status' => array(
+              'und' => array(
+                0 => array(
+                  'value' => '1',
+                ),
+              ),
+            ),
+            'field_status_value' => array(
+              0 => '1',
+            ),
+          ),
+          'context' => 'panelizer',
+          'not' => FALSE,
+        ),
+      ),
+    );
+    $pane->configuration = array(
+      'override_pager_settings' => 0,
+      'use_pager' => 1,
+      'nodes_per_page' => '10',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'page',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'd719a30e-5d26-46fe-9658-8bdcf5a94157';
+    $display->content['new-d719a30e-5d26-46fe-9658-8bdcf5a94157'] = $pane;
+    $display->panels['footer'][0] = 'new-d719a30e-5d26-46fe-9658-8bdcf5a94157';
+    $pane = new stdClass();
     $pane->pid = 'new-0a9e691e-d68b-407e-bfac-861dfefb6284';
     $pane->panel = 'header';
     $pane->type = 'entity_field';
@@ -137,6 +192,61 @@ function tree_about_panelizer_defaults() {
     $pane->uuid = '0a9e691e-d68b-407e-bfac-861dfefb6284';
     $display->content['new-0a9e691e-d68b-407e-bfac-861dfefb6284'] = $pane;
     $display->panels['header'][0] = 'new-0a9e691e-d68b-407e-bfac-861dfefb6284';
+    $pane = new stdClass();
+    $pane->pid = 'new-b6ef273d-8b56-4839-a6ad-4aa70e5df6ec';
+    $pane->panel = 'sidebar';
+    $pane->type = 'views';
+    $pane->subtype = 'about';
+    $pane->shown = TRUE;
+    $pane->access = array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'entity_field_value:node:about_tree:field_status',
+          'settings' => array(
+            'field_status' => array(
+              'und' => array(
+                0 => array(
+                  'value' => 1,
+                ),
+              ),
+            ),
+            'field_status_value' => array(
+              0 => 1,
+            ),
+          ),
+          'context' => 'panelizer',
+          'not' => FALSE,
+        ),
+      ),
+    );
+    $pane->configuration = array(
+      'override_pager_settings' => 0,
+      'use_pager' => 0,
+      'nodes_per_page' => '5',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'page_1',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'b6ef273d-8b56-4839-a6ad-4aa70e5df6ec';
+    $display->content['new-b6ef273d-8b56-4839-a6ad-4aa70e5df6ec'] = $pane;
+    $display->panels['sidebar'][0] = 'new-b6ef273d-8b56-4839-a6ad-4aa70e5df6ec';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $panelizer->display = $display;

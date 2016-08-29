@@ -101,18 +101,21 @@
 	
 
 		p {
-		    font-size: 14px;
+		    font-size: 0.66em;
 		    color: #efefef;
+			text-align: left;
+		    letter-spacing: 0.04em;
 		}
 		
 	.footer-first	{
 		
    	 a {
-   		 font-size: 12px;
+   		 font-size: 0.9em;
    		 color: #fff;	
 		 font-weight: 600;
 		     padding-top: 5px;
-		     display: block; 
+		     display: block;
+			 letter-spacing: 0.04em; 
    	 }
 	 
    	 a:hover{
@@ -174,7 +177,7 @@
    
     .footer_wrapper .contact i {
       position: absolute;
-	  background-color: #7b919f;
+	  background-color: #7A942E;
       color: #fff;
       font-size: 1.5rem;
       border-radius: 50%;
@@ -201,11 +204,13 @@
   
   
   .footer_wrapper h2 {
-	  font-size: 0.99em;
+      letter-spacing: .5px;
+      font-size: .875em;
 	  font-weight: 600;
       color: #efefef;
       text-transform: uppercase;
 	  font-family: "Source Sans Pro", Arial, sans-serif;
+
   }
   
   .footer_wrapper .footer-links  {
@@ -225,12 +230,14 @@
 	  
 	  a {
 	  
-      font-size: 0.713em;
+     font-size: 0.66em;
       display: inline-block;
       line-height: 30px;
 	  color: #efefef;
 	  float: left;
 	  list-style: none;
+      letter-spacing: 0.04em;
+	
       } 
 	  
 	   a:visited, a:hover, a:active, a:focus {

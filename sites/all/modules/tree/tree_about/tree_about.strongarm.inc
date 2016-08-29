@@ -98,6 +98,15 @@ function tree_about_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'email_plain' => array(
+        'custom_settings' => FALSE,
+      ),
+      'email_html' => array(
+        'custom_settings' => FALSE,
+      ),
+      'email_textalt' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -112,6 +121,9 @@ function tree_about_strongarm() {
         ),
         'redirect' => array(
           'weight' => '4',
+        ),
+        'locations' => array(
+          'weight' => '30',
         ),
       ),
       'display' => array(),
@@ -174,16 +186,11 @@ function tree_about_strongarm() {
     'status' => 1,
     'view modes' => array(
       'page_manager' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'default' => array(
         'status' => 1,
         'default' => 1,
-        'choice' => 0,
+        'choice' => 1,
       ),
-      'full' => array(
+      'default' => array(
         'status' => 1,
         'default' => 1,
         'choice' => 1,
@@ -191,32 +198,12 @@ function tree_about_strongarm() {
       'teaser' => array(
         'status' => 1,
         'default' => 1,
-        'choice' => 1,
-      ),
-      'rss' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'ical' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'diff_standard' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'token' => array(
-        'status' => 0,
-        'default' => 0,
         'choice' => 0,
       ),
       'search_result' => array(
         'status' => 1,
         'default' => 1,
-        'choice' => 1,
+        'choice' => 0,
       ),
     ),
   );

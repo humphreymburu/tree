@@ -158,7 +158,7 @@ function tree_preprocess_views_view(&$variables) {
       ));
   }  
 
-  if ($view->name == 'staff') {
+  if ($view->name == 'staff_list') {
     //add needed javascript
        drupal_add_js(drupal_get_path('theme', 'tree') . '/js/grids/profile.js', array(
         'type' => 'file',

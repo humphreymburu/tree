@@ -1405,7 +1405,7 @@ img, object, embed {
 	margin: 0;
     padding: 0;
 	background-color: white;
-	height: 200px;
+	height: 250px;
 }
 
 //Events Packery page
@@ -1601,7 +1601,6 @@ h5.title-one::before {
 }
 
 .title-block {
-	 margin-top: 4.5rem;
 	     font-weight: 700;
 	     font-size: 1.1rem;
 	     line-height: 1.16666667;
@@ -1623,9 +1622,17 @@ h5.title-one::before {
 	line-height: 1.16666667;
    
     }
+	
+	
 } 
 
- 
+h5.title-block {
+    font-size: 1.5rem;
+    line-height: 1.16666667;
+    margin: 0 0 35px 0;
+    font-weight: 600;
+	color: #fff;
+   } 
  
  
  
@@ -1740,17 +1747,17 @@ h5.title-one::before {
 
  
  .pack-header { 
-     bottom: 0;
-     -moz-box-sizing: border-box;
-     box-sizing: border-box;
-     color: #fff;
-     left: 0;
-     background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.40) 100%);
-     background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 0.40) 100%);
-     position: absolute;
-     width: 100%;
-     z-index: 1;
-	 padding: 155px 20px calc(42.3px);
+	 bottom: 0;
+	 -moz-box-sizing: border-box;
+	 box-sizing: border-box;
+	 color: #fff;
+	 left: 0;
+	 background: -webkit-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.64) 100%);
+	 background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 0.64) 100%);
+	 padding: 20px;
+	 position: absolute;
+	 width: 100%;
+	 z-index: 1;
 	
  
 	
@@ -1772,10 +1779,14 @@ h5.title-one::before {
 
 	 h6 {
 	 	line-height: 1.36364;
-	 	font-weight: 400;
+	 	font-weight: 700;
 	 	color: white;
 		font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 	 	
+	 }
+	 
+	 a:hover, a:focus {
+	   color: #fff;
 	 }
 
 	 span {
@@ -2755,7 +2766,7 @@ h5.title-one::before {
 	 	margin: 0;
 	     padding: 0;
 	 	background-color: white;
-		height: 200px;
+		height: 250px;
 	 }
 	 
 	
