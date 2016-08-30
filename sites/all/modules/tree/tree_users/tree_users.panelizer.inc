@@ -89,7 +89,7 @@ function tree_users_panelizer_defaults() {
       'view_mode' => 'full',
       'context' => 'panelizer',
       'override_title' => 1,
-      'override_title_text' => 'More Information',
+      'override_title_text' => 'Biography',
       'override_title_heading' => 'h2',
     );
     $pane->cache = array();

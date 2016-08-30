@@ -45,7 +45,7 @@ function tree_users_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'redirect' => array(
-          'weight' => '6',
+          'weight' => '7',
         ),
       ),
       'display' => array(),
@@ -176,7 +176,7 @@ function tree_users_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'realname_pattern';
-  $strongarm->value = '[user:profile-tree-profile:field_first_name][user:profile-tree-profile:field_last_name]';
+  $strongarm->value = '[user:profile-tree-profile:field_first_name] [user:profile-tree-profile:field_last_name]';
   $export['realname_pattern'] = $strongarm;
 
   $strongarm = new stdClass();

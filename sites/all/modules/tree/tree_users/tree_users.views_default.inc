@@ -136,10 +136,14 @@ function tree_users_views_default_views() {
   $handler->display->display_options['fields']['name']['alter']['path'] = '[name]';
   $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['name']['element_type'] = 'h6';
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['name']['element_wrapper_type'] = 'div';
-  $handler->display->display_options['fields']['name']['element_wrapper_class'] = 'pack-header';
+  /* Field: Profile: User uid */
+  $handler->display->display_options['fields']['user']['id'] = 'user';
+  $handler->display->display_options['fields']['user']['table'] = 'profile';
+  $handler->display->display_options['fields']['user']['field'] = 'user';
+  $handler->display->display_options['fields']['user']['relationship'] = 'profile';
+  $handler->display->display_options['fields']['user']['label'] = '';
+  $handler->display->display_options['fields']['user']['element_label_colon'] = FALSE;
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
@@ -147,8 +151,11 @@ function tree_users_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '[name] ';
   $handler->display->display_options['fields']['nothing']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['nothing']['alter']['path'] = '[name]';
+  $handler->display->display_options['fields']['nothing']['alter']['path'] = 'user/[user]';
+  $handler->display->display_options['fields']['nothing']['element_type'] = 'h6';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['nothing']['element_wrapper_class'] = 'pack-header';
   /* Field: User: Picture */
   $handler->display->display_options['fields']['picture']['id'] = 'picture';
   $handler->display->display_options['fields']['picture']['table'] = 'users';
@@ -295,6 +302,8 @@ function tree_users_views_default_views() {
     t('Profile'),
     t('Taxonomy term entity referenced from field_job_categories'),
     t('[field_first_name]&nbsp;[field_last_name] '),
+    t('.'),
+    t(','),
     t('[name] '),
     t('Select Profile Category'),
     t('Staff Categories'),
