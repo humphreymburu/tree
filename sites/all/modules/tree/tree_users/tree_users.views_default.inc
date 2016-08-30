@@ -143,6 +143,7 @@ function tree_users_views_default_views() {
   $handler->display->display_options['fields']['user']['field'] = 'user';
   $handler->display->display_options['fields']['user']['relationship'] = 'profile';
   $handler->display->display_options['fields']['user']['label'] = '';
+  $handler->display->display_options['fields']['user']['exclude'] = TRUE;
   $handler->display->display_options['fields']['user']['element_label_colon'] = FALSE;
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
