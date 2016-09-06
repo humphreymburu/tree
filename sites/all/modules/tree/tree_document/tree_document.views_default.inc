@@ -144,7 +144,7 @@ function tree_document_views_default_views() {
   $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'test2',
     'image_link' => 'content',
   );
   /* Field: Content: Title */
@@ -226,7 +226,7 @@ function tree_document_views_default_views() {
   $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'test2',
     'image_link' => 'content',
   );
   /* Field: Content: Title */
@@ -310,7 +310,7 @@ function tree_document_views_default_views() {
   $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'test2',
     'image_link' => 'content',
   );
   /* Field: Content: Title */
@@ -374,8 +374,8 @@ function tree_document_views_default_views() {
   $handler->display->display_options['filters']['tid']['hierarchy'] = 1;
   $handler->display->display_options['path'] = 'News/list';
 
-  /* Display: Publication List */
-  $handler = $view->new_display('panel_pane', 'Publication List', 'panel_pane_1');
+  /* Display: Pubs List */
+  $handler = $view->new_display('panel_pane', 'Pubs List', 'panel_pane_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Publications';
   $handler->display->display_options['defaults']['query'] = FALSE;
@@ -498,7 +498,7 @@ function tree_document_views_default_views() {
 '),
     t('list'),
     t('News'),
-    t('Publication List'),
+    t('Pubs List'),
     t('Publications'),
     t('Taxonomy term entity referenced from field_document_type'),
     t('publication list'),
