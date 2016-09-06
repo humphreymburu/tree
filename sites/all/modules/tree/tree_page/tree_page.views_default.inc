@@ -62,10 +62,9 @@ function tree_page_views_default_views() {
     'tree_event' => 'tree_event',
   );
 
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page');
+  /* Display: page */
+  $handler = $view->new_display('page', 'page', 'page');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Education';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -116,7 +115,7 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_theme_photo']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_theme_photo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_theme_photo']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'test2',
     'image_link' => 'content',
   );
   /* Field: Content: Photo */
@@ -124,10 +123,11 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_photo']['table'] = 'field_data_field_photo';
   $handler->display->display_options['fields']['field_photo']['field'] = 'field_photo';
   $handler->display->display_options['fields']['field_photo']['label'] = '';
+  $handler->display->display_options['fields']['field_photo']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_photo']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_photo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_photo']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'test2',
     'image_link' => '',
   );
   /* Field: Global: Custom text */
@@ -271,7 +271,7 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_theme_photo']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_theme_photo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_theme_photo']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'test2',
     'image_link' => 'content',
   );
   /* Field: Global: Custom text */
@@ -327,8 +327,7 @@ function tree_page_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('Page'),
-    t('Education'),
+    t('page'),
     t('Taxonomy term entity referenced from field_type_of_theme'),
     t('<h5 class="title-one">[field_education_category]</h5>
 <h3 class="title-block">[title]</h3> '),
@@ -893,7 +892,6 @@ function tree_page_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Research';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'isotope_grid';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -940,8 +938,8 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_theme_photo']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_theme_photo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_theme_photo']['settings'] = array(
-    'image_style' => '',
-    'image_link' => '',
+    'image_style' => 'test2',
+    'image_link' => 'content',
   );
   /* Field: Content: Photo */
   $handler->display->display_options['fields']['field_photo']['id'] = 'field_photo';
@@ -951,8 +949,8 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_photo']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_photo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_photo']['settings'] = array(
-    'image_style' => '',
-    'image_link' => '',
+    'image_style' => 'test2',
+    'image_link' => 'content',
   );
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
@@ -988,7 +986,7 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_pic']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_pic']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_researcher_pic']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'test2',
     'image_link' => '',
   );
   $handler->display->display_options['defaults']['sorts'] = FALSE;
@@ -1078,7 +1076,7 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_theme_photo']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_theme_photo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_theme_photo']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'test2',
     'image_link' => 'content',
   );
   /* Field: Content: Researcher Bio */
@@ -1204,7 +1202,7 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_pic']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_pic']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_researcher_pic']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'test2',
     'image_link' => 'content',
   );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
@@ -1241,7 +1239,6 @@ function tree_page_views_default_views() {
     t('next ›'),
     t('last »'),
     t('Page'),
-    t('Research'),
     t('Taxonomy term entity referenced from field_type_of_theme'),
     t('<h3 class="title-block">[title]</h3> '),
     t('<div class="res-container"><a href="researcher_list" class="res_button">Meet Our Researchers</a></div>'),
@@ -1305,7 +1302,6 @@ function tree_page_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Resources';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'isotope_grid';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -1378,7 +1374,7 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_document_photo']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_document_photo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_document_photo']['settings'] = array(
-    'image_style' => 'large',
+    'image_style' => 'test2',
     'image_link' => '',
   );
   /* Field: Content: Image */
@@ -1389,7 +1385,7 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'test2',
     'image_link' => '',
   );
   /* Field: Global: Custom text */
@@ -1507,7 +1503,6 @@ function tree_page_views_default_views() {
     t('last »'),
     t('Taxonomy term entity referenced from field_type_of_news'),
     t('Page'),
-    t('Resources'),
     t('<h3 class="title-block">[field_document_type]</h3>
 <h3 class="title-block">[field_type_of_news]</h3>
 '),
@@ -1569,7 +1564,6 @@ function tree_page_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Treatment';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'isotope_grid';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -1596,12 +1590,31 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: event photo */
+  $handler->display->display_options['fields']['field_event_photo_1']['id'] = 'field_event_photo_1';
+  $handler->display->display_options['fields']['field_event_photo_1']['table'] = 'field_data_field_event_photo';
+  $handler->display->display_options['fields']['field_event_photo_1']['field'] = 'field_event_photo';
+  $handler->display->display_options['fields']['field_event_photo_1']['label'] = '';
+  $handler->display->display_options['fields']['field_event_photo_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_event_photo_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_event_photo_1']['alter']['text'] = '>&nbsp;Browse Our Events';
+  $handler->display->display_options['fields']['field_event_photo_1']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_event_photo_1']['alter']['path'] = '/Event';
+  $handler->display->display_options['fields']['field_event_photo_1']['element_type'] = 'h4';
+  $handler->display->display_options['fields']['field_event_photo_1']['element_class'] = 'title-one';
+  $handler->display->display_options['fields']['field_event_photo_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_photo_1']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_event_photo_1']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
   $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_1']['label'] = '';
-  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<h3 class="title-block">[title]</h3> ';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '[field_event_photo_1]
+<h3 class="title-block">[title]</h3> ';
   $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing_1']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing_1']['element_wrapper_class'] = 'title-block-content';
@@ -1614,7 +1627,7 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_theme_photo']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_theme_photo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_theme_photo']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'test2',
     'image_link' => 'content',
   );
   /* Field: Content: Photo */
@@ -1625,45 +1638,25 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_photo']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_photo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_photo']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'test2',
     'image_link' => '',
-  );
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="res-container"><a href="Event" class="res_button">Browse Events</a></div>';
-  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Field: Content: Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['body']['alter']['text'] = '[nothing]';
-  $handler->display->display_options['fields']['body']['element_type'] = 'h3';
-  $handler->display->display_options['fields']['body']['element_class'] = 'res-block_title ';
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['body']['element_wrapper_type'] = 'div';
-  $handler->display->display_options['fields']['body']['element_wrapper_class'] = 'res-block_content';
-  $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
-  $handler->display->display_options['fields']['body']['settings'] = array(
-    'trim_length' => '5',
   );
   /* Field: Content: event photo */
   $handler->display->display_options['fields']['field_event_photo']['id'] = 'field_event_photo';
   $handler->display->display_options['fields']['field_event_photo']['table'] = 'field_data_field_event_photo';
   $handler->display->display_options['fields']['field_event_photo']['field'] = 'field_event_photo';
   $handler->display->display_options['fields']['field_event_photo']['label'] = '';
+  $handler->display->display_options['fields']['field_event_photo']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_event_photo']['alter']['text'] = '[field_event_photo]';
   $handler->display->display_options['fields']['field_event_photo']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['field_event_photo']['alter']['path'] = 'Event';
   $handler->display->display_options['fields']['field_event_photo']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_photo']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_event_photo']['element_wrapper_class'] = 'test';
+  $handler->display->display_options['fields']['field_event_photo']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_event_photo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_event_photo']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'test2',
     'image_link' => '',
   );
   $handler->display->display_options['defaults']['sorts'] = FALSE;
@@ -1675,6 +1668,10 @@ function tree_page_views_default_views() {
   $handler->display->display_options['sorts']['sticky']['id'] = 'sticky';
   $handler->display->display_options['sorts']['sticky']['table'] = 'node';
   $handler->display->display_options['sorts']['sticky']['field'] = 'sticky';
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -1746,7 +1743,7 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'test2',
     'image_link' => 'content',
   );
   $handler->display->display_options['defaults']['sorts'] = FALSE;
@@ -1845,11 +1842,11 @@ function tree_page_views_default_views() {
     t('next ›'),
     t('last »'),
     t('Page'),
-    t('Treatment'),
     t('Taxonomy term entity referenced from field_type_of_theme'),
-    t('<h3 class="title-block">[title]</h3> '),
-    t('<div class="res-container"><a href="Event" class="res_button">Browse Events</a></div>'),
-    t('[nothing]'),
+    t('>&nbsp;Browse Our Events'),
+    t('[field_event_photo_1]
+<h3 class="title-block">[title]</h3> '),
+    t('[field_event_photo]'),
     t('Success Stories'),
     t('Taxonomy term entity referenced from field_type_of_news'),
     t('<h3 class="title-block">[title]</h3>'),

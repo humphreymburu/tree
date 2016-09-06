@@ -396,5 +396,65 @@ function THEMENAME_preprocess_views_view_fields(&$variables) {
 //  }
 //}
 
+/*
+ * Implements hook_views_pre_render()
+ */
+function tree_views_pre_render(&$view) {
+  switch ($view->name) {
+    //Change the Photo style and row class depending on the number of results
+   
+	case 'education';
+	
+      foreach($view->result as $value=>$result) 
+       { 
+		
+		   if($value === 0) {
+		   //dpm($value);
+		    $result->field_field_theme_photo[0]['rendered']['#image_style']= 'test';
+	
+		//$view->field['field_theme_photo']->options['settings']['image_style'] = 'test';
+		 
+		 //$result->field_field_theme_photo[]['rendered']['#image_style']= 'test2';
+		      } 
+      }
+	  
+	  break;
+	  
+	  
+  	case 'research';
+	
+        foreach($view->result as $value=>$result) 
+         { 
+		
+  		   if($value === 0) {
+  		   //dpm($value);
+  		    $result->field_field_theme_photo[0]['rendered']['#image_style']= 'test';
+  		   } 
+        }
+	  
+  	  break;
+  
+  
+  
+  
+    	case 'treatment';
+	
+          foreach($view->result as $value=>$result) 
+           { 
+    		   if($value === 0) {
+    		   //dpm($value);
+    		    $result->field_field_theme_photo[0]['rendered']['#image_style']= 'test';
+				$result->field_field_event_photo[0]['rendered']['#image_style']= 'test';
+				$result->ffield_field_photo[0]['rendered']['#image_style']= 'test';
+    		   } 
+          }
+	  
+    	  break;
+		  
+		 
+  
+
+  }
+}
 
 
