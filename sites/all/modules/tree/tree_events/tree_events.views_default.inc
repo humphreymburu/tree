@@ -99,7 +99,7 @@ function tree_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_photo']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_event_photo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_event_photo']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'test2',
     'image_link' => 'content',
   );
   /* Field: Content: Date */
