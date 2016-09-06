@@ -921,12 +921,33 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'pack-header';
+  /* Field: Content: Researcher Bio */
+  $handler->display->display_options['fields']['field_researcher_bio']['id'] = 'field_researcher_bio';
+  $handler->display->display_options['fields']['field_researcher_bio']['table'] = 'field_data_field_researcher_bio';
+  $handler->display->display_options['fields']['field_researcher_bio']['field'] = 'field_researcher_bio';
+  $handler->display->display_options['fields']['field_researcher_bio']['label'] = '';
+  $handler->display->display_options['fields']['field_researcher_bio']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_researcher_bio']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_researcher_bio']['alter']['text'] = '<h5 class="title-one">Meet Our Researchers</h5>';
+  $handler->display->display_options['fields']['field_researcher_bio']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_researcher_bio']['alter']['path'] = '/research_list';
+  $handler->display->display_options['fields']['field_researcher_bio']['element_type'] = 'h3';
+  $handler->display->display_options['fields']['field_researcher_bio']['element_class'] = 'res-block_title ';
+  $handler->display->display_options['fields']['field_researcher_bio']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_researcher_bio']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_researcher_bio']['element_wrapper_class'] = 'res-block_content';
+  $handler->display->display_options['fields']['field_researcher_bio']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['field_researcher_bio']['settings'] = array(
+    'trim_length' => '5',
+  );
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
   $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_1']['label'] = '';
-  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<h3 class="title-block">[title]</h3> ';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '[field_researcher_bio]
+<h3 class="title-block">[title]</h3> 
+';
   $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing_1']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing_1']['element_wrapper_class'] = 'title-block-content';
@@ -951,30 +972,6 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_photo']['settings'] = array(
     'image_style' => 'test2',
     'image_link' => 'content',
-  );
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="res-container"><a href="researcher_list" class="res_button">Meet Our Researchers</a></div>';
-  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Field: Content: Researcher Bio */
-  $handler->display->display_options['fields']['field_researcher_bio']['id'] = 'field_researcher_bio';
-  $handler->display->display_options['fields']['field_researcher_bio']['table'] = 'field_data_field_researcher_bio';
-  $handler->display->display_options['fields']['field_researcher_bio']['field'] = 'field_researcher_bio';
-  $handler->display->display_options['fields']['field_researcher_bio']['label'] = '';
-  $handler->display->display_options['fields']['field_researcher_bio']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_researcher_bio']['alter']['text'] = '[nothing]';
-  $handler->display->display_options['fields']['field_researcher_bio']['element_type'] = 'h3';
-  $handler->display->display_options['fields']['field_researcher_bio']['element_class'] = 'res-block_title ';
-  $handler->display->display_options['fields']['field_researcher_bio']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_researcher_bio']['element_wrapper_type'] = 'div';
-  $handler->display->display_options['fields']['field_researcher_bio']['element_wrapper_class'] = 'res-block_content';
-  $handler->display->display_options['fields']['field_researcher_bio']['type'] = 'text_summary_or_trimmed';
-  $handler->display->display_options['fields']['field_researcher_bio']['settings'] = array(
-    'trim_length' => '5',
   );
   /* Field: Content: Photo Researcher */
   $handler->display->display_options['fields']['field_researcher_pic']['id'] = 'field_researcher_pic';
@@ -1240,11 +1237,13 @@ function tree_page_views_default_views() {
     t('last »'),
     t('Page'),
     t('Taxonomy term entity referenced from field_type_of_theme'),
-    t('<h3 class="title-block">[title]</h3> '),
-    t('<div class="res-container"><a href="researcher_list" class="res_button">Meet Our Researchers</a></div>'),
-    t('[nothing]'),
+    t('<h5 class="title-one">Meet Our Researchers</h5>'),
+    t('[field_researcher_bio]
+<h3 class="title-block">[title]</h3> 
+'),
     t('More Research'),
     t('<h3 class="title-block"> [title] </h3>'),
+    t('<div class="res-container"><a href="researcher_list" class="res_button">Meet Our Researchers</a></div>'),
     t('Research Publications'),
     t('View panes'),
     t('Research Publications list'),
