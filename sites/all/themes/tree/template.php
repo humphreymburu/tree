@@ -445,13 +445,14 @@ function tree_views_pre_render(&$view) {
     		   //dpm($value);
     		    $result->field_field_theme_photo[0]['rendered']['#image_style']= 'test';
 				$result->field_field_event_photo[0]['rendered']['#image_style']= 'test';
-				$result->ffield_field_photo[0]['rendered']['#image_style']= 'test';
+				$result->field_field_photo[0]['rendered']['#image_style']= 'test';
     		   } 
           }
 	  
     	  break;
 		  
-		 
+		
+	     	
   
 
   }

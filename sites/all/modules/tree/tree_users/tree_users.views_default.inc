@@ -157,12 +157,18 @@ function tree_users_views_default_views() {
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_wrapper_class'] = 'pack-header';
-  /* Field: User: Picture */
-  $handler->display->display_options['fields']['picture']['id'] = 'picture';
-  $handler->display->display_options['fields']['picture']['table'] = 'users';
-  $handler->display->display_options['fields']['picture']['field'] = 'picture';
-  $handler->display->display_options['fields']['picture']['label'] = '';
-  $handler->display->display_options['fields']['picture']['element_label_colon'] = FALSE;
+  /* Field: Profile: profile pic */
+  $handler->display->display_options['fields']['field_profile_pic']['id'] = 'field_profile_pic';
+  $handler->display->display_options['fields']['field_profile_pic']['table'] = 'field_data_field_profile_pic';
+  $handler->display->display_options['fields']['field_profile_pic']['field'] = 'field_profile_pic';
+  $handler->display->display_options['fields']['field_profile_pic']['relationship'] = 'profile';
+  $handler->display->display_options['fields']['field_profile_pic']['label'] = '';
+  $handler->display->display_options['fields']['field_profile_pic']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_profile_pic']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_profile_pic']['settings'] = array(
+    'image_style' => 'staff',
+    'image_link' => 'content',
+  );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: User: Active */
