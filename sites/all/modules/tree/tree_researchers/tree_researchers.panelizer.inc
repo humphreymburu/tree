@@ -162,6 +162,25 @@ function tree_researchers_panelizer_defaults() {
     $pane->uuid = 'b73b4f32-8986-4e90-ab5d-56df00973ab1';
     $display->content['new-b73b4f32-8986-4e90-ab5d-56df00973ab1'] = $pane;
     $display->panels['sidebar'][0] = 'new-b73b4f32-8986-4e90-ab5d-56df00973ab1';
+    $pane = new stdClass();
+    $pane->pid = 'new-a913aaf1-3637-4e94-8780-8d99b51be7a8';
+    $pane->panel = 'sidebar';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'research-panel_pane_2';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'a913aaf1-3637-4e94-8780-8d99b51be7a8';
+    $display->content['new-a913aaf1-3637-4e94-8780-8d99b51be7a8'] = $pane;
+    $display->panels['sidebar'][1] = 'new-a913aaf1-3637-4e94-8780-8d99b51be7a8';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-7c1e2b94-d81a-46e8-8dfd-f3546120a968';
   $panelizer->display = $display;

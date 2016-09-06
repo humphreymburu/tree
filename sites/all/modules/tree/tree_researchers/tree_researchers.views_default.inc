@@ -97,7 +97,7 @@ function tree_researchers_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_pic']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_pic']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_researcher_pic']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'test2',
     'image_link' => 'content',
   );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;

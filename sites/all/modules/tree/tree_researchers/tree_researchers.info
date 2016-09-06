@@ -42,4 +42,4 @@ features[variable][] = node_preview_tree_researchers
 features[variable][] = node_submitted_tree_researchers
 features[variable][] = panelizer_defaults_node_tree_researchers
 features[views_view][] = researchers
-mtime = 1471366643
+mtime = 1473169538
