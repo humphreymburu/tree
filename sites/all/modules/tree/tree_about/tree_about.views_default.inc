@@ -105,7 +105,7 @@ function tree_about_views_default_views() {
   $handler->display->display_options['fields']['field_about_photo']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_about_photo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_about_photo']['settings'] = array(
-    'image_style' => 'large',
+    'image_style' => 'test2',
     'image_link' => '',
   );
   /* Field: Content: About Info */
@@ -142,7 +142,7 @@ function tree_about_views_default_views() {
   $handler->display->display_options['fields']['field_about_photo_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_about_photo_1']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_about_photo_1']['settings'] = array(
-    'image_style' => 'large',
+    'image_style' => 'test2',
     'image_link' => '',
   );
   /* Field: Content: Other Info */
@@ -176,7 +176,7 @@ function tree_about_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_pic']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_pic']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_researcher_pic']['settings'] = array(
-    'image_style' => 'large',
+    'image_style' => 'test2',
     'image_link' => '',
   );
   /* Field: Content: Researcher Bio */
