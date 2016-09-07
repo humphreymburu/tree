@@ -473,6 +473,85 @@ function tree_document_views_default_views() {
   $handler->display->display_options['filters']['tid']['vocabulary'] = 'tree_document_type';
   $handler->display->display_options['filters']['tid']['hierarchy'] = 1;
   $handler->display->display_options['pane_title'] = 'Posters and Presentations list';
+
+  /* Display: Latest Blog Post */
+  $handler = $view->new_display('block', 'Latest Blog Post', 'block_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Latest Blog Post';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_1']['label'] = '';
+  $handler->display->display_options['fields']['nothing_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = ' >> More';
+  $handler->display->display_options['fields']['nothing_1']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['nothing_1']['alter']['path'] = '/[title]';
+  $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
+  /* Field: Content: News Body */
+  $handler->display->display_options['fields']['field_news_body']['id'] = 'field_news_body';
+  $handler->display->display_options['fields']['field_news_body']['table'] = 'field_data_field_news_body';
+  $handler->display->display_options['fields']['field_news_body']['field'] = 'field_news_body';
+  $handler->display->display_options['fields']['field_news_body']['label'] = '';
+  $handler->display->display_options['fields']['field_news_body']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_news_body']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_news_body']['alter']['text'] = '[field_news_body][nothing_1]';
+  $handler->display->display_options['fields']['field_news_body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_news_body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['field_news_body']['settings'] = array(
+    'trim_length' => '250',
+  );
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_news_body]';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'tree_news' => 'tree_news',
+  );
+  /* Filter criterion: Content: Has taxonomy term */
+  $handler->display->display_options['filters']['tid']['id'] = 'tid';
+  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['value'] = array(
+    10 => '10',
+  );
+  $handler->display->display_options['filters']['tid']['type'] = 'select';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'news_category';
+  $handler->display->display_options['filters']['tid']['hierarchy'] = 1;
   $translatables['resources_pubs'] = array(
     t('Master'),
     t('Success Stories'),
@@ -506,6 +585,10 @@ function tree_document_views_default_views() {
     t('Posters and Presentations List'),
     t('Posters and Presentations'),
     t('Posters and Presentations list'),
+    t('Latest Blog Post'),
+    t(' >> More'),
+    t('[field_news_body][nothing_1]'),
+    t('[field_news_body]'),
   );
   $export['resources_pubs'] = $view;
 
