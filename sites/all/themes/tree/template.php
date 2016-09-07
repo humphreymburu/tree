@@ -470,8 +470,7 @@ function tree_views_pre_render(&$view) {
 			   } else {
 			   	  //$result->field_field_photo[0]['rendered']['#image_style']='home2';	
 			   }
-			    dpm($result);
-				  dpm($value); 
+			
             }
 	  
       	  break;
