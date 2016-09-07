@@ -38,12 +38,6 @@ function tree_layout_context_default_contexts() {
           'region' => 'footer_secondcolumn',
           'weight' => '-10',
         ),
-        'simplenews-27' => array(
-          'module' => 'simplenews',
-          'delta' => '27',
-          'region' => 'footer_thirdcolumn',
-          'weight' => '-10',
-        ),
         'block-3' => array(
           'module' => 'block',
           'delta' => '3',

@@ -408,8 +408,8 @@ function tree_views_pre_render(&$view) {
       foreach($view->result as $value=>$result) 
        { 
 		
+		 
 		   if($value === 0) {
-		   //dpm($value);
 		    $result->field_field_theme_photo[0]['rendered']['#image_style']= 'test';
 	
 		//$view->field['field_theme_photo']->options['settings']['image_style'] = 'test';
@@ -426,8 +426,8 @@ function tree_views_pre_render(&$view) {
         foreach($view->result as $value=>$result) 
          { 
 		
-  		   if($value === 0) {
-  		   //dpm($value);
+		 if($value === 0){
+  		
   		    $result->field_field_theme_photo[0]['rendered']['#image_style']= 'test';
   		   } 
         }
@@ -446,10 +446,35 @@ function tree_views_pre_render(&$view) {
     		    $result->field_field_theme_photo[0]['rendered']['#image_style']= 'test';
 				$result->field_field_event_photo[0]['rendered']['#image_style']= 'test';
 				$result->field_field_photo[0]['rendered']['#image_style']= 'test';
+				$result->field_field_image[0]['rendered']['#image_style']= 'test';
     		   } 
           }
 	  
     	  break;
+		  
+		  
+		  
+      	case 'tree';
+	
+            foreach($view->result as $value=>$result) 
+             { 
+				
+				
+      		   if($value === 0) {
+				$result->field_field_photo[0]['rendered']['#image_style']='home';
+				
+      		   } elseif($value === 5) {
+			   	$result->field_field_photo[0]['rendered']['#image_style']='home';	
+			   } elseif($value === 6) {
+			   	  $result->field_field_photo[0]['rendered']['#image_style']='home';	
+			   } else {
+			   	  //$result->field_field_photo[0]['rendered']['#image_style']='home2';	
+			   }
+			    dpm($result);
+				  dpm($value); 
+            }
+	  
+      	  break;
 		  
 		
 	     	

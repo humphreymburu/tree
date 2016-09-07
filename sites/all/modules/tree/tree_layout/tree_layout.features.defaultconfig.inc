@@ -36,10 +36,11 @@ function tree_layout_defaultconfig_default_fe_block_boxes() {
   $fe_block_boxes->machine_name = 'contacts';
   $fe_block_boxes->body = '<ul class="contact">
         <li><p><i class="step fi-marker size-18"></i>Kenyatta National Hospital
-UNITID Building Ground Floor,Nairobi, Kenya</p></li>
+UNITID Building<br/> Ground Floor<br/>Nairobi, &nbsp;<br/> Kenya</p></li>
         <li><p><i class="step fi-telephone size-18"></i>(254)/0731112512</p></li>
         <li><p><i class="step fi-mail size-18"></i>info@tree4health.org</p></li>
       </ul>
+
 ';
 
   $export['contacts'] = $fe_block_boxes;
@@ -49,14 +50,13 @@ UNITID Building Ground Floor,Nairobi, Kenya</p></li>
   $fe_block_boxes->format = 'panopoly_html_text';
   $fe_block_boxes->machine_name = 'other_links';
   $fe_block_boxes->body = '<ul class="footer-links">
-<li><a href="#">Donate</a></li>
-<li><a href="../get-involved">Get Involved</a></li>
-<li><a href="../mission-and-values">Our Mission</a></li>
-<li><a href="../researcher_list">Our Researchers</a></li>
-<li><a href="../contact_us">Contact Us</a></li>
+<li><a href="?q=mission-and-values">Our Mission</a></li>
+<li><a href="?q=researcher_list">Our Researchers</a></li>
 <li><a href="#">Staff</a></li>
+<li><a href="?q=get-involved">Get Involved</a></li>
+<li><a href="#">Donate</a></li>
+<li><a href="?q=contact_us">Contact Us</a></li>
 <ul/>
-
 
 
 ';

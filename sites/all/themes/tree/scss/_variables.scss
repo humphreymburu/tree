@@ -1465,6 +1465,7 @@ img, object, embed {
 }
 
 
+
 .isotope-element.odd_profile {
 	width: 33.3%;
     width: calc(100% / 3);
@@ -1584,8 +1585,7 @@ h5.title-one::before {
 	
 }
  
- 
- 
+
  
 .title-block-content {
 	    bottom: 0;
@@ -1618,9 +1618,9 @@ h5.title-one::before {
 
 .title-block {
 	     font-weight: 700;
-	     font-size: 1.1rem;
+	     font-size: 1.3rem;
 	     line-height: 1.16666667;
-	
+	     
 	
 	a {
 		color: #fff;
@@ -1846,11 +1846,11 @@ h5.title-block {
  position: absolute;
  width: 100%;
  z-index: 1;
- padding-bottom: 110px;
+ //padding-bottom: 110px;
  text-align: center;
  vertical-align: middle;
- background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.4) 100%);
-     background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0.4) 100%);
+ background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.2) 100%);
+     background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0.2) 100%);
 
 
 
@@ -2109,101 +2109,122 @@ h5.title-block {
  //homepage isotope elements css
  
  li.isotope-element.one_item {
-	width: calc(90% * 1 / 2);
- 	float: left;
+	 //width: calc(90% * 2);
+	 width: 100%;
+ 	 float: left;
      overflow: hidden;
      position: relative;
- 	margin: 0;
+ 	 margin: 0;
      padding: 0;
- 	background-color: white;
+ 	 background-color: white;
+	 display: none;
  }
 
 
  li.isotope-element.three_item {
- 	width: calc(90% / 3);
- 	height:300px;
+ 	width: calc(100%);
  	float: left;
      overflow: hidden;
      position: relative;
  	margin: 0;
      padding: 0;
  	background-color: white;
+	
  }
  
  li.isotope-element.two_item {
- 	width: calc(100% / 4);
- 	height:300px;
- 	float: left;
-     overflow: hidden;
-     position: relative;
- 	margin: 0;
-     padding: 0;
+ 
+    overflow: hidden;
+	
  	background-color: #89729e;
+	position: relative;
+	    margin-left: auto;
+	    margin-right: auto;
+	    top: 100%;
+	    width: 100%;
+	    //padding: 2.5em;
+
+	//padding-bottom:20%;
+    height: 0;
+    padding-top: 25%;
  }
  
  li.isotope-element.five_item {
- 	width: calc(100% / 4);
- 	height:300px;
- 	float: left;
      overflow: hidden;
-     position: relative;
- 	margin: 0;
-     padding: 0;
- 	background-color: #7A942E;
+	
+  	background-color: #7A942E;
+ 	position: relative;
+ 	    margin-left: auto;
+ 	    margin-right: auto;
+ 	    top: 100%;
+ 	    width: 100%;
+ 	    //padding: 2.5em;
+
+ 	//padding-bottom:20%;
+     height: 0;
+     padding-top: 25%;
  }
  
  li.isotope-element.four_item {
  	width: calc(99% / 3);
- 	height:300px;
+ 	//height:300px;
  	float: left;
      overflow: hidden;
      position: relative;
  	margin: 0;
-     padding: 0;
+	display:block;
  	background-color: white;
+	display: none;
  }
  
  
  li.isotope-element.six_item {
-	width: calc(84% * 1 / 2);
+	width: calc(100%);
  	float: left;
      overflow: hidden;
      position: relative;
  	margin: 0;
-     padding: 0;
+//height: 0;
+height:auto;
+    display:block;
  	background-color: white;
+	//display: none;
  }
  
  
  li.isotope-element.seven_item {
-	width: calc(90% * 1 / 2);
- 	float: left;
-     overflow: hidden;
-     position: relative;
- 	margin: 0;
-     padding: 0;
- 	background-color: white;
+ 	width: calc(100%);
+  	float: left;
+      overflow: hidden;
+      position: relative;
+  	margin: 0;
+ //height: 0;
+ height:auto;
+     display:none;
+  background-color: #fff;
+		display: none;
  }
  
  li.isotope-element.eight_item {
- 	width: calc(100% / 4);
- 	height:300px;
- 	float: left;
-     overflow: hidden;
-     position: relative;
- 	margin: 0;
-     padding: 0;
- 	background-color: #e29c45;
+ 	position: relative;
+ 	    margin-left: auto;
+ 	    margin-right: auto;
+ 	    top: 100%;
+ 	    width: 100%;
+     height: 0;
+     padding-top: 25%;
+	 background-color: #e29c45;
  }
  
  li.isotope-element.nine_item {
-	width: calc(60% * 1 / 2);
+	width: calc(100%);
  	float: left;
      overflow: hidden;
      position: relative;
  	margin: 0;
      padding: 0;
  	background-color: white;
+
  }
  
  
@@ -2455,13 +2476,13 @@ h5.title-block {
      width: 60px;
      z-index: 1;
      -webkit-transform: translate3d(0,0,0);
-	 left: 320px;
-	 bottom: 20px;
+	 left: 30px;
+	 top: 30px;
  }
  
- 
 
- 
+
+
  
  //publications
  
@@ -2489,7 +2510,7 @@ h5.title-block {
 
   a:hover, a:focus {
      color: #fff;
- 	 text-decoration: underline;
+ 	 text-decoration: none;
   }
 
   a:hover {
@@ -2498,6 +2519,7 @@ h5.title-block {
  
   a:active, a:hover {
       outline: 0;
+	   text-decoration: none;
   }
   
   a {
@@ -2605,6 +2627,146 @@ h5.title-block {
 
  @media #{$medium}  { 
 	 
+	 
+	 .isotope_desc {
+		 padding:20px 20px 30px 20px !important;
+		 //padding-bottom: 110px;
+		 
+		 h1 {
+		     margin-bottom: 120px;
+		 }
+	 }
+	 
+	 
+	 
+	 li.isotope-grid-sizer,
+	 li.isotope-element.one_item {
+		width: calc(100% / 2) !important;
+		//width: 63%;
+	 	float: left;
+	     overflow: hidden;
+	     position: relative;
+	 	margin: 0;
+	     //padding: 0;
+	 	background-color: white;
+      height: 0;
+	  display: block !important;
+        //padding-top: 27.50% !important;
+      }
+	 
+	 
+	  li.isotope-element.three_item {
+	  	width: calc(50% / 2) !important;
+	  	float: left;
+	      overflow: hidden;
+	      position: relative;
+	  	margin: 0;
+	      //padding: 0;
+		  height: 0;
+	  	background-color: white;
+		display: block !important;
+	  }
+	  li.isotope-element.two_item {
+	  	width: calc(50% / 2) !important;
+	  	float: left;
+	      overflow: hidden;
+	      position: relative !important;
+	  	margin: 0;
+	    
+		  height: 0;
+	  	background-color: #89729e;
+	
+	  }
+ 
+	  li.isotope-element.four_item {
+	  	width: calc(50% / 2) !important;
+	  	//height:300px;
+	  	float: left;
+	      overflow: hidden;
+	      position: relative;
+	  	margin: 0;
+	      //padding: 0;
+		  height: 0;
+		  display: block !important;
+	  	background-color: #89729e;
+	  }
+	  
+	  li.isotope-element.five_item {
+	  	width: calc(50% / 2) !important;
+	  	//height:300px;
+	  	float: left;
+	      overflow: hidden;
+	      position: relative;
+	      margin: 0;
+	      padding: 0;
+		  height: 0;
+	      background-color: #7A942E;
+		  display: block !important;
+	  }
+	 
+	 
+	  li.isotope-element.six_item {
+	 	width: calc(100% / 2) !important;
+	  	float: left;
+	      overflow: hidden;
+	      position: relative;
+	      margin: 0;
+		  height: 0;
+	  	  background-color: white;
+		  display: block !important;
+	  }
+ 
+ 
+	  li.isotope-element.seven_item {
+	 	width: calc(100% / 2) !important;
+	  	float: left;
+	      overflow: hidden;
+	      position: relative;
+	  	margin: 0;
+	      //padding: 0;
+		    height: 0;
+	  	background-color: white;
+			  display: block !important;
+	  }
+ 
+	  li.isotope-element.eight_item {
+	  	width: calc(100% / 4);
+	  	//height:300px;
+	  	float: left;
+	      overflow: hidden;
+	      position: relative;
+	  	margin: 0;
+		height: 0;
+	  	background-color: #e29c45;
+	  }
+ 
+	  li.isotope-element.nine_item {
+	 	width: calc(50% / 2);
+	  	float: left;
+	    overflow: hidden;
+	    position: relative;
+	  	margin: 0;
+		height: 0;
+	  	background-color: white;
+		display: block !important;
+	  }
+ 
+	 
+	 
+	  .tag_date  {
+	      left: 30px;
+	      top: 30px;
+	  }
+	 
+	 
+	 
+	 .title-block-content {
+ 	
+	  padding: 30px 30px calc(32.3px);
+	}
+	 
+	 
+	 
 	 //hero flex
 	 
 	 .flexslider {
@@ -2687,30 +2849,16 @@ h5.title-block {
      }
  
 	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
+
 
 
 	 	    .pub__info {
-	 	        padding: 10px 10px calc(42.3px);
+	 	        padding: 20px 20px calc(25.3px);
 	 	        } 
 	  
 
 	 	        .pub__info--state {
 	 	          display: inline-block; } 
-	 
-	 
-	 
-	 
-	 
- 	
-	 
 	 
 	 
 	 
@@ -3121,6 +3269,54 @@ h5.title-block {
   	  margin: auto
        //height: 510px;
    }
+ 
+ 
+ li.isotope-grid-sizer,
+ li.isotope-element.one_item {
+	width: calc(100% / 2) !important;
+    }
+ 
+ 
+  li.isotope-element.three_item {
+  	width: calc(50% / 2) !important;
+  }
+  li.isotope-element.two_item {
+  	width: calc(50% / 2) !important;
+  }
+
+  li.isotope-element.four_item {
+  	width: calc(50% / 2) !important;
+  }
+  
+  li.isotope-element.five_item {
+  	width: calc(50% / 2) !important;
+  }
+ 
+ 
+  li.isotope-element.six_item {
+ 	width: calc(100% / 2) !important;
+  }
+
+
+  li.isotope-element.seven_item {
+ 	width: calc(100% / 2) !important;
+  }
+
+  li.isotope-element.eight_item {
+  	width: calc(100% / 4);
+  }
+
+  li.isotope-element.nine_item {
+ 	width: calc(50% / 2);
+  }
+
+ 
+ .flexslider .field-container {
+	 left: 22em;
+ }
+ 
+ 
+ 
  
  }
  

@@ -113,7 +113,7 @@
    		 font-size: 0.9em;
    		 color: #fff;	
 		 font-weight: 600;
-		     padding-top: 5px;
+		     padding-top: 2.8em;
 		     display: block;
 			 letter-spacing: 0.04em; 
    	 }
@@ -201,7 +201,21 @@
   }
   
   
-  
+  .footer-third.large-3{
+	  
+	  span.field-content {
+		  
+		  a {
+		      font-size: 0.6em;
+		      color: #fff;
+		      font-weight: 600;
+		      padding-top: -65px;
+		      display: block;
+		      letter-spacing: 0.04em;
+		      text-align: left;
+			 } 
+	  }
+  }
   
   .footer_wrapper h2 {
       letter-spacing: .5px;
