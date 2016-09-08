@@ -125,20 +125,3 @@ function tree_layout_image_default_styles() {
 
   return $styles;
 }
-
-/**
- * Implements hook_node_info().
- */
-function tree_layout_node_info() {
-  $items = array(
-    'simplenews' => array(
-      'name' => t('Simplenews newsletter'),
-      'base' => 'node_content',
-      'description' => t('A newsletter issue to be sent to subscribed email addresses.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
-  );
-  return $items;
-}
