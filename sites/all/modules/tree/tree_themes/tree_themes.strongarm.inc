@@ -763,5 +763,31 @@ function tree_themes_strongarm() {
   $strongarm->value = 'content/[node:title]';
   $export['pathauto_node_pattern'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_entity_taxonomy_term';
+  $strongarm->value = array(
+    'tags' => 'tags',
+    'tree_space_category' => 'tree_space_category',
+    'home' => 'home',
+    'theme' => 'theme',
+    'tree_event_category' => 'tree_event_category',
+    'news_category' => 'news_category',
+    'tree_document_type' => 'tree_document_type',
+    'profile_categories' => 'profile_categories',
+    'education_categories' => 'education_categories',
+    'document_types' => 0,
+    'newsletter' => 0,
+  );
+  $export['uuid_features_entity_taxonomy_term'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_vocabulary_terms';
+  $strongarm->value = 1;
+  $export['uuid_features_vocabulary_terms'] = $strongarm;
+
   return $export;
 }
