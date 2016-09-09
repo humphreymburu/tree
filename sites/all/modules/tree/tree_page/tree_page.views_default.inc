@@ -67,7 +67,7 @@ function tree_page_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['quantity'] = '9';
@@ -892,6 +892,12 @@ function tree_page_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'isotope_grid';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -940,12 +946,25 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_bio']['settings'] = array(
     'trim_length' => '5',
   );
+  /* Field: Content: Document Type */
+  $handler->display->display_options['fields']['field_document_type']['id'] = 'field_document_type';
+  $handler->display->display_options['fields']['field_document_type']['table'] = 'field_data_field_document_type';
+  $handler->display->display_options['fields']['field_document_type']['field'] = 'field_document_type';
+  $handler->display->display_options['fields']['field_document_type']['label'] = '';
+  $handler->display->display_options['fields']['field_document_type']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_document_type']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_document_type']['alter']['text'] = '<h5 class="title-one">[field_document_type]</h5>';
+  $handler->display->display_options['fields']['field_document_type']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_document_type']['settings'] = array(
+    'link' => 0,
+  );
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
   $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_1']['label'] = '';
   $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '[field_researcher_bio]
+[field_document_type]
 <h3 class="title-block">[title]</h3> 
 ';
   $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
@@ -986,6 +1005,17 @@ function tree_page_views_default_views() {
     'image_style' => 'test2',
     'image_link' => '',
   );
+  /* Field: Content: Document_photo */
+  $handler->display->display_options['fields']['field_document_photo']['id'] = 'field_document_photo';
+  $handler->display->display_options['fields']['field_document_photo']['table'] = 'field_data_field_document_photo';
+  $handler->display->display_options['fields']['field_document_photo']['field'] = 'field_document_photo';
+  $handler->display->display_options['fields']['field_document_photo']['label'] = '';
+  $handler->display->display_options['fields']['field_document_photo']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_document_photo']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_document_photo']['settings'] = array(
+    'image_style' => 'test2',
+    'image_link' => '',
+  );
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Global: Random */
   $handler->display->display_options['sorts']['random']['id'] = 'random';
@@ -1002,6 +1032,7 @@ function tree_page_views_default_views() {
   $handler->display->display_options['filters']['type_1']['table'] = 'node';
   $handler->display->display_options['filters']['type_1']['field'] = 'type';
   $handler->display->display_options['filters']['type_1']['value'] = array(
+    'tree_document' => 'tree_document',
     'tree_page' => 'tree_page',
     'tree_researchers' => 'tree_researchers',
     'themes' => 'themes',
@@ -1238,7 +1269,9 @@ function tree_page_views_default_views() {
     t('Page'),
     t('Taxonomy term entity referenced from field_type_of_theme'),
     t('<h5 class="title-one">Meet Our Researchers</h5>'),
+    t('<h5 class="title-one">[field_document_type]</h5>'),
     t('[field_researcher_bio]
+[field_document_type]
 <h3 class="title-block">[title]</h3> 
 '),
     t('More Research'),
@@ -1563,6 +1596,12 @@ function tree_page_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'isotope_grid';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
