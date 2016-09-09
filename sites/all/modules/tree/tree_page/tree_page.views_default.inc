@@ -310,6 +310,15 @@ function tree_page_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'themes' => 'themes',
   );
+  /* Filter criterion: Content: Has taxonomy term */
+  $handler->display->display_options['filters']['tid']['id'] = 'tid';
+  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['value'] = array(
+    1 => '1',
+  );
+  $handler->display->display_options['filters']['tid']['type'] = 'select';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'theme';
   $handler->display->display_options['pane_title'] = 'More on Education';
   $translatables['education'] = array(
     t('Master'),
