@@ -80,20 +80,56 @@ ul li{
 	}
 }
 
-span.date-display-single {
-    color: #5B8930;
-	font-size: 1rem;
-	margin: 0;
-    letter-spacing: .25px;
-	padding-left: 0;
-	font-weight: bold;
-	display: block;
+
+
+//event
+
+.date i {
+    position: absolute;
+    background-color: #8DB255;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    line-height: 2px;
+    margin: 0 0 0 -3.5rem;
+    vertical-align: middle;
+    padding: .25em .45em;
 }
+
+.date {
+	padding-left: 1.8em;
+	
+	
+    li {
+ 	   list-style-type: none;
+ 	   padding: 6px 0px 6px 0px;
+ 	   list-style: none;
+	   
+	}   
+	
+	span.date-display-single {
+	    font-size: inherit;
+	    margin-top: -1em;
+	    letter-spacing: .25px;
+	    padding-left: 0;
+	    display: block;
+	}
+	
+}
+
+
+span.date-display-single {
+    font-size: inherit;
+    letter-spacing: .25px;
+    padding-left: 0;
+    display: block;
+}
+
 span.date-display-start {
-  color: #5B8930;
+  //color: #5B8930;
 }
 span.date-display-end {
-	color: #5B8930;
+	//color: #5B8930;
 }
 
 

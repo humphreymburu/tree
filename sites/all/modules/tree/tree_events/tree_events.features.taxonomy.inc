@@ -9,9 +9,9 @@
  */
 function tree_events_taxonomy_default_vocabularies() {
   return array(
-    'tree_event_category' => array(
+    'event_category' => array(
       'name' => 'Event Category',
-      'machine_name' => 'tree_event_category',
+      'machine_name' => 'event_category',
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
