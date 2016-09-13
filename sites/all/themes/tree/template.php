@@ -454,6 +454,21 @@ function tree_views_pre_render(&$view) {
 		  
 		  
 		  
+      	case 'resources';
+	
+            foreach($view->result as $value=>$result) 
+             { 
+      		   if($value === 0) {
+      		    $result->field_field_document_photo[0]['rendered']['#image_style']= 'test';
+				$result->field_field_image[0]['rendered']['#image_style']= 'test';
+				
+      		   } 
+            }
+	  
+      	  break;
+		  
+		  
+		  
       	case 'tree';
 	
             foreach($view->result as $value=>$result) 

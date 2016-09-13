@@ -146,6 +146,13 @@ function tree_document_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'token' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 6,
+      ),
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
@@ -197,6 +204,16 @@ function tree_document_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'token' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 5,
       ),
     ),
     'entity_type' => 'node',
@@ -277,6 +294,15 @@ function tree_document_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 9,
       ),
+      'token' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 2,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_document_type',
@@ -297,7 +323,9 @@ function tree_document_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
       'type' => 'options_select',
       'weight' => 2,
     ),
@@ -341,6 +369,19 @@ function tree_document_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 6,
+      ),
+      'token' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => '',
+          'delete' => '',
+          'description' => 1,
+          'edit' => '',
+          'view_mode' => 'token',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'node',
@@ -400,6 +441,20 @@ function tree_document_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 5,
       ),
+      'token' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_repeat_rule' => 'show',
+        ),
+        'type' => 'date_default',
+        'weight' => 3,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_publication_date',
@@ -432,6 +487,79 @@ function tree_document_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-tree_document-field_related_links'
+  $field_instances['node-tree_document-field_related_links'] = array(
+    'bundle' => 'tree_document',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 17,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'token' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 8,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_related_links',
+    'label' => 'Related Links',
+    'required' => 1,
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'rel_remove' => 'default',
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_predefined' => '',
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 7,
+    ),
+  );
+
   // Exported field_instance: 'node-tree_document-field_type_of_theme'
   $field_instances['node-tree_document-field_type_of_theme'] = array(
     'bundle' => 'tree_document',
@@ -460,6 +588,15 @@ function tree_document_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'token' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 7,
       ),
     ),
     'entity_type' => 'node',
@@ -519,6 +656,12 @@ function tree_document_field_default_field_instances() {
         'type' => 'title_linked',
         'weight' => 1,
       ),
+      'token' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'title_field',
@@ -552,6 +695,7 @@ function tree_document_field_default_field_instances() {
   t('File(s)');
   t('Language');
   t('Publication Date');
+  t('Related Links');
   t('Title');
   t('Type of Theme');
 

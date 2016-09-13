@@ -118,6 +118,11 @@ ul li{
 }
 
 
+
+
+
+
+
 span.date-display-single {
     font-size: inherit;
     letter-spacing: .25px;
@@ -268,15 +273,16 @@ span.date-display-end {
 }
 
 
+
 .field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper {
 	display: block;
     
 	
 	p {
-	     font-size: 0.875rem;
-	     line-height: 1.2rem;
+	    font-size: 0.9em;
+	    line-height: 1.2rem;
 	     margin: 0;
-	     padding: 0.875rem 0.875rem 0.875rem 0;
+	     padding: 0.875em 1.875em 0.875em 0;
 		 font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 	 }
 	 
