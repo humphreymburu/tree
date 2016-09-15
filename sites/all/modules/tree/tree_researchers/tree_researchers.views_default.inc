@@ -116,7 +116,7 @@ function tree_researchers_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'tree_researchers' => 'tree_researchers',
   );
-  $handler->display->display_options['path'] = 'researcher_list';
+  $handler->display->display_options['path'] = 'Researchers';
   $translatables['researchers'] = array(
     t('Master'),
     t('Meet Out Researchers'),
