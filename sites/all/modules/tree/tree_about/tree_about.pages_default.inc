@@ -13,15 +13,15 @@ function tree_about_default_page_manager_pages() {
   $page->api_version = 1;
   $page->name = 'about_us';
   $page->task = 'page';
-  $page->admin_title = 'About_us';
+  $page->admin_title = 'About';
   $page->admin_description = 'About page';
-  $page->path = 'About_us';
+  $page->path = 'About';
   $page->access = array();
   $page->menu = array(
     'type' => 'normal',
     'title' => 'ABOUT',
-    'name' => 'navigation',
-    'weight' => '0',
+    'name' => 'main-menu',
+    'weight' => '7',
     'parent' => array(
       'type' => 'none',
       'title' => '',
@@ -55,7 +55,7 @@ function tree_about_default_page_manager_pages() {
     'name' => 'panel',
   );
   $display = new panels_display();
-  $display->layout = 'radix_boxton';
+  $display->layout = 'foundation_1col';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -77,7 +77,7 @@ function tree_about_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-e474883d-efbc-455d-9046-c70a76e5db3b';
-    $pane->panel = 'contentmain';
+    $pane->panel = 'middle';
     $pane->type = 'node';
     $pane->subtype = 'node';
     $pane->shown = TRUE;
@@ -103,7 +103,7 @@ function tree_about_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = 'e474883d-efbc-455d-9046-c70a76e5db3b';
     $display->content['new-e474883d-efbc-455d-9046-c70a76e5db3b'] = $pane;
-    $display->panels['contentmain'][0] = 'new-e474883d-efbc-455d-9046-c70a76e5db3b';
+    $display->panels['middle'][0] = 'new-e474883d-efbc-455d-9046-c70a76e5db3b';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
