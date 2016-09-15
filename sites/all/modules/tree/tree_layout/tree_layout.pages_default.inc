@@ -87,6 +87,66 @@ function tree_layout_default_page_manager_pages() {
     $display->content['new-4077394d-1076-4533-9bb8-090a341e4276'] = $pane;
     $display->panels['half'][0] = 'new-4077394d-1076-4533-9bb8-090a341e4276';
     $pane = new stdClass();
+    $pane->pid = 'new-bb1e9d36-c914-4095-9fa0-d6fb53a48e46';
+    $pane->panel = 'header';
+    $pane->type = 'views';
+    $pane->subtype = 'contacts';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_pager_settings' => 0,
+      'use_pager' => 0,
+      'nodes_per_page' => '5',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'block',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'bb1e9d36-c914-4095-9fa0-d6fb53a48e46';
+    $display->content['new-bb1e9d36-c914-4095-9fa0-d6fb53a48e46'] = $pane;
+    $display->panels['header'][0] = 'new-bb1e9d36-c914-4095-9fa0-d6fb53a48e46';
+    $pane = new stdClass();
+    $pane->pid = 'new-fe261bc1-1769-4eb4-91d7-9abd36313764';
+    $pane->panel = 'header';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => 'Gmap',
+      'title' => '',
+      'body' => '[gmap zoom=3 |center=40,0 |width=300px |height=200px |control=Small |type=Map]',
+      'format' => 'gmap_macro',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'fe261bc1-1769-4eb4-91d7-9abd36313764';
+    $display->content['new-fe261bc1-1769-4eb4-91d7-9abd36313764'] = $pane;
+    $display->panels['header'][1] = 'new-fe261bc1-1769-4eb4-91d7-9abd36313764';
+    $pane = new stdClass();
     $pane->pid = 'new-e4de56e3-ec78-4315-b84b-7d64237c62b6';
     $pane->panel = 'quarter1';
     $pane->type = 'custom';
@@ -167,8 +227,8 @@ function tree_layout_default_page_manager_pages() {
   $page->menu = array(
     'type' => 'normal',
     'title' => 'EDUCATION',
-    'name' => 'navigation',
-    'weight' => '0',
+    'name' => 'main-menu',
+    'weight' => '4',
     'parent' => array(
       'type' => 'none',
       'title' => '',
@@ -195,8 +255,9 @@ function tree_layout_default_page_manager_pages() {
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
     'body_classes_to_add' => '',
-    'css_id' => '',
-    'css' => '',
+    'css_id' => 'education',
+    'css' => '.breadcrumb { display: none; }
+',
     'contexts' => array(),
     'relationships' => array(),
     'name' => 'panel',
@@ -269,7 +330,18 @@ function tree_layout_default_page_manager_pages() {
   $page->admin_description = 'Events Page';
   $page->path = 'Event';
   $page->access = array();
-  $page->menu = array();
+  $page->menu = array(
+    'type' => 'normal',
+    'title' => 'EVENTS',
+    'name' => 'main-menu',
+    'weight' => '6',
+    'parent' => array(
+      'type' => 'none',
+      'title' => '',
+      'name' => 'navigation',
+      'weight' => '0',
+    ),
+  );
   $page->arguments = array();
   $page->conf = array(
     'admin_paths' => FALSE,
@@ -290,18 +362,20 @@ function tree_layout_default_page_manager_pages() {
     'body_classes_to_remove' => '',
     'body_classes_to_add' => '',
     'css_id' => '',
-    'css' => '',
+    'css' => '.breadcrumb { display: none; }
+',
     'contexts' => array(),
     'relationships' => array(),
     'name' => 'panel',
   );
   $display = new panels_display();
-  $display->layout = 'radix_boxton';
+  $display->layout = 'foundation_1col';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
       'contentmain' => NULL,
+      'middle' => NULL,
     ),
   );
   $display->cache = array();
@@ -311,7 +385,7 @@ function tree_layout_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-c566fd5a-68ac-4d58-b90c-c56d9bda447a';
-    $pane->panel = 'contentmain';
+    $pane->panel = 'middle';
     $pane->type = 'views';
     $pane->subtype = 'test_events';
     $pane->shown = TRUE;
@@ -343,7 +417,7 @@ function tree_layout_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = 'c566fd5a-68ac-4d58-b90c-c56d9bda447a';
     $display->content['new-c566fd5a-68ac-4d58-b90c-c56d9bda447a'] = $pane;
-    $display->panels['contentmain'][0] = 'new-c566fd5a-68ac-4d58-b90c-c56d9bda447a';
+    $display->panels['middle'][0] = 'new-c566fd5a-68ac-4d58-b90c-c56d9bda447a';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -466,8 +540,8 @@ function tree_layout_default_page_manager_pages() {
   $page->menu = array(
     'type' => 'normal',
     'title' => 'RESEARCH',
-    'name' => 'navigation',
-    'weight' => '0',
+    'name' => 'main-menu',
+    'weight' => '3',
     'parent' => array(
       'type' => 'none',
       'title' => '',
@@ -495,7 +569,8 @@ function tree_layout_default_page_manager_pages() {
     'body_classes_to_remove' => '',
     'body_classes_to_add' => '',
     'css_id' => '',
-    'css' => '',
+    'css' => '.breadcrumb { display: none; }
+',
     'contexts' => array(),
     'relationships' => array(),
     'name' => 'panel',
@@ -567,8 +642,8 @@ function tree_layout_default_page_manager_pages() {
   $page->menu = array(
     'type' => 'normal',
     'title' => 'RESOURCES',
-    'name' => 'navigation',
-    'weight' => '0',
+    'name' => 'main-menu',
+    'weight' => '4',
     'parent' => array(
       'type' => 'none',
       'title' => '',
@@ -596,18 +671,20 @@ function tree_layout_default_page_manager_pages() {
     'body_classes_to_remove' => '',
     'body_classes_to_add' => '',
     'css_id' => '',
-    'css' => '',
+    'css' => '.breadcrumb { display: none; }
+',
     'contexts' => array(),
     'relationships' => array(),
     'name' => 'panel',
   );
   $display = new panels_display();
-  $display->layout = 'radix_boxton';
+  $display->layout = 'foundation_1col';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
       'contentmain' => NULL,
+      'middle' => NULL,
     ),
   );
   $display->cache = array();
@@ -617,7 +694,7 @@ function tree_layout_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-dc26d037-dba1-4b61-bdce-aadd3947ba79';
-    $pane->panel = 'contentmain';
+    $pane->panel = 'middle';
     $pane->type = 'views';
     $pane->subtype = 'resources';
     $pane->shown = TRUE;
@@ -649,7 +726,7 @@ function tree_layout_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = 'dc26d037-dba1-4b61-bdce-aadd3947ba79';
     $display->content['new-dc26d037-dba1-4b61-bdce-aadd3947ba79'] = $pane;
-    $display->panels['contentmain'][0] = 'new-dc26d037-dba1-4b61-bdce-aadd3947ba79';
+    $display->panels['middle'][0] = 'new-dc26d037-dba1-4b61-bdce-aadd3947ba79';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-dc26d037-dba1-4b61-bdce-aadd3947ba79';
   $handler->conf['display'] = $display;
@@ -671,8 +748,8 @@ function tree_layout_default_page_manager_pages() {
   $page->menu = array(
     'type' => 'normal',
     'title' => 'TREATMENT',
-    'name' => 'navigation',
-    'weight' => '0',
+    'name' => 'main-menu',
+    'weight' => '2',
     'parent' => array(
       'type' => 'none',
       'title' => '',
@@ -700,7 +777,8 @@ function tree_layout_default_page_manager_pages() {
     'body_classes_to_remove' => '',
     'body_classes_to_add' => '',
     'css_id' => '',
-    'css' => '',
+    'css' => '.breadcrumb { display: none; }
+',
     'contexts' => array(),
     'relationships' => array(),
     'name' => 'panel',
