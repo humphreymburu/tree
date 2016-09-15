@@ -174,7 +174,7 @@ function tree_about_panelizer_defaults() {
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
         'image_link' => '',
-        'image_style' => 'flexslider_full',
+        'image_style' => 'about',
       ),
       'context' => 'panelizer',
       'override_title' => 0,
