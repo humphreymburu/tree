@@ -119,7 +119,8 @@ function tree_about_views_default_views() {
 <div class="title-block-content">
 <h5 class="title-block">[field_about_info]</h5></div>
 ';
-  $handler->display->display_options['fields']['field_about_info']['alter']['path'] = '/content/[title] ';
+  $handler->display->display_options['fields']['field_about_info']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_about_info']['alter']['path'] = '/content/[title]';
   $handler->display->display_options['fields']['field_about_info']['alter']['replace_spaces'] = TRUE;
   $handler->display->display_options['fields']['field_about_info']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_about_info']['element_default_classes'] = FALSE;
@@ -129,9 +130,7 @@ function tree_about_views_default_views() {
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_about_info]';
-  $handler->display->display_options['fields']['nothing']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['nothing']['alter']['path'] = '/content/[title]';
-  $handler->display->display_options['fields']['nothing']['alter']['replace_spaces'] = TRUE;
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Field: Content: Photo About */
   $handler->display->display_options['fields']['field_about_photo_1']['id'] = 'field_about_photo_1';
@@ -187,22 +186,22 @@ function tree_about_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_bio']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_bio']['alter']['text'] = 'Meet Our Researchers';
   $handler->display->display_options['fields']['field_researcher_bio']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_researcher_bio']['alter']['path'] = '/researcher_list';
+  $handler->display->display_options['fields']['field_researcher_bio']['alter']['path'] = '/researchers';
   $handler->display->display_options['fields']['field_researcher_bio']['element_type'] = 'h5';
   $handler->display->display_options['fields']['field_researcher_bio']['element_class'] = 'title-block';
   $handler->display->display_options['fields']['field_researcher_bio']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_bio']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['field_researcher_bio']['element_wrapper_class'] = 'title-block-content';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Global: Random */
+  $handler->display->display_options['sorts']['random']['id'] = 'random';
+  $handler->display->display_options['sorts']['random']['table'] = 'views';
+  $handler->display->display_options['sorts']['random']['field'] = 'random';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Sort criterion: Global: Random */
-  $handler->display->display_options['sorts']['random']['id'] = 'random';
-  $handler->display->display_options['sorts']['random']['table'] = 'views';
-  $handler->display->display_options['sorts']['random']['field'] = 'random';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -265,7 +264,8 @@ function tree_about_views_default_views() {
   $handler->display->display_options['fields']['field_about_info']['alter']['text'] = '[field_about_info]
 ';
   $handler->display->display_options['fields']['field_about_info']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_about_info']['alter']['path'] = '/content/[title] ';
+  $handler->display->display_options['fields']['field_about_info']['alter']['path'] = '/content/[title]';
+  $handler->display->display_options['fields']['field_about_info']['alter']['replace_spaces'] = TRUE;
   $handler->display->display_options['fields']['field_about_info']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_about_info']['element_default_classes'] = FALSE;
   /* Field: Global: Custom text */
@@ -292,7 +292,7 @@ function tree_about_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_bio']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_bio']['alter']['text'] = 'Meet Our Researchers';
   $handler->display->display_options['fields']['field_researcher_bio']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_researcher_bio']['alter']['path'] = '/research_list';
+  $handler->display->display_options['fields']['field_researcher_bio']['alter']['path'] = '/researchers';
   $handler->display->display_options['fields']['field_researcher_bio']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Content: Post date */
