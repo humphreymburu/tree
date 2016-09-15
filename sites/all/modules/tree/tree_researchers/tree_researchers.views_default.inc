@@ -22,7 +22,7 @@ function tree_researchers_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Meet Out Researchers';
+  $handler->display->display_options['title'] = 'Meet Our Researchers';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -119,7 +119,7 @@ function tree_researchers_views_default_views() {
   $handler->display->display_options['path'] = 'Researchers';
   $translatables['researchers'] = array(
     t('Master'),
-    t('Meet Out Researchers'),
+    t('Meet Our Researchers'),
     t('more'),
     t('Apply'),
     t('Reset'),
