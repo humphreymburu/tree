@@ -1025,6 +1025,29 @@ function tree_page_views_default_views() {
     'image_style' => 'test2',
     'image_link' => '',
   );
+  /* Field: Content: Document Type */
+  $handler->display->display_options['fields']['field_document_type_1']['id'] = 'field_document_type_1';
+  $handler->display->display_options['fields']['field_document_type_1']['table'] = 'field_data_field_document_type';
+  $handler->display->display_options['fields']['field_document_type_1']['field'] = 'field_document_type';
+  $handler->display->display_options['fields']['field_document_type_1']['label'] = '';
+  $handler->display->display_options['fields']['field_document_type_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_document_type_1']['settings'] = array(
+    'link' => 0,
+  );
+  /* Field: Content: Document_photo */
+  $handler->display->display_options['fields']['field_document_photo_1']['id'] = 'field_document_photo_1';
+  $handler->display->display_options['fields']['field_document_photo_1']['table'] = 'field_data_field_document_photo';
+  $handler->display->display_options['fields']['field_document_photo_1']['field'] = 'field_document_photo';
+  $handler->display->display_options['fields']['field_document_photo_1']['label'] = '';
+  $handler->display->display_options['fields']['field_document_photo_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_document_photo_1']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_document_photo_1']['alter']['path'] = '[field_document_type_1] /list';
+  $handler->display->display_options['fields']['field_document_photo_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_document_photo_1']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_document_photo_1']['settings'] = array(
+    'image_style' => 'test2',
+    'image_link' => '',
+  );
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Global: Random */
   $handler->display->display_options['sorts']['random']['id'] = 'random';
@@ -1060,6 +1083,11 @@ function tree_page_views_default_views() {
   $handler->display->display_options['filters']['name']['field'] = 'name';
   $handler->display->display_options['filters']['name']['relationship'] = 'field_type_of_theme_target_id';
   $handler->display->display_options['filters']['name']['value'] = 'Research';
+  /* Filter criterion: Content: Sticky */
+  $handler->display->display_options['filters']['sticky']['id'] = 'sticky';
+  $handler->display->display_options['filters']['sticky']['table'] = 'node';
+  $handler->display->display_options['filters']['sticky']['field'] = 'sticky';
+  $handler->display->display_options['filters']['sticky']['value'] = '1';
   $handler->display->display_options['path'] = 'uw_research';
 
   /* Display: More Research */
