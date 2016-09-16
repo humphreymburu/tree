@@ -171,7 +171,7 @@ function tree_about_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_pic']['field'] = 'field_researcher_pic';
   $handler->display->display_options['fields']['field_researcher_pic']['label'] = '';
   $handler->display->display_options['fields']['field_researcher_pic']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_researcher_pic']['alter']['path'] = '/research_list';
+  $handler->display->display_options['fields']['field_researcher_pic']['alter']['path'] = '/researchers';
   $handler->display->display_options['fields']['field_researcher_pic']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_pic']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_researcher_pic']['settings'] = array(
