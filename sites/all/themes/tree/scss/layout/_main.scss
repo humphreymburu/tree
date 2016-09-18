@@ -117,6 +117,118 @@ ul li{
 	
 }
 
+.docs i {
+    position: absolute;
+    /* background-color: #8DB255; */
+    color: #8DB255;
+    font-size: 6.2rem;
+    /* border-radius: 50%; */
+    line-height: 2px;
+    margin: 0 0 0 -3.5rem;  
+    padding: .1em .95em;	
+}
+
+.docs {
+	//padding-left: 1.8em;
+	//padding: 20px 20px 20px 30px;
+    padding: 0px 20px 20px 60px;
+    display: block;
+    min-height: 100px;
+    width: 100%;
+    position: relative;
+	vertical-align: middle;
+
+	
+	
+    li {
+ 	   list-style-type: none;
+ 	   padding: 6px 0px 6px 0px;
+ 	   list-style: none;
+	   
+	}   
+
+}
+//document pane
+.panelizer-view-mode.node.node-search-result {
+    padding-right: 45px;
+    padding-left: 25px;
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+	
+	.pdfpreview {
+	    padding: 35px 20px 20px 10px;
+	    display: block;
+	    min-height: 100px;
+	    width: 100%;
+	    position: relative;
+	}
+	
+	.docs i {
+	  position: absolute;
+	  padding: 30px 20px 20px 10px;
+	}
+	
+    a {
+	    line-height: 1.5em;
+	    font-size: 0.995em
+    }
+
+}
+
+
+
+.panelizer-view-mode.node.node-full.node-tree-document {
+  background-color: #f3f3e5;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
+  padding-right: 15px;
+  padding-left: 25px;
+  margin-bottom: 35px;
+  
+  
+  .field , p {
+	  font-size: 0.955em;
+      line-height: 1.5rem;
+      margin: 0;
+      //padding: 6px 6px 6px 6px;
+	  text-align: left;
+	  font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+  }
+  
+  
+  h2.pane-title {
+  	
+  }
+  
+  
+  h3.pane-title {
+		      padding: 20px 10px 15px 0px;
+		      border: none !important;
+		      font-size: 1.2em;
+		      margin: 0;
+		      color: #563521;		  
+  }
+  
+ 
+  
+  
+
+.radix-layouts-sidebar.panel-panel {
+	background-color: #ededdc;	
+}
+
+
+.field.field-name-title-field.field-type-text.field-wrapper {
+	 h2 {
+	 	 padding: 15px 0px 15px 0;
+	    border-bottom: 1px dotted #b3b3a6;
+	    margin: 0;
+	    color: #563521;
+	    font-weight: 800;
+    }
+ }
+ 
+}
+
 
 
 
@@ -138,21 +250,18 @@ span.date-display-end {
 }
 
 
-#page-title {
-    bottom: 0;
-    -moz-box-sizing: border-box;
-   // box-sizing: border-box;
-    //color: #fff;
-    //left: 0;
-    //padding: 20px;
-    //position: absolute;
+
+
+.pdfpreview {
+    padding: 20px 20px 20px 60px;
+    display: block;
+    min-height: 100px;
     width: 100%;
-    //z-index: 2;	
-	//padding-bottom: 40%;
-	display: block;
-    //text-shadow: 1px 1px 2px #222;
-	font-size: 2.25rem;
-	line-height: 1.16666667;
+    position: relative;
+}
+
+.pdfpreview-image-wrapper {
+	    padding: 0px 20px 0px 30px;
 }
 
 
@@ -165,9 +274,9 @@ span.date-display-end {
   margin-bottom: 20px !important;
   position: relative;
       background: #ededdc;
-      padding: 1.75rem;
+      //padding: 1.75rem;
        margin: 35px 0 35px !important;
-	  padding: 2rem;
+	  //padding: 2rem;
 	  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.05);
 	    color: #272727;
 	    border-radius: 2px; 
@@ -246,6 +355,9 @@ span.date-display-end {
 	
 .ztn {
 	
+    padding-top: 0.6875em 1.075em 0.75em 0.65em !important;
+    font-size: 0.65em !important;
+	
   @include button(
     // If true, set to button radius which is $global-radius or explicitly set radius amount in px (ex. $radius:10px). Default:false.
     $radius: 3px,
@@ -263,14 +375,6 @@ span.date-display-end {
 }
 
 //field.field-name-field-document-bio field-type-text-with-summary field-label-hidden field-wrapper
-.field.field-name-title-field.field-type-text.field-wrapper {
- 	color: #5B8930;
-	font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
-	margin-top: 1.5rem;
-    font-weight: 600;
-    font-size: 1.1rem;
-	line-height: 1.2;
-}
 
 
 
@@ -279,17 +383,13 @@ span.date-display-end {
     
 	
 	p {
-	    font-size: 0.9em;
-	    line-height: 1.2rem;
-	     margin: 0;
-	     padding: 0.875em 1.875em 0.875em 0;
 		 font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 	 }
 	 
 	 span {
 		 color: #212121;
 		 padding-left: 0;
-		 font-size: 0.875rem;
+		 //font-size: 0.875rem;
 		 
 	
 		 
@@ -314,6 +414,15 @@ span.date-display-end {
 
 		  
 }
+
+
+
+
+
+
+
+
+
 
 .field.field-name-field-document-type.field-type-entityreference.clearfix.field-wrapper
 {
@@ -353,7 +462,11 @@ span.date-display-end {
 		
 		.file {
 			display: block;
-			float: right;
+            word-wrap: break-word;
+		    max-width: 75%;
+		     position: relative;
+		     line-height: 1.5em;
+		     font-size: 0.995em;
 		}
 	
 }
@@ -442,5 +555,28 @@ ul.isotope-options.clearfix {
 	img {
 		float: left;
 	}
+	
+}
+
+.panel-pane.pane-node-created, .panel-pane.pane-node-author {
+	
+	font-size: 0.95em;
+	font-family: "Source Sans Pro", Arial, sans-serif;
+	
+	
+	
+	.pane-title,.pane-content {
+		display: inline-block;
+		margin-bottom: 23px;
+        vertical-align: baseline;
+		float: left;
+		
+	}
+	
+	.pane-content {
+		margin-right: 15px;
+	}
+	
+	
 	
 }

@@ -68,14 +68,14 @@
  .panel-pane.pane-entity-field.pane-node-field-document-bio.doc {
 	
 	p {
-	     padding-left: 1.875em;
+	     //padding-left: 1.875em;
 		 font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 	 }
 	 
 	 .pane-title {
-	     padding: 20px 20px 13px 1.275em;
+	     padding: 20px 20px 13px 0;
 	     border: none !important;
-	     font-size: 1.5em;
+	     //font-size: 1.5em;
 	     margin: 0;
       }		 
  }
@@ -85,16 +85,23 @@
 	
 
 	.field .field-label {
-		padding: 20px 20px 13px 1.875em;
+		//padding: 20px 20px 13px 1.875em;
 	}
 	
 	
 	
 	.entity.entity-field-collection-item.field-collection-item-field-files-collection {
 	    float: left;
-	    padding-left: 1.875em;
+	    //padding-left: 1.875em;
 		padding-top: 0.1em;
-		font-size: 0.875em;
+		//font-size: 0.875em;
+		
+		a {
+			display: inline;
+		}
+		
+		
+		
 	}
 }
 
@@ -132,6 +139,7 @@
 		background-color: #ededdc;
 		padding: 20px;
 		margin-top: 20px;
+		
 	}
 	
 	.pane-title 
