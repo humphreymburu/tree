@@ -9612,8 +9612,12 @@ ul li {
   line-height: 1.5em;
   font-size: 0.995em;
 }
+/* line 175, ../scss/layout/_main.scss */
+.panelizer-view-mode.node.node-search-result h1 {
+  font-size: 1.5em;
+}
 
-/* line 180, ../scss/layout/_main.scss */
+/* line 183, ../scss/layout/_main.scss */
 .panelizer-view-mode.node.node-full.node-tree-document {
   background-color: #f3f3e5;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
@@ -9621,7 +9625,7 @@ ul li {
   padding-left: 25px;
   margin-bottom: 35px;
 }
-/* line 188, ../scss/layout/_main.scss */
+/* line 191, ../scss/layout/_main.scss */
 .panelizer-view-mode.node.node-full.node-tree-document .field, .panelizer-view-mode.node.node-full.node-tree-document p {
   font-size: 0.955em;
   line-height: 1.5rem;
@@ -9629,7 +9633,7 @@ ul li {
   text-align: left;
   font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 }
-/* line 203, ../scss/layout/_main.scss */
+/* line 206, ../scss/layout/_main.scss */
 .panelizer-view-mode.node.node-full.node-tree-document h3.pane-title {
   padding: 20px 10px 15px 0px;
   border: none !important;
@@ -9637,11 +9641,11 @@ ul li {
   margin: 0;
   color: #563521;
 }
-/* line 215, ../scss/layout/_main.scss */
+/* line 218, ../scss/layout/_main.scss */
 .panelizer-view-mode.node.node-full.node-tree-document .radix-layouts-sidebar.panel-panel {
   background-color: #ededdc;
 }
-/* line 221, ../scss/layout/_main.scss */
+/* line 224, ../scss/layout/_main.scss */
 .panelizer-view-mode.node.node-full.node-tree-document .field.field-name-title-field.field-type-text.field-wrapper h2 {
   padding: 15px 0px 15px 0;
   border-bottom: 1px dotted #b3b3a6;
@@ -9650,7 +9654,7 @@ ul li {
   font-weight: 800;
 }
 
-/* line 238, ../scss/layout/_main.scss */
+/* line 241, ../scss/layout/_main.scss */
 span.date-display-single {
   font-size: inherit;
   letter-spacing: .25px;
@@ -9658,7 +9662,7 @@ span.date-display-single {
   display: block;
 }
 
-/* line 255, ../scss/layout/_main.scss */
+/* line 258, ../scss/layout/_main.scss */
 .pdfpreview {
   padding: 20px 20px 20px 60px;
   display: block;
@@ -9667,12 +9671,12 @@ span.date-display-single {
   position: relative;
 }
 
-/* line 263, ../scss/layout/_main.scss */
+/* line 266, ../scss/layout/_main.scss */
 .pdfpreview-image-wrapper {
   padding: 0px 20px 0px 30px;
 }
 
-/* line 270, ../scss/layout/_main.scss */
+/* line 273, ../scss/layout/_main.scss */
 .node-search-result {
   margin-bottom: 20px !important;
   position: relative;
@@ -9682,7 +9686,7 @@ span.date-display-single {
   color: #272727;
   border-radius: 2px;
 }
-/* line 286, ../scss/layout/_main.scss */
+/* line 289, ../scss/layout/_main.scss */
 .node-search-result:after {
   content: '';
   display: block;
@@ -9693,7 +9697,7 @@ span.date-display-single {
   right: 0;
   height: 100%;
 }
-/* line 297, ../scss/layout/_main.scss */
+/* line 300, ../scss/layout/_main.scss */
 .node-search-result > h2 {
   font-size: 16px;
   font-weight: bold;
@@ -9703,20 +9707,20 @@ span.date-display-single {
   margin-top: 16px;
   min-height: 55px;
 }
-/* line 308, ../scss/layout/_main.scss */
+/* line 311, ../scss/layout/_main.scss */
 .node-search-result .form-item {
   padding-top: 0.875rem;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* line 318, ../scss/layout/_main.scss */
+/* line 321, ../scss/layout/_main.scss */
 .node-search-result.field-label {
   font-weight: bolder;
   font-size: 0.875rem;
 }
 
-/* line 322, ../scss/layout/_main.scss */
+/* line 325, ../scss/layout/_main.scss */
 .field .field-label {
   font-size: 0.895rem;
   font-weight: bolder;
@@ -9726,12 +9730,12 @@ span.date-display-single {
   line-height: 1.2rem;
 }
 
-/* line 333, ../scss/layout/_main.scss */
+/* line 336, ../scss/layout/_main.scss */
 .view.view-test-search.view-id-test_search.node-search-result.panel-pane.pane-entity-field.pane-node-field-image {
   padding-left: 30px;
 }
 
-/* line 337, ../scss/layout/_main.scss */
+/* line 340, ../scss/layout/_main.scss */
 .sidebar {
   background: #fbfbfb;
   -webkit-box-sizing: border-box;
@@ -9745,7 +9749,7 @@ span.date-display-single {
   margin-top: 1.3em;
 }
 
-/* line 356, ../scss/layout/_main.scss */
+/* line 359, ../scss/layout/_main.scss */
 .ztn {
   padding-top: 0.6875em 1.075em 0.75em 0.65em !important;
   font-size: 0.65em !important;
@@ -9780,38 +9784,38 @@ span.date-display-single {
   color: #fff;
 }
 
-/* line 373, ../scss/layout/_main.scss */
+/* line 376, ../scss/layout/_main.scss */
 .entity.entity-field-collection-item.field-collection-item-field-files-collection {
   padding: 0.875rem 0.875rem 0.875rem 0;
 }
 
-/* line 381, ../scss/layout/_main.scss */
+/* line 384, ../scss/layout/_main.scss */
 .field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper {
   display: block;
 }
-/* line 385, ../scss/layout/_main.scss */
+/* line 388, ../scss/layout/_main.scss */
 .field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper p {
   font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 }
-/* line 389, ../scss/layout/_main.scss */
+/* line 392, ../scss/layout/_main.scss */
 .field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper span {
   color: #212121;
   padding-left: 0;
 }
-/* line 397, ../scss/layout/_main.scss */
+/* line 400, ../scss/layout/_main.scss */
 .field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper span .date-display-single {
   color: #212121;
 }
-/* line 404, ../scss/layout/_main.scss */
+/* line 407, ../scss/layout/_main.scss */
 .field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper .date-display-single {
   color: #212121;
 }
-/* line 410, ../scss/layout/_main.scss */
+/* line 413, ../scss/layout/_main.scss */
 .field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper .field-label {
   padding: 0.875rem 0;
 }
 
-/* line 427, ../scss/layout/_main.scss */
+/* line 430, ../scss/layout/_main.scss */
 .field.field-name-field-document-type.field-type-entityreference.clearfix.field-wrapper {
   font-size: 0.875rem;
   font-weight: normal;
@@ -9819,7 +9823,7 @@ span.date-display-single {
   font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 }
 
-/* line 438, ../scss/layout/_main.scss */
+/* line 441, ../scss/layout/_main.scss */
 .field.field-name-field-publication-date.field-type-datetime.clearfix.field-wrapper span {
   color: #212121;
   padding-left: 0;
@@ -9828,12 +9832,12 @@ span.date-display-single {
   font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
   padding-top: 0.148em;
 }
-/* line 448, ../scss/layout/_main.scss */
+/* line 451, ../scss/layout/_main.scss */
 .field.field-name-field-publication-date.field-type-datetime.clearfix.field-wrapper span .date-display-single {
   color: #212121;
 }
 
-/* line 463, ../scss/layout/_main.scss */
+/* line 466, ../scss/layout/_main.scss */
 .field.field-name-field-file.field-type-file.field-wrapper .file {
   display: block;
   word-wrap: break-word;
@@ -9843,17 +9847,17 @@ span.date-display-single {
   font-size: 0.995em;
 }
 
-/* line 475, ../scss/layout/_main.scss */
+/* line 478, ../scss/layout/_main.scss */
 ul.isotope-options.clearfix {
   margin-top: 15px;
   margin-bottom: 35px;
 }
 
-/* line 489, ../scss/layout/_main.scss */
+/* line 492, ../scss/layout/_main.scss */
 .isotope-options li.first {
   display: inline-block;
 }
-/* line 497, ../scss/layout/_main.scss */
+/* line 500, ../scss/layout/_main.scss */
 .isotope-options li {
   list-style-type: none;
   margin: auto;
@@ -9861,7 +9865,7 @@ ul.isotope-options.clearfix {
   padding: 0;
   display: inline-block;
 }
-/* line 505, ../scss/layout/_main.scss */
+/* line 508, ../scss/layout/_main.scss */
 .isotope-options a {
   letter-spacing: .3px;
   font-size: 16px;
@@ -9869,7 +9873,7 @@ ul.isotope-options.clearfix {
   margin-right: 20px;
   display: inline-block;
 }
-/* line 515, ../scss/layout/_main.scss */
+/* line 518, ../scss/layout/_main.scss */
 .isotope-options .filterbutton {
   display: block;
   color: 8DB255;
@@ -9882,17 +9886,17 @@ ul.isotope-options.clearfix {
   line-height: 12px;
   margin-right: 10px;
 }
-/* line 528, ../scss/layout/_main.scss */
+/* line 531, ../scss/layout/_main.scss */
 .isotope-options .filterbutton.selected {
   color: #EAEAEA;
   background-color: #8DB255;
 }
 
-/* line 539, ../scss/layout/_main.scss */
+/* line 542, ../scss/layout/_main.scss */
 .panel-pane.pane-entity-field-extra.pane-user-profile-tree-profile h3 {
   display: none;
 }
-/* line 543, ../scss/layout/_main.scss */
+/* line 546, ../scss/layout/_main.scss */
 .panel-pane.pane-entity-field-extra.pane-user-profile-tree-profile .field {
   font-family: inherit;
   font-size: 0.95em;
@@ -9900,24 +9904,24 @@ ul.isotope-options.clearfix {
   font-weight: 600;
 }
 
-/* line 555, ../scss/layout/_main.scss */
+/* line 558, ../scss/layout/_main.scss */
 .field.field-name-field-profile-pic.field-type-imagef.field-wrapper img {
   float: left;
 }
 
-/* line 561, ../scss/layout/_main.scss */
+/* line 564, ../scss/layout/_main.scss */
 .panel-pane.pane-node-created, .panel-pane.pane-node-author {
   font-size: 0.95em;
   font-family: "Source Sans Pro", Arial, sans-serif;
 }
-/* line 568, ../scss/layout/_main.scss */
+/* line 571, ../scss/layout/_main.scss */
 .panel-pane.pane-node-created .pane-title, .panel-pane.pane-node-created .pane-content, .panel-pane.pane-node-author .pane-title, .panel-pane.pane-node-author .pane-content {
   display: inline-block;
   margin-bottom: 23px;
   vertical-align: baseline;
   float: left;
 }
-/* line 576, ../scss/layout/_main.scss */
+/* line 579, ../scss/layout/_main.scss */
 .panel-pane.pane-node-created .pane-content, .panel-pane.pane-node-author .pane-content {
   margin-right: 15px;
 }

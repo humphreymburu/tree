@@ -6,9 +6,9 @@ dependencies[] = imagemagick
 dependencies[] = image
 
 
-; Information added by drupal.org packaging script on 2012-04-23
-version = "7.x-2.1"
+; Information added by Drupal.org packaging script on 2016-02-18
+version = "7.x-2.1+20-dev"
 core = "7.x"
 project = "pdfpreview"
-datestamp = "1335210084"
+datestamp = "1455826443"
 

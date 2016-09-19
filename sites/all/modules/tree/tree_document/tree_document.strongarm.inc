@@ -56,13 +56,13 @@ function tree_document_strongarm() {
           'weight' => '-5',
         ),
         'path' => array(
-          'weight' => '8',
+          'weight' => '10',
         ),
         'redirect' => array(
-          'weight' => '9',
+          'weight' => '11',
         ),
         'locations' => array(
-          'weight' => '10',
+          'weight' => '12',
         ),
       ),
       'display' => array(
@@ -78,7 +78,7 @@ function tree_document_strongarm() {
         ),
         'tree_core_read_more_button' => array(
           'default' => array(
-            'weight' => '0',
+            'weight' => '1',
             'visible' => TRUE,
           ),
           'token' => array(
@@ -213,6 +213,34 @@ function tree_document_strongarm() {
   $strongarm->name = 'pathauto_node_tree_document_pattern';
   $strongarm->value = '[node:og-group-ref:url:path]/document/[node:title]';
   $export['pathauto_node_tree_document_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pdfpreview_filenames';
+  $strongarm->value = '0';
+  $export['pdfpreview_filenames'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pdfpreview_pathtoimages';
+  $strongarm->value = 'pdfpreview';
+  $export['pdfpreview_pathtoimages'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pdfpreview_previewsize';
+  $strongarm->value = '1024x1024';
+  $export['pdfpreview_previewsize'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pdfpreview_quality';
+  $strongarm->value = '90';
+  $export['pdfpreview_quality'] = $strongarm;
 
   return $export;
 }

@@ -10,6 +10,36 @@
 function tree_document_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_conclusion'
+  $field_bases['field_conclusion'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_conclusion',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'text_with_summary',
+  );
+
   // Exported field_base: 'field_document_bio'
   $field_bases['field_document_bio'] = array(
     'active' => 1,
@@ -38,40 +68,6 @@ function tree_document_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text_with_summary',
-  );
-
-  // Exported field_base: 'field_document_photo'
-  $field_bases['field_document_photo'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_document_photo',
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
-    'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'image',
-    'settings' => array(
-      'default_image' => 0,
-      'entity_translation_sync' => array(
-        0 => 'fid',
-      ),
-      'profile2_private' => FALSE,
-      'uri_scheme' => 'private',
-    ),
-    'translatable' => 0,
-    'type' => 'image',
   );
 
   // Exported field_base: 'field_document_type'
@@ -179,38 +175,6 @@ function tree_document_field_default_field_bases() {
     'type' => 'field_collection',
   );
 
-  // Exported field_base: 'field_language'
-  $field_bases['field_language'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_language',
-    'foreign keys' => array(),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'languagefield',
-    'settings' => array(
-      'enabled' => 1,
-      'entity_translation_sync' => FALSE,
-      'excluded_languages' => array(),
-      'format' => array(
-        'iso' => 0,
-        'name' => 'name',
-        'name_native' => 0,
-      ),
-      'groups' => '',
-      'languages' => array(),
-      'profile2_private' => FALSE,
-    ),
-    'translatable' => 0,
-    'type' => 'language_field',
-  );
-
   // Exported field_base: 'field_publication_date'
   $field_bases['field_publication_date'] = array(
     'active' => 1,
@@ -242,6 +206,66 @@ function tree_document_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'datetime',
+  );
+
+  // Exported field_base: 'field_purpose'
+  $field_bases['field_purpose'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_purpose',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_results'
+  $field_bases['field_results'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_results',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'text_long',
   );
 
   return $field_bases;
