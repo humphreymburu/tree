@@ -87,10 +87,10 @@ function tree_core_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'gmap_default';
   $strongarm->value = array(
-    'width' => '300px',
-    'height' => '200px',
-    'latlong' => '40,0',
-    'zoom' => '3',
+    'width' => '100%',
+    'height' => '400px',
+    'latlong' => '-1.2997069999999946,36.805728999999914',
+    'zoom' => '15',
     'maxzoom' => '14',
     'styles' => array(
       'line_default' => array(
@@ -288,7 +288,7 @@ function tree_core_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'location_geocode_google_apikey';
-  $strongarm->value = 'AIzaSyCmH1notQ54S47mUpYcj-L3Zka5KVWyIzg';
+  $strongarm->value = 'AIzaSyCK2oSmzI3BF51X29kgp-GepN4vLTY1Ayo';
   $export['location_geocode_google_apikey'] = $strongarm;
 
   $strongarm = new stdClass();
