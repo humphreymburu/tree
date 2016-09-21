@@ -9,12 +9,20 @@
  */
 function tree_layout_taxonomy_default_vocabularies() {
   return array(
-    'newsletter' => array(
-      'name' => 'Newsletter',
-      'machine_name' => 'newsletter',
-      'description' => 'Simplenews newsletter categories.',
+    'home' => array(
+      'name' => 'Home',
+      'machine_name' => 'home',
+      'description' => 'Home related content',
       'hierarchy' => 0,
-      'module' => 'simplenews',
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
+    'tree_space_category' => array(
+      'name' => 'Space Category',
+      'machine_name' => 'tree_space_category',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
       'weight' => 0,
     ),
   );
