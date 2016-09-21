@@ -129,6 +129,45 @@ function tree_layout_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['block-tree_location'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'machine_name' => 'tree_location',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'tree' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'tree',
+        'weight' => 0,
+      ),
+      'zurb_foundation' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'zurb_foundation',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   $export['context_ui-editor'] = array(
     'cache' => 1,
     'css_class' => '',
@@ -347,8 +386,8 @@ function tree_layout_default_fe_block_settings() {
         'weight' => 0,
       ),
       'tree' => array(
-        'region' => 'footer_thirdcolumn',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'tree',
         'weight' => 0,
       ),

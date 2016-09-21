@@ -51,5 +51,14 @@ UNITID Building<br/> Ground Floor<br/>Nairobi, &nbsp;<br/> Kenya</p></li>
 
   $export['other_links'] = $fe_block_boxes;
 
+  $fe_block_boxes = new stdClass();
+  $fe_block_boxes->info = 'Map of Tree Location';
+  $fe_block_boxes->format = 'gmap_macro';
+  $fe_block_boxes->machine_name = 'tree_location';
+  $fe_block_boxes->body = '[gmap markers=green::-1.2997069999999946,36.805728999999914 |zoom=15 |center=-1.2997069999999946,36.805728999999914 |width=100% |height=200px |control=Small |type=Map]
+';
+
+  $export['tree_location'] = $fe_block_boxes;
+
   return $export;
 }

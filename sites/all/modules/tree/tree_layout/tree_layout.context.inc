@@ -32,15 +32,21 @@ function tree_layout_context_default_contexts() {
           'region' => 'footer_firstcolumn',
           'weight' => '-10',
         ),
-        'block-1' => array(
-          'module' => 'block',
-          'delta' => '1',
-          'region' => 'footer_secondcolumn',
-          'weight' => '-10',
-        ),
         'block-3' => array(
           'module' => 'block',
           'delta' => '3',
+          'region' => 'footer_secondcolumn',
+          'weight' => '-9',
+        ),
+        'block-4' => array(
+          'module' => 'block',
+          'delta' => '4',
+          'region' => 'footer_thirdcolumn',
+          'weight' => '-9',
+        ),
+        'block-1' => array(
+          'module' => 'block',
+          'delta' => '1',
           'region' => 'footer_fourthcolumn',
           'weight' => '-10',
         ),

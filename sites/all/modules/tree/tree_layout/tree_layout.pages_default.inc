@@ -72,8 +72,8 @@ function tree_layout_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'override_title' => 1,
-      'override_title_text' => 'Contact TREE',
-      'override_title_heading' => 'h1',
+      'override_title_text' => 'Get In Touch',
+      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -87,51 +87,17 @@ function tree_layout_default_page_manager_pages() {
     $display->content['new-4077394d-1076-4533-9bb8-090a341e4276'] = $pane;
     $display->panels['half'][0] = 'new-4077394d-1076-4533-9bb8-090a341e4276';
     $pane = new stdClass();
-    $pane->pid = 'new-bb1e9d36-c914-4095-9fa0-d6fb53a48e46';
-    $pane->panel = 'header';
-    $pane->type = 'views';
-    $pane->subtype = 'contacts';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_pager_settings' => 0,
-      'use_pager' => 0,
-      'nodes_per_page' => '5',
-      'pager_id' => '0',
-      'offset' => '0',
-      'more_link' => 0,
-      'feed_icons' => 0,
-      'panel_args' => 0,
-      'link_to_view' => 0,
-      'args' => '',
-      'url' => '',
-      'display' => 'block',
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = 'bb1e9d36-c914-4095-9fa0-d6fb53a48e46';
-    $display->content['new-bb1e9d36-c914-4095-9fa0-d6fb53a48e46'] = $pane;
-    $display->panels['header'][0] = 'new-bb1e9d36-c914-4095-9fa0-d6fb53a48e46';
-    $pane = new stdClass();
-    $pane->pid = 'new-fe261bc1-1769-4eb4-91d7-9abd36313764';
+    $pane->pid = 'new-d97d12f6-a7f2-4847-9a68-c1e8115e1b5c';
     $pane->panel = 'header';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'admin_title' => 'Gmap',
-      'title' => '',
-      'body' => '[gmap zoom=3 |center=40,0 |width=300px |height=200px |control=Small |type=Map]',
+      'admin_title' => '',
+      'title' => 'Contact TREE',
+      'body' => '[gmap markers=green::-1.2997069999999946,36.805728999999914 |zoom=15 |center=-1.2997069999999946,36.805728999999914 |width=100% |height=400px |control=Small |type=Map]
+',
       'format' => 'gmap_macro',
       'substitute' => TRUE,
     );
@@ -139,13 +105,16 @@ function tree_layout_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'map',
+    );
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'fe261bc1-1769-4eb4-91d7-9abd36313764';
-    $display->content['new-fe261bc1-1769-4eb4-91d7-9abd36313764'] = $pane;
-    $display->panels['header'][1] = 'new-fe261bc1-1769-4eb4-91d7-9abd36313764';
+    $pane->uuid = 'd97d12f6-a7f2-4847-9a68-c1e8115e1b5c';
+    $display->content['new-d97d12f6-a7f2-4847-9a68-c1e8115e1b5c'] = $pane;
+    $display->panels['header'][0] = 'new-d97d12f6-a7f2-4847-9a68-c1e8115e1b5c';
     $pane = new stdClass();
     $pane->pid = 'new-e4de56e3-ec78-4315-b84b-7d64237c62b6';
     $pane->panel = 'quarter1';

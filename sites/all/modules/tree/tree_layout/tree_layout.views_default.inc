@@ -196,5 +196,162 @@ function tree_layout_views_default_views() {
   );
   $export['hero_slider'] = $view;
 
+  $view = new view();
+  $view->name = 'tree_location';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'tree location';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'tree location';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'node';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'gmap';
+  $handler->display->display_options['style_options']['macro'] = '[gmap align=Center |zoom=15 |center=-1.2999299999999985,36.80571299999995 |width=800px |height=400px |control=Small |type=Map]';
+  $handler->display->display_options['style_options']['markertype'] = 'green';
+  $handler->display->display_options['style_options']['latfield'] = 'title';
+  $handler->display->display_options['style_options']['lonfield'] = 'title';
+  $handler->display->display_options['style_options']['markerfield'] = 'title';
+  $handler->display->display_options['style_options']['geofield'] = 'title';
+  $handler->display->display_options['style_options']['enablermt'] = 0;
+  $handler->display->display_options['style_options']['rmtfield'] = 'title';
+  $handler->display->display_options['style_options']['rmtfieldraw'] = 1;
+  $handler->display->display_options['style_options']['animation'] = '0';
+  $handler->display->display_options['style_options']['tooltipfield'] = 'title';
+  $handler->display->display_options['style_options']['bubbletextfield'] = 'title';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['path'] = 'tree-location';
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block_1');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'gmap';
+  $handler->display->display_options['style_options']['macro'] = '[gmap]';
+  $handler->display->display_options['style_options']['markertype'] = 'green';
+  $handler->display->display_options['style_options']['latfield'] = 'title';
+  $handler->display->display_options['style_options']['lonfield'] = 'title';
+  $handler->display->display_options['style_options']['markerfield'] = 'title';
+  $handler->display->display_options['style_options']['geofield'] = 'title';
+  $handler->display->display_options['style_options']['enablermt'] = 0;
+  $handler->display->display_options['style_options']['rmtfield'] = 'title';
+  $handler->display->display_options['style_options']['rmtfieldraw'] = 1;
+  $handler->display->display_options['style_options']['center_on_nodearg_arg'] = 'nid';
+  $handler->display->display_options['style_options']['animation'] = '2';
+  $handler->display->display_options['style_options']['highlight_nodearg_arg'] = 'nid';
+  $handler->display->display_options['style_options']['autoclick_on_nodearg_arg'] = 'nid';
+  $handler->display->display_options['style_options']['tooltipenabled'] = 1;
+  $handler->display->display_options['style_options']['tooltipfield'] = 'title';
+  $handler->display->display_options['style_options']['bubbletextenabled'] = 1;
+  $handler->display->display_options['style_options']['bubbletextfield'] = 'title';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['block_description'] = 'Contacts';
+
+  /* Display: Content pane */
+  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'gmap';
+  $handler->display->display_options['style_options']['markertype'] = 'green';
+  $handler->display->display_options['style_options']['latfield'] = 'title';
+  $handler->display->display_options['style_options']['lonfield'] = 'title';
+  $handler->display->display_options['style_options']['markerfield'] = 'title';
+  $handler->display->display_options['style_options']['geofield'] = 'title';
+  $handler->display->display_options['style_options']['enablermt'] = 0;
+  $handler->display->display_options['style_options']['rmtfield'] = 'title';
+  $handler->display->display_options['style_options']['rmtfieldraw'] = 1;
+  $handler->display->display_options['style_options']['animation'] = '2';
+  $handler->display->display_options['style_options']['tooltipenabled'] = 1;
+  $handler->display->display_options['style_options']['tooltipfield'] = 'title';
+  $handler->display->display_options['style_options']['bubbletextenabled'] = 1;
+  $handler->display->display_options['style_options']['bubbletextfield'] = 'title';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  $translatables['tree_location'] = array(
+    t('Master'),
+    t('tree location'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Page'),
+    t('Block'),
+    t('All'),
+    t('Contacts'),
+    t('Content pane'),
+    t('View panes'),
+  );
+  $export['tree_location'] = $view;
+
   return $export;
 }
