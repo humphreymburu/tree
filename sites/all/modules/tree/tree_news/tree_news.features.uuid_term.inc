@@ -11,7 +11,7 @@ function tree_news_uuid_features_default_terms() {
   $terms = array();
 
   $terms[] = array(
-    'name' => 'Blog Posts',
+    'name' => 'Blog',
     'description' => 'Blog Posts',
     'format' => 'plain_text',
     'weight' => 0,
