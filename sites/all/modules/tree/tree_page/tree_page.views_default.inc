@@ -955,30 +955,19 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_bio']['settings'] = array(
     'trim_length' => '5',
   );
-  /* Field: Content: Document Type */
-  $handler->display->display_options['fields']['field_document_type']['id'] = 'field_document_type';
-  $handler->display->display_options['fields']['field_document_type']['table'] = 'field_data_field_document_type';
-  $handler->display->display_options['fields']['field_document_type']['field'] = 'field_document_type';
-  $handler->display->display_options['fields']['field_document_type']['label'] = '';
-  $handler->display->display_options['fields']['field_document_type']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_document_type']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_document_type']['alter']['text'] = '<h5 class="title-one">[field_document_type]</h5>';
-  $handler->display->display_options['fields']['field_document_type']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_document_type']['settings'] = array(
-    'link' => 0,
-  );
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
-  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing_1']['label'] = '';
-  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '[field_researcher_bio]
-[field_document_type]
-<h3 class="title-block">[title]</h3> 
+  /* Field: Content: Researcher Bio */
+  $handler->display->display_options['fields']['field_researcher_bio_1']['id'] = 'field_researcher_bio_1';
+  $handler->display->display_options['fields']['field_researcher_bio_1']['table'] = 'field_data_field_researcher_bio';
+  $handler->display->display_options['fields']['field_researcher_bio_1']['field'] = 'field_researcher_bio';
+  $handler->display->display_options['fields']['field_researcher_bio_1']['label'] = '';
+  $handler->display->display_options['fields']['field_researcher_bio_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_researcher_bio_1']['alter']['text'] = '[field_researcher_bio]
+<h3 class="title-block">[title]</h3> ';
+  $handler->display->display_options['fields']['field_researcher_bio_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_researcher_bio_1']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_researcher_bio_1']['element_wrapper_class'] = 'title-block-content';
+  $handler->display->display_options['fields']['field_researcher_bio_1']['empty'] = '
 ';
-  $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['nothing_1']['element_wrapper_type'] = 'div';
-  $handler->display->display_options['fields']['nothing_1']['element_wrapper_class'] = 'title-block-content';
   /* Field: Content: Theme Photo */
   $handler->display->display_options['fields']['field_theme_photo']['id'] = 'field_theme_photo';
   $handler->display->display_options['fields']['field_theme_photo']['table'] = 'field_data_field_theme_photo';
@@ -989,6 +978,23 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_theme_photo']['settings'] = array(
     'image_style' => 'test2',
     'image_link' => 'content',
+  );
+  /* Field: Content: Theme Photo */
+  $handler->display->display_options['fields']['field_theme_photo_1']['id'] = 'field_theme_photo_1';
+  $handler->display->display_options['fields']['field_theme_photo_1']['table'] = 'field_data_field_theme_photo';
+  $handler->display->display_options['fields']['field_theme_photo_1']['field'] = 'field_theme_photo';
+  $handler->display->display_options['fields']['field_theme_photo_1']['label'] = '';
+  $handler->display->display_options['fields']['field_theme_photo_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_theme_photo_1']['alter']['text'] = '<h3 class="title-block">[title]</h3>';
+  $handler->display->display_options['fields']['field_theme_photo_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_theme_photo_1']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_theme_photo_1']['element_wrapper_class'] = 'title-block-content';
+  $handler->display->display_options['fields']['field_theme_photo_1']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_theme_photo_1']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_theme_photo_1']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_theme_photo_1']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
   );
   /* Field: Content: Photo */
   $handler->display->display_options['fields']['field_photo']['id'] = 'field_photo';
@@ -1007,21 +1013,10 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_pic']['field'] = 'field_researcher_pic';
   $handler->display->display_options['fields']['field_researcher_pic']['label'] = '';
   $handler->display->display_options['fields']['field_researcher_pic']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_researcher_pic']['alter']['path'] = '/research_list';
+  $handler->display->display_options['fields']['field_researcher_pic']['alter']['path'] = '/researchers';
   $handler->display->display_options['fields']['field_researcher_pic']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_pic']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_researcher_pic']['settings'] = array(
-    'image_style' => 'test2',
-    'image_link' => '',
-  );
-  /* Field: Content: Document_photo */
-  $handler->display->display_options['fields']['field_document_photo']['id'] = 'field_document_photo';
-  $handler->display->display_options['fields']['field_document_photo']['table'] = 'field_data_field_document_photo';
-  $handler->display->display_options['fields']['field_document_photo']['field'] = 'field_document_photo';
-  $handler->display->display_options['fields']['field_document_photo']['label'] = '';
-  $handler->display->display_options['fields']['field_document_photo']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_document_photo']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_document_photo']['settings'] = array(
     'image_style' => 'test2',
     'image_link' => '',
   );
@@ -1030,23 +1025,41 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_document_type_1']['table'] = 'field_data_field_document_type';
   $handler->display->display_options['fields']['field_document_type_1']['field'] = 'field_document_type';
   $handler->display->display_options['fields']['field_document_type_1']['label'] = '';
+  $handler->display->display_options['fields']['field_document_type_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_document_type_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_document_type_1']['alter']['text'] = '<h1 class="title-one">Find research documents from TREE</h1>';
   $handler->display->display_options['fields']['field_document_type_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_document_type_1']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_document_type_1']['settings'] = array(
     'link' => 0,
   );
-  /* Field: Content: Document_photo */
-  $handler->display->display_options['fields']['field_document_photo_1']['id'] = 'field_document_photo_1';
-  $handler->display->display_options['fields']['field_document_photo_1']['table'] = 'field_data_field_document_photo';
-  $handler->display->display_options['fields']['field_document_photo_1']['field'] = 'field_document_photo';
-  $handler->display->display_options['fields']['field_document_photo_1']['label'] = '';
-  $handler->display->display_options['fields']['field_document_photo_1']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_document_photo_1']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_document_photo_1']['alter']['path'] = '[field_document_type_1] /list';
-  $handler->display->display_options['fields']['field_document_photo_1']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_document_photo_1']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_document_photo_1']['settings'] = array(
-    'image_style' => 'test2',
-    'image_link' => '',
+  /* Field: Content: Document Type */
+  $handler->display->display_options['fields']['field_document_type_2']['id'] = 'field_document_type_2';
+  $handler->display->display_options['fields']['field_document_type_2']['table'] = 'field_data_field_document_type';
+  $handler->display->display_options['fields']['field_document_type_2']['field'] = 'field_document_type';
+  $handler->display->display_options['fields']['field_document_type_2']['label'] = '';
+  $handler->display->display_options['fields']['field_document_type_2']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_document_type_2']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_document_type_2']['alter']['path'] = '/[field_document_type_2]/list';
+  $handler->display->display_options['fields']['field_document_type_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_document_type_2']['settings'] = array(
+    'link' => 0,
+  );
+  /* Field: Content: Document Type */
+  $handler->display->display_options['fields']['field_document_type']['id'] = 'field_document_type';
+  $handler->display->display_options['fields']['field_document_type']['table'] = 'field_data_field_document_type';
+  $handler->display->display_options['fields']['field_document_type']['field'] = 'field_document_type';
+  $handler->display->display_options['fields']['field_document_type']['label'] = '';
+  $handler->display->display_options['fields']['field_document_type']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_document_type']['alter']['text'] = '<h5 class="title-one-two">[field_document_type_2]</h5>
+<h3 class="title-block-two">[title]</h3> ';
+  $handler->display->display_options['fields']['field_document_type']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_document_type']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_document_type']['element_wrapper_class'] = '[field_document_type_2]';
+  $handler->display->display_options['fields']['field_document_type']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_document_type']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_document_type']['settings'] = array(
+    'link' => 0,
   );
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Global: Random */
@@ -1057,6 +1070,10 @@ function tree_page_views_default_views() {
   $handler->display->display_options['sorts']['sticky']['id'] = 'sticky';
   $handler->display->display_options['sorts']['sticky']['table'] = 'node';
   $handler->display->display_options['sorts']['sticky']['field'] = 'sticky';
+  /* Sort criterion: Content: Published */
+  $handler->display->display_options['sorts']['status']['id'] = 'status';
+  $handler->display->display_options['sorts']['status']['table'] = 'node';
+  $handler->display->display_options['sorts']['status']['field'] = 'status';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Type */
@@ -1306,11 +1323,14 @@ function tree_page_views_default_views() {
     t('Page'),
     t('Taxonomy term entity referenced from field_type_of_theme'),
     t('<h5 class="title-one">Meet Our Researchers</h5>'),
-    t('<h5 class="title-one">[field_document_type]</h5>'),
     t('[field_researcher_bio]
-[field_document_type]
-<h3 class="title-block">[title]</h3> 
+<h3 class="title-block">[title]</h3> '),
+    t('
 '),
+    t('<h3 class="title-block">[title]</h3>'),
+    t('<h1 class="title-one">Find research documents from TREE</h1>'),
+    t('<h5 class="title-one-two">[field_document_type_2]</h5>
+<h3 class="title-block-two">[title]</h3> '),
     t('More Research'),
     t('<h3 class="title-block"> [title] </h3>'),
     t('<div class="res-container"><a href="researcher_list" class="res_button">Meet Our Researchers</a></div>'),
@@ -1373,7 +1393,7 @@ function tree_page_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '4';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['quantity'] = '9';
@@ -1388,6 +1408,18 @@ function tree_page_views_default_views() {
   );
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h3';
+  $handler->display->display_options['fields']['title']['element_class'] = 'title-block';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'title-block-content';
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   /* Field: Content: Type of News */
   $handler->display->display_options['fields']['field_type_of_news_1']['id'] = 'field_type_of_news_1';
   $handler->display->display_options['fields']['field_type_of_news_1']['table'] = 'field_data_field_type_of_news';
@@ -1395,33 +1427,8 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_type_of_news_1']['label'] = '';
   $handler->display->display_options['fields']['field_type_of_news_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_type_of_news_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_type_of_news_1']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_type_of_news_1']['settings'] = array(
-    'link' => 0,
-  );
-  /* Field: Content: Document Type */
-  $handler->display->display_options['fields']['field_document_type_1']['id'] = 'field_document_type_1';
-  $handler->display->display_options['fields']['field_document_type_1']['table'] = 'field_data_field_document_type';
-  $handler->display->display_options['fields']['field_document_type_1']['field'] = 'field_document_type';
-  $handler->display->display_options['fields']['field_document_type_1']['label'] = '';
-  $handler->display->display_options['fields']['field_document_type_1']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_document_type_1']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_document_type_1']['settings'] = array(
-    'link' => 0,
-  );
-  /* Field: Content: Document Type */
-  $handler->display->display_options['fields']['field_document_type']['id'] = 'field_document_type';
-  $handler->display->display_options['fields']['field_document_type']['table'] = 'field_data_field_document_type';
-  $handler->display->display_options['fields']['field_document_type']['field'] = 'field_document_type';
-  $handler->display->display_options['fields']['field_document_type']['label'] = '';
-  $handler->display->display_options['fields']['field_document_type']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_document_type']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_document_type']['alter']['path'] = '/[field_document_type_1]/list';
-  $handler->display->display_options['fields']['field_document_type']['element_type'] = 'h2';
-  $handler->display->display_options['fields']['field_document_type']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_document_type']['element_wrapper_type'] = 'div';
-  $handler->display->display_options['fields']['field_document_type']['element_wrapper_class'] = 'content_types';
-  $handler->display->display_options['fields']['field_document_type']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_document_type']['settings'] = array(
     'link' => 0,
   );
   /* Field: Content: Type of News */
@@ -1429,29 +1436,18 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_type_of_news']['table'] = 'field_data_field_type_of_news';
   $handler->display->display_options['fields']['field_type_of_news']['field'] = 'field_type_of_news';
   $handler->display->display_options['fields']['field_type_of_news']['label'] = '';
-  $handler->display->display_options['fields']['field_type_of_news']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_type_of_news']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_type_of_news']['alter']['text'] = '<h5 class="title-one">[field_type_of_news_1]</h5>
+<h3 class="title-block">[title]</h3> ';
   $handler->display->display_options['fields']['field_type_of_news']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_type_of_news']['alter']['path'] = '/[field_type_of_news]/list';
-  $handler->display->display_options['fields']['field_type_of_news']['element_type'] = 'h2';
+  $handler->display->display_options['fields']['field_type_of_news']['alter']['path'] = '/[field_type_of_news_1]/list';
   $handler->display->display_options['fields']['field_type_of_news']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_type_of_news']['element_wrapper_type'] = 'div';
-  $handler->display->display_options['fields']['field_type_of_news']['element_wrapper_class'] = 'content_type';
+  $handler->display->display_options['fields']['field_type_of_news']['element_wrapper_class'] = 'title-block-content';
   $handler->display->display_options['fields']['field_type_of_news']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_type_of_news']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_type_of_news']['settings'] = array(
     'link' => 0,
-  );
-  /* Field: Content: Document_photo */
-  $handler->display->display_options['fields']['field_document_photo']['id'] = 'field_document_photo';
-  $handler->display->display_options['fields']['field_document_photo']['table'] = 'field_data_field_document_photo';
-  $handler->display->display_options['fields']['field_document_photo']['field'] = 'field_document_photo';
-  $handler->display->display_options['fields']['field_document_photo']['label'] = '';
-  $handler->display->display_options['fields']['field_document_photo']['alter']['text'] = '[field_theme_photo]';
-  $handler->display->display_options['fields']['field_document_photo']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_document_photo']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_document_photo']['settings'] = array(
-    'image_style' => 'test2',
-    'image_link' => '',
   );
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
@@ -1464,18 +1460,56 @@ function tree_page_views_default_views() {
     'image_style' => 'test2',
     'image_link' => '',
   );
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<h3 class="title-block">[field_document_type]</h3>
-<h3 class="title-block">[field_type_of_news]</h3>
-';
-  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'div';
-  $handler->display->display_options['fields']['nothing']['element_wrapper_class'] = 'title-block-content';
-  $handler->display->display_options['fields']['nothing']['element_default_classes'] = FALSE;
+  /* Field: Content: Date */
+  $handler->display->display_options['fields']['field_event_date']['id'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['field'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['label'] = '';
+  $handler->display->display_options['fields']['field_event_date']['element_type'] = 'h3';
+  $handler->display->display_options['fields']['field_event_date']['element_class'] = 'date_tag';
+  $handler->display->display_options['fields']['field_event_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_date']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_event_date']['element_wrapper_class'] = 'tag_date';
+  $handler->display->display_options['fields']['field_event_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_event_date']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_event_date']['settings'] = array(
+    'format_type' => 'events',
+    'fromto' => 'value',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_repeat_rule' => 'show',
+  );
+  $handler->display->display_options['fields']['field_event_date']['delta_offset'] = '0';
+  /* Field: Content: event photo */
+  $handler->display->display_options['fields']['field_event_photo']['id'] = 'field_event_photo';
+  $handler->display->display_options['fields']['field_event_photo']['table'] = 'field_data_field_event_photo';
+  $handler->display->display_options['fields']['field_event_photo']['field'] = 'field_event_photo';
+  $handler->display->display_options['fields']['field_event_photo']['label'] = '';
+  $handler->display->display_options['fields']['field_event_photo']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_photo']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_event_photo']['settings'] = array(
+    'image_style' => 'test2',
+    'image_link' => 'content',
+  );
+  /* Field: Content: event photo */
+  $handler->display->display_options['fields']['field_event_photo_1']['id'] = 'field_event_photo_1';
+  $handler->display->display_options['fields']['field_event_photo_1']['table'] = 'field_data_field_event_photo';
+  $handler->display->display_options['fields']['field_event_photo_1']['field'] = 'field_event_photo';
+  $handler->display->display_options['fields']['field_event_photo_1']['label'] = '';
+  $handler->display->display_options['fields']['field_event_photo_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_event_photo_1']['alter']['text'] = '<h5 class="title-one">Events</h5>
+<h3 class="title-block">[title]</h3> ';
+  $handler->display->display_options['fields']['field_event_photo_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_photo_1']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_event_photo_1']['element_wrapper_class'] = 'title-block-content';
+  $handler->display->display_options['fields']['field_event_photo_1']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_event_photo_1']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_event_photo_1']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_event_photo_1']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
@@ -1495,7 +1529,7 @@ function tree_page_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'tree_document' => 'tree_document',
+    'tree_event' => 'tree_event',
     'tree_news' => 'tree_news',
   );
   /* Filter criterion: Content: Sticky */
@@ -1509,6 +1543,11 @@ function tree_page_views_default_views() {
   $handler = $view->new_display('panel_pane', 'Resource Links', 'panel_pane_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Resource Links';
+  $handler->display->display_options['defaults']['group_by'] = FALSE;
+  $handler->display->display_options['defaults']['query'] = FALSE;
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['distinct'] = TRUE;
+  $handler->display->display_options['query']['options']['pure_distinct'] = TRUE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
@@ -1552,6 +1591,11 @@ function tree_page_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Sticky */
+  $handler->display->display_options['filters']['sticky']['id'] = 'sticky';
+  $handler->display->display_options['filters']['sticky']['table'] = 'node';
+  $handler->display->display_options['filters']['sticky']['field'] = 'sticky';
+  $handler->display->display_options['filters']['sticky']['value'] = '1';
   /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
@@ -1560,11 +1604,6 @@ function tree_page_views_default_views() {
     'tree_document' => 'tree_document',
     'tree_news' => 'tree_news',
   );
-  /* Filter criterion: Content: Sticky */
-  $handler->display->display_options['filters']['sticky']['id'] = 'sticky';
-  $handler->display->display_options['filters']['sticky']['table'] = 'node';
-  $handler->display->display_options['filters']['sticky']['field'] = 'sticky';
-  $handler->display->display_options['filters']['sticky']['value'] = '1';
   $handler->display->display_options['pane_title'] = 'Resources Links';
   $translatables['resources'] = array(
     t('Master'),
@@ -1584,10 +1623,10 @@ function tree_page_views_default_views() {
     t('last »'),
     t('Taxonomy term entity referenced from field_type_of_news'),
     t('Page'),
-    t('[field_theme_photo]'),
-    t('<h3 class="title-block">[field_document_type]</h3>
-<h3 class="title-block">[field_type_of_news]</h3>
-'),
+    t('<h5 class="title-one">[field_type_of_news_1]</h5>
+<h3 class="title-block">[title]</h3> '),
+    t('<h5 class="title-one">Events</h5>
+<h3 class="title-block">[title]</h3> '),
     t('Resource Links'),
     t('Resources Links'),
     t('View panes'),
