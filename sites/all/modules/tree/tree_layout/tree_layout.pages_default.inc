@@ -606,11 +606,11 @@ function tree_layout_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Resources';
   $page->admin_description = 'Poster,Publications etc';
-  $page->path = 'Resources';
+  $page->path = 'News_and_Events';
   $page->access = array();
   $page->menu = array(
     'type' => 'normal',
-    'title' => 'RESOURCES',
+    'title' => 'News and Events',
     'name' => 'main-menu',
     'weight' => '4',
     'parent' => array(

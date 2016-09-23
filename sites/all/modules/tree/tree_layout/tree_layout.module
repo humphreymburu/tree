@@ -29,7 +29,7 @@ function tree_layout_block_view($delta = '') {
       }
       break;
     case 'tree_layout_donate':
-       $block['content'] = l(t('DONATE'), 'donate', 
+       $block['content'] = l(t('DONATE'), 'get-involved', 
           array('attributes' => array('class' => array('button', 'radius', ''))));
      break;
 

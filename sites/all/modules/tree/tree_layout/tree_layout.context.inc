@@ -36,7 +36,7 @@ function tree_layout_context_default_contexts() {
           'module' => 'block',
           'delta' => '3',
           'region' => 'footer_secondcolumn',
-          'weight' => '-9',
+          'weight' => '-10',
         ),
         'block-4' => array(
           'module' => 'block',
