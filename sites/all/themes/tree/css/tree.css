@@ -201,15 +201,143 @@ h5.title-one {
   letter-spacing: .25px;
   color: #fff;
   font-weight: 300;
+}
+
+/* line 1582, ../scss/_variables.scss */
+h5.title-one-two {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: .25px;
+  color: #fff;
+  font-weight: 300;
+  padding: 5em 0 0 3em;
+}
+
+/* line 1593, ../scss/_variables.scss */
+h5.title-one-two::before {
+  content: "> ";
+}
+
+/* line 1599, ../scss/_variables.scss */
+h5.title-two {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: .25px;
+  color: #fff;
+  font-weight: 300;
   padding-bottom: 0.55em;
 }
 
-/* line 1583, ../scss/_variables.scss */
+/* line 1609, ../scss/_variables.scss */
+h5.title-two::before {
+  content: "> ";
+}
+
+/* line 1614, ../scss/_variables.scss */
 h5.title-one::before {
   content: "> ";
 }
 
-/* line 1590, ../scss/_variables.scss */
+/* line 1619, ../scss/_variables.scss */
+h1.title-one {
+  font-size: 1.17em;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: "Droid", sans-serif;
+  font-weight: 300;
+}
+
+/* line 1629, ../scss/_variables.scss */
+.title-block-content1:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+/* line 1639, ../scss/_variables.scss */
+.Posters:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+/* line 1646, ../scss/_variables.scss */
+.Posters {
+  bottom: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  left: 0;
+  text-align: centre;
+  position: relative;
+  width: 100%;
+  height: 0;
+  z-index: 1;
+  background: #e29c45;
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/* line 1671, ../scss/_variables.scss */
+.Posters span {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: .25px;
+  color: #fff;
+  font-weight: 300;
+}
+/* line 1680, ../scss/_variables.scss */
+.Posters a, .Posters a:hover, .Posters a:active {
+  color: #fff;
+}
+
+/* line 1686, ../scss/_variables.scss */
+.Publications:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+/* line 1693, ../scss/_variables.scss */
+.Publications {
+  bottom: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  left: 0;
+  text-align: centre;
+  position: relative;
+  width: 100%;
+  height: 0;
+  z-index: 1;
+  background: #7A942E;
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/* line 1718, ../scss/_variables.scss */
+.Publications span {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: .25px;
+  color: #fff;
+  font-weight: 300;
+}
+/* line 1727, ../scss/_variables.scss */
+.Publications a, .Publications a:hover, .Publications a:active {
+  color: #fff;
+}
+
+/* line 1738, ../scss/_variables.scss */
 .title-block-content {
   bottom: 0;
   -moz-box-sizing: border-box;
@@ -223,7 +351,7 @@ h5.title-one::before {
   width: 100%;
   z-index: 1;
 }
-/* line 1604, ../scss/_variables.scss */
+/* line 1752, ../scss/_variables.scss */
 .title-block-content span {
   font-size: 0.9rem;
   line-height: 1.5;
@@ -232,26 +360,31 @@ h5.title-one::before {
   color: #fff;
   font-weight: 300;
 }
-/* line 1613, ../scss/_variables.scss */
+/* line 1761, ../scss/_variables.scss */
 .title-block-content a, .title-block-content a:hover, .title-block-content a:active {
   color: #fff;
 }
 
-/* line 1619, ../scss/_variables.scss */
+/* line 1768, ../scss/_variables.scss */
+h3.title-block-two {
+  padding: 2px 50px 50px 50px;
+}
+
+/* line 1772, ../scss/_variables.scss */
 .title-block {
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.16666667;
 }
-/* line 1625, ../scss/_variables.scss */
+/* line 1779, ../scss/_variables.scss */
 .title-block a {
   color: #fff;
 }
-/* line 1630, ../scss/_variables.scss */
+/* line 1784, ../scss/_variables.scss */
 .title-block a:hover {
   color: #fff;
 }
-/* line 1634, ../scss/_variables.scss */
+/* line 1788, ../scss/_variables.scss */
 .title-block h1, .title-block h2, .title-block h3 {
   margin: 0 0 35px 0;
   font-weight: 500;
@@ -259,7 +392,7 @@ h5.title-one::before {
   line-height: 1.16666667;
 }
 
-/* line 1645, ../scss/_variables.scss */
+/* line 1799, ../scss/_variables.scss */
 h5.title-block {
   font-size: 1.5rem;
   line-height: 1.16666667;
@@ -268,20 +401,20 @@ h5.title-block {
   color: #fff;
 }
 
-/* line 1662, ../scss/_variables.scss */
+/* line 1816, ../scss/_variables.scss */
 .pack-header .field-content a {
   color: #fff;
   text-decoration: none;
   line-height: inherit;
 }
-/* line 1671, ../scss/_variables.scss */
+/* line 1825, ../scss/_variables.scss */
 .pack-header a {
   color: #fff;
   text-decoration: none;
   line-height: inherit;
 }
 
-/* line 1685, ../scss/_variables.scss */
+/* line 1839, ../scss/_variables.scss */
 li.isotope-element.one .pack-header {
   left: 0;
   position: absolute;
@@ -298,7 +431,7 @@ li.isotope-element.one .pack-header {
   width: 100%;
   z-index: 1;
 }
-/* line 1704, ../scss/_variables.scss */
+/* line 1858, ../scss/_variables.scss */
 li.isotope-element.one .pack-header .field-content {
   margin-bottom: 0;
   margin-top: 8px;
@@ -307,7 +440,7 @@ li.isotope-element.one .pack-header .field-content {
   vertical-align: middle;
 }
 
-/* line 1719, ../scss/_variables.scss */
+/* line 1873, ../scss/_variables.scss */
 li.isotope-element.two .pack-header {
   left: 0;
   position: absolute;
@@ -324,7 +457,7 @@ li.isotope-element.two .pack-header {
   width: 100%;
   z-index: 1;
 }
-/* line 1738, ../scss/_variables.scss */
+/* line 1892, ../scss/_variables.scss */
 li.isotope-element.two .pack-header .field-content {
   margin-bottom: 0;
   margin-top: 8px;
@@ -334,7 +467,7 @@ li.isotope-element.two .pack-header .field-content {
   vertical-align: middle;
 }
 
-/* line 1765, ../scss/_variables.scss */
+/* line 1919, ../scss/_variables.scss */
 li.isotope-element .pack-header {
   bottom: 0;
   -moz-box-sizing: border-box;
@@ -348,7 +481,7 @@ li.isotope-element .pack-header {
   width: 100%;
   z-index: 1;
 }
-/* line 1781, ../scss/_variables.scss */
+/* line 1935, ../scss/_variables.scss */
 li.isotope-element .pack-header .field-content a.hover {
   background: red;
   content: '';
@@ -361,23 +494,23 @@ li.isotope-element .pack-header .field-content a.hover {
   transition: opacity .2s linear;
   width: 100%;
 }
-/* line 1796, ../scss/_variables.scss */
+/* line 1950, ../scss/_variables.scss */
 li.isotope-element .pack-header h6 {
   line-height: 1.36364;
   font-weight: 700;
   color: white;
   font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 }
-/* line 1804, ../scss/_variables.scss */
+/* line 1958, ../scss/_variables.scss */
 li.isotope-element .pack-header a:hover, li.isotope-element .pack-header a:focus {
   color: #fff;
 }
-/* line 1808, ../scss/_variables.scss */
+/* line 1962, ../scss/_variables.scss */
 li.isotope-element .pack-header span {
   padding-left: 0px;
   color: #ccc;
 }
-/* line 1815, ../scss/_variables.scss */
+/* line 1969, ../scss/_variables.scss */
 li.isotope-element .pack-header .field-content {
   margin-bottom: 0;
   margin-top: 8px;
@@ -387,7 +520,7 @@ li.isotope-element .pack-header .field-content {
   vertical-align: middle;
 }
 
-/* line 1838, ../scss/_variables.scss */
+/* line 1992, ../scss/_variables.scss */
 .isotope_desc {
   bottom: 0;
   -moz-box-sizing: border-box;
@@ -403,51 +536,51 @@ li.isotope-element .pack-header .field-content {
   background: -webkit-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.2) 100%);
   background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 0.2) 100%);
 }
-/* line 1857, ../scss/_variables.scss */
+/* line 2011, ../scss/_variables.scss */
 .isotope_desc h1 {
   font-size: 2.2em;
   text-transform: uppercase;
 }
-/* line 1862, ../scss/_variables.scss */
+/* line 2016, ../scss/_variables.scss */
 .isotope_desc a:hover, .isotope_desc a:focus {
   color: #fff;
   text-decoration: none;
 }
-/* line 1867, ../scss/_variables.scss */
+/* line 2021, ../scss/_variables.scss */
 .isotope_desc a:hover {
   cursor: pointer;
 }
-/* line 1870, ../scss/_variables.scss */
+/* line 2024, ../scss/_variables.scss */
 .isotope_desc a:active, .isotope_desc a:hover {
   outline: 0;
 }
-/* line 1873, ../scss/_variables.scss */
+/* line 2027, ../scss/_variables.scss */
 .isotope_desc a {
   color: #fff;
   text-decoration: none;
   line-height: inherit;
 }
 
-/* line 1890, ../scss/_variables.scss */
+/* line 2044, ../scss/_variables.scss */
 .item-list ul li {
   list-style-type: none;
   margin: auto;
   margin: 0;
 }
 
-/* line 1896, ../scss/_variables.scss */
+/* line 2050, ../scss/_variables.scss */
 a {
   color: red;
   text-decoration: none;
   line-height: inherit;
 }
 
-/* line 1902, ../scss/_variables.scss */
+/* line 2056, ../scss/_variables.scss */
 .slider.row {
   width: 100%;
 }
 
-/* line 1909, ../scss/_variables.scss */
+/* line 2063, ../scss/_variables.scss */
 .res_button {
   border: 1px solid #fff;
   border-radius: 3px;
@@ -472,7 +605,7 @@ a {
   background-color: rgba(0, 0, 0, 0.32);
 }
 
-/* line 1934, ../scss/_variables.scss */
+/* line 2088, ../scss/_variables.scss */
 .res_button.hover {
   border: 1px solid #fff;
   border-radius: 5px;
@@ -485,12 +618,12 @@ a {
   transition: background-color 250ms linear,border-color 250ms linear,color 250ms linear;
 }
 
-/* line 1947, ../scss/_variables.scss */
+/* line 2101, ../scss/_variables.scss */
 .res-container {
   margin-top: 0.5em;
 }
 
-/* line 1952, ../scss/_variables.scss */
+/* line 2106, ../scss/_variables.scss */
 .res-block_content {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -500,34 +633,34 @@ a {
   position: absolute;
   width: 100%;
 }
-/* line 1961, ../scss/_variables.scss */
+/* line 2115, ../scss/_variables.scss */
 .res-block_content h3 {
   color: #fff;
 }
-/* line 1964, ../scss/_variables.scss */
+/* line 2118, ../scss/_variables.scss */
 .res-block_content a:hover, .res-block_content a:focus {
   color: #fff;
   text-decoration: none;
 }
-/* line 1969, ../scss/_variables.scss */
+/* line 2123, ../scss/_variables.scss */
 .res-block_content a:hover {
   cursor: pointer;
 }
-/* line 1972, ../scss/_variables.scss */
+/* line 2126, ../scss/_variables.scss */
 .res-block_content a:active, .res-block_content a:hover {
   outline: 0;
 }
-/* line 1975, ../scss/_variables.scss */
+/* line 2129, ../scss/_variables.scss */
 .res-block_content a {
   text-decoration: none;
 }
 
-/* line 1984, ../scss/_variables.scss */
+/* line 2138, ../scss/_variables.scss */
 .res-block_title {
   margin-bottom: 1.875rem;
 }
 
-/* line 1996, ../scss/_variables.scss */
+/* line 2150, ../scss/_variables.scss */
 .isotope-element.res {
   width: calc(100%);
   height: 0;
@@ -540,7 +673,7 @@ a {
   display: block;
 }
 
-/* line 2012, ../scss/_variables.scss */
+/* line 2166, ../scss/_variables.scss */
 .content_types {
   bottom: 0;
   -moz-box-sizing: border-box;
@@ -556,27 +689,27 @@ a {
   padding-bottom: 10%;
   padding-left: 5%;
 }
-/* line 2029, ../scss/_variables.scss */
+/* line 2183, ../scss/_variables.scss */
 .content_types a:hover, .content_types a:focus {
   color: #fff;
   text-decoration: underline;
 }
-/* line 2034, ../scss/_variables.scss */
+/* line 2188, ../scss/_variables.scss */
 .content_types a:hover {
   cursor: pointer;
 }
-/* line 2037, ../scss/_variables.scss */
+/* line 2191, ../scss/_variables.scss */
 .content_types a:active, .content_types a:hover {
   outline: 0;
 }
-/* line 2040, ../scss/_variables.scss */
+/* line 2194, ../scss/_variables.scss */
 .content_types a {
   color: #fff;
   text-decoration: none;
   line-height: inherit;
 }
 
-/* line 2051, ../scss/_variables.scss */
+/* line 2205, ../scss/_variables.scss */
 .content_type {
   bottom: 0;
   -moz-box-sizing: border-box;
@@ -592,27 +725,27 @@ a {
   padding-bottom: 10%;
   padding-left: 5%;
 }
-/* line 2070, ../scss/_variables.scss */
+/* line 2224, ../scss/_variables.scss */
 .content_type a:hover, .content_type a:focus {
   color: #fff;
   text-decoration: underline;
 }
-/* line 2075, ../scss/_variables.scss */
+/* line 2229, ../scss/_variables.scss */
 .content_type a:hover {
   cursor: pointer;
 }
-/* line 2078, ../scss/_variables.scss */
+/* line 2232, ../scss/_variables.scss */
 .content_type a:active, .content_type a:hover {
   outline: 0;
 }
-/* line 2081, ../scss/_variables.scss */
+/* line 2235, ../scss/_variables.scss */
 .content_type a {
   color: #fff;
   text-decoration: none;
   line-height: inherit;
 }
 
-/* line 2091, ../scss/_variables.scss */
+/* line 2245, ../scss/_variables.scss */
 .content_type h2 {
   font-size: 0.9em;
   line-height: 1.36364;
@@ -621,7 +754,7 @@ a {
   text-transform: uppercase;
 }
 
-/* line 2111, ../scss/_variables.scss */
+/* line 2265, ../scss/_variables.scss */
 li.isotope-element.one_item {
   width: 100%;
   float: left;
@@ -633,7 +766,7 @@ li.isotope-element.one_item {
   display: none;
 }
 
-/* line 2124, ../scss/_variables.scss */
+/* line 2278, ../scss/_variables.scss */
 li.isotope-element.three_item {
   width: calc(100%);
   float: left;
@@ -644,7 +777,7 @@ li.isotope-element.three_item {
   background-color: white;
 }
 
-/* line 2135, ../scss/_variables.scss */
+/* line 2289, ../scss/_variables.scss */
 li.isotope-element.two_item {
   overflow: hidden;
   background-color: #89729e;
@@ -657,7 +790,7 @@ li.isotope-element.two_item {
   padding-top: 25%;
 }
 
-/* line 2152, ../scss/_variables.scss */
+/* line 2306, ../scss/_variables.scss */
 li.isotope-element.five_item {
   overflow: hidden;
   background-color: #7A942E;
@@ -670,7 +803,7 @@ li.isotope-element.five_item {
   padding-top: 25%;
 }
 
-/* line 2168, ../scss/_variables.scss */
+/* line 2322, ../scss/_variables.scss */
 li.isotope-element.four_item {
   width: calc(99% / 3);
   float: left;
@@ -682,7 +815,7 @@ li.isotope-element.four_item {
   display: none;
 }
 
-/* line 2181, ../scss/_variables.scss */
+/* line 2335, ../scss/_variables.scss */
 li.isotope-element.six_item {
   width: calc(100%);
   float: left;
@@ -694,7 +827,7 @@ li.isotope-element.six_item {
   background-color: white;
 }
 
-/* line 2195, ../scss/_variables.scss */
+/* line 2349, ../scss/_variables.scss */
 li.isotope-element.seven_item {
   width: calc(100%);
   float: left;
@@ -707,7 +840,7 @@ li.isotope-element.seven_item {
   display: none;
 }
 
-/* line 2208, ../scss/_variables.scss */
+/* line 2362, ../scss/_variables.scss */
 li.isotope-element.eight_item {
   position: relative;
   margin-left: auto;
@@ -719,7 +852,7 @@ li.isotope-element.eight_item {
   background-color: #e29c45;
 }
 
-/* line 2219, ../scss/_variables.scss */
+/* line 2373, ../scss/_variables.scss */
 li.isotope-element.nine_item {
   width: calc(100%);
   float: left;
@@ -730,11 +863,11 @@ li.isotope-element.nine_item {
   background-color: white;
 }
 
-/* line 2240, ../scss/_variables.scss */
+/* line 2394, ../scss/_variables.scss */
 .flexslider .flex-direction-nav a {
   height: 50px;
 }
-/* line 2243, ../scss/_variables.scss */
+/* line 2397, ../scss/_variables.scss */
 .flexslider .slider-button-rounded-corners {
   display: inline-block;
   width: 50%;
@@ -746,12 +879,12 @@ li.isotope-element.nine_item {
   outline: none;
   text-decoration: none;
 }
-/* line 2258, ../scss/_variables.scss */
+/* line 2412, ../scss/_variables.scss */
 .flexslider .slider-button-rounded-corners:hover,
 .flexslider .slider-button-rounded-corners:active {
   text-decoration: underline;
 }
-/* line 2267, ../scss/_variables.scss */
+/* line 2421, ../scss/_variables.scss */
 .flexslider .field-container {
   position: relative;
   margin-left: auto;
@@ -761,14 +894,14 @@ li.isotope-element.nine_item {
   padding: 2.5em;
 }
 
-/* line 2283, ../scss/_variables.scss */
+/* line 2437, ../scss/_variables.scss */
 .flexslider {
   margin: 0;
   background: #fff;
   border: 0;
 }
 
-/* line 2294, ../scss/_variables.scss */
+/* line 2448, ../scss/_variables.scss */
 .field-container h2 {
   text-transform: uppercase;
   margin-bottom: 0;
@@ -782,7 +915,7 @@ li.isotope-element.nine_item {
   line-height: 24px;
   margin-bottom: 5px;
 }
-/* line 2310, ../scss/_variables.scss */
+/* line 2464, ../scss/_variables.scss */
 .field-container a {
   color: #5B8930;
   letter-spacing: 1px;
@@ -790,19 +923,19 @@ li.isotope-element.nine_item {
   margin-bottom: 1rem;
   margin-bottom: 0.1em;
 }
-/* line 2317, ../scss/_variables.scss */
+/* line 2471, ../scss/_variables.scss */
 .field-container a:visited {
   color: #4e7629;
 }
-/* line 2320, ../scss/_variables.scss */
+/* line 2474, ../scss/_variables.scss */
 .field-container a:hover {
   color: #4e7629;
 }
-/* line 2324, ../scss/_variables.scss */
+/* line 2478, ../scss/_variables.scss */
 .field-container a:active {
   color: #5B8930;
 }
-/* line 2329, ../scss/_variables.scss */
+/* line 2483, ../scss/_variables.scss */
 .field-container p {
   font-size: 0.9em;
   font-style: normal;
@@ -810,7 +943,7 @@ li.isotope-element.nine_item {
   line-height: 1.3em;
   font-family: "Open Sans", sans-serif;
 }
-/* line 2338, ../scss/_variables.scss */
+/* line 2492, ../scss/_variables.scss */
 .field-container .slides p {
   margin: 0;
   text-align: left;
@@ -818,12 +951,12 @@ li.isotope-element.nine_item {
   color: #222;
 }
 
-/* line 2348, ../scss/_variables.scss */
+/* line 2502, ../scss/_variables.scss */
 .text-overlay {
   text-align: center;
 }
 
-/* line 2351, ../scss/_variables.scss */
+/* line 2505, ../scss/_variables.scss */
 .text-overlay {
   position: absolute;
   width: 100%;
@@ -834,7 +967,7 @@ li.isotope-element.nine_item {
   z-index: 10;
 }
 
-/* line 2363, ../scss/_variables.scss */
+/* line 2517, ../scss/_variables.scss */
 .flex-control-nav.flex-control-paging {
   position: absolute;
   bottom: 15px;
@@ -842,7 +975,7 @@ li.isotope-element.nine_item {
   z-index: 501;
 }
 
-/* line 2370, ../scss/_variables.scss */
+/* line 2524, ../scss/_variables.scss */
 .flex-control-nav.flex-control-paging a {
   width: 10px;
   height: 10px;
@@ -859,34 +992,34 @@ li.isotope-element.nine_item {
   border-radius: 35px;
 }
 
-/* line 2386, ../scss/_variables.scss */
+/* line 2540, ../scss/_variables.scss */
 .flex-control-paging li a.flex-active {
   background: #5B8930;
 }
 
-/* line 2393, ../scss/_variables.scss */
+/* line 2547, ../scss/_variables.scss */
 .flex-nav-next {
   right: 0;
 }
 
-/* line 2399, ../scss/_variables.scss */
+/* line 2553, ../scss/_variables.scss */
 .flex-nav-prev {
   left: 0;
 }
 
-/* line 2405, ../scss/_variables.scss */
+/* line 2559, ../scss/_variables.scss */
 .views-slideshow-ddblock-cycle-vsdcw60p .slide-read-more {
   margin: 0 15px;
 }
 
-/* line 2408, ../scss/_variables.scss */
+/* line 2562, ../scss/_variables.scss */
 .views-slideshow-ddblock-cycle-vsdcw60p .slide-read-more {
   display: inline-block;
   float: right;
   zoom: 1;
 }
 
-/* line 2413, ../scss/_variables.scss */
+/* line 2567, ../scss/_variables.scss */
 .views-slideshow-ddblock-cycle-vsdcw60p .slide-read-more a {
   display: inline-block;
   padding: 10px 40px 10px 20px;
@@ -901,7 +1034,7 @@ li.isotope-element.nine_item {
   text-decoration: none;
 }
 
-/* line 2428, ../scss/_variables.scss */
+/* line 2582, ../scss/_variables.scss */
 .field-image-colour-standard .group-slide-description {
   background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.22) 17%, rgba(0, 0, 0, 0.75) 57%, rgba(0, 0, 0, 0.75) 88%, rgba(0, 0, 0, 0.75) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(17%, rgba(0, 0, 0, 0.22)), color-stop(57%, rgba(0, 0, 0, 0.75)), color-stop(88%, rgba(0, 0, 0, 0.75)), color-stop(100%, rgba(0, 0, 0, 0.75)));
@@ -912,13 +1045,13 @@ li.isotope-element.nine_item {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#bf000000',GradientType=0);
 }
 
-/* line 2446, ../scss/_variables.scss */
+/* line 2600, ../scss/_variables.scss */
 .date_tag {
   font-size: 12px;
   padding-top: 8px;
   text-transform: uppercase;
 }
-/* line 2452, ../scss/_variables.scss */
+/* line 2606, ../scss/_variables.scss */
 .date_tag span.date-display-single {
   float: left;
   display: block;
@@ -929,9 +1062,9 @@ li.isotope-element.nine_item {
   font-size: 0.75rem;
 }
 
-/* line 2465, ../scss/_variables.scss */
+/* line 2619, ../scss/_variables.scss */
 .tag_date {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(226, 156, 69, 0.9);
   border-radius: 50%;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -948,12 +1081,12 @@ li.isotope-element.nine_item {
   top: 30px;
 }
 
-/* line 2489, ../scss/_variables.scss */
+/* line 2643, ../scss/_variables.scss */
 .fixed {
   right: 0;
 }
 
-/* line 2496, ../scss/_variables.scss */
+/* line 2650, ../scss/_variables.scss */
 .pub__info {
   bottom: 0;
   -moz-box-sizing: border-box;
@@ -967,21 +1100,21 @@ li.isotope-element.nine_item {
   width: 100%;
   z-index: 1;
 }
-/* line 2511, ../scss/_variables.scss */
+/* line 2665, ../scss/_variables.scss */
 .pub__info a:hover, .pub__info a:focus {
   color: #fff;
   text-decoration: none;
 }
-/* line 2516, ../scss/_variables.scss */
+/* line 2670, ../scss/_variables.scss */
 .pub__info a:hover {
   cursor: pointer;
 }
-/* line 2520, ../scss/_variables.scss */
+/* line 2674, ../scss/_variables.scss */
 .pub__info a:active, .pub__info a:hover {
   outline: 0;
   text-decoration: none;
 }
-/* line 2525, ../scss/_variables.scss */
+/* line 2679, ../scss/_variables.scss */
 .pub__info a {
   color: #fff;
   text-decoration: none;
@@ -990,20 +1123,20 @@ li.isotope-element.nine_item {
   font-weight: bolder;
 }
 
-/* line 2541, ../scss/_variables.scss */
+/* line 2695, ../scss/_variables.scss */
 .pub__info p {
   font-size: 0.75em;
   padding-bottom: 15px;
   margin: 0;
 }
 
-/* line 2548, ../scss/_variables.scss */
+/* line 2702, ../scss/_variables.scss */
 .pub__info--intro {
   color: #FFFFFF;
   padding: 10px;
 }
 
-/* line 2554, ../scss/_variables.scss */
+/* line 2708, ../scss/_variables.scss */
 .pub__info--state {
   display: none;
   background-color: rgba(141, 178, 85, 0.8);
@@ -1011,7 +1144,7 @@ li.isotope-element.nine_item {
   padding: 5px 10px;
 }
 
-/* line 2563, ../scss/_variables.scss */
+/* line 2717, ../scss/_variables.scss */
 .pub__info__title {
   margin-bottom: 0;
   margin-top: 8px;
@@ -1019,12 +1152,12 @@ li.isotope-element.nine_item {
   line-height: 1.39666690;
 }
 
-/* line 2574, ../scss/_variables.scss */
+/* line 2728, ../scss/_variables.scss */
 .pub__info--title {
   font-family: "Source Sans Pro", Arial, sans-serif;
 }
 
-/* line 2580, ../scss/_variables.scss */
+/* line 2734, ../scss/_variables.scss */
 .pub__info__meta {
   color: #fff;
   padding: 0 10px;
@@ -1035,37 +1168,68 @@ li.isotope-element.nine_item {
 }
 
 @media only screen and (min-width: 48em) {
-  /* line 2602, ../scss/_variables.scss */
+  /* line 2756, ../scss/_variables.scss */
   .content_type {
     padding: 30px 30px calc(34.5px);
   }
 
-  /* line 2606, ../scss/_variables.scss */
+  /* line 2760, ../scss/_variables.scss */
   .content_types {
     padding: 30px 30px calc(34.5px);
   }
 
-  /* line 2612, ../scss/_variables.scss */
+  /* line 2766, ../scss/_variables.scss */
   .pub__info {
     padding: 30px 30px calc(34.5px);
   }
 
-  /* line 2621, ../scss/_variables.scss */
+  /* line 2775, ../scss/_variables.scss */
   .tile__info--state {
     display: inline-block;
   }
 }
+/* line 2782, ../scss/_variables.scss */
+.box-theme {
+  background-color: #e29c45;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* line 2787, ../scss/_variables.scss */
+.box-block {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-transform: translate3d(0, 0, 0);
+  /* height: 32.75vw; */
+}
+
+/* line 2796, ../scss/_variables.scss */
+.box-block {
+  /* height: 48.65vw; */
+  /* height: 100%; */
+  /* width: 100%; */
+}
+
+/* line 2801, ../scss/_variables.scss */
+.box-block {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
 @media only screen and (min-width: 64em) {
-  /* line 2631, ../scss/_variables.scss */
+  /* line 2826, ../scss/_variables.scss */
   .isotope_desc {
     padding: 20px 20px 30px 20px !important;
   }
-  /* line 2635, ../scss/_variables.scss */
+  /* line 2830, ../scss/_variables.scss */
   .isotope_desc h1 {
     margin-bottom: 120px;
   }
 
-  /* line 2642, ../scss/_variables.scss */
+  /* line 2837, ../scss/_variables.scss */
   li.isotope-grid-sizer,
   li.isotope-element.one_item {
     width: calc(100% / 2) !important;
@@ -1078,7 +1242,7 @@ li.isotope-element.nine_item {
     display: block !important;
   }
 
-  /* line 2658, ../scss/_variables.scss */
+  /* line 2853, ../scss/_variables.scss */
   li.isotope-element.three_item {
     width: calc(50% / 2) !important;
     float: left;
@@ -1090,7 +1254,7 @@ li.isotope-element.nine_item {
     display: block !important;
   }
 
-  /* line 2669, ../scss/_variables.scss */
+  /* line 2864, ../scss/_variables.scss */
   li.isotope-element.two_item {
     width: calc(50% / 2) !important;
     float: left;
@@ -1101,7 +1265,7 @@ li.isotope-element.nine_item {
     background-color: #89729e;
   }
 
-  /* line 2681, ../scss/_variables.scss */
+  /* line 2876, ../scss/_variables.scss */
   li.isotope-element.four_item {
     width: calc(50% / 2) !important;
     float: left;
@@ -1113,7 +1277,7 @@ li.isotope-element.nine_item {
     background-color: #89729e;
   }
 
-  /* line 2694, ../scss/_variables.scss */
+  /* line 2889, ../scss/_variables.scss */
   li.isotope-element.five_item {
     width: calc(50% / 2) !important;
     float: left;
@@ -1126,7 +1290,7 @@ li.isotope-element.nine_item {
     display: block !important;
   }
 
-  /* line 2708, ../scss/_variables.scss */
+  /* line 2903, ../scss/_variables.scss */
   li.isotope-element.six_item {
     width: calc(100% / 2) !important;
     float: left;
@@ -1138,7 +1302,7 @@ li.isotope-element.nine_item {
     display: block !important;
   }
 
-  /* line 2720, ../scss/_variables.scss */
+  /* line 2915, ../scss/_variables.scss */
   li.isotope-element.seven_item {
     width: calc(100% / 2) !important;
     float: left;
@@ -1150,7 +1314,7 @@ li.isotope-element.nine_item {
     display: block !important;
   }
 
-  /* line 2732, ../scss/_variables.scss */
+  /* line 2927, ../scss/_variables.scss */
   li.isotope-element.eight_item {
     width: calc(100% / 4);
     float: left;
@@ -1161,7 +1325,7 @@ li.isotope-element.nine_item {
     background-color: #e29c45;
   }
 
-  /* line 2743, ../scss/_variables.scss */
+  /* line 2938, ../scss/_variables.scss */
   li.isotope-element.nine_item {
     width: calc(50% / 2);
     float: left;
@@ -1173,18 +1337,18 @@ li.isotope-element.nine_item {
     display: block !important;
   }
 
-  /* line 2756, ../scss/_variables.scss */
+  /* line 2951, ../scss/_variables.scss */
   .tag_date {
     left: 30px;
     top: 30px;
   }
 
-  /* line 2763, ../scss/_variables.scss */
+  /* line 2958, ../scss/_variables.scss */
   .title-block-content {
     padding: 30px 30px calc(32.3px);
   }
 
-  /* line 2775, ../scss/_variables.scss */
+  /* line 2970, ../scss/_variables.scss */
   .flexslider .field-container {
     width: 30%;
     margin-left: auto;
@@ -1204,7 +1368,7 @@ li.isotope-element.nine_item {
     left: 3rem;
   }
 
-  /* line 2806, ../scss/_variables.scss */
+  /* line 3001, ../scss/_variables.scss */
   .field-container h2 {
     text-transform: uppercase;
     margin-bottom: 0;
@@ -1216,7 +1380,7 @@ li.isotope-element.nine_item {
     line-height: 36px;
     font-weight: bold;
   }
-  /* line 2821, ../scss/_variables.scss */
+  /* line 3016, ../scss/_variables.scss */
   .field-container a {
     color: #fff;
     letter-spacing: 1px;
@@ -1224,19 +1388,19 @@ li.isotope-element.nine_item {
     margin-bottom: 1rem;
     margin-bottom: 0.1em;
   }
-  /* line 2828, ../scss/_variables.scss */
+  /* line 3023, ../scss/_variables.scss */
   .field-container a:visited {
     color: #fff;
   }
-  /* line 2831, ../scss/_variables.scss */
+  /* line 3026, ../scss/_variables.scss */
   .field-container a:hover {
     color: #ffF;
   }
-  /* line 2835, ../scss/_variables.scss */
+  /* line 3030, ../scss/_variables.scss */
   .field-container a:active {
     color: #fff;
   }
-  /* line 2840, ../scss/_variables.scss */
+  /* line 3035, ../scss/_variables.scss */
   .field-container p {
     font-size: 0.9em;
     font-style: normal;
@@ -1246,22 +1410,22 @@ li.isotope-element.nine_item {
     font-family: "Open Sans", sans-serif;
   }
 
-  /* line 2855, ../scss/_variables.scss */
+  /* line 3050, ../scss/_variables.scss */
   .pub__info {
     padding: 20px 20px calc(25.3px);
   }
 
-  /* line 2860, ../scss/_variables.scss */
+  /* line 3055, ../scss/_variables.scss */
   .pub__info--state {
     display: inline-block;
   }
 
-  /* line 2865, ../scss/_variables.scss */
+  /* line 3060, ../scss/_variables.scss */
   .res-block_content {
     padding: 18px;
   }
 
-  /* line 2874, ../scss/_variables.scss */
+  /* line 3069, ../scss/_variables.scss */
   .isotope-element.res {
     float: left;
     overflow: hidden;
@@ -1273,7 +1437,7 @@ li.isotope-element.nine_item {
     width: calc(100% / 3);
   }
 
-  /* line 2892, ../scss/_variables.scss */
+  /* line 3087, ../scss/_variables.scss */
   .isotope-element.res img {
     width: 100%;
     display: block;
@@ -1288,12 +1452,12 @@ li.isotope-element.nine_item {
     margin: auto;
   }
 
-  /* line 2911, ../scss/_variables.scss */
+  /* line 3106, ../scss/_variables.scss */
   .content_type {
     padding: 40px 40px calc(42.3px);
   }
 
-  /* line 2916, ../scss/_variables.scss */
+  /* line 3111, ../scss/_variables.scss */
   .content_type h2 {
     font-size: 0.9em;
     line-height: 1.36364;
@@ -1302,12 +1466,12 @@ li.isotope-element.nine_item {
     text-transform: uppercase;
   }
 
-  /* line 2925, ../scss/_variables.scss */
+  /* line 3120, ../scss/_variables.scss */
   .content_types {
     padding: 40px 40px calc(42.3px);
   }
 
-  /* line 2930, ../scss/_variables.scss */
+  /* line 3125, ../scss/_variables.scss */
   .content_types h2 {
     font-size: 0.9em;
     line-height: 1.36364;
@@ -1316,7 +1480,7 @@ li.isotope-element.nine_item {
     text-transform: uppercase;
   }
 
-  /* line 2943, ../scss/_variables.scss */
+  /* line 3138, ../scss/_variables.scss */
   .isotope-grid-sizer,
   .isotope-element.pr {
     width: calc(100% * 1 / 4);
@@ -1328,7 +1492,7 @@ li.isotope-element.nine_item {
     height: 0;
   }
 
-  /* line 2957, ../scss/_variables.scss */
+  /* line 3152, ../scss/_variables.scss */
   .isotope-element.pr img {
     width: 100%;
     display: block;
@@ -1343,33 +1507,33 @@ li.isotope-element.nine_item {
     margin: auto;
   }
 
-  /* line 2975, ../scss/_variables.scss */
+  /* line 3170, ../scss/_variables.scss */
   .isotope-grid-sizer,
   .isotope-element {
     display: block;
   }
-  /* line 2980, ../scss/_variables.scss */
+  /* line 3175, ../scss/_variables.scss */
   .isotope-grid-sizer .pack-header,
   .isotope-element .pack-header {
     padding: 170px 10px calc(20px);
     display: block;
   }
 
-  /* line 2995, ../scss/_variables.scss */
+  /* line 3190, ../scss/_variables.scss */
   li.isotope-element.one .pack-header {
     padding: 250px 10px calc(40px);
     height: 300px;
     display: block;
   }
 
-  /* line 3005, ../scss/_variables.scss */
+  /* line 3200, ../scss/_variables.scss */
   li.isotope-element.two .pack-header {
     padding: 250px 10px calc(40px);
     height: 300px;
     display: block;
   }
 
-  /* line 3012, ../scss/_variables.scss */
+  /* line 3207, ../scss/_variables.scss */
   .isotope-element {
     float: left;
     overflow: hidden;
@@ -1381,7 +1545,7 @@ li.isotope-element.nine_item {
     width: calc(100% / 3);
   }
 
-  /* line 3031, ../scss/_variables.scss */
+  /* line 3226, ../scss/_variables.scss */
   .isotope-grid-sizer,
   .isotope-element.odd {
     width: 66.4%;
@@ -1395,7 +1559,7 @@ li.isotope-element.nine_item {
     padding: 27.50% 0 0 0;
   }
 
-  /* line 3048, ../scss/_variables.scss */
+  /* line 3243, ../scss/_variables.scss */
   .isotope-element.oddi {
     width: 66.4%;
     width: calc(100% * 2 / 3);
@@ -1408,7 +1572,7 @@ li.isotope-element.nine_item {
     padding: 27.50% 0 0 0 !important;
   }
 
-  /* line 3065, ../scss/_variables.scss */
+  /* line 3260, ../scss/_variables.scss */
   .isotope-element img {
     width: 100%;
     display: block;
@@ -1423,7 +1587,7 @@ li.isotope-element.nine_item {
     margin: auto;
   }
 
-  /* line 3083, ../scss/_variables.scss */
+  /* line 3278, ../scss/_variables.scss */
   .isotope-gutter-sizer.odd img, .isotope-element.oddi img, .isotope-element.odd img {
     width: 100%;
     display: block;
@@ -1438,7 +1602,7 @@ li.isotope-element.nine_item {
     margin: auto;
   }
 
-  /* line 3098, ../scss/_variables.scss */
+  /* line 3293, ../scss/_variables.scss */
   .isotope-element.even {
     width: 33.3333333%;
     width: calc(100% / 3);
@@ -1450,13 +1614,13 @@ li.isotope-element.nine_item {
     background-color: white;
   }
 
-  /* line 3113, ../scss/_variables.scss */
+  /* line 3308, ../scss/_variables.scss */
   .col-md-12.radix-layouts-content.panel-panel {
     padding: 0;
   }
 }
 @media only screen and (min-width: 90em) {
-  /* line 3138, ../scss/_variables.scss */
+  /* line 3333, ../scss/_variables.scss */
   .content_type h2 {
     font-size: 0.9em;
     line-height: 1.36364;
@@ -1465,7 +1629,7 @@ li.isotope-element.nine_item {
     text-transform: uppercase;
   }
 
-  /* line 3147, ../scss/_variables.scss */
+  /* line 3342, ../scss/_variables.scss */
   .content_type {
     bottom: 0;
     -moz-box-sizing: border-box;
@@ -1480,7 +1644,7 @@ li.isotope-element.nine_item {
     z-index: 1;
   }
 
-  /* line 3161, ../scss/_variables.scss */
+  /* line 3356, ../scss/_variables.scss */
   .content_types h2 {
     font-size: 0.9em;
     line-height: 1.36364;
@@ -1489,7 +1653,7 @@ li.isotope-element.nine_item {
     text-transform: uppercase;
   }
 
-  /* line 3170, ../scss/_variables.scss */
+  /* line 3365, ../scss/_variables.scss */
   .content_types {
     bottom: 0;
     -moz-box-sizing: border-box;
@@ -1504,12 +1668,12 @@ li.isotope-element.nine_item {
     z-index: 1000;
   }
 
-  /* line 3186, ../scss/_variables.scss */
+  /* line 3381, ../scss/_variables.scss */
   .isotope-gutter-sizer {
     width: 25%;
   }
 
-  /* line 3192, ../scss/_variables.scss */
+  /* line 3387, ../scss/_variables.scss */
   .isotope-element.res {
     width: calc(25%);
     height: 230px;
@@ -1521,7 +1685,7 @@ li.isotope-element.nine_item {
     background-color: white;
   }
 
-  /* line 3204, ../scss/_variables.scss */
+  /* line 3399, ../scss/_variables.scss */
   .isotope-element.odd {
     width: 33.3%;
     width: calc(100% / 3);
@@ -1533,7 +1697,7 @@ li.isotope-element.nine_item {
     background-color: white;
   }
 
-  /* line 3219, ../scss/_variables.scss */
+  /* line 3414, ../scss/_variables.scss */
   .isotope-element {
     float: left;
     overflow: hidden;
@@ -1544,7 +1708,7 @@ li.isotope-element.nine_item {
     width: 33.3333333%;
   }
 
-  /* line 3231, ../scss/_variables.scss */
+  /* line 3426, ../scss/_variables.scss */
   .isotope-grid-sizer,
   .isotope-element.odd {
     width: 66.4%;
@@ -1557,7 +1721,7 @@ li.isotope-element.nine_item {
     background-color: white;
   }
 
-  /* line 3244, ../scss/_variables.scss */
+  /* line 3439, ../scss/_variables.scss */
   .isotope-grid-sizer,
   .isotope-element.pr {
     width: calc(100% * 1 / 4);
@@ -1569,7 +1733,7 @@ li.isotope-element.nine_item {
     height: 0;
   }
 
-  /* line 3258, ../scss/_variables.scss */
+  /* line 3453, ../scss/_variables.scss */
   .isotope-element.pr img {
     width: 100%;
     display: block;
@@ -1584,53 +1748,53 @@ li.isotope-element.nine_item {
     margin: auto;
   }
 
-  /* line 3274, ../scss/_variables.scss */
+  /* line 3469, ../scss/_variables.scss */
   li.isotope-grid-sizer,
   li.isotope-element.one_item {
     width: calc(100% / 2) !important;
   }
 
-  /* line 3280, ../scss/_variables.scss */
+  /* line 3475, ../scss/_variables.scss */
   li.isotope-element.three_item {
     width: calc(50% / 2) !important;
   }
 
-  /* line 3283, ../scss/_variables.scss */
+  /* line 3478, ../scss/_variables.scss */
   li.isotope-element.two_item {
     width: calc(50% / 2) !important;
   }
 
-  /* line 3287, ../scss/_variables.scss */
+  /* line 3482, ../scss/_variables.scss */
   li.isotope-element.four_item {
     width: calc(50% / 2) !important;
   }
 
-  /* line 3291, ../scss/_variables.scss */
+  /* line 3486, ../scss/_variables.scss */
   li.isotope-element.five_item {
     width: calc(50% / 2) !important;
   }
 
-  /* line 3296, ../scss/_variables.scss */
+  /* line 3491, ../scss/_variables.scss */
   li.isotope-element.six_item {
     width: calc(100% / 2) !important;
   }
 
-  /* line 3301, ../scss/_variables.scss */
+  /* line 3496, ../scss/_variables.scss */
   li.isotope-element.seven_item {
     width: calc(100% / 2) !important;
   }
 
-  /* line 3305, ../scss/_variables.scss */
+  /* line 3500, ../scss/_variables.scss */
   li.isotope-element.eight_item {
     width: calc(100% / 4);
   }
 
-  /* line 3309, ../scss/_variables.scss */
+  /* line 3504, ../scss/_variables.scss */
   li.isotope-element.nine_item {
     width: calc(50% / 2);
   }
 
-  /* line 3314, ../scss/_variables.scss */
+  /* line 3509, ../scss/_variables.scss */
   .flexslider .field-container {
     left: 22em;
   }

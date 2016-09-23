@@ -461,6 +461,7 @@ function tree_views_pre_render(&$view) {
       		   if($value === 0) {
       		    $result->field_field_document_photo[0]['rendered']['#image_style']= 'test';
 				$result->field_field_image[0]['rendered']['#image_style']= 'test';
+				$result->field_field_event_photo_1[0]['rendered']['#image_style']= 'test';
 				
       		   } 
             }
