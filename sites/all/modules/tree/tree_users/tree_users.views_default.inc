@@ -260,6 +260,12 @@ function tree_users_views_default_views() {
   $handler->display->display_options['relationships']['field_job_categories_target_id']['field'] = 'field_job_categories_target_id';
   $handler->display->display_options['relationships']['field_job_categories_target_id']['relationship'] = 'profile';
   $handler->display->display_options['relationships']['field_job_categories_target_id']['required'] = TRUE;
+  /* Relationship: Profile: profile pic (field_profile_pic:fid) */
+  $handler->display->display_options['relationships']['field_profile_pic_fid']['id'] = 'field_profile_pic_fid';
+  $handler->display->display_options['relationships']['field_profile_pic_fid']['table'] = 'field_data_field_profile_pic';
+  $handler->display->display_options['relationships']['field_profile_pic_fid']['field'] = 'field_profile_pic_fid';
+  $handler->display->display_options['relationships']['field_profile_pic_fid']['relationship'] = 'profile';
+  $handler->display->display_options['relationships']['field_profile_pic_fid']['required'] = TRUE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Profile: Job Category */
   $handler->display->display_options['fields']['field_job_categories']['id'] = 'field_job_categories';
@@ -321,15 +327,15 @@ function tree_users_views_default_views() {
   $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_wrapper_class'] = 'pack-header';
   /* Field: Profile: profile pic */
-  $handler->display->display_options['fields']['field_profile_pic']['id'] = 'field_profile_pic';
-  $handler->display->display_options['fields']['field_profile_pic']['table'] = 'field_data_field_profile_pic';
-  $handler->display->display_options['fields']['field_profile_pic']['field'] = 'field_profile_pic';
-  $handler->display->display_options['fields']['field_profile_pic']['relationship'] = 'profile';
-  $handler->display->display_options['fields']['field_profile_pic']['label'] = '';
-  $handler->display->display_options['fields']['field_profile_pic']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_profile_pic']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_profile_pic']['settings'] = array(
-    'image_style' => 'staff',
+  $handler->display->display_options['fields']['field_profile_pic_1']['id'] = 'field_profile_pic_1';
+  $handler->display->display_options['fields']['field_profile_pic_1']['table'] = 'field_data_field_profile_pic';
+  $handler->display->display_options['fields']['field_profile_pic_1']['field'] = 'field_profile_pic';
+  $handler->display->display_options['fields']['field_profile_pic_1']['relationship'] = 'profile';
+  $handler->display->display_options['fields']['field_profile_pic_1']['label'] = '';
+  $handler->display->display_options['fields']['field_profile_pic_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_profile_pic_1']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_profile_pic_1']['settings'] = array(
+    'image_style' => '',
     'image_link' => 'content',
   );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
@@ -470,6 +476,7 @@ function tree_users_views_default_views() {
     t('Meet The Team'),
     t('Profile'),
     t('Taxonomy term entity referenced from field_job_categories'),
+    t('image from field_profile_pic'),
     t('[field_first_name]&nbsp;[field_last_name] '),
     t('.'),
     t(','),

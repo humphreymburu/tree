@@ -1730,9 +1730,14 @@ h1.title-one {
 		
 }
   
+.Publications:nth-child(odd) {
+	background: #89729e;
+}
  
- 
- 
+.Posters:nth-child(odd) {
+	background: #5B8930;
+}
+  
  
  
 .title-block-content {
