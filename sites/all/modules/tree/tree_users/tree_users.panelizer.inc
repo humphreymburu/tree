@@ -89,7 +89,7 @@ function tree_users_panelizer_defaults() {
       'view_mode' => 'full',
       'context' => 'panelizer',
       'override_title' => 1,
-      'override_title_text' => 'Biography',
+      'override_title_text' => '',
       'override_title_heading' => 'h2',
     );
     $pane->cache = array();
@@ -104,22 +104,19 @@ function tree_users_panelizer_defaults() {
     $display->content['new-1ffcf6db-c55e-48cc-a3f1-3f015313f6e3'] = $pane;
     $display->panels['contentmain'][0] = 'new-1ffcf6db-c55e-48cc-a3f1-3f015313f6e3';
     $pane = new stdClass();
-    $pane->pid = 'new-0750e4c9-04d6-4a64-b744-ee1356a13ac7';
-    $pane->panel = 'sidebar';
+    $pane->pid = 'new-46327214-f961-4ed5-b270-4dde90660367';
+    $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
-    $pane->subtype = 'profile2:field_profile_pic';
+    $pane->subtype = 'profile2:field_bio';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'hidden',
-      'formatter' => 'image',
+      'formatter' => 'text_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'image_style' => 'staff_one',
-        'image_link' => '',
-      ),
+      'formatter_settings' => array(),
       'context' => 'relationship_profile2_1',
       'override_title' => 0,
       'override_title_text' => '',
@@ -131,11 +128,35 @@ function tree_users_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '46327214-f961-4ed5-b270-4dde90660367';
+    $display->content['new-46327214-f961-4ed5-b270-4dde90660367'] = $pane;
+    $display->panels['contentmain'][1] = 'new-46327214-f961-4ed5-b270-4dde90660367';
+    $pane = new stdClass();
+    $pane->pid = 'new-cc549f6f-1bc7-47cd-a96e-56e9aac61d64';
+    $pane->panel = 'sidebar';
+    $pane->type = 'user_picture';
+    $pane->subtype = 'user_picture';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => 'panelizer',
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '0750e4c9-04d6-4a64-b744-ee1356a13ac7';
-    $display->content['new-0750e4c9-04d6-4a64-b744-ee1356a13ac7'] = $pane;
-    $display->panels['sidebar'][0] = 'new-0750e4c9-04d6-4a64-b744-ee1356a13ac7';
+    $pane->uuid = 'cc549f6f-1bc7-47cd-a96e-56e9aac61d64';
+    $display->content['new-cc549f6f-1bc7-47cd-a96e-56e9aac61d64'] = $pane;
+    $display->panels['sidebar'][0] = 'new-cc549f6f-1bc7-47cd-a96e-56e9aac61d64';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $panelizer->display = $display;
