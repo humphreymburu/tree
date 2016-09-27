@@ -9,9 +9,9 @@
  */
 function tree_users_taxonomy_default_vocabularies() {
   return array(
-    'tree_job_title' => array(
+    'profile_categories' => array(
       'name' => 'Profile Categories',
-      'machine_name' => 'tree_job_title',
+      'machine_name' => 'profile_categories',
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
