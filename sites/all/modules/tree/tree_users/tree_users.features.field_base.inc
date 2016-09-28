@@ -34,7 +34,7 @@ function tree_users_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(
       'entity_translation_sync' => FALSE,
-      'profile2_private' => 1,
+      'profile2_private' => 0,
     ),
     'translatable' => 0,
     'type' => 'text_with_summary',
@@ -237,7 +237,7 @@ function tree_users_field_default_field_bases() {
         0 => 'fid',
       ),
       'profile2_private' => 0,
-      'uri_scheme' => 'private',
+      'uri_scheme' => 'public',
     ),
     'translatable' => 0,
     'type' => 'image',

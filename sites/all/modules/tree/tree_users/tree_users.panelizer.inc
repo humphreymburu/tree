@@ -129,36 +129,6 @@ function tree_users_panelizer_defaults() {
     $display->content['new-1ffcf6db-c55e-48cc-a3f1-3f015313f6e3'] = $pane;
     $display->panels['contentmain'][1] = 'new-1ffcf6db-c55e-48cc-a3f1-3f015313f6e3';
     $pane = new stdClass();
-    $pane->pid = 'new-46327214-f961-4ed5-b270-4dde90660367';
-    $pane->panel = 'contentmain';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'profile2:field_bio';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'text_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'relationship_profile2_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $pane->uuid = '46327214-f961-4ed5-b270-4dde90660367';
-    $display->content['new-46327214-f961-4ed5-b270-4dde90660367'] = $pane;
-    $display->panels['contentmain'][2] = 'new-46327214-f961-4ed5-b270-4dde90660367';
-    $pane = new stdClass();
     $pane->pid = 'new-152d6cc5-7bf6-4f27-b221-b349a515f8f3';
     $pane->panel = 'sidebar';
     $pane->type = 'entity_field';
