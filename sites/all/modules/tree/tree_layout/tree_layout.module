@@ -29,7 +29,7 @@ function tree_layout_block_view($delta = '') {
       }
       break;
     case 'tree_layout_donate':
-       $block['content'] = l(t('DONATE'), 'get-involved', 
+       $block['content'] = l(t('DONATE'), 'https://www.washington.edu/giving/make-a-gift/?source_typ=3&source=TREEGM', 
           array('attributes' => array('class' => array('button', 'radius', ''))));
      break;
 

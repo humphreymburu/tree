@@ -137,7 +137,7 @@ function tree_layout_path_breadcrumbs_settings_info() {
       'logic' => 'and',
     ),
   );
-  $path_breadcrumb->weight = -90;
+  $path_breadcrumb->weight = -88;
   $export['news_list'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
