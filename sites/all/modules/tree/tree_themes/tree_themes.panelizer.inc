@@ -757,6 +757,40 @@ function tree_themes_panelizer_defaults() {
     $display->content['new-59269e62-3c8b-4d8d-96e1-2ae95705c915'] = $pane;
     $display->panels['footer'][2] = 'new-59269e62-3c8b-4d8d-96e1-2ae95705c915';
     $pane = new stdClass();
+    $pane->pid = 'new-99787f82-d3db-410f-9955-7a03734b8ada';
+    $pane->panel = 'header';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:title_field';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'title_linked',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(
+        'title_style' => 'h1',
+        'title_link' => '',
+        'title_class' => '',
+      ),
+      'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '99787f82-d3db-410f-9955-7a03734b8ada';
+    $display->content['new-99787f82-d3db-410f-9955-7a03734b8ada'] = $pane;
+    $display->panels['header'][0] = 'new-99787f82-d3db-410f-9955-7a03734b8ada';
+    $pane = new stdClass();
     $pane->pid = 'new-c93d19cd-d045-441b-b48d-e01bfa2372b5';
     $pane->panel = 'header';
     $pane->type = 'entity_field';
@@ -784,11 +818,11 @@ function tree_themes_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = 'c93d19cd-d045-441b-b48d-e01bfa2372b5';
     $display->content['new-c93d19cd-d045-441b-b48d-e01bfa2372b5'] = $pane;
-    $display->panels['header'][0] = 'new-c93d19cd-d045-441b-b48d-e01bfa2372b5';
+    $display->panels['header'][1] = 'new-c93d19cd-d045-441b-b48d-e01bfa2372b5';
     $pane = new stdClass();
     $pane->pid = 'new-ec1bcc0b-206b-45ad-a3a0-d9ade558a30e';
     $pane->panel = 'sidebar';
