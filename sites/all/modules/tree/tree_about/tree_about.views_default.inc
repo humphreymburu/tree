@@ -62,7 +62,7 @@ function tree_about_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'More About Tree';
+  $handler->display->display_options['title'] = 'More About TREE';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
@@ -229,7 +229,7 @@ function tree_about_views_default_views() {
   /* Display: About Links */
   $handler = $view->new_display('page', 'About Links', 'page_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'About Tree';
+  $handler->display->display_options['title'] = 'About TREE';
   $handler->display->display_options['defaults']['access'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['defaults']['pager'] = FALSE;
@@ -300,10 +300,6 @@ function tree_about_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Sort criterion: Global: Random */
-  $handler->display->display_options['sorts']['random']['id'] = 'random';
-  $handler->display->display_options['sorts']['random']['table'] = 'views';
-  $handler->display->display_options['sorts']['random']['field'] = 'random';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -344,7 +340,7 @@ function tree_about_views_default_views() {
     t('next ›'),
     t('last »'),
     t('Page'),
-    t('More About Tree'),
+    t('More About TREE'),
     t('[field_about_photo]
 <div class="title-block-content">
 <h5 class="title-block">[field_about_info]</h5></div>
@@ -356,7 +352,7 @@ function tree_about_views_default_views() {
     t('[field_other_info] '),
     t('Meet Our Researchers'),
     t('About Links'),
-    t('About Tree'),
+    t('About TREE'),
     t('[field_about_info]
 '),
     t('[field_about_info] '),
