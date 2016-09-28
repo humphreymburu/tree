@@ -335,7 +335,7 @@ function tree_users_views_default_views() {
   $handler->display->display_options['fields']['field_profile_pic_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_profile_pic_1']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_profile_pic_1']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'profiles',
     'image_link' => 'content',
   );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
