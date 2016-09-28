@@ -1704,7 +1704,7 @@ h1.title-one {
 	    width: 100%;
 		 height: 0;
 	    z-index: 1;
-		background: #7A942E;
+		//background: #7A942E;
 		    display: table;
 		position: absolute;
 		    top: 0;
@@ -1729,16 +1729,43 @@ h1.title-one {
 		}
 		
 }
-  
-.Publications:nth-child(odd) {
-	background: #89729e;
+
+
+
+.isotope-element.last {
+	
+	.Publications:nth-child(odd) {
+	 background: #e29c45;
+   }
 }
- 
-.Posters:nth-child(odd) {
-	background: #5B8930;
-}
-  
- 
+
+
+.isotope-element:nth-child(odd) {
+	
+	.Publications {
+		background: #e29c45;
+	}	
+	
+	.Posters {
+		background: #7A942E;
+		
+	}	
+};
+
+.isotope-element:nth-child(even) {
+	
+	.Publications {
+		background: #5B8930;
+	}	
+	
+     .Posters  {
+		background: #7A942E;
+	}
+	
+};
+
+
+
  
 .title-block-content {
 	    bottom: 0;
@@ -1957,6 +1984,8 @@ h5.title-block {
 	 	font-weight: 700;
 	 	color: white;
 		font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+		text-transform: uppercase;
+		
 	 	
 	 }
 	 
