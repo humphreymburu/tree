@@ -19,7 +19,7 @@ function tree_news_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'news_category',
   );
   $terms[] = array(
-    'name' => 'Success Stories',
+    'name' => 'Stories',
     'description' => 'Success Stories',
     'format' => 'plain_text',
     'weight' => 0,
