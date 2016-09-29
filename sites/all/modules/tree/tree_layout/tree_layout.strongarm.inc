@@ -41,6 +41,16 @@ function tree_layout_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'default_path_breadcrumbs';
+  $strongarm->value = array(
+    'news_list' => TRUE,
+    'resources_pages' => TRUE,
+  );
+  $export['default_path_breadcrumbs'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'flexslider_version';
   $strongarm->value = '2.6';
   $export['flexslider_version'] = $strongarm;

@@ -40,7 +40,7 @@ UNITID Building<br/> Ground Floor<br/>Nairobi, &nbsp;<br/> Kenya</p></li>
   $fe_block_boxes->body = '<ul class="footer-links">
 <li><a href="?q=content/Mission-and-Values">Our Mission</a></li>
 <li><a href="?q=researchers">Our Researchers</a></li>
-<li><a href="#">Staff</a></li>
+<li><a href="?q=staff">Staff</a></li>
 <li><a href="?q=content/Get-Involved">Get Involved</a></li>
 <li><a href="https://www.washington.edu/giving/make-a-gift/?source_typ=3&source=TREEGM">Donate</a></li>
 <li><a href="?q=contact_us">Contact Us</a></li>

@@ -51,8 +51,28 @@ function tree_layout_path_breadcrumbs_settings_info() {
       'logic' => 'and',
     ),
   );
-  $path_breadcrumb->weight = -98;
+  $path_breadcrumb->weight = -93;
   $export['about_pages'] = $path_breadcrumb;
+
+  $path_breadcrumb = new stdClass();
+  $path_breadcrumb->api_version = 1;
+  $path_breadcrumb->machine_name = 'about_single_page';
+  $path_breadcrumb->name = 'about_single_page';
+  $path_breadcrumb->path = 'About';
+  $path_breadcrumb->data = array(
+    'titles' => array(
+      0 => 'About',
+    ),
+    'paths' => array(
+      0 => 'About',
+    ),
+    'home' => 1,
+    'translatable' => 0,
+    'arguments' => array(),
+    'access' => array(),
+  );
+  $path_breadcrumb->weight = -92;
+  $export['about_single_page'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
   $path_breadcrumb->api_version = 1;
@@ -61,12 +81,12 @@ function tree_layout_path_breadcrumbs_settings_info() {
   $path_breadcrumb->path = 'node/%node';
   $path_breadcrumb->data = array(
     'titles' => array(
-      0 => 'Events',
-      1 => '%node:title',
+      0 => 'News_and_Events',
+      1 => 'Events',
     ),
     'paths' => array(
-      0 => 'Events',
-      1 => '<none>',
+      0 => 'News_and_Events',
+      1 => 'Events',
     ),
     'home' => 1,
     'translatable' => 0,
@@ -95,8 +115,30 @@ function tree_layout_path_breadcrumbs_settings_info() {
       'logic' => 'and',
     ),
   );
-  $path_breadcrumb->weight = -93;
+  $path_breadcrumb->weight = -98;
   $export['events_pages'] = $path_breadcrumb;
+
+  $path_breadcrumb = new stdClass();
+  $path_breadcrumb->api_version = 1;
+  $path_breadcrumb->machine_name = 'main_event_page';
+  $path_breadcrumb->name = 'main_event_page';
+  $path_breadcrumb->path = 'Events';
+  $path_breadcrumb->data = array(
+    'titles' => array(
+      0 => 'News and Events',
+      1 => 'Events',
+    ),
+    'paths' => array(
+      0 => 'News_and_Events',
+      1 => 'Events',
+    ),
+    'home' => 1,
+    'translatable' => 0,
+    'arguments' => array(),
+    'access' => array(),
+  );
+  $path_breadcrumb->weight = -97;
+  $export['main_event_page'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
   $path_breadcrumb->api_version = 1;
@@ -137,20 +179,110 @@ function tree_layout_path_breadcrumbs_settings_info() {
       'logic' => 'and',
     ),
   );
-  $path_breadcrumb->weight = -88;
+  $path_breadcrumb->weight = -84;
   $export['news_list'] = $path_breadcrumb;
+
+  $path_breadcrumb = new stdClass();
+  $path_breadcrumb->api_version = 1;
+  $path_breadcrumb->machine_name = 'news_list_page';
+  $path_breadcrumb->name = 'news_list';
+  $path_breadcrumb->path = 'News/list';
+  $path_breadcrumb->data = array(
+    'titles' => array(
+      0 => 'News and Events',
+      1 => 'News',
+    ),
+    'paths' => array(
+      0 => 'News_and_Events',
+      1 => 'News/list',
+    ),
+    'home' => 1,
+    'translatable' => 0,
+    'arguments' => array(),
+    'access' => array(),
+  );
+  $path_breadcrumb->weight = -96;
+  $export['news_list_page'] = $path_breadcrumb;
+
+  $path_breadcrumb = new stdClass();
+  $path_breadcrumb->api_version = 1;
+  $path_breadcrumb->machine_name = 'news_list_page_clone';
+  $path_breadcrumb->name = 'blog_list';
+  $path_breadcrumb->path = 'Blog/list';
+  $path_breadcrumb->data = array(
+    'titles' => array(
+      0 => 'News and Events',
+      1 => 'Blog',
+    ),
+    'paths' => array(
+      0 => 'News_and_Events',
+      1 => 'Blog/list',
+    ),
+    'home' => 1,
+    'translatable' => 0,
+    'arguments' => array(),
+    'access' => array(),
+  );
+  $path_breadcrumb->weight = -94;
+  $export['news_list_page_clone'] = $path_breadcrumb;
+
+  $path_breadcrumb = new stdClass();
+  $path_breadcrumb->api_version = 1;
+  $path_breadcrumb->machine_name = 'news_list_page_clone_clone';
+  $path_breadcrumb->name = 'stories_list';
+  $path_breadcrumb->path = 'Stories/list';
+  $path_breadcrumb->data = array(
+    'titles' => array(
+      0 => 'News and Events',
+      1 => 'Stories',
+    ),
+    'paths' => array(
+      0 => 'News_and_Events',
+      1 => 'Stories/list',
+    ),
+    'home' => 1,
+    'translatable' => 0,
+    'arguments' => array(),
+    'access' => array(),
+  );
+  $path_breadcrumb->weight = -95;
+  $export['news_list_page_clone_clone'] = $path_breadcrumb;
+
+  $path_breadcrumb = new stdClass();
+  $path_breadcrumb->api_version = 1;
+  $path_breadcrumb->machine_name = 'profiles';
+  $path_breadcrumb->name = 'profiles';
+  $path_breadcrumb->path = 'staff';
+  $path_breadcrumb->data = array(
+    'titles' => array(
+      0 => 'About',
+      1 => 'Meet the Team',
+    ),
+    'paths' => array(
+      0 => 'About',
+      1 => 'staff',
+    ),
+    'home' => 1,
+    'translatable' => 0,
+    'arguments' => array(),
+    'access' => array(),
+  );
+  $path_breadcrumb->weight = -87;
+  $export['profiles'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
   $path_breadcrumb->api_version = 1;
   $path_breadcrumb->machine_name = 'research_page';
   $path_breadcrumb->name = 'research_page';
-  $path_breadcrumb->path = 'researchers';
+  $path_breadcrumb->path = 'Researchers';
   $path_breadcrumb->data = array(
     'titles' => array(
-      0 => 'Researchers',
+      0 => 'About',
+      1 => 'Researchers',
     ),
     'paths' => array(
-      0 => 'Researchers',
+      0 => 'About',
+      1 => 'Researchers',
     ),
     'home' => 1,
     'translatable' => 0,
@@ -160,7 +292,7 @@ function tree_layout_path_breadcrumbs_settings_info() {
       'logic' => 'and',
     ),
   );
-  $path_breadcrumb->weight = -96;
+  $path_breadcrumb->weight = -90;
   $export['research_page'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -206,7 +338,7 @@ function tree_layout_path_breadcrumbs_settings_info() {
       'logic' => 'and',
     ),
   );
-  $path_breadcrumb->weight = -97;
+  $path_breadcrumb->weight = -91;
   $export['researcher_profiles_clone'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -248,7 +380,7 @@ function tree_layout_path_breadcrumbs_settings_info() {
       'logic' => 'and',
     ),
   );
-  $path_breadcrumb->weight = -99;
+  $path_breadcrumb->weight = -83;
   $export['resources_pages'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -290,7 +422,7 @@ function tree_layout_path_breadcrumbs_settings_info() {
       'logic' => 'and',
     ),
   );
-  $path_breadcrumb->weight = -91;
+  $path_breadcrumb->weight = -88;
   $export['resources_pages_clone'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -300,10 +432,12 @@ function tree_layout_path_breadcrumbs_settings_info() {
   $path_breadcrumb->path = 'node/%node';
   $path_breadcrumb->data = array(
     'titles' => array(
-      0 => '%node:field-type-of-news',
+      0 => 'News and Events',
+      1 => '%node:field-type-of-news:name',
     ),
     'paths' => array(
-      0 => '%node:field-type-of-news/list',
+      0 => 'News_and_Events',
+      1 => '%node:field-type-of-news:name/list',
     ),
     'home' => 1,
     'translatable' => 0,
@@ -332,7 +466,7 @@ function tree_layout_path_breadcrumbs_settings_info() {
       'logic' => 'and',
     ),
   );
-  $path_breadcrumb->weight = -92;
+  $path_breadcrumb->weight = -99;
   $export['success_stories_pages'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -376,6 +510,36 @@ function tree_layout_path_breadcrumbs_settings_info() {
   );
   $path_breadcrumb->weight = -100;
   $export['theme_pages'] = $path_breadcrumb;
+
+  $path_breadcrumb = new stdClass();
+  $path_breadcrumb->api_version = 1;
+  $path_breadcrumb->machine_name = 'user_id_page_profilea';
+  $path_breadcrumb->name = 'user_id_page_profilea';
+  $path_breadcrumb->path = 'user/%user';
+  $path_breadcrumb->data = array(
+    'titles' => array(
+      0 => 'About',
+      1 => 'Meet the Team',
+    ),
+    'paths' => array(
+      0 => 'About',
+      1 => 'staff',
+    ),
+    'home' => 1,
+    'translatable' => 0,
+    'arguments' => array(
+      'user' => array(
+        'position' => 1,
+        'argument' => 'entity_id:user',
+        'settings' => array(
+          'identifier' => 'User: ID',
+        ),
+      ),
+    ),
+    'access' => array(),
+  );
+  $path_breadcrumb->weight = -86;
+  $export['user_id_page_profilea'] = $path_breadcrumb;
 
   return $export;
 }
