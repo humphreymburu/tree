@@ -186,7 +186,7 @@ function tree_about_strongarm() {
     'status' => 1,
     'view modes' => array(
       'page_manager' => array(
-        'status' => 1,
+        'status' => 0,
         'default' => 1,
         'choice' => 1,
       ),
