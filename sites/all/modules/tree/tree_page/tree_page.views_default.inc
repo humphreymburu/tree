@@ -945,7 +945,7 @@ function tree_page_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_bio']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_bio']['alter']['text'] = '<h5 class="title-one">Meet Our Researchers</h5>';
   $handler->display->display_options['fields']['field_researcher_bio']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_researcher_bio']['alter']['path'] = '/research_list';
+  $handler->display->display_options['fields']['field_researcher_bio']['alter']['path'] = '/researchers';
   $handler->display->display_options['fields']['field_researcher_bio']['element_type'] = 'h3';
   $handler->display->display_options['fields']['field_researcher_bio']['element_class'] = 'res-block_title ';
   $handler->display->display_options['fields']['field_researcher_bio']['element_label_colon'] = FALSE;
