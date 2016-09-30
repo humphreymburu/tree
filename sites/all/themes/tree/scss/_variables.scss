@@ -1356,6 +1356,35 @@ img {
 	color: #fff;
 }
 
+h2.pane-title {
+	margin-bottom: 0.9em;
+}
+
+.pane-tile {
+   ul li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 2.5rem;
+    font-size: 14px;
+   }
+   
+   ol li {
+   	
+       margin-top: 0.5rem;
+       margin-bottom: 0.5rem;
+       margin-left: 2.5rem;
+       font-size: 14px;
+	
+   }
+
+}
+
+
+.panel-panel-inner	{
+	margin-bottom: 3px;
+	
+}
+
 
 .block-title {
     font-size: 1em;

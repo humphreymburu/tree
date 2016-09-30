@@ -427,8 +427,8 @@ function tree_views_pre_render(&$view) {
          { 
 		
 		 if($value === 0){
-  		
   		    $result->field_field_theme_photo[0]['rendered']['#image_style']= 'test';
+  		    $result->field_field_researcher_pic[0]['rendered']['#image_style']= 'test';
   		   } 
         }
 	  
