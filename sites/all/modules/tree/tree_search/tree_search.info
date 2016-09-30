@@ -35,4 +35,4 @@ features[search_api_server][] = tree_solr
 features[variable][] = facetapi_pretty_paths_searcher_search_api@default_node_index
 features[variable][] = facetapi_pretty_paths_searcher_search_api@default_node_index_options
 features[views_view][] = test_search
-mtime = 1471265675
+mtime = 1471265798

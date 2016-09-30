@@ -97,7 +97,6 @@ function tree_search_views_default_views() {
     'tree_document' => 'tree_document',
     'tree_event' => 'tree_event',
     'tree_news' => 'tree_news',
-    'tree_page' => 'tree_page',
     'tree_researchers' => 'tree_researchers',
     'themes' => 'themes',
   );
