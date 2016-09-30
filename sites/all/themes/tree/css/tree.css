@@ -44,14 +44,14 @@ h2.pane-title {
 }
 
 /* line 1364, ../scss/_variables.scss */
-.pane-tile ul li {
+.pane-content ul li {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   margin-left: 2.5rem;
   font-size: 14px;
 }
 /* line 1371, ../scss/_variables.scss */
-.pane-tile ol li {
+.pane-content ol li {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   margin-left: 2.5rem;
