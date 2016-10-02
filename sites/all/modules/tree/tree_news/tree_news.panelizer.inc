@@ -388,11 +388,15 @@ function tree_news_panelizer_defaults() {
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'hidden',
-      'formatter' => 'text_default',
+      'formatter' => 'title_linked',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
+      'formatter_settings' => array(
+        'title_style' => 'h2',
+        'title_link' => '',
+        'title_class' => '',
+      ),
       'context' => 'panelizer',
       'override_title' => 0,
       'override_title_text' => '',
