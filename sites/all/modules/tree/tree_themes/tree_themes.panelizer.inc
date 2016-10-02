@@ -249,7 +249,7 @@ function tree_themes_panelizer_defaults() {
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
-        'title_style' => 'h2',
+        'title_style' => 'h1',
         'title_link' => 'content',
         'title_class' => '',
       ),
