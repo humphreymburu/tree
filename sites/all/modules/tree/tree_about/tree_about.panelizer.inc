@@ -193,48 +193,42 @@ function tree_about_panelizer_defaults() {
     $display->content['new-0a9e691e-d68b-407e-bfac-861dfefb6284'] = $pane;
     $display->panels['header'][0] = 'new-0a9e691e-d68b-407e-bfac-861dfefb6284';
     $pane = new stdClass();
-    $pane->pid = 'new-b6ef273d-8b56-4839-a6ad-4aa70e5df6ec';
+    $pane->pid = 'new-faed7347-df9e-4503-8652-293d66eae5da';
     $pane->panel = 'sidebar';
-    $pane->type = 'views';
-    $pane->subtype = 'about';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
     $pane->shown = TRUE;
-    $pane->access = array(
-      'plugins' => array(
-        0 => array(
-          'name' => 'entity_field_value:node:about_tree:field_status',
-          'settings' => array(
-            'field_status' => array(
-              'und' => array(
-                0 => array(
-                  'value' => 1,
-                ),
-              ),
-            ),
-            'field_status_value' => array(
-              0 => 1,
-            ),
-          ),
-          'context' => 'panelizer',
-          'not' => FALSE,
-        ),
-      ),
-    );
+    $pane->access = array();
     $pane->configuration = array(
-      'override_pager_settings' => 0,
-      'use_pager' => 0,
-      'nodes_per_page' => '5',
-      'pager_id' => '0',
-      'offset' => '0',
-      'more_link' => 0,
-      'feed_icons' => 0,
-      'panel_args' => 0,
-      'link_to_view' => 0,
-      'args' => '',
-      'url' => '',
-      'display' => 'page_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
+      'admin_title' => '',
+      'title' => 'About TREE',
+      'body' => '<div class="views-group">
+<div class="views-row views-row-1 views-row-odd views-row-first">
+<div class="views-field views-field-nothing">        <span class="field-content"><a href="/tree/node/91">Mission and Values</a> </span>  </div>  
+<div class="views-field views-field-field-other-info">        <div class="field-content"></div>  </div>  
+<div class="views-field views-field-field-researcher-bio">        <div class="field-content"></div>  </div>	  </div>
+</div>
+
+
+<div class="views-row views-row-2 views-row-even">
+<div class="views-field views-field-nothing">        <span class="field-content"> </span>  </div>  
+ <div class="views-field views-field-field-other-info">        <div class="field-content"><a href="/tree/staff">Meet the Team</a></div>  </div>  
+ <div class="views-field views-field-field-researcher-bio">        <div class="field-content"></div>  </div>	  </div>
+
+<div class="views-row views-row-3 views-row-odd">	      
+<div class="views-field views-field-nothing">        <span class="field-content"> </span>  </div>  
+<div class="views-field views-field-field-other-info">        <div class="field-content"></div>  </div>  
+<div class="views-field views-field-field-researcher-bio">        <div class="field-content"><a href="/tree/researchers">Meet Our Researchers</a></div>  </div>	  
+
+
+<div class="views-row views-row-4 views-row-even views-row-last">
+	      <div class="views-field views-field-nothing">        <span class="field-content"><a href="/tree/node/90">Get Involved</a> </span>  </div>  
+  <div class="views-field views-field-field-other-info">        <div class="field-content"></div>  </div>  
+  <div class="views-field views-field-field-researcher-bio">        <div class="field-content"></div>  </div>	  </div>
+  
+		</div>',
+      'format' => 'full_html',
+      'substitute' => 1,
     );
     $pane->cache = array();
     $pane->style = array(
@@ -244,9 +238,9 @@ function tree_about_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'b6ef273d-8b56-4839-a6ad-4aa70e5df6ec';
-    $display->content['new-b6ef273d-8b56-4839-a6ad-4aa70e5df6ec'] = $pane;
-    $display->panels['sidebar'][0] = 'new-b6ef273d-8b56-4839-a6ad-4aa70e5df6ec';
+    $pane->uuid = 'faed7347-df9e-4503-8652-293d66eae5da';
+    $display->content['new-faed7347-df9e-4503-8652-293d66eae5da'] = $pane;
+    $display->panels['sidebar'][0] = 'new-faed7347-df9e-4503-8652-293d66eae5da';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $panelizer->display = $display;
