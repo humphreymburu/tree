@@ -35,8 +35,8 @@ function tree_layout_default_fe_block_settings() {
         'weight' => 0,
       ),
       'tree' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'footer_firstcolumn',
+        'status' => 1,
         'theme' => 'tree',
         'weight' => 0,
       ),
@@ -74,8 +74,8 @@ function tree_layout_default_fe_block_settings() {
         'weight' => 0,
       ),
       'tree' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'footer_secondcolumn',
+        'status' => 1,
         'theme' => 'tree',
         'weight' => 0,
       ),
@@ -113,8 +113,8 @@ function tree_layout_default_fe_block_settings() {
         'weight' => 0,
       ),
       'tree' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'footer_fourthcolumn',
+        'status' => 1,
         'theme' => 'tree',
         'weight' => 0,
       ),
@@ -152,8 +152,8 @@ function tree_layout_default_fe_block_settings() {
         'weight' => 0,
       ),
       'tree' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'footer_thirdcolumn',
+        'status' => 1,
         'theme' => 'tree',
         'weight' => 0,
       ),

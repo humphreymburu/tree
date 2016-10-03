@@ -81,7 +81,7 @@ function tree_layout_path_breadcrumbs_settings_info() {
   $path_breadcrumb->path = 'node/%node';
   $path_breadcrumb->data = array(
     'titles' => array(
-      0 => 'News_and_Events',
+      0 => 'News and Events',
       1 => 'Events',
     ),
     'paths' => array(
@@ -274,7 +274,7 @@ function tree_layout_path_breadcrumbs_settings_info() {
   $path_breadcrumb->api_version = 1;
   $path_breadcrumb->machine_name = 'research_page';
   $path_breadcrumb->name = 'research_page';
-  $path_breadcrumb->path = 'Researchers';
+  $path_breadcrumb->path = 'researchers';
   $path_breadcrumb->data = array(
     'titles' => array(
       0 => 'About',
@@ -520,10 +520,12 @@ function tree_layout_path_breadcrumbs_settings_info() {
     'titles' => array(
       0 => 'About',
       1 => 'Meet the Team',
+      2 => '%user:name',
     ),
     'paths' => array(
       0 => 'About',
       1 => 'staff',
+      2 => '<none>',
     ),
     'home' => 1,
     'translatable' => 0,
