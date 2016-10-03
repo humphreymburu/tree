@@ -33,6 +33,27 @@ function tree_users_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'access content overview'.
+  $permissions['access content overview'] = array(
+    'name' => 'access content overview',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Manager' => 'Manager',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'access mollom statistics'.
+  $permissions['access mollom statistics'] = array(
+    'name' => 'access mollom statistics',
+    'roles' => array(
+      'Manager' => 'Manager',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'mollom',
+  );
+
   // Exported permission: 'access site reports'.
   $permissions['access site reports'] = array(
     'name' => 'access site reports',
@@ -48,7 +69,6 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'contact',
@@ -63,6 +83,16 @@ function tree_users_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'toolbar',
+  );
+
+  // Exported permission: 'access tools'.
+  $permissions['access tools'] = array(
+    'name' => 'access tools',
+    'roles' => array(
+      'Manager' => 'Manager',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'tools',
   );
 
   // Exported permission: 'access user contact forms'.
@@ -86,6 +116,16 @@ function tree_users_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'administer actions'.
+  $permissions['administer actions'] = array(
+    'name' => 'administer actions',
+    'roles' => array(
+      'Manager' => 'Manager',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'system',
+  );
+
   // Exported permission: 'administer image styles'.
   $permissions['administer image styles'] = array(
     'name' => 'administer image styles',
@@ -94,6 +134,17 @@ function tree_users_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'image',
+  );
+
+  // Exported permission: 'administer nodes'.
+  $permissions['administer nodes'] = array(
+    'name' => 'administer nodes',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Manager' => 'Manager',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'administer profile types'.
@@ -109,10 +160,31 @@ function tree_users_user_default_permissions() {
   $permissions['administer profiles'] = array(
     'name' => 'administer profiles',
     'roles' => array(
+      'Editor' => 'Editor',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'profile2',
+  );
+
+  // Exported permission: 'administer themes'.
+  $permissions['administer themes'] = array(
+    'name' => 'administer themes',
+    'roles' => array(
+      'Manager' => 'Manager',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'system',
+  );
+
+  // Exported permission: 'block IP addresses'.
+  $permissions['block IP addresses'] = array(
+    'name' => 'block IP addresses',
+    'roles' => array(
+      'Manager' => 'Manager',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'system',
   );
 
   // Exported permission: 'cancel account'.
@@ -143,6 +215,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -151,7 +224,6 @@ function tree_users_user_default_permissions() {
   $permissions['create article content'] = array(
     'name' => 'create article content',
     'roles' => array(
-      'Editor' => 'Editor',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
@@ -175,6 +247,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -195,6 +268,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -205,6 +279,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -213,8 +288,8 @@ function tree_users_user_default_permissions() {
   $permissions['create tree_page content'] = array(
     'name' => 'create tree_page content',
     'roles' => array(
-      'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -225,6 +300,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -235,6 +311,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -243,7 +320,6 @@ function tree_users_user_default_permissions() {
   $permissions['delete any article content'] = array(
     'name' => 'delete any article content',
     'roles' => array(
-      'Editor' => 'Editor',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
@@ -289,6 +365,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -309,6 +386,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -319,6 +397,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -329,6 +408,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -350,6 +430,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -358,7 +439,6 @@ function tree_users_user_default_permissions() {
   $permissions['delete own article content'] = array(
     'name' => 'delete own article content',
     'roles' => array(
-      'Editor' => 'Editor',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
@@ -404,6 +484,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -424,6 +505,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -434,6 +516,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -444,6 +527,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -564,6 +648,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -572,7 +657,6 @@ function tree_users_user_default_permissions() {
   $permissions['edit any article content'] = array(
     'name' => 'edit any article content',
     'roles' => array(
-      'Editor' => 'Editor',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
@@ -618,6 +702,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -638,6 +723,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -648,6 +734,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -669,6 +756,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -690,6 +778,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -698,7 +787,6 @@ function tree_users_user_default_permissions() {
   $permissions['edit own article content'] = array(
     'name' => 'edit own article content',
     'roles' => array(
-      'Editor' => 'Editor',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
@@ -744,6 +832,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -764,6 +853,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -774,6 +864,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -795,6 +886,7 @@ function tree_users_user_default_permissions() {
     'roles' => array(
       'Editor' => 'Editor',
       'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -817,6 +909,16 @@ function tree_users_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
+  // Exported permission: 'report to mollom'.
+  $permissions['report to mollom'] = array(
+    'name' => 'report to mollom',
+    'roles' => array(
+      'Manager' => 'Manager',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'mollom',
+  );
+
   // Exported permission: 'revert revisions'.
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
@@ -836,6 +938,15 @@ function tree_users_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'save_draft',
+  );
+
+  // Exported permission: 'use panels in place editing'.
+  $permissions['use panels in place editing'] = array(
+    'name' => 'use panels in place editing',
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'panels',
   );
 
   // Exported permission: 'use text format filtered_html'.
