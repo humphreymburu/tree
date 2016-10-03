@@ -267,7 +267,7 @@ function tree_layout_path_breadcrumbs_settings_info() {
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -87;
+  $path_breadcrumb->weight = -86;
   $export['profiles'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -308,7 +308,7 @@ function tree_layout_path_breadcrumbs_settings_info() {
     ),
     'paths' => array(
       0 => 'About',
-      1 => 'Researchers',
+      1 => 'researchers',
       2 => '%node',
     ),
     'home' => 1,
@@ -380,7 +380,7 @@ function tree_layout_path_breadcrumbs_settings_info() {
       'logic' => 'and',
     ),
   );
-  $path_breadcrumb->weight = -83;
+  $path_breadcrumb->weight = -82;
   $export['resources_pages'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -422,7 +422,7 @@ function tree_layout_path_breadcrumbs_settings_info() {
       'logic' => 'and',
     ),
   );
-  $path_breadcrumb->weight = -88;
+  $path_breadcrumb->weight = -87;
   $export['resources_pages_clone'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -520,7 +520,7 @@ function tree_layout_path_breadcrumbs_settings_info() {
     'titles' => array(
       0 => 'About',
       1 => 'Meet the Team',
-      2 => '%user:name',
+      2 => '%user:profile-tree-profile:field-first-name',
     ),
     'paths' => array(
       0 => 'About',
@@ -540,7 +540,7 @@ function tree_layout_path_breadcrumbs_settings_info() {
     ),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -86;
+  $path_breadcrumb->weight = -85;
   $export['user_id_page_profilea'] = $path_breadcrumb;
 
   return $export;

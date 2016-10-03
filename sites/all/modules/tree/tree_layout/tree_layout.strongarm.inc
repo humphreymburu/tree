@@ -45,6 +45,7 @@ function tree_layout_strongarm() {
   $strongarm->value = array(
     'news_list' => TRUE,
     'resources_pages' => TRUE,
+    'user_profiles' => TRUE,
   );
   $export['default_path_breadcrumbs'] = $strongarm;
 
