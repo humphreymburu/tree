@@ -264,7 +264,7 @@ span.date-display-end {
 
 
 .pdfpreview {
-    padding: 20px 20px 20px 60px;
+    padding: 20px 40px 20px 10px;
     display: block;
     min-height: 100px;
     width: 100%;
@@ -282,15 +282,13 @@ span.date-display-end {
 
  // background-color: #F2F1EF;
   //border: 1px solid #FFF;
-  margin-bottom: 20px !important;
-  position: relative;
-      background: #ededdc;
-      //padding: 1.75rem;
-       margin: 35px 35px 35px !important;
-	  //padding: 2rem;
-	  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.05);
-	    color: #272727;
-	    border-radius: 2px; 
+    margin-bottom: 20px !important;
+    position: relative;
+    background: #ededdc;
+    margin: 35px 0 55px !important;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
+    color: #272727;
+    border-radius: 2px;
 	
   
 

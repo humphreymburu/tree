@@ -9889,7 +9889,7 @@ span.date-display-single {
 
 /* line 266, ../scss/layout/_main.scss */
 .pdfpreview {
-  padding: 20px 20px 20px 60px;
+  padding: 20px 40px 20px 10px;
   display: block;
   min-height: 100px;
   width: 100%;
@@ -9906,12 +9906,12 @@ span.date-display-single {
   margin-bottom: 20px !important;
   position: relative;
   background: #ededdc;
-  margin: 35px 35px 35px !important;
+  margin: 35px 0 55px !important;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
   color: #272727;
   border-radius: 2px;
 }
-/* line 297, ../scss/layout/_main.scss */
+/* line 295, ../scss/layout/_main.scss */
 .node-search-result:after {
   content: '';
   display: block;
@@ -9922,7 +9922,7 @@ span.date-display-single {
   right: 0;
   height: 100%;
 }
-/* line 308, ../scss/layout/_main.scss */
+/* line 306, ../scss/layout/_main.scss */
 .node-search-result > h2 {
   font-size: 16px;
   font-weight: bold;
@@ -9932,20 +9932,20 @@ span.date-display-single {
   margin-top: 16px;
   min-height: 55px;
 }
-/* line 319, ../scss/layout/_main.scss */
+/* line 317, ../scss/layout/_main.scss */
 .node-search-result .form-item {
   padding-top: 0.875rem;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* line 329, ../scss/layout/_main.scss */
+/* line 327, ../scss/layout/_main.scss */
 .node-search-result.field-label {
   font-weight: bolder;
   font-size: 0.875rem;
 }
 
-/* line 333, ../scss/layout/_main.scss */
+/* line 331, ../scss/layout/_main.scss */
 .field .field-label {
   font-size: 0.895rem;
   font-weight: bolder;
@@ -9955,12 +9955,12 @@ span.date-display-single {
   line-height: 1.2rem;
 }
 
-/* line 344, ../scss/layout/_main.scss */
+/* line 342, ../scss/layout/_main.scss */
 .view.view-test-search.view-id-test_search.node-search-result.panel-pane.pane-entity-field.pane-node-field-image {
   padding-left: 30px;
 }
 
-/* line 348, ../scss/layout/_main.scss */
+/* line 346, ../scss/layout/_main.scss */
 .sidebar {
   background: #fbfbfb;
   -webkit-box-sizing: border-box;
@@ -9974,7 +9974,7 @@ span.date-display-single {
   margin-top: 4.5em;
 }
 
-/* line 367, ../scss/layout/_main.scss */
+/* line 365, ../scss/layout/_main.scss */
 .ztn {
   padding-top: 0.6875em 1.075em 0.75em 0.65em !important;
   font-size: 0.65em !important;
@@ -10009,39 +10009,39 @@ span.date-display-single {
   color: #fff;
 }
 
-/* line 384, ../scss/layout/_main.scss */
+/* line 382, ../scss/layout/_main.scss */
 .entity.entity-field-collection-item.field-collection-item-field-files-collection {
   padding: 0.875rem 0.875rem 0.875rem 0;
 }
 
-/* line 392, ../scss/layout/_main.scss */
+/* line 390, ../scss/layout/_main.scss */
 .field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper {
   display: block;
 }
-/* line 396, ../scss/layout/_main.scss */
+/* line 394, ../scss/layout/_main.scss */
 .field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper p {
   font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
   margin-bottom: 15px;
 }
-/* line 401, ../scss/layout/_main.scss */
+/* line 399, ../scss/layout/_main.scss */
 .field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper span {
   color: #212121;
   padding-left: 0;
 }
-/* line 409, ../scss/layout/_main.scss */
+/* line 407, ../scss/layout/_main.scss */
 .field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper span .date-display-single {
   color: #212121;
 }
-/* line 416, ../scss/layout/_main.scss */
+/* line 414, ../scss/layout/_main.scss */
 .field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper .date-display-single {
   color: #212121;
 }
-/* line 422, ../scss/layout/_main.scss */
+/* line 420, ../scss/layout/_main.scss */
 .field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper .field-label {
   padding: 0.875rem 0;
 }
 
-/* line 439, ../scss/layout/_main.scss */
+/* line 437, ../scss/layout/_main.scss */
 .field.field-name-field-document-type.field-type-entityreference.clearfix.field-wrapper {
   font-size: 0.875rem;
   font-weight: normal;
@@ -10049,7 +10049,7 @@ span.date-display-single {
   font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 }
 
-/* line 450, ../scss/layout/_main.scss */
+/* line 448, ../scss/layout/_main.scss */
 .field.field-name-field-publication-date.field-type-datetime.clearfix.field-wrapper span {
   color: #212121;
   padding-left: 0;
@@ -10058,12 +10058,12 @@ span.date-display-single {
   font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
   padding-top: 0.148em;
 }
-/* line 460, ../scss/layout/_main.scss */
+/* line 458, ../scss/layout/_main.scss */
 .field.field-name-field-publication-date.field-type-datetime.clearfix.field-wrapper span .date-display-single {
   color: #212121;
 }
 
-/* line 475, ../scss/layout/_main.scss */
+/* line 473, ../scss/layout/_main.scss */
 .field.field-name-field-file.field-type-file.field-wrapper .file {
   display: block;
   word-wrap: break-word;
@@ -10073,17 +10073,17 @@ span.date-display-single {
   font-size: 0.995em;
 }
 
-/* line 487, ../scss/layout/_main.scss */
+/* line 485, ../scss/layout/_main.scss */
 ul.isotope-options.clearfix {
   margin-top: 15px;
   margin-bottom: 35px;
 }
 
-/* line 501, ../scss/layout/_main.scss */
+/* line 499, ../scss/layout/_main.scss */
 .isotope-options li.first {
   display: inline-block;
 }
-/* line 509, ../scss/layout/_main.scss */
+/* line 507, ../scss/layout/_main.scss */
 .isotope-options li {
   list-style-type: none;
   margin: auto;
@@ -10091,7 +10091,7 @@ ul.isotope-options.clearfix {
   padding: 0;
   display: inline-block;
 }
-/* line 517, ../scss/layout/_main.scss */
+/* line 515, ../scss/layout/_main.scss */
 .isotope-options a {
   letter-spacing: .3px;
   font-size: 16px;
@@ -10099,7 +10099,7 @@ ul.isotope-options.clearfix {
   margin-right: 20px;
   display: inline-block;
 }
-/* line 527, ../scss/layout/_main.scss */
+/* line 525, ../scss/layout/_main.scss */
 .isotope-options .filterbutton {
   display: block;
   color: 8DB255;
@@ -10113,17 +10113,17 @@ ul.isotope-options.clearfix {
   margin-right: 10px;
   margin-top: 10px;
 }
-/* line 541, ../scss/layout/_main.scss */
+/* line 539, ../scss/layout/_main.scss */
 .isotope-options .filterbutton.selected {
   color: #EAEAEA;
   background-color: #8DB255;
 }
 
-/* line 552, ../scss/layout/_main.scss */
+/* line 550, ../scss/layout/_main.scss */
 .panel-pane.pane-entity-field-extra.pane-user-profile-tree-profile h3 {
   display: none;
 }
-/* line 556, ../scss/layout/_main.scss */
+/* line 554, ../scss/layout/_main.scss */
 .panel-pane.pane-entity-field-extra.pane-user-profile-tree-profile .field {
   font-family: inherit;
   font-size: 0.95em;
@@ -10131,29 +10131,29 @@ ul.isotope-options.clearfix {
   font-weight: 600;
 }
 
-/* line 568, ../scss/layout/_main.scss */
+/* line 566, ../scss/layout/_main.scss */
 .field.field-name-field-profile-pic.field-type-imagef.field-wrapper img {
   float: left;
 }
 
-/* line 574, ../scss/layout/_main.scss */
+/* line 572, ../scss/layout/_main.scss */
 .panel-pane.pane-node-created, .panel-pane.pane-node-author {
   font-size: 0.95em;
   font-family: "Source Sans Pro", Arial, sans-serif;
 }
-/* line 581, ../scss/layout/_main.scss */
+/* line 579, ../scss/layout/_main.scss */
 .panel-pane.pane-node-created .pane-title, .panel-pane.pane-node-created .pane-content, .panel-pane.pane-node-author .pane-title, .panel-pane.pane-node-author .pane-content {
   display: inline-block;
   margin-bottom: 23px;
   vertical-align: baseline;
   float: left;
 }
-/* line 589, ../scss/layout/_main.scss */
+/* line 587, ../scss/layout/_main.scss */
 .panel-pane.pane-node-created .pane-content, .panel-pane.pane-node-author .pane-content {
   margin-right: 15px;
 }
 
-/* line 597, ../scss/layout/_main.scss */
+/* line 595, ../scss/layout/_main.scss */
 .gmap {
   margin-bottom: 45px;
 }
@@ -10291,8 +10291,13 @@ ul.isotope-options.clearfix {
 /* line 191, ../scss/layout/_aside.scss */
 .panel-pane.pane-entity-field.pane-node-field-related-links.links .field.field-name-field-related-links {
   padding: 10px 10px 0px 1em;
+  display: block;
+  word-wrap: break-word;
+  max-width: 75%;
+  position: relative;
+  line-height: 1.5em;
 }
-/* line 194, ../scss/layout/_aside.scss */
+/* line 200, ../scss/layout/_aside.scss */
 .panel-pane.pane-entity-field.pane-node-field-related-links.links .field.field-name-field-related-links a::before {
   content: ">> ";
   font-size: 0.875em;

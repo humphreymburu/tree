@@ -189,7 +189,13 @@
 	
 	
 	.field.field-name-field-related-links {
-		padding: 10px 10px 0px 1em;
+		  padding: 10px 10px 0px 1em;
+		  display: block;
+		  word-wrap: break-word;
+		  max-width: 75%;
+		  position: relative;
+		  line-height: 1.5em;
+		
 		
 		a::before {
 		    content: ">> ";
