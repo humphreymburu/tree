@@ -1688,7 +1688,7 @@ h1.title-one {
 	    width: 100%;
 		 height: 0;
 	    z-index: 1;
-		background: #e29c45;
+		background: #89729e;
 		    display: table;
 		position: absolute;
 		    top: 0;
@@ -1735,7 +1735,7 @@ h1.title-one {
 	    width: 100%;
 		 height: 0;
 	    z-index: 1;
-		//background: #7A942E;
+		background: #e29c45;
 		    display: table;
 		position: absolute;
 		    top: 0;
@@ -1766,15 +1766,15 @@ h1.title-one {
 .isotope-element.last {
 	
 	.Publications:nth-child(odd) {
-	 background: #e29c45;
+	 //background: #e29c45;
    }
 }
 
 
-.isotope-element:nth-child(odd) {
+.isotope-element:nth-child(1) {
 	
 	.Publications {
-		background: #e29c45;
+		background: #e29c45;;
 	}	
 	
 	.Posters {
@@ -1783,14 +1783,59 @@ h1.title-one {
 	}	
 };
 
-.isotope-element:nth-child(even) {
+
+.isotope-element:nth-child(2) {
+	
+	.Publications {
+		background: #89729e;
+	}	
+	
+	.Posters {
+		background: #e29c45;
+		
+	}	
+};
+
+.isotope-element:nth-child(3) {
 	
 	.Publications {
 		background: #5B8930;
 	}	
 	
-     .Posters  {
+	.Posters {
+		
 		background: #7A942E;
+		
+	}	
+};
+
+
+.isotope-element:nth-child(4) {
+	
+	.Publications {
+		background: #e29c45;
+	}	
+	
+	.Posters {
+		
+		background: #7A942E;
+		
+	}	
+};
+
+
+
+
+
+
+.isotope-element:nth-child(5) {
+	
+	.Publications {
+		background: #7A942E;
+	}	
+	
+     .Posters  {
+		background: #5B8930;
 	}
 	
 };
@@ -3280,7 +3325,7 @@ height:auto;
  	background-color: white;
      height: 0;
        padding-top: 27.50% !important;
-	width: calc(100% / 3);	
+	width: 33.633337%;
  }
  
  
