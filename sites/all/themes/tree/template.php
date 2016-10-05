@@ -158,7 +158,7 @@ function tree_preprocess_views_view(&$variables) {
       ));
   }  
 
-  if ($view->name == 'staff') {
+  if ($view->name == 'staff_list') {
     //add needed javascript
        drupal_add_js(drupal_get_path('theme', 'tree') . '/js/grids/profile.js', array(
         'type' => 'file',
@@ -244,34 +244,26 @@ function tree_preprocess_html(&$vars){
 }
 
 
-
-
-
-function tree_links__topbar_main_menu($variables) {
-  // We need to fetch the links ourselves because we need the entire tree.
-  $links = menu_tree_output(menu_tree_all_data(variable_get('menu_main_links_source', 'main-menu')));
-  $output = _zurb_foundation_links($links);
-  $variables['attributes']['class'][] = 'right';
-
-  $searchFormItem = '<li class="has-form">
-        <form method="GET" action="' . $GLOBALS['base_url'] . '/search/content/">
-          <div class="row collapse">
-            <div class="large-8 small-9 columns"">
-              <input type="text" name="keys">
-            </div>
-            <div class="large-4 small-3 columns">
-			<button type="submit" class="js_toggler"><i class="step fi-magnifying-glass size-18"></i>
-			  </button>
-			  
-	
-			  
-            </div>
-          </div>
-        </form>
-      </li>';
-
-  return '<ul class="right"' . drupal_attributes($variables['attributes']) . '>' . $output . $searchFormItem . '</ul>';
+function tree_form_alter( &$form, &$form_state, $form_id )
+{
+    
+      if($form_id=="simplenews_block_form_14"){
+        $form['mail']=array(
+          '#type'=>'textfield',
+          '#title' => t('Email'),
+          '#size' => 20,
+          '#maxlength' => 128,
+          '#required' =>true,
+		  '#attributes' => array(
+		          'placeholder' => t('Email'),
+		        ),
+        );
+	}
+    
 }
+ 
+
+
 
 
 /**
@@ -403,3 +395,107 @@ function THEMENAME_preprocess_views_view_fields(&$variables) {
 //    }
 //  }
 //}
+
+/*
+ * Implements hook_views_pre_render()
+ */
+function tree_views_pre_render(&$view) {
+  switch ($view->name) {
+    //Change the Photo style and row class depending on the number of results
+   
+	case 'education';
+	
+      foreach($view->result as $value=>$result) 
+       { 
+		
+		 
+		   if($value === 0) {
+		    $result->field_field_theme_photo[0]['rendered']['#image_style']= 'test';
+	
+		//$view->field['field_theme_photo']->options['settings']['image_style'] = 'test';
+		 
+		 //$result->field_field_theme_photo[]['rendered']['#image_style']= 'test2';
+		      } 
+      }
+	  
+	  break;
+	  
+	  
+  	case 'research';
+	
+        foreach($view->result as $value=>$result) 
+         { 
+		
+		 if($value === 0){
+  		    $result->field_field_theme_photo[0]['rendered']['#image_style']= 'test';
+  		    $result->field_field_researcher_pic[0]['rendered']['#image_style']= 'test';
+  		   } 
+        }
+	  
+  	  break;
+  
+  
+  
+  
+    	case 'treatment';
+	
+          foreach($view->result as $value=>$result) 
+           { 
+    		   if($value === 0) {
+    		   //dpm($value);
+    		    $result->field_field_theme_photo[0]['rendered']['#image_style']= 'test';
+				$result->field_field_event_photo[0]['rendered']['#image_style']= 'test';
+				$result->field_field_photo[0]['rendered']['#image_style']= 'test';
+				$result->field_field_image[0]['rendered']['#image_style']= 'test';
+    		   } 
+          }
+	  
+    	  break;
+		  
+		  
+		  
+      	case 'resources';
+	
+            foreach($view->result as $value=>$result) 
+             { 
+      		   if($value === 0) {
+      		    $result->field_field_document_photo[0]['rendered']['#image_style']= 'test';
+				$result->field_field_image[0]['rendered']['#image_style']= 'test';
+				$result->field_field_event_photo_1[0]['rendered']['#image_style']= 'test';
+				
+      		   } 
+            }
+	  
+      	  break;
+		  
+		  
+		  
+      	case 'tree';
+	
+            foreach($view->result as $value=>$result) 
+             { 
+				
+				
+      		   if($value === 0) {
+				$result->field_field_photo[0]['rendered']['#image_style']='home';
+				
+      		   } elseif($value === 5) {
+			   	$result->field_field_photo[0]['rendered']['#image_style']='home';	
+			   } elseif($value === 6) {
+			   	  $result->field_field_photo[0]['rendered']['#image_style']='home';	
+			   } else {
+			   	  //$result->field_field_photo[0]['rendered']['#image_style']='home2';	
+			   }
+			
+            }
+	  
+      	  break;
+		  
+		
+	     	
+  
+
+  }
+}
+
+

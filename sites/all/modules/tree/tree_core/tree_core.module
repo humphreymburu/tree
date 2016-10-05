@@ -101,6 +101,12 @@ function tree_core_field_extra_fields() {
       'description' => t('Share button'),
       'weight' => 0,
     ),
+	
+    'tree_core_read_more_button' => array(
+      'label' => t('Read more button'),
+      'description' => t('Read more button'),
+      'weight' => 0,
+    ),
   );
 
   return $extra;
@@ -117,9 +123,28 @@ function tree_core_node_view($node, $view_mode, $langcode) {
   $node->content['tree_core_share_button'] = array(
     '#type' => 'item',
     '#title' => '',
-    '#markup' => l('<i class="fa fa-share"></i> '.t('share'), 'http://www.addtoany.com/share_save', array('attributes' => array('class' => array( 'a2a_dd', 'btn', 'btn-default')), 'html' => TRUE)),
+    '#markup' => l('<i class="step fi-share size-16"></i> '.t('Share'), 'http://www.addtoany.com/share_save', array('attributes' => array('class' => array( 'a2a_dd','ztn')), 'html' => TRUE)),
     '#suffix' => '<script type="text/javascript">a2a_config.linkname = "'.$node->title.'";a2a_config.linkurl = "'.$url.'";a2a.init("page");</script>',
   );
-}
+  
+  
+  $node->content['tree_core_read_more_button'] = array(
+    '#type' => 'item',
+    '#title' => '',
+    '#markup' => l(
+      '<i class="step fi-eye size-16"></i> ' . t('read more'),
+      'node/' . $node->nid,
+      array(
+        'attributes' => array(
+          'class' => array(
+            '',
+            'ztn'
+          )
+        ),
+        'html' => TRUE
+	       )
+	     ),
+	   );
+  }
 
 

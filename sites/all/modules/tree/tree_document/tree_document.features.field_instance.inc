@@ -23,74 +23,55 @@ function tree_document_field_default_field_instances() {
         'type' => 'file_default',
         'weight' => 0,
       ),
-      'token' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_file',
-    'label' => 'File',
-    'required' => 1,
+    'label' => 'file',
+    'required' => 0,
     'settings' => array(
       'description_field' => 0,
       'entity_translation_sync' => FALSE,
-      'file_directory' => 'documents/files',
-      'file_extensions' => 'pdf doc docx xls xlsx ppt pptx odt ods odp zip gz',
+      'file_directory' => 'document/files',
+      'file_extensions' => 'pdf doc docx xls xlsx xlsb xlsm ppt pptx odt ods odp zip gz',
       'max_filesize' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'media',
+      'module' => 'file',
       'settings' => array(
-        'allowed_schemes' => array(
-          'private' => 'private',
-          'public' => 'public',
-          'vimeo' => 0,
-          'youtube' => 0,
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 'document',
-          'image' => 0,
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'media_default--media_browser_1' => 0,
-          'media_default--media_browser_my_files' => 0,
-          'media_internet' => 0,
-          'upload' => 0,
-          'youtube' => 0,
-        ),
-        'progress_indicator' => 'ttreeobber',
+        'progress_indicator' => 'throbber',
       ),
-      'type' => 'media_generic',
+      'type' => 'file_generic',
       'weight' => 0,
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_files_collection-field_language'
-  $field_instances['field_collection_item-field_files_collection-field_language'] = array(
-    'bundle' => 'field_files_collection',
+  // Exported field_instance: 'node-tree_document-field_conclusion'
+  $field_instances['node-tree_document-field_conclusion'] = array(
+    'bundle' => 'tree_document',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Conclusion related to poster',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
-        'module' => 'languagefield',
-        'settings' => array(
-          'format' => array(
-            'iso' => 0,
-            'name' => 'name',
-            'name_native' => 0,
-          ),
-        ),
-        'type' => 'language_default',
-        'weight' => 1,
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'token' => array(
         'label' => 'above',
@@ -99,22 +80,25 @@ function tree_document_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_language',
-    'label' => 'Language',
+    'entity_type' => 'node',
+    'field_name' => 'field_conclusion',
+    'label' => 'Conclusion',
     'required' => 0,
     'settings' => array(
+      'display_summary' => 0,
       'entity_translation_sync' => FALSE,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
+      'module' => 'text',
       'settings' => array(
-        'apply_chosen' => 1,
+        'rows' => 20,
+        'summary_rows' => 5,
       ),
-      'type' => 'options_select',
-      'weight' => 1,
+      'type' => 'text_textarea_with_summary',
+      'weight' => 8,
     ),
   );
 
@@ -130,7 +114,7 @@ function tree_document_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 15,
+        'weight' => 5,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -143,6 +127,13 @@ function tree_document_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'token' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 6,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -164,82 +155,7 @@ function tree_document_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 6,
-    ),
-  );
-
-  // Exported field_instance: 'node-tree_document-field_document_photo'
-  $field_instances['node-tree_document-field_document_photo'] = array(
-    'bundle' => 'tree_document',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 14,
-      ),
-      'search_result' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_document_photo',
-    'label' => 'Document_photo',
-    'required' => 0,
-    'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'entity_translation_sync' => FALSE,
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'media',
-      'settings' => array(
-        'allowed_schemes' => array(
-          'private' => 'private',
-          'public' => 'public',
-          'vimeo' => 0,
-          'youtube' => 0,
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 0,
-          'image' => 'image',
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'media_default--media_browser_1' => 0,
-          'media_default--media_browser_my_files' => 0,
-          'media_internet' => 0,
-          'upload' => 0,
-          'youtube' => 0,
-        ),
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'media_generic',
-      'weight' => 1,
+      'weight' => 5,
     ),
   );
 
@@ -258,7 +174,7 @@ function tree_document_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 10,
+        'weight' => 3,
       ),
       'search_result' => array(
         'label' => 'inline',
@@ -275,10 +191,19 @@ function tree_document_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 9,
       ),
+      'token' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 2,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_document_type',
-    'label' => 'Document type',
+    'label' => 'Document Type',
     'required' => 1,
     'settings' => array(
       'behaviors' => array(
@@ -296,7 +221,7 @@ function tree_document_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'apply_chosen' => 1,
+        'apply_chosen' => '',
       ),
       'type' => 'options_select',
       'weight' => 2,
@@ -308,44 +233,43 @@ function tree_document_field_default_field_instances() {
     'bundle' => 'tree_document',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Upload file one at a time',
     'display' => array(
       'default' => array(
         'label' => 'above',
         'module' => 'field_collection',
         'settings' => array(
-          'add' => '',
-          'delete' => '',
-          'description' => 1,
-          'edit' => '',
-          'view_mode' => 'token',
-        ),
-        'type' => 'field_collection_view',
-        'weight' => 13,
-      ),
-      'search_result' => array(
-        'label' => 'inline',
-        'module' => 'field_collection',
-        'settings' => array(
           'add' => 'Add',
           'delete' => 'Delete',
-          'description' => TRUE,
+          'description' => 1,
           'edit' => 'Edit',
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 4,
+        'weight' => 2,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 0,
+      ),
+      'token' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_files_collection',
-    'label' => 'File(s)',
+    'label' => 'Files',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -356,7 +280,7 @@ function tree_document_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 4,
+      'weight' => 1,
     ),
   );
 
@@ -378,7 +302,7 @@ function tree_document_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 11,
+        'weight' => 4,
       ),
       'search_result' => array(
         'label' => 'inline',
@@ -399,6 +323,20 @@ function tree_document_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 5,
+      ),
+      'token' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_repeat_rule' => 'show',
+        ),
+        'type' => 'date_default',
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'node',
@@ -428,7 +366,194 @@ function tree_document_field_default_field_instances() {
         'year_range' => '-10:+0',
       ),
       'type' => 'date_select',
-      'weight' => 5,
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-tree_document-field_purpose'
+  $field_instances['node-tree_document-field_purpose'] = array(
+    'bundle' => 'tree_document',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Purpose of the poster',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 8,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'token' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_purpose',
+    'label' => 'Purpose',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 10,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-tree_document-field_related_links'
+  $field_instances['node-tree_document-field_related_links'] = array(
+    'bundle' => 'tree_document',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 7,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'token' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 8,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_related_links',
+    'label' => 'Related Links',
+    'required' => 1,
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'rel_remove' => 'default',
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_predefined' => '',
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-tree_document-field_results'
+  $field_instances['node-tree_document-field_results'] = array(
+    'bundle' => 'tree_document',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Results related to Poster',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 9,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'token' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_results',
+    'label' => 'Results',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 7,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 7,
     ),
   );
 
@@ -447,7 +572,7 @@ function tree_document_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 16,
+        'weight' => 6,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -460,6 +585,15 @@ function tree_document_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'token' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 7,
       ),
     ),
     'entity_type' => 'node',
@@ -500,7 +634,7 @@ function tree_document_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 11,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -518,6 +652,12 @@ function tree_document_field_default_field_instances() {
         ),
         'type' => 'title_linked',
         'weight' => 1,
+      ),
+      'token' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
       ),
     ),
     'entity_type' => 'node',
@@ -543,95 +683,23 @@ function tree_document_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-tree_document_type-description_field'
-  $field_instances['taxonomy_term-tree_document_type-description_field'] = array(
-    'bundle' => 'tree_document_type',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'description_field',
-    'label' => 'Description',
-    'required' => FALSE,
-    'settings' => array(
-      'display_summary' => 0,
-      'entity_translation_sync' => FALSE,
-      'hide_label' => array(
-        'entity' => FALSE,
-        'page' => FALSE,
-      ),
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-tree_document_type-name_field'
-  $field_instances['taxonomy_term-tree_document_type-name_field'] = array(
-    'bundle' => 'tree_document_type',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'name_field',
-    'label' => 'Name',
-    'required' => TRUE,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'hide_label' => array(
-        'entity' => FALSE,
-        'page' => FALSE,
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 0,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
-  t('Description');
+  t('Conclusion');
+  t('Conclusion related to poster');
   t('Document Bio');
-  t('Document type');
-  t('Document_photo');
-  t('File');
-  t('File(s)');
-  t('Language');
-  t('Name');
+  t('Document Type');
+  t('Files');
   t('Publication Date');
+  t('Purpose');
+  t('Purpose of the poster');
+  t('Related Links');
+  t('Results');
+  t('Results related to Poster');
   t('Title');
   t('Type of Theme');
+  t('Upload file one at a time');
+  t('file');
 
   return $field_instances;
 }

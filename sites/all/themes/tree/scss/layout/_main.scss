@@ -1,8 +1,597 @@
 // Non-modular or client styles for the .l-content region.
+  $small-screen: 768px;
+  $medium-screen: 1280px;
+  $large-screen: 1440px;
 
-.l-main {}
+// $screen: "only screen";
+  $small: "only screen and (min-width: #{$small-screen})";
+  $medium: "only screen and (min-width: #{$medium-screen})";
+  $large: "only screen and (min-width: #{$large-screen})";
+  $landscape: "only screen and (orientation: landscape)";
+  $portrait: "only screen and (orientation: portrait)";
+  
+.l-main {
+	
+	
+	
+	
+	
+}
 
 .node {}
 .body {}
 .image {}
 .breadcrumb {}
+
+.feature-content {
+bottom: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    left: 0;
+    background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.64) 100%);
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.64) 100%);
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+
+p {
+        margin: 15px 0 0;
+	    text-align: justify;
+	    font-size: 14px;
+	
+		
+		
+}
+ 
+.right {
+   float: right;
+	width: 500px;
+	margin: 0px 0px 70px 70px;
+} 
+ 
+li.isotope-element  
+{
+	margin:0;
+}
+
+.top-bar-section li 
+{
+	margin:0;
+}
+
+ul li{
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	margin-left: 2.5rem;
+}
+
+
+
+.pane-content {
+	display: block;
+	
+	
+	//padding-top: 15px;
+}
+.pane-content.field-wrapper {
+	p {
+		//margin-top: 1rem;
+	}
+}
+
+
+
+//event
+
+.date i {
+    position: absolute;
+    background-color: #8DB255;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    line-height: 2px;
+    margin: 0 0 0 -3.5rem;
+    vertical-align: middle;
+    padding: .25em .45em;
+}
+
+.date {
+	padding-left: 1.8em;
+	
+	
+    li {
+ 	   list-style-type: none;
+ 	   padding: 6px 0px 6px 0px;
+ 	   list-style: none;
+	   
+	}   
+	
+	span.date-display-single {
+	    font-size: inherit;
+	    margin-top: -1em;
+	    letter-spacing: .25px;
+	    padding-left: 0;
+	    display: block;
+	}
+	
+}
+
+.docs i {
+    position: absolute;
+    /* background-color: #8DB255; */
+    color: #8DB255;
+    font-size: 6.2rem;
+    /* border-radius: 50%; */
+    line-height: 2px;
+    margin: 0 0 0 -3.5rem;  
+    padding: .1em .95em;	
+}
+
+.docs {
+	//padding-left: 1.8em;
+	//padding: 20px 20px 20px 30px;
+    padding: 0px 20px 20px 60px;
+    display: block;
+    min-height: 100px;
+    width: 100%;
+    position: relative;
+	vertical-align: middle;
+
+	
+	
+    li {
+ 	   list-style-type: none;
+ 	   padding: 6px 0px 6px 0px;
+ 	   list-style: none;
+	   
+	}   
+
+}
+//document pane
+.panelizer-view-mode.node.node-search-result {
+    padding-right: 45px;
+    padding-left: 25px;
+   // padding-bottom: 35px;
+    margin-bottom: 35px;
+	
+	.pdfpreview {
+	    padding: 35px 20px 20px 10px;
+	    display: block;
+	    min-height: 100px;
+	    width: 100%;
+	    position: relative;
+	}
+	
+	.docs i {
+	  position: absolute;
+	  padding: 30px 20px 20px 10px;
+	}
+	
+    a {
+	    line-height: 1.5em;
+	    font-size: 0.995em
+    }
+	h1 {
+	    font-size: 1.5em;
+	}
+	
+	h2 {
+		padding-top: 10px;
+		font-size: 1.5em;
+	}
+
+}
+
+
+
+.panelizer-view-mode.node.node-full.node-tree-document {
+  background-color: #f3f3e5;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
+  padding-right: 15px;
+  padding-left: 25px;
+  margin-bottom: 35px;
+  
+  
+  .field , p {
+	  font-size: 0.955em;
+      line-height: 1.5rem;
+      margin: 0;
+      //padding: 6px 6px 6px 6px;
+	  text-align: left;
+	  font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+  }
+  
+  
+  h2.pane-title {
+  	
+  }
+  
+  
+  h3.pane-title {
+		      padding: 20px 10px 15px 0px;
+		      border: none !important;
+		      font-size: 1.2em;
+		      margin: 0;
+		      color: #563521;		  
+  }
+  
+ 
+  
+  
+
+.radix-layouts-sidebar.panel-panel {
+	background-color: #ededdc;	
+}
+
+
+.field.field-name-title-field.field-type-text.field-wrapper {
+	 h2 {
+	 	 padding: 15px 0px 15px 0;
+	    border-bottom: 1px dotted #b3b3a6;
+	    margin: 0;
+	    color: #563521;
+	    font-weight: 800;
+    }
+ }
+ 
+}
+
+
+
+
+
+
+
+span.date-display-single {
+    font-size: inherit;
+    letter-spacing: .25px;
+    padding-left: 0;
+    display: block;
+}
+
+span.date-display-start {
+  //color: #5B8930;
+}
+span.date-display-end {
+	//color: #5B8930;
+}
+
+
+
+
+.pdfpreview {
+    padding: 20px 40px 20px 10px;
+    display: block;
+    min-height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.pdfpreview-image-wrapper {
+	    padding: 0px 20px 0px 30px;
+}
+
+
+// node panels 
+
+.node-search-result {
+
+ // background-color: #F2F1EF;
+  //border: 1px solid #FFF;
+    margin-bottom: 20px !important;
+    position: relative;
+    background: #ededdc;
+    margin: 35px 0 55px !important;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
+    color: #272727;
+    border-radius: 2px;
+	
+  
+
+  &:after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+
+  > h2 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 20px 20px 79px;
+    max-height: 55px;
+    margin-left: 18px;
+    margin-top: 16px;
+    min-height: 55px;
+  }
+  
+  
+  .form-item  {
+      padding-top: 0.875rem;
+	  margin-top: 0;
+	  margin-bottom: 0;
+  }
+  
+  
+  
+}
+  
+.node-search-result.field-label {
+	 font-weight: bolder;
+	 font-size: 0.875rem;
+}
+.field .field-label {
+    font-size: 0.895rem;
+    font-weight: bolder;
+    color: #563521;
+    margin-bottom: 0.2rem;
+   font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+   line-height: 1.2rem;
+}
+
+
+
+.view.view-test-search.view-id-test_search.node-search-result.panel-pane.pane-entity-field.pane-node-field-image {
+  padding-left: 30px;
+}
+	
+.sidebar {	
+    background: #fbfbfb;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline;
+    float: left;
+    width: 23.7%;
+    margin-left: 1px;
+    padding: 2rem;
+    margin-top: 4.5em;
+}	
+	
+	
+	
+	
+
+	
+	
+.ztn {
+	
+    padding-top: 0.6875em 1.075em 0.75em 0.65em !important;
+    font-size: 0.65em !important;
+	
+  @include button(
+    // If true, set to button radius which is $global-radius or explicitly set radius amount in px (ex. $radius:10px). Default:false.
+    $radius: 3px,
+    // We can set $full-width:true to remove side padding extend width. Default:false
+    $disabled: false,
+	$bg: #8DB255
+  );
+}
+
+
+
+
+.entity.entity-field-collection-item.field-collection-item-field-files-collection {
+	padding: 0.875rem 0.875rem 0.875rem 0;
+}
+
+//field.field-name-field-document-bio field-type-text-with-summary field-label-hidden field-wrapper
+
+
+
+.field.field-name-field-document-bio.field-type-text-with-summary.field-wrapper {
+	display: block;
+    
+	
+	p {
+		 font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+		  margin-bottom: 15px;
+	 }
+	 
+	 span {
+		 color: #212121;
+		 padding-left: 0;
+		 //font-size: 0.875rem;
+		 
+	
+		 
+		 
+		 	.date-display-single {
+		
+				 color: #212121;
+		 	}
+		 
+	 }
+	 
+	 .date-display-single {
+		 color: #212121;
+	 	
+	 }
+	 
+	 
+	 .field-label {
+		 	padding: 0.875rem 0;
+	 }
+	 
+
+		  
+}
+
+
+
+
+
+
+
+
+
+
+.field.field-name-field-document-type.field-type-entityreference.clearfix.field-wrapper
+{
+	font-size: 0.875rem;
+	    font-weight: normal;
+	    line-height: normal;
+		    font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+	
+}
+.field.field-name-field-publication-date.field-type-datetime.clearfix.field-wrapper {
+
+	
+ span {
+	 color: #212121;
+	 padding-left: 0;
+     font-size: 0.875rem;
+     font-weight: normal;
+	 font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+	 padding-top: 0.148em;
+	 
+	 
+	 
+	 	.date-display-single {
+	
+			 color: #212121;
+	 	}
+	 
+ }
+	
+	
+}
+
+
+
+
+.field.field-name-field-file.field-type-file.field-wrapper {
+		
+		.file {
+			display: block;
+            word-wrap: break-word;
+		    max-width: 75%;
+		     position: relative;
+		     line-height: 1.5em;
+		     font-size: 0.995em;
+		}
+	
+}
+
+
+ul.isotope-options.clearfix {
+	
+	margin-top: 15px;
+	margin-bottom: 35px;
+}
+	
+
+
+
+
+.isotope-options {
+	
+
+	
+	li.first {
+		
+		display: inline-block;
+	}
+	
+	 
+	 
+	 
+	 li {
+	    list-style-type: none;
+	    margin: auto;
+	    margin: 0;
+	    padding: 0;
+	    display: inline-block;
+	}
+	
+	a {
+	    letter-spacing: .3px;
+	    font-size: 16px;
+	    display: inline;
+	    margin-right: 20px;
+		display: inline-block;
+		
+	}
+	
+	
+	.filterbutton {
+	    display: block;
+	    color: 8DB255;
+	    background-color: #ededdc;
+	    -moz-border-radius: 3px;
+	    -webkit-border-radius: 3px;
+	    border-radius: 3px;
+	    padding: 10px 18px;
+	    font-size: 0.8em;
+	    line-height: 12px;
+	    margin-right: 10px;
+		margin-top: 10px;
+	}
+	
+	.filterbutton.selected {
+	    color: #EAEAEA;
+	    background-color: #8DB255;
+	}
+	
+	
+
+}
+
+.panel-pane.pane-entity-field-extra.pane-user-profile-tree-profile {
+	
+	h3{
+		display: none;
+	}
+	
+	.field 
+	{
+	    font-family: inherit;
+		font-size: 0.95em;
+		line-height: 1.6;
+		font-weight: 600;
+	}
+	
+}
+
+.field.field-name-field-profile-pic.field-type-imagef.field-wrapper {
+	
+	img {
+		float: left;
+	}
+	
+}
+
+.panel-pane.pane-node-created, .panel-pane.pane-node-author {
+	
+	font-size: 0.95em;
+	font-family: "Source Sans Pro", Arial, sans-serif;
+	
+	
+	
+	.pane-title,.pane-content {
+		display: inline-block;
+		margin-bottom: 23px;
+        vertical-align: baseline;
+		float: left;
+		
+	}
+	
+	.pane-content {
+		margin-right: 15px;
+	}
+	
+	
+	
+}
+
+.gmap {
+	margin-bottom: 45px;
+}

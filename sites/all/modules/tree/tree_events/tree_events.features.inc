@@ -60,8 +60,7 @@ function tree_events_default_search_api_autocomplete_search() {
     "index_id" : "default_node_index",
     "type" : "search_api_views",
     "enabled" : "1",
-    "options" : { "result count" : true, "fields" : [] },
-    "rdf_mapping" : []
+    "options" : { "result count" : true, "fields" : [] }
   }');
   return $items;
 }

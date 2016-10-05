@@ -79,6 +79,31 @@ function tree_users_panelizer_defaults() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
+    $pane->pid = 'new-5769934c-5cfe-4009-9a91-71fd37994cc8';
+    $pane->panel = 'contentmain';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '<h1>%profile2:field_first_name &nbsp;%profile2:field_last_name</h1>',
+      'format' => 'full_html',
+      'substitute' => 1,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '5769934c-5cfe-4009-9a91-71fd37994cc8';
+    $display->content['new-5769934c-5cfe-4009-9a91-71fd37994cc8'] = $pane;
+    $display->panels['contentmain'][0] = 'new-5769934c-5cfe-4009-9a91-71fd37994cc8';
+    $pane = new stdClass();
     $pane->pid = 'new-1ffcf6db-c55e-48cc-a3f1-3f015313f6e3';
     $pane->panel = 'contentmain';
     $pane->type = 'entity_field_extra';
@@ -98,25 +123,28 @@ function tree_users_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = '1ffcf6db-c55e-48cc-a3f1-3f015313f6e3';
     $display->content['new-1ffcf6db-c55e-48cc-a3f1-3f015313f6e3'] = $pane;
-    $display->panels['contentmain'][0] = 'new-1ffcf6db-c55e-48cc-a3f1-3f015313f6e3';
+    $display->panels['contentmain'][1] = 'new-1ffcf6db-c55e-48cc-a3f1-3f015313f6e3';
     $pane = new stdClass();
-    $pane->pid = 'new-46327214-f961-4ed5-b270-4dde90660367';
-    $pane->panel = 'contentmain';
+    $pane->pid = 'new-152d6cc5-7bf6-4f27-b221-b349a515f8f3';
+    $pane->panel = 'sidebar';
     $pane->type = 'entity_field';
-    $pane->subtype = 'profile2:field_bio';
+    $pane->subtype = 'profile2:field_profile_pic';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'hidden',
-      'formatter' => 'text_default',
+      'formatter' => 'image',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
+      'formatter_settings' => array(
+        'image_style' => 'large',
+        'image_link' => '',
+      ),
       'context' => 'relationship_profile2_1',
       'override_title' => 0,
       'override_title_text' => '',
@@ -128,35 +156,11 @@ function tree_users_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $pane->uuid = '46327214-f961-4ed5-b270-4dde90660367';
-    $display->content['new-46327214-f961-4ed5-b270-4dde90660367'] = $pane;
-    $display->panels['contentmain'][1] = 'new-46327214-f961-4ed5-b270-4dde90660367';
-    $pane = new stdClass();
-    $pane->pid = 'new-cc549f6f-1bc7-47cd-a96e-56e9aac61d64';
-    $pane->panel = 'sidebar';
-    $pane->type = 'user_picture';
-    $pane->subtype = 'user_picture';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'context' => 'panelizer',
-      'override_title' => 1,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'cc549f6f-1bc7-47cd-a96e-56e9aac61d64';
-    $display->content['new-cc549f6f-1bc7-47cd-a96e-56e9aac61d64'] = $pane;
-    $display->panels['sidebar'][0] = 'new-cc549f6f-1bc7-47cd-a96e-56e9aac61d64';
+    $pane->uuid = '152d6cc5-7bf6-4f27-b221-b349a515f8f3';
+    $display->content['new-152d6cc5-7bf6-4f27-b221-b349a515f8f3'] = $pane;
+    $display->panels['sidebar'][0] = 'new-152d6cc5-7bf6-4f27-b221-b349a515f8f3';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $panelizer->display = $display;
