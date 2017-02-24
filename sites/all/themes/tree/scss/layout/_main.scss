@@ -595,3 +595,37 @@ ul.isotope-options.clearfix {
 .gmap {
 	margin-bottom: 45px;
 }
+
+
+//publications list page
+.view-resources-pubs,.view-id-resources_pubs,
+.view-display-id-panel_pane_pubs
+{
+	
+	.item-list ul li {
+		list-style: disc !important;
+		    margin: auto;
+		    margin-top: 0.5em;
+		    margin-bottom: 0.5em;
+		    margin-left: 1.3em;
+		    color: #5B8930;
+	}
+	
+}
+.purpose {
+	p {
+		color: black;
+	}
+	
+	hr { 
+		display: block;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		margin-left: auto;
+		margin-right: auto;
+		border-color: #d1d1d1;
+	}
+	
+	
+	
+}

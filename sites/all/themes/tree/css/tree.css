@@ -10207,6 +10207,31 @@ ul.isotope-options.clearfix {
   margin-bottom: 45px;
 }
 
+/* line 605, ../scss/layout/_main.scss */
+.view-resources-pubs .item-list ul li, .view-id-resources_pubs .item-list ul li,
+.view-display-id-panel_pane_pubs .item-list ul li {
+  list-style: disc !important;
+  margin: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 1.3em;
+  color: #5B8930;
+}
+
+/* line 616, ../scss/layout/_main.scss */
+.purpose p {
+  color: black;
+}
+/* line 620, ../scss/layout/_main.scss */
+.purpose hr {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: #d1d1d1;
+}
+
 /* line 9, ../scss/layout/_aside.scss */
 .radix-layouts-sidebar.panel-panel
 .sidebar .pane-title {
