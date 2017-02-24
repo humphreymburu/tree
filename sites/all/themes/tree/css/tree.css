@@ -10208,7 +10208,6 @@ ul.isotope-options.clearfix {
 }
 
 /* line 605, ../scss/layout/_main.scss */
-.view-resources-pubs .item-list ul li, .view-id-resources_pubs .item-list ul li,
 .view-display-id-panel_pane_pubs .item-list ul li {
   list-style: disc !important;
   margin: auto;
@@ -10230,6 +10229,12 @@ ul.isotope-options.clearfix {
   margin-left: auto;
   margin-right: auto;
   border-color: #d1d1d1;
+}
+
+/* line 638, ../scss/layout/_main.scss */
+.view-resources-pubs.view-id-resources_pubs.view-display-id-news .item-list ul li {
+  list-style: none;
+  color: #5B8930;
 }
 
 /* line 9, ../scss/layout/_aside.scss */

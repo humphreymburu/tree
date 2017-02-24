@@ -598,7 +598,7 @@ ul.isotope-options.clearfix {
 
 
 //publications list page
-.view-resources-pubs,.view-id-resources_pubs,
+
 .view-display-id-panel_pane_pubs
 {
 	
@@ -628,4 +628,15 @@ ul.isotope-options.clearfix {
 	
 	
 	
+}
+
+
+
+//
+.view-resources-pubs.view-id-resources_pubs.view-display-id-news {
+	
+	.item-list ul li {
+		list-style: none;
+		    color: #5B8930;
+	}
 }
