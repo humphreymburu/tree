@@ -82,13 +82,54 @@ function tree_page_default_page_manager_pages() {
   $display->content['new-084541c0-a1d0-427c-a8dd-8d413f47519d'] = $pane;
   $display->panels['contentmain'][0] = 'new-084541c0-a1d0-427c-a8dd-8d413f47519d';
   $pane = new stdClass();
-  $pane->pid = 'new-e439a4ca-9fe3-438c-8b28-f7e1da4dd906';
+  $pane->pid = 'new-0b3491b0-8f9b-4b70-a175-b38c1eedf60a';
   $pane->panel = 'sidebar';
-  $pane->type = 'views_panes';
-  $pane->subtype = 'resources-panel_pane_1';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
   $pane->shown = TRUE;
   $pane->access = array();
-  $pane->configuration = array();
+  $pane->configuration = array(
+    'admin_title' => '',
+    'title' => '',
+    'title_heading' => 'h2',
+    'body' => '<div class="panel-pane pane-custom pane-1">
+ <h2 class="pane-title">
+      Resource Links   </h2>
+  <div class="pane-content">
+    <div class="views-group">
+<div class="views-row views-row-1 views-row-odd views-row-first">
+<div class="views-field views-field-nothing"><div class="field-content">
+<a href="/News/list">News</a> </div>  </div>
+<div class="views-field views-field-field-other-info">
+</div>
+</div>
+</div>
+<div class="views-row views-row-2 views-row-even">
+<div class="views-field views-field-nothing">        <span class="field-content"> </span>  </div>
+<div class="views-field views-field-field-other-info">
+<div class="field-content"><a href="/Stories/list">Success Stories</a></div>
+</div>
+<div class="views-row views-row-3 views-row-odd">
+<div class="views-field views-field-nothing">        <span class="field-content"> </span>  </div>
+
+<div class="views-field views-field-field-researcher-bio">
+<div class="field-content"><a href="/Blog/list">Blog</a></div>
+</div>
+<div class="views-row views-row-4 views-row-even views-row-last">
+<div class="views-field views-field-nothing">        <span class="field-content"><a href="/Event">Events</a> </span>  </div>
+<div class="views-field views-field-field-other-info">
+<div class="field-content"></div>
+</div>
+<div class="views-field views-field-field-researcher-bio">
+<div class="field-content"></div>
+</div>
+</div>
+</div>
+  </div>
+  </div>',
+    'format' => 'panopoly_html_text',
+    'substitute' => TRUE,
+  );
   $pane->cache = array();
   $pane->style = array(
     'settings' => NULL,
@@ -97,9 +138,9 @@ function tree_page_default_page_manager_pages() {
   $pane->extras = array();
   $pane->position = 0;
   $pane->locks = array();
-  $pane->uuid = 'e439a4ca-9fe3-438c-8b28-f7e1da4dd906';
-  $display->content['new-e439a4ca-9fe3-438c-8b28-f7e1da4dd906'] = $pane;
-  $display->panels['sidebar'][0] = 'new-e439a4ca-9fe3-438c-8b28-f7e1da4dd906';
+  $pane->uuid = '0b3491b0-8f9b-4b70-a175-b38c1eedf60a';
+  $display->content['new-0b3491b0-8f9b-4b70-a175-b38c1eedf60a'] = $pane;
+  $display->panels['sidebar'][0] = 'new-0b3491b0-8f9b-4b70-a175-b38c1eedf60a';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -180,13 +221,64 @@ function tree_page_default_page_manager_pages() {
   $display->content['new-cfd3aac7-11f5-4895-b6dd-4ee5bccb0f87'] = $pane;
   $display->panels['contentmain'][0] = 'new-cfd3aac7-11f5-4895-b6dd-4ee5bccb0f87';
   $pane = new stdClass();
-  $pane->pid = 'new-e071496e-f0d2-41ed-b5f3-8bf398afb3a1';
+  $pane->pid = 'new-a91da60f-738e-4ebb-9b73-01a7734a333e';
   $pane->panel = 'sidebar';
-  $pane->type = 'views_panes';
-  $pane->subtype = 'resources-panel_pane_1';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
   $pane->shown = TRUE;
   $pane->access = array();
-  $pane->configuration = array();
+  $pane->configuration = array(
+    'admin_title' => '',
+    'title' => '',
+    'title_heading' => 'h2',
+    'body' => '<div class="panel-pane pane-custom pane-1">
+<h2 class="pane-title">
+      Resource Links   </h2>
+  <div class="pane-content">
+    <div class="views-group">
+<div class="views-row views-row-1 views-row-odd">
+<div class="views-field views-field-nothing">       <div class="field-content">
+<a href="/News/list">News</a> </div>  </div>
+<div class="views-field views-field-field-other-info">
+<div class="field-content"></div>
+</div>
+<div class="views-field views-field-field-researcher-bio">
+<div class="field-content"></div>
+</div>
+</div>
+</div>
+<div class="views-row views-row-2 views-row-even">
+<div class="views-field views-field-nothing">        <span class="field-content"> </span>  </div>
+<div class="views-field views-field-field-other-info">
+<div class="field-content"><a href="/Stories/list">Success Stories</a></div>
+</div>
+<div class="views-field views-field-field-researcher-bio">
+<div class="field-content"></div>
+</div>
+</div>
+<div class="views-row views-row-3 views-row-odd">
+<div class="views-field views-field-nothing">        <span class="field-content"> </span>  </div>
+<div class="views-field views-field-field-other-info">
+<div class="field-content"></div>
+</div>
+<div class="views-field views-field-field-researcher-bio">
+<div class="field-content"><a href="/Blog/list">Blog</a></div>
+</div>
+<div class="views-row views-row-4 views-row-even views-row-last">
+<div class="views-field views-field-nothing">        <span class="field-content"><a href="/Event">Events</a> </span>  </div>
+<div class="views-field views-field-field-other-info">
+<div class="field-content"></div>
+</div>
+<div class="views-field views-field-field-researcher-bio">
+<div class="field-content"></div>
+</div>
+</div>
+</div>
+  </div>
+  </div>',
+    'format' => 'panopoly_html_text',
+    'substitute' => TRUE,
+  );
   $pane->cache = array();
   $pane->style = array(
     'settings' => NULL,
@@ -195,9 +287,9 @@ function tree_page_default_page_manager_pages() {
   $pane->extras = array();
   $pane->position = 0;
   $pane->locks = array();
-  $pane->uuid = 'e071496e-f0d2-41ed-b5f3-8bf398afb3a1';
-  $display->content['new-e071496e-f0d2-41ed-b5f3-8bf398afb3a1'] = $pane;
-  $display->panels['sidebar'][0] = 'new-e071496e-f0d2-41ed-b5f3-8bf398afb3a1';
+  $pane->uuid = 'a91da60f-738e-4ebb-9b73-01a7734a333e';
+  $display->content['new-a91da60f-738e-4ebb-9b73-01a7734a333e'] = $pane;
+  $display->panels['sidebar'][0] = 'new-a91da60f-738e-4ebb-9b73-01a7734a333e';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
