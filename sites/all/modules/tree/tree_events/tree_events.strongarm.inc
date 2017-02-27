@@ -63,7 +63,7 @@ function tree_events_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'date_format_events';
-  $strongarm->value = 'F  d';
+  $strongarm->value = 'M  d';
   $export['date_format_events'] = $strongarm;
 
   $strongarm = new stdClass();
