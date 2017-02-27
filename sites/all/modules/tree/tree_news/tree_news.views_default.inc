@@ -68,7 +68,7 @@ function tree_news_views_default_views() {
   $handler->display->display_options['empty']['area']['format'] = 'panopoly_wysiwyg_text';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Indexed Node: Status */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['filters']['status']['field'] = 'status';

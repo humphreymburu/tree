@@ -95,33 +95,35 @@ function tree_news_default_page_manager_pages() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '75dbaa3f-7b89-459d-aca5-67bcbce6180c';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_tree_space_news_panel_context';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-e888266b-1822-451c-851b-36d00e6ff24c';
-    $pane->panel = 'top';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'tree_news-list';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'context' => array(
-        0 => 'argument_entity_id:node_1',
-      ),
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = 'e888266b-1822-451c-851b-36d00e6ff24c';
-    $display->content['new-e888266b-1822-451c-851b-36d00e6ff24c'] = $pane;
-    $display->panels['top'][0] = 'new-e888266b-1822-451c-851b-36d00e6ff24c';
+  $pane = new stdClass();
+  $pane->pid = 'new-e888266b-1822-451c-851b-36d00e6ff24c';
+  $pane->panel = 'top';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'tree_news-list';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'context' => array(
+      0 => 'argument_entity_id:node_1',
+    ),
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = 'e888266b-1822-451c-851b-36d00e6ff24c';
+  $display->content['new-e888266b-1822-451c-851b-36d00e6ff24c'] = $pane;
+  $display->panels['top'][0] = 'new-e888266b-1822-451c-851b-36d00e6ff24c';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
