@@ -100,7 +100,7 @@ function tree_events_panelizer_defaults() {
     'delta_offset' => '0',
     'delta_reversed' => FALSE,
     'formatter_settings' => array(
-      'image_style' => 'event',
+      'image_style' => 'large',
       'image_link' => '',
     ),
     'context' => 'panelizer',
@@ -158,16 +158,18 @@ function tree_events_panelizer_defaults() {
   $pane->configuration = array(
     'admin_title' => 'event_details',
     'title' => '',
-    'body' => '<ul class="date">
+    'body' => '<ul class="date"><p>
 <li>
-<p>
-<i class="step fi-calendar size-18"></i> &nbsp;%node:field_event_date <br>
+<i class="step fi-calendar size-18"></i> &nbsp;%node:field_event_date</li> 
+<br><br><br><br><br><br><br><br>
+<li>
 <i class="step fi-marker size-18"></i> &nbsp;%node:field_event_location 
-</p>
 </li>
+</p>
 </ul>',
     'format' => 'panopoly_html_text',
     'substitute' => 1,
+    'title_heading' => 'h2',
   );
   $pane->cache = array();
   $pane->style = array(
