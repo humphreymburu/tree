@@ -63,10 +63,10 @@ function tree_page_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
-  $pane->pid = 'new-084541c0-a1d0-427c-a8dd-8d413f47519d';
+  $pane->pid = 'new-0188cb0a-1ca8-44fd-b4e9-886c94918b26';
   $pane->panel = 'contentmain';
   $pane->type = 'views_panes';
-  $pane->subtype = 'resources_pubs-panel_pane_1';
+  $pane->subtype = 'resources_pubs-panel_pane_posters';
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array();
@@ -78,9 +78,9 @@ function tree_page_default_page_manager_pages() {
   $pane->extras = array();
   $pane->position = 0;
   $pane->locks = array();
-  $pane->uuid = '084541c0-a1d0-427c-a8dd-8d413f47519d';
-  $display->content['new-084541c0-a1d0-427c-a8dd-8d413f47519d'] = $pane;
-  $display->panels['contentmain'][0] = 'new-084541c0-a1d0-427c-a8dd-8d413f47519d';
+  $pane->uuid = '0188cb0a-1ca8-44fd-b4e9-886c94918b26';
+  $display->content['new-0188cb0a-1ca8-44fd-b4e9-886c94918b26'] = $pane;
+  $display->panels['contentmain'][0] = 'new-0188cb0a-1ca8-44fd-b4e9-886c94918b26';
   $pane = new stdClass();
   $pane->pid = 'new-0b3491b0-8f9b-4b70-a175-b38c1eedf60a';
   $pane->panel = 'sidebar';

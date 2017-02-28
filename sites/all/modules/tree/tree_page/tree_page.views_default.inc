@@ -1888,7 +1888,7 @@ function tree_page_views_default_views() {
   $handler->display->display_options['pane_title'] = 'Publications';
 
   /* Display: List of Posters */
-  $handler = $view->new_display('panel_pane', 'List of Posters', 'panel_pane_1');
+  $handler = $view->new_display('panel_pane', 'List of Posters', 'panel_pane_posters');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Posters';
   $handler->display->display_options['defaults']['pager'] = FALSE;
